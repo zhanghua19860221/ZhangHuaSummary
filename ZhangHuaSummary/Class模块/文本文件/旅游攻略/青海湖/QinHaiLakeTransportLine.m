@@ -1,28 +1,28 @@
 //
-//  ZHTextFileController.m
+//  QinHaiLakeTransportLine.m
 //  ZhangHuaSummary
 //
 //  Created by zhanghua0221 on 17/9/5.
 //  Copyright © 2017年 zhanghua0221. All rights reserved.
 //
 
-#import "ZHTextFileController.h"
+#import "QinHaiLakeTransportLine.h"
 
-@interface ZHTextFileController ()
+@interface QinHaiLakeTransportLine ()
 
 @end
 
-@implementation ZHTextFileController
+@implementation QinHaiLakeTransportLine
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initTableViewData];
+    [self createTextField];
     // Do any additional setup after loading the view.
 }
--(void)initTableViewData{
+-(void)createTextField{
     
-    self.tableListArray = @[@"学习类",@"旅游攻略"];
-    self.controllerTitle = @[@"ZHLearningClass",@"ZHTravelStrategyController"];
+//    self.textField = [UITextField alloc] initWithFrame:CGRectMak
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

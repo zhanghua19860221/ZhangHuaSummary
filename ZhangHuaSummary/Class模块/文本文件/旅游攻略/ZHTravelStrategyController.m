@@ -1,28 +1,27 @@
 //
-//  ZHTextFileController.m
+//  ZHTravelStrategyController.m
 //  ZhangHuaSummary
 //
 //  Created by zhanghua0221 on 17/9/5.
 //  Copyright © 2017年 zhanghua0221. All rights reserved.
 //
 
-#import "ZHTextFileController.h"
+#import "ZHTravelStrategyController.h"
 
-@interface ZHTextFileController ()
+@interface ZHTravelStrategyController ()
 
 @end
 
-@implementation ZHTextFileController
+@implementation ZHTravelStrategyController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
     [self initTableViewData];
     // Do any additional setup after loading the view.
 }
 -(void)initTableViewData{
     
-    self.tableListArray = @[@"学习类",@"旅游攻略"];
-    self.controllerTitle = @[@"ZHLearningClass",@"ZHTravelStrategyController"];
+    self.tableListArray = @[@"青海湖"];
+    self.controllerTitle = @[@"ZHQinHaiLake"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

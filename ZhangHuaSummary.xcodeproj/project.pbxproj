@@ -15,6 +15,15 @@
 		70043ACB1F4E7D8B00E82B8F /* animationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043ACA1F4E7D8B00E82B8F /* animationController.m */; };
 		70251BEF1F5E887A00405C57 /* ZHTextFileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70251BEE1F5E887A00405C57 /* ZHTextFileController.m */; };
 		70251BF21F5E88D800405C57 /* ZHLearningClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 70251BF11F5E88D800405C57 /* ZHLearningClass.m */; };
+		70251C161F5E9FDD00405C57 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 70251C0C1F5E9FDD00405C57 /* 1.png */; };
+		70251C171F5E9FDD00405C57 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 70251C0D1F5E9FDD00405C57 /* 2.png */; };
+		70251C181F5E9FDD00405C57 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 70251C0E1F5E9FDD00405C57 /* 3.png */; };
+		70251C191F5E9FDD00405C57 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 70251C0F1F5E9FDD00405C57 /* 4.png */; };
+		70251C1A1F5E9FDD00405C57 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 70251C101F5E9FDD00405C57 /* 5.png */; };
+		70251C251F5EA29400405C57 /* 6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 70251C241F5EA29400405C57 /* 6.jpeg */; };
+		70251C281F5EA3CD00405C57 /* ZHTravelStrategyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70251C271F5EA3CD00405C57 /* ZHTravelStrategyController.m */; };
+		70251C2B1F5EA42100405C57 /* ZHQinHaiLake.m in Sources */ = {isa = PBXBuildFile; fileRef = 70251C2A1F5EA42100405C57 /* ZHQinHaiLake.m */; };
+		70251C2E1F5EA4BA00405C57 /* QinHaiLakeTransportLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 70251C2D1F5EA4BA00405C57 /* QinHaiLakeTransportLine.m */; };
 		703947171F5D2C3300B33969 /* ZHPictureCacheClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 703947161F5D2C3300B33969 /* ZHPictureCacheClass.m */; };
 		704915161F56546F00DA2B5A /* leftImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 704915131F56546F00DA2B5A /* leftImage.jpg */; };
 		704915171F56546F00DA2B5A /* mid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 704915141F56546F00DA2B5A /* mid.jpg */; };
@@ -63,6 +72,18 @@
 		70251BEE1F5E887A00405C57 /* ZHTextFileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHTextFileController.m; path = "Class模块/文本文件/ZHTextFileController.m"; sourceTree = "<group>"; };
 		70251BF01F5E88D800405C57 /* ZHLearningClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHLearningClass.h; path = "Class模块/文本文件/学习类/ZHLearningClass.h"; sourceTree = "<group>"; };
 		70251BF11F5E88D800405C57 /* ZHLearningClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHLearningClass.m; path = "Class模块/文本文件/学习类/ZHLearningClass.m"; sourceTree = "<group>"; };
+		70251C0C1F5E9FDD00405C57 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		70251C0D1F5E9FDD00405C57 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		70251C0E1F5E9FDD00405C57 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		70251C0F1F5E9FDD00405C57 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		70251C101F5E9FDD00405C57 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		70251C241F5EA29400405C57 /* 6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpeg; sourceTree = "<group>"; };
+		70251C261F5EA3CD00405C57 /* ZHTravelStrategyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHTravelStrategyController.h; path = "Class模块/文本文件/旅游攻略/ZHTravelStrategyController.h"; sourceTree = "<group>"; };
+		70251C271F5EA3CD00405C57 /* ZHTravelStrategyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHTravelStrategyController.m; path = "Class模块/文本文件/旅游攻略/ZHTravelStrategyController.m"; sourceTree = "<group>"; };
+		70251C291F5EA42100405C57 /* ZHQinHaiLake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHQinHaiLake.h; sourceTree = "<group>"; };
+		70251C2A1F5EA42100405C57 /* ZHQinHaiLake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHQinHaiLake.m; sourceTree = "<group>"; };
+		70251C2C1F5EA4BA00405C57 /* QinHaiLakeTransportLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QinHaiLakeTransportLine.h; sourceTree = "<group>"; };
+		70251C2D1F5EA4BA00405C57 /* QinHaiLakeTransportLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QinHaiLakeTransportLine.m; sourceTree = "<group>"; };
 		703947151F5D2C3300B33969 /* ZHPictureCacheClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPictureCacheClass.h; path = "Class模块/工具类封装/图片的加载与缓存/ZHPictureCacheClass.h"; sourceTree = "<group>"; };
 		703947161F5D2C3300B33969 /* ZHPictureCacheClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPictureCacheClass.m; path = "Class模块/工具类封装/图片的加载与缓存/ZHPictureCacheClass.m"; sourceTree = "<group>"; };
 		704915131F56546F00DA2B5A /* leftImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = leftImage.jpg; path = "Class模块/动画效果/抽屉/leftImage.jpg"; sourceTree = "<group>"; };
@@ -149,6 +170,7 @@
 		70251BEB1F5E4D0900405C57 /* 文本文件 */ = {
 			isa = PBXGroup;
 			children = (
+				70251BF31F5E98C500405C57 /* 旅游攻略 */,
 				70251BEC1F5E4D2300405C57 /* 学习类 */,
 				70251BED1F5E887A00405C57 /* ZHTextFileController.h */,
 				70251BEE1F5E887A00405C57 /* ZHTextFileController.m */,
@@ -163,6 +185,42 @@
 				70251BF11F5E88D800405C57 /* ZHLearningClass.m */,
 			);
 			name = "学习类";
+			sourceTree = "<group>";
+		};
+		70251BF31F5E98C500405C57 /* 旅游攻略 */ = {
+			isa = PBXGroup;
+			children = (
+				70251C0A1F5E9FDD00405C57 /* 青海湖 */,
+				70251C261F5EA3CD00405C57 /* ZHTravelStrategyController.h */,
+				70251C271F5EA3CD00405C57 /* ZHTravelStrategyController.m */,
+			);
+			name = "旅游攻略";
+			sourceTree = "<group>";
+		};
+		70251C0A1F5E9FDD00405C57 /* 青海湖 */ = {
+			isa = PBXGroup;
+			children = (
+				70251C0B1F5E9FDD00405C57 /* imageResource */,
+				70251C291F5EA42100405C57 /* ZHQinHaiLake.h */,
+				70251C2A1F5EA42100405C57 /* ZHQinHaiLake.m */,
+				70251C2C1F5EA4BA00405C57 /* QinHaiLakeTransportLine.h */,
+				70251C2D1F5EA4BA00405C57 /* QinHaiLakeTransportLine.m */,
+			);
+			name = "青海湖";
+			path = "Class模块/文本文件/旅游攻略/青海湖";
+			sourceTree = "<group>";
+		};
+		70251C0B1F5E9FDD00405C57 /* imageResource */ = {
+			isa = PBXGroup;
+			children = (
+				70251C0C1F5E9FDD00405C57 /* 1.png */,
+				70251C0D1F5E9FDD00405C57 /* 2.png */,
+				70251C0E1F5E9FDD00405C57 /* 3.png */,
+				70251C0F1F5E9FDD00405C57 /* 4.png */,
+				70251C101F5E9FDD00405C57 /* 5.png */,
+				70251C241F5EA29400405C57 /* 6.jpeg */,
+			);
+			path = imageResource;
 			sourceTree = "<group>";
 		};
 		704ED3EA1F594DED00377DE3 /* 图片缓存处理 */ = {
@@ -430,15 +488,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70251C181F5E9FDD00405C57 /* 3.png in Resources */,
 				709FEEAA1F4D63E100285983 /* LaunchScreen.storyboard in Resources */,
 				704915171F56546F00DA2B5A /* mid.jpg in Resources */,
+				70251C171F5E9FDD00405C57 /* 2.png in Resources */,
 				70A0D1D01F4E747000670625 /* banner_tp01@2x.png in Resources */,
+				70251C1A1F5E9FDD00405C57 /* 5.png in Resources */,
+				70251C251F5EA29400405C57 /* 6.jpeg in Resources */,
 				70A0D1D11F4E747000670625 /* banner_tp02@2x.png in Resources */,
 				70A0D1D31F4E747000670625 /* banner_tp04@2x.png in Resources */,
+				70251C161F5E9FDD00405C57 /* 1.png in Resources */,
 				704915161F56546F00DA2B5A /* leftImage.jpg in Resources */,
 				704915181F56546F00DA2B5A /* right.jpg in Resources */,
 				709FEEA71F4D63E100285983 /* Assets.xcassets in Resources */,
 				70FA4C941F53C6DD0078BFE6 /* cart.png in Resources */,
+				70251C191F5E9FDD00405C57 /* 4.png in Resources */,
 				70FA4C951F53C6DD0078BFE6 /* heheda.png in Resources */,
 				709FEEA51F4D63E100285983 /* Main.storyboard in Resources */,
 				70A0D1D21F4E747000670625 /* banner_tp03@2x.png in Resources */,
@@ -453,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				709FEE9F1F4D63E100285983 /* AppDelegate.m in Sources */,
+				70251C2B1F5EA42100405C57 /* ZHQinHaiLake.m in Sources */,
 				70FA4C9F1F53CC110078BFE6 /* ZHBannerLoop.m in Sources */,
 				70FA4C8F1F53C47F0078BFE6 /* ZHShoppingCartAnimation.m in Sources */,
 				70FA4C821F53C3490078BFE6 /* ZHCustomLayOut.m in Sources */,
@@ -471,7 +536,9 @@
 				703947171F5D2C3300B33969 /* ZHPictureCacheClass.m in Sources */,
 				70C23ED51F553DF400FAEBAA /* RightViewController.m in Sources */,
 				70FA4C841F53C3490078BFE6 /* ZHWaterfallStyle.m in Sources */,
+				70251C2E1F5EA4BA00405C57 /* QinHaiLakeTransportLine.m in Sources */,
 				70251BF21F5E88D800405C57 /* ZHLearningClass.m in Sources */,
+				70251C281F5EA3CD00405C57 /* ZHTravelStrategyController.m in Sources */,
 				70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */,
 				70043ABE1F4E7C4A00E82B8F /* RootViewController.m in Sources */,
 				70FA4C961F53C6DD0078BFE6 /* ZHShoppingCart.m in Sources */,
