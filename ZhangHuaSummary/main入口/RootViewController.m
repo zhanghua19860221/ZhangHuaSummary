@@ -25,8 +25,8 @@
     self.title = @"提纲";
 }
 -(void)initTableViewData{
-    self.tableListArray = @[@"视图布局",@"UI控件封装",@"工具类封装",@"动画效果"];
-    self.controllerTitle = @[@"viewLayoutController",@"UIEncapController",@"toolClassEncap",@"animationController"];
+    self.tableListArray = @[@"视图布局",@"UI控件封装",@"工具类封装",@"动画效果",@"文本文件"];
+    self.controllerTitle = @[@"viewLayoutController",@"UIEncapController",@"toolClassEncap",@"animationController",@"ZHTextFileController"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
