@@ -11,5 +11,5 @@
 @interface QinHaiLakeTransportLine : UIViewController
 
 @property (strong, nonatomic) NSString *lineStr;
-@property (strong, nonatomic) UITextField *textField;
+@property (strong, nonatomic) UITextView *textView;
 @end

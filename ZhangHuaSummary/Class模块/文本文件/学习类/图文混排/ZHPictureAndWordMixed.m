@@ -1,29 +1,25 @@
 //
-//  ZHTextFileController.m
+//  ZHPictureAndWordMixed.m
 //  ZhangHuaSummary
 //
-//  Created by zhanghua0221 on 17/9/5.
+//  Created by zhanghua0221 on 17/9/6.
 //  Copyright © 2017年 zhanghua0221. All rights reserved.
 //
 
-#import "ZHTextFileController.h"
+#import "ZHPictureAndWordMixed.h"
 
-@interface ZHTextFileController ()
+@interface ZHPictureAndWordMixed ()
 
 @end
 
-@implementation ZHTextFileController
+@implementation ZHPictureAndWordMixed
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initTableViewData];
+    self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
 }
--(void)initTableViewData{
-    
-    self.tableListArray = @[@"学习类",@"旅游攻略"];
-    self.controllerTitle = @[@"ZHLearningController",@"ZHTravelStrategyController"];
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

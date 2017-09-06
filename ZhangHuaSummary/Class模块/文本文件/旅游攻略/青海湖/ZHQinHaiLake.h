@@ -14,5 +14,9 @@
 @property (strong, nonatomic) NSMutableArray *tableArray;
 //每个Cell路线详情数据
 @property (strong, nonatomic) NSMutableArray *detailArray;
+//tableView头视图headView
+@property (strong, nonatomic) UIImageView *headView;
+//headView的状态
+@property (assign, nonatomic) BOOL isClick;
 
 @end

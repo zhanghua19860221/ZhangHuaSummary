@@ -1,25 +1,29 @@
 //
-//  ZHLearningClass.m
+//  ZHLearningController.m
 //  ZhangHuaSummary
 //
-//  Created by zhanghua0221 on 17/9/5.
+//  Created by zhanghua0221 on 17/9/6.
 //  Copyright © 2017年 zhanghua0221. All rights reserved.
 //
 
-#import "ZHLearningClass.h"
+#import "ZHLearningController.h"
 
-@interface ZHLearningClass ()
+@interface ZHLearningController ()
 
 @end
 
-@implementation ZHLearningClass
+@implementation ZHLearningController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    [self initTableViewData];
     // Do any additional setup after loading the view.
 }
-
+-(void)initTableViewData{
+    
+    self.tableListArray = @[@"图文混排"];
+    self.controllerTitle = @[@"ZHPictureAndWordMixed"];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

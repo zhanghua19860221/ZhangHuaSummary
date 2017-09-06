@@ -1,13 +1,13 @@
 //
-//  ZHLearningClass.h
+//  ZHPictureAndWordMixed.h
 //  ZhangHuaSummary
 //
-//  Created by zhanghua0221 on 17/9/5.
+//  Created by zhanghua0221 on 17/9/6.
 //  Copyright © 2017年 zhanghua0221. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ZHLearningClass : UIViewController
+@interface ZHPictureAndWordMixed : UIViewController
 
 @end
