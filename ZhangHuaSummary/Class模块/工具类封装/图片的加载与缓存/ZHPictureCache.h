@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ZHPictureCache : UIViewController<UITableViewDelegate,UITableViewDataSource>
+#import "ZHWebImageCache.h"
+@interface ZHPictureCache : UIViewController<UITableViewDelegate,UITableViewDataSource,ZHWebImageDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSArray *imageArray;
-
+@property (strong, nonatomic) ZHWebImageCache *objectCache;
 @end
