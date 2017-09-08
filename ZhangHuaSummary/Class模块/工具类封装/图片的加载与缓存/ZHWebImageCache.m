@@ -26,11 +26,13 @@
         NSURL *imageUrl = [NSURL URLWithString:url];
         NSData *imageData = [NSData dataWithContentsOfURL:imageUrl];
         [weakSelf saveImageData:imageData imageName:imageName];
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            
-//            [weakSelf.delegate refreshUIOperation];
-//            
-//        });
+        
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                [weakSelf.delegate refreshUIOperation];
+                
+            });
+
     });
 }
 /**
@@ -87,36 +89,39 @@
     NSFileManager *managar = [NSFileManager defaultManager];
     NSString *imageDataPath= [self getLocationImageDataFilePath];
     [managar removeItemAtPath:imageDataPath error:nil];
-    [self.delegate refreshUIOperation];
-
 }
 
 /**
-    获取缓存文件大小
+    获取缓存文件夹大小
  */
-- (float)fileSizeAtPath{
-    NSFileManager* manager = [NSFileManager defaultManager];
-    NSString *imageDataPath= [self getLocationImageDataFilePath];
-    if ([manager fileExistsAtPath:imageDataPath]){
-        
-        //        //取得一个目录下得所有文件名
-        //        NSArray *files = [manager subpathsAtPath:filePath];
-        //        NSLog(@"files1111111%@ == %ld",files,files.count);
-        //
-        //        // 从路径中获得完整的文件名（带后缀）
-        //        NSString *exe = [filePath lastPathComponent];
-        //        NSLog(@"exeexe ====%@",exe);
-        //
-        //        // 获得文件名（不带后缀）
-        //        exe = [exe stringByDeletingPathExtension];
-        //
-        //        // 获得文件名（不带后缀）
-        //        NSString *exestr = [[files objectAtIndex:1] stringByDeletingPathExtension];
-        //        NSLog(@"files2222222%@  ==== %@",[files objectAtIndex:1],exestr);
-        
-        
-        return [[manager attributesOfItemAtPath:imageDataPath error:nil] fileSize];
-    }
-    return 0;
-}
+-(unsigned long long)getFileSizeAtPath
+ {
+     // 总大小
+     unsigned long long size = 0;
+
+     // 文件管理者
+     NSFileManager *mgr = [NSFileManager defaultManager];
+
+     // 是否为文件夹
+     BOOL isDirectory = NO;
+
+     // 路径是否存在
+     BOOL exists = [mgr fileExistsAtPath:[self getLocationImageDataFilePath] isDirectory:&isDirectory];
+     if (!exists) return size;
+
+     if (isDirectory) { // 文件夹
+         // 获得文件夹的大小  == 获得文件夹中所有文件的总大小
+         NSDirectoryEnumerator *enumerator = [mgr enumeratorAtPath:[self getLocationImageDataFilePath]];
+         for (NSString *subpath in enumerator) {
+             // 全路径
+             NSString *fullSubpath = [[self getLocationImageDataFilePath] stringByAppendingPathComponent:subpath];
+             // 累加文件大小
+             size += [mgr attributesOfItemAtPath:fullSubpath error:nil].fileSize;
+         }
+     } else { // 文件
+         size = [mgr attributesOfItemAtPath:[self getLocationImageDataFilePath] error:nil].fileSize;
+     }
+ 
+     return size;
+ }
 @end

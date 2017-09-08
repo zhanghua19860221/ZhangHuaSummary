@@ -30,6 +30,6 @@
 //删除缓存文件
 -(void)removeImageCacheFile;
 //获取缓存文件的大小
-- (float)fileSizeAtPath;
+- (unsigned long long)getFileSizeAtPath;
 
 @end

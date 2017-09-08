@@ -56,14 +56,13 @@
     }
     NSString *imageDataPath = [[self.objectCache getLocationImageDataFilePath] stringByAppendingPathComponent:[NSString stringWithFormat:@"%ld",(long)indexPath.row]];
     NSData *imageData = [self.objectCache getLocalCacheImage:imageDataPath];
+    
     if (imageData) {
         UIImage *image = [UIImage imageWithData:imageData];
         [cell.imageView setImage:image];
-        NSLog(@"1 有有有有");
     }else{
         
         [self.objectCache  cacheWebImageUrl:self.imageArray[indexPath.row] imageName:[NSString stringWithFormat:@"%ld",indexPath.row]];
-        NSLog(@"2 没没没没");
     }
     [cell.textLabel setText:[NSString stringWithFormat:@"%ld",(long)indexPath.row]];
     return cell;
@@ -74,7 +73,19 @@
 };
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    NSLog(@"%@",NSHomeDirectory());
+
+    if (indexPath.row == 9) {
+        [self .objectCache removeImageCacheFile];
+        NSString *delegateSize = [NSString stringWithFormat:@"清空缓存、缓存文件夹大小为%.2fMB",[self.objectCache getFileSizeAtPath]/1024.0/1024.0,nil];
+        UIAlertView *delegateView = [[UIAlertView alloc] initWithTitle:@"标题" message:delegateSize delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
+        [delegateView show];
+    }else{
+        NSString *fileSize = [NSString stringWithFormat:@"缓存文件夹大小为%.2fMB",[self.objectCache getFileSizeAtPath]/1024.0/1024.0,nil];
+        
+        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题" message:fileSize delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
+        [alertview show];
+    }
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
