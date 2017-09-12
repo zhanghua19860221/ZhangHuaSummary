@@ -16,21 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self createTextField];
+    [self createTextView];
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
 }
--(void)createTextField{
+-(void)createTextView{
     
     self.textView = [[UITextView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.textView setText:self.lineStr];
     UIColor *color = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1];
+    
     //textView文本样式设置
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineSpacing = 10;// 字体的行间距
     paragraphStyle.firstLineHeadIndent = 33.f; //首行缩进宽度
     paragraphStyle.alignment = NSTextAlignmentJustified;
-    
     NSDictionary *attributes = @{
                                  
                                  NSFontAttributeName:[UIFont systemFontOfSize:17],
@@ -39,6 +39,8 @@
                                  
                                  };
     self.textView.attributedText = [[NSAttributedString alloc] initWithString:self.textView.text attributes:attributes];
+    
+    
     [self.textView setTextColor:color];
     [self.view addSubview:self.textView];
     

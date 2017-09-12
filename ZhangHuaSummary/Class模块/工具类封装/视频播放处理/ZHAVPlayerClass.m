@@ -1,21 +1,22 @@
 //
-//  UIEncapController.m
+//  ZHAVPlayerClass.m
 //  ZhangHuaSummary
 //
-//  Created by zhanghua0221 on 17/8/24.
+//  Created by zhanghua0221 on 17/9/12.
 //  Copyright © 2017年 zhanghua0221. All rights reserved.
 //
 
-#import "UIEncapController.h"
+#import "ZHAVPlayerClass.h"
 
-@interface UIEncapController ()
+@interface ZHAVPlayerClass ()
 
 @end
 
-@implementation UIEncapController
+@implementation ZHAVPlayerClass
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
 }
 

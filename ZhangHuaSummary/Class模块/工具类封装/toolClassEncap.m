@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableListArray = @[@"图片缓存处理"];
-    self.controllerTitle = @[@"ZHPictureCache"];
+    self.tableListArray = @[@"图片缓存处理",@"视频播放处理"];
+    self.controllerTitle = @[@"ZHPictureCache",@"ZHAVPlayerClass"];
     // Do any additional setup after loading the view.
 }
 

@@ -72,8 +72,7 @@
     return 44;
 };
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
-
+    
     if (indexPath.row == 9) {
         [self .objectCache removeImageCacheFile];
         NSString *delegateSize = [NSString stringWithFormat:@"清空缓存、缓存文件夹大小为%.2fMB",[self.objectCache getFileSizeAtPath]/1024.0/1024.0,nil];
