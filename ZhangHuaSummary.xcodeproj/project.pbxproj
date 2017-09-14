@@ -10,7 +10,6 @@
 		70043ABE1F4E7C4A00E82B8F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043ABB1F4E7C4A00E82B8F /* RootViewController.m */; };
 		70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043ABD1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m */; };
 		70043AC21F4E7CDA00E82B8F /* viewLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043AC11F4E7CDA00E82B8F /* viewLayoutController.m */; };
-		70043AC81F4E7D5F00E82B8F /* toolClassEncap.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043AC71F4E7D5F00E82B8F /* toolClassEncap.m */; };
 		70043ACB1F4E7D8B00E82B8F /* animationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043ACA1F4E7D8B00E82B8F /* animationController.m */; };
 		7019FE401F5FA5780086F6C1 /* ZHLearningController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7019FE3F1F5FA5780086F6C1 /* ZHLearningController.m */; };
 		7019FE431F5FA63B0086F6C1 /* ZHPictureAndWordMixed.m in Sources */ = {isa = PBXBuildFile; fileRef = 7019FE421F5FA63B0086F6C1 /* ZHPictureAndWordMixed.m */; };
@@ -27,8 +26,13 @@
 		704915161F56546F00DA2B5A /* leftImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 704915131F56546F00DA2B5A /* leftImage.jpg */; };
 		704915171F56546F00DA2B5A /* mid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 704915141F56546F00DA2B5A /* mid.jpg */; };
 		704915181F56546F00DA2B5A /* right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 704915151F56546F00DA2B5A /* right.jpg */; };
-		704ED3ED1F594E5000377DE3 /* ZHPictureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 704ED3EC1F594E5000377DE3 /* ZHPictureCache.m */; };
-		706E044E1F6777E9001E58FA /* ZHAVPlayerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 706E044D1F6777E9001E58FA /* ZHAVPlayerClass.m */; };
+		705C1B451F6A6CAC00D01751 /* ZHCameraCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C1B441F6A6CAC00D01751 /* ZHCameraCall.m */; };
+		705C1B481F6A6CC600D01751 /* ZHAVPlayerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C1B471F6A6CC600D01751 /* ZHAVPlayerClass.m */; };
+		705C1B4D1F6A6CD900D01751 /* ZHPictureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C1B4A1F6A6CD900D01751 /* ZHPictureCache.m */; };
+		705C1B4E1F6A6CD900D01751 /* ZHWebImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C1B4C1F6A6CD900D01751 /* ZHWebImageCache.m */; };
+		705C1B511F6A6CF300D01751 /* toolClassEncap.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C1B501F6A6CF300D01751 /* toolClassEncap.m */; };
+		705C1B531F6A71A500D01751 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705C1B521F6A71A500D01751 /* MobileCoreServices.framework */; };
+		705C1B541F6A74D900D01751 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7058FCDA1F6A304400369815 /* AssetsLibrary.framework */; };
 		709FEE9C1F4D63E100285983 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 709FEE9B1F4D63E100285983 /* main.m */; };
 		709FEE9F1F4D63E100285983 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 709FEE9E1F4D63E100285983 /* AppDelegate.m */; };
 		709FEEA51F4D63E100285983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709FEEA31F4D63E100285983 /* Main.storyboard */; };
@@ -38,7 +42,6 @@
 		70A0D1D11F4E747000670625 /* banner_tp02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A0D1CD1F4E747000670625 /* banner_tp02@2x.png */; };
 		70A0D1D21F4E747000670625 /* banner_tp03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A0D1CE1F4E747000670625 /* banner_tp03@2x.png */; };
 		70A0D1D31F4E747000670625 /* banner_tp04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A0D1CF1F4E747000670625 /* banner_tp04@2x.png */; };
-		70AF70361F60F73B005EDF86 /* ZHWebImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AF70351F60F73B005EDF86 /* ZHWebImageCache.m */; };
 		70C23EC51F5506D700FAEBAA /* ZHRoundDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C23EC41F5506D700FAEBAA /* ZHRoundDisplay.m */; };
 		70C23EC81F55071F00FAEBAA /* ZHRoundLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C23EC71F55071F00FAEBAA /* ZHRoundLayout.m */; };
 		70C23ECC1F553DB600FAEBAA /* ZHDrawerRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C23ECB1F553DB600FAEBAA /* ZHDrawerRootController.m */; };
@@ -63,8 +66,6 @@
 		70043ABD1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHBasicsTableViewController.m; path = "main入口/ZHBasicsTableViewController.m"; sourceTree = "<group>"; };
 		70043AC01F4E7CDA00E82B8F /* viewLayoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = viewLayoutController.h; path = "Class模块/视图布局/viewLayoutController.h"; sourceTree = "<group>"; };
 		70043AC11F4E7CDA00E82B8F /* viewLayoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = viewLayoutController.m; path = "Class模块/视图布局/viewLayoutController.m"; sourceTree = "<group>"; };
-		70043AC61F4E7D5F00E82B8F /* toolClassEncap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = toolClassEncap.h; path = "Class模块/工具类封装/toolClassEncap.h"; sourceTree = "<group>"; };
-		70043AC71F4E7D5F00E82B8F /* toolClassEncap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = toolClassEncap.m; path = "Class模块/工具类封装/toolClassEncap.m"; sourceTree = "<group>"; };
 		70043AC91F4E7D8B00E82B8F /* animationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animationController.h; sourceTree = "<group>"; };
 		70043ACA1F4E7D8B00E82B8F /* animationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = animationController.m; sourceTree = "<group>"; };
 		7019FE3E1F5FA5780086F6C1 /* ZHLearningController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHLearningController.h; path = "Class模块/文本文件/学习类/ZHLearningController.h"; sourceTree = "<group>"; };
@@ -88,10 +89,18 @@
 		704915131F56546F00DA2B5A /* leftImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = leftImage.jpg; path = "Class模块/动画效果/抽屉/leftImage.jpg"; sourceTree = "<group>"; };
 		704915141F56546F00DA2B5A /* mid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mid.jpg; path = "Class模块/动画效果/抽屉/mid.jpg"; sourceTree = "<group>"; };
 		704915151F56546F00DA2B5A /* right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right.jpg; path = "Class模块/动画效果/抽屉/right.jpg"; sourceTree = "<group>"; };
-		704ED3EB1F594E5000377DE3 /* ZHPictureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPictureCache.h; path = "Class模块/工具类封装/图片的加载与缓存/ZHPictureCache.h"; sourceTree = "<group>"; };
-		704ED3EC1F594E5000377DE3 /* ZHPictureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPictureCache.m; path = "Class模块/工具类封装/图片的加载与缓存/ZHPictureCache.m"; sourceTree = "<group>"; };
-		706E044C1F6777E9001E58FA /* ZHAVPlayerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHAVPlayerClass.h; path = "Class模块/工具类封装/视频播放处理/ZHAVPlayerClass.h"; sourceTree = "<group>"; };
-		706E044D1F6777E9001E58FA /* ZHAVPlayerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHAVPlayerClass.m; path = "Class模块/工具类封装/视频播放处理/ZHAVPlayerClass.m"; sourceTree = "<group>"; };
+		7058FCDA1F6A304400369815 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		705C1B431F6A6CAC00D01751 /* ZHCameraCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCameraCall.h; path = "Class模块/功能类封装/调用摄像头/ZHCameraCall.h"; sourceTree = "<group>"; };
+		705C1B441F6A6CAC00D01751 /* ZHCameraCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCameraCall.m; path = "Class模块/功能类封装/调用摄像头/ZHCameraCall.m"; sourceTree = "<group>"; };
+		705C1B461F6A6CC600D01751 /* ZHAVPlayerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHAVPlayerClass.h; path = "Class模块/功能类封装/视频播放处理/ZHAVPlayerClass.h"; sourceTree = "<group>"; };
+		705C1B471F6A6CC600D01751 /* ZHAVPlayerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHAVPlayerClass.m; path = "Class模块/功能类封装/视频播放处理/ZHAVPlayerClass.m"; sourceTree = "<group>"; };
+		705C1B491F6A6CD900D01751 /* ZHPictureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPictureCache.h; path = "Class模块/功能类封装/图片的加载与缓存/ZHPictureCache.h"; sourceTree = "<group>"; };
+		705C1B4A1F6A6CD900D01751 /* ZHPictureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPictureCache.m; path = "Class模块/功能类封装/图片的加载与缓存/ZHPictureCache.m"; sourceTree = "<group>"; };
+		705C1B4B1F6A6CD900D01751 /* ZHWebImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHWebImageCache.h; path = "Class模块/功能类封装/图片的加载与缓存/ZHWebImageCache.h"; sourceTree = "<group>"; };
+		705C1B4C1F6A6CD900D01751 /* ZHWebImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHWebImageCache.m; path = "Class模块/功能类封装/图片的加载与缓存/ZHWebImageCache.m"; sourceTree = "<group>"; };
+		705C1B4F1F6A6CF300D01751 /* toolClassEncap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = toolClassEncap.h; path = "Class模块/功能类封装/toolClassEncap.h"; sourceTree = "<group>"; };
+		705C1B501F6A6CF300D01751 /* toolClassEncap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = toolClassEncap.m; path = "Class模块/功能类封装/toolClassEncap.m"; sourceTree = "<group>"; };
+		705C1B521F6A71A500D01751 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		709FEE971F4D63E100285983 /* ZhangHuaSummary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhangHuaSummary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		709FEE9B1F4D63E100285983 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		709FEE9D1F4D63E100285983 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,8 +113,6 @@
 		70A0D1CD1F4E747000670625 /* banner_tp02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner_tp02@2x.png"; sourceTree = "<group>"; };
 		70A0D1CE1F4E747000670625 /* banner_tp03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner_tp03@2x.png"; sourceTree = "<group>"; };
 		70A0D1CF1F4E747000670625 /* banner_tp04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner_tp04@2x.png"; sourceTree = "<group>"; };
-		70AF70341F60F73B005EDF86 /* ZHWebImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHWebImageCache.h; path = "Class模块/工具类封装/图片的加载与缓存/ZHWebImageCache.h"; sourceTree = "<group>"; };
-		70AF70351F60F73B005EDF86 /* ZHWebImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHWebImageCache.m; path = "Class模块/工具类封装/图片的加载与缓存/ZHWebImageCache.m"; sourceTree = "<group>"; };
 		70C23EC31F5506D700FAEBAA /* ZHRoundDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHRoundDisplay.h; path = "Class模块/视图布局/collectionView视图布局/环形/ZHRoundDisplay.h"; sourceTree = "<group>"; };
 		70C23EC41F5506D700FAEBAA /* ZHRoundDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHRoundDisplay.m; path = "Class模块/视图布局/collectionView视图布局/环形/ZHRoundDisplay.m"; sourceTree = "<group>"; };
 		70C23EC61F55071F00FAEBAA /* ZHRoundLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHRoundLayout.h; path = "Class模块/视图布局/collectionView视图布局/环形/ZHRoundLayout.h"; sourceTree = "<group>"; };
@@ -142,6 +149,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705C1B541F6A74D900D01751 /* AssetsLibrary.framework in Frameworks */,
+				705C1B531F6A71A500D01751 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,21 +248,39 @@
 		704ED3EA1F594DED00377DE3 /* 图片缓存处理 */ = {
 			isa = PBXGroup;
 			children = (
-				704ED3EB1F594E5000377DE3 /* ZHPictureCache.h */,
-				704ED3EC1F594E5000377DE3 /* ZHPictureCache.m */,
-				70AF70341F60F73B005EDF86 /* ZHWebImageCache.h */,
-				70AF70351F60F73B005EDF86 /* ZHWebImageCache.m */,
+				705C1B491F6A6CD900D01751 /* ZHPictureCache.h */,
+				705C1B4A1F6A6CD900D01751 /* ZHPictureCache.m */,
+				705C1B4B1F6A6CD900D01751 /* ZHWebImageCache.h */,
+				705C1B4C1F6A6CD900D01751 /* ZHWebImageCache.m */,
 			);
 			name = "图片缓存处理";
+			sourceTree = "<group>";
+		};
+		7058FCD91F6A304400369815 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				705C1B521F6A71A500D01751 /* MobileCoreServices.framework */,
+				7058FCDA1F6A304400369815 /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		706E044B1F67777C001E58FA /* 视频播放处理 */ = {
 			isa = PBXGroup;
 			children = (
-				706E044C1F6777E9001E58FA /* ZHAVPlayerClass.h */,
-				706E044D1F6777E9001E58FA /* ZHAVPlayerClass.m */,
+				705C1B461F6A6CC600D01751 /* ZHAVPlayerClass.h */,
+				705C1B471F6A6CC600D01751 /* ZHAVPlayerClass.m */,
 			);
 			name = "视频播放处理";
+			sourceTree = "<group>";
+		};
+		706E044F1F67E198001E58FA /* 调用摄像头 */ = {
+			isa = PBXGroup;
+			children = (
+				705C1B431F6A6CAC00D01751 /* ZHCameraCall.h */,
+				705C1B441F6A6CAC00D01751 /* ZHCameraCall.m */,
+			);
+			name = "调用摄像头";
 			sourceTree = "<group>";
 		};
 		706FD2881F4D7EBE00E21A82 /* main 入口 */ = {
@@ -278,6 +305,7 @@
 			children = (
 				709FEE991F4D63E100285983 /* ZhangHuaSummary */,
 				709FEE981F4D63E100285983 /* Products */,
+				7058FCD91F6A304400369815 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -315,7 +343,7 @@
 				70251BEB1F5E4D0900405C57 /* 文本文件 */,
 				709FEEB51F4D7DDB00285983 /* 视图布局 */,
 				709FEEB21F4D7DCF00285983 /* 动画效果 */,
-				709FEEB31F4D7DD400285983 /* 工具类封装 */,
+				709FEEB31F4D7DD400285983 /* 功能类封装 */,
 			);
 			name = "Class 模块";
 			sourceTree = "<group>";
@@ -331,15 +359,16 @@
 			name = "动画效果";
 			sourceTree = "<group>";
 		};
-		709FEEB31F4D7DD400285983 /* 工具类封装 */ = {
+		709FEEB31F4D7DD400285983 /* 功能类封装 */ = {
 			isa = PBXGroup;
 			children = (
+				706E044F1F67E198001E58FA /* 调用摄像头 */,
 				706E044B1F67777C001E58FA /* 视频播放处理 */,
 				704ED3EA1F594DED00377DE3 /* 图片缓存处理 */,
-				70043AC61F4E7D5F00E82B8F /* toolClassEncap.h */,
-				70043AC71F4E7D5F00E82B8F /* toolClassEncap.m */,
+				705C1B4F1F6A6CF300D01751 /* toolClassEncap.h */,
+				705C1B501F6A6CF300D01751 /* toolClassEncap.m */,
 			);
-			name = "工具类封装";
+			name = "功能类封装";
 			sourceTree = "<group>";
 		};
 		709FEEB51F4D7DDB00285983 /* 视图布局 */ = {
@@ -530,23 +559,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				709FEE9F1F4D63E100285983 /* AppDelegate.m in Sources */,
-				70AF70361F60F73B005EDF86 /* ZHWebImageCache.m in Sources */,
 				70251C2B1F5EA42100405C57 /* ZHQinHaiLake.m in Sources */,
+				705C1B4E1F6A6CD900D01751 /* ZHWebImageCache.m in Sources */,
 				70FA4C9F1F53CC110078BFE6 /* ZHBannerLoop.m in Sources */,
 				7019FE401F5FA5780086F6C1 /* ZHLearningController.m in Sources */,
+				705C1B451F6A6CAC00D01751 /* ZHCameraCall.m in Sources */,
 				70FA4C8F1F53C47F0078BFE6 /* ZHShoppingCartAnimation.m in Sources */,
 				70FA4C821F53C3490078BFE6 /* ZHCustomLayOut.m in Sources */,
+				705C1B481F6A6CC600D01751 /* ZHAVPlayerClass.m in Sources */,
 				70FA4C831F53C3490078BFE6 /* ZHWaterfallCell.m in Sources */,
-				706E044E1F6777E9001E58FA /* ZHAVPlayerClass.m in Sources */,
 				70FA4C9C1F53CB490078BFE6 /* ZHBannerLoopView.m in Sources */,
 				709FEE9C1F4D63E100285983 /* main.m in Sources */,
 				70C23ED21F553DE100FAEBAA /* MidViewController.m in Sources */,
+				705C1B511F6A6CF300D01751 /* toolClassEncap.m in Sources */,
 				70043AC21F4E7CDA00E82B8F /* viewLayoutController.m in Sources */,
-				704ED3ED1F594E5000377DE3 /* ZHPictureCache.m in Sources */,
 				70C23ECF1F553DCE00FAEBAA /* LeftViewController.m in Sources */,
 				70251BEF1F5E887A00405C57 /* ZHTextFileController.m in Sources */,
 				70043ACB1F4E7D8B00E82B8F /* animationController.m in Sources */,
-				70043AC81F4E7D5F00E82B8F /* toolClassEncap.m in Sources */,
+				705C1B4D1F6A6CD900D01751 /* ZHPictureCache.m in Sources */,
 				70C23EC51F5506D700FAEBAA /* ZHRoundDisplay.m in Sources */,
 				70C23ED51F553DF400FAEBAA /* RightViewController.m in Sources */,
 				70FA4C841F53C3490078BFE6 /* ZHWaterfallStyle.m in Sources */,

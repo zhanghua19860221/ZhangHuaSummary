@@ -43,8 +43,6 @@
         [_attributeAttay addObject:attris];
     }
     
-    
-    
 }
 //设置内容区域的大小
 -(CGSize)collectionViewContentSize{

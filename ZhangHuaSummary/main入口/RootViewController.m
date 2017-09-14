@@ -23,9 +23,10 @@
 }
 -(void)SetTitle{
     self.title = @"提纲";
+    
 }
 -(void)initTableViewData{
-    self.tableListArray = @[@"视图布局",@"动画效果",@"文本文件",@"工具类封装"];
+    self.tableListArray = @[@"视图布局",@"动画效果",@"文本文件",@"功能类封装"];
     self.controllerTitle = @[@"viewLayoutController",@"animationController",@"ZHTextFileController",@"toolClassEncap"];
 }
 - (void)didReceiveMemoryWarning {

@@ -24,6 +24,8 @@
     RootViewController *rootVc = [[RootViewController alloc]init];
     self.mainNav = [[UINavigationController alloc]initWithRootViewController:rootVc];
     self.window.rootViewController = self.mainNav;
+    
+
     return YES;
 }
 
