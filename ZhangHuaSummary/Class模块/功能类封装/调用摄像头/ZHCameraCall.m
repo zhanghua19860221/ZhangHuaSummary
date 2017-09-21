@@ -16,24 +16,76 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self createButtonForPhoto];
     [self createButtonForCamera];
-    
+    [self createButtonForPhotoList];
+    [self createImageView];
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
 }
+/**
+ 调用系统相册按钮
+ */
+-(void)createButtonForPhoto{
+
+    self.butPhoto = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.butPhoto.frame = CGRectMake((self.view.frame.size.width-200)/2.0,100,200,50);
+    self.butPhoto.backgroundColor = [UIColor grayColor];
+    [self.butPhoto setTitle:@"相册操作按钮" forState:UIControlStateNormal];
+    [self.butPhoto addTarget:self action:@selector(butPhotoClick) forControlEvents:UIControlEventTouchUpInside];
+    self.butPhoto.layer.cornerRadius = 20;
+    self.butPhoto.layer.masksToBounds = YES;
+    [self.view addSubview:self.butPhoto];
+
+}
+/**
+ 调用系统摄像头按钮
+ */
 -(void)createButtonForCamera{
     
     self.butCamera = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.butCamera.frame = CGRectMake((self.view.frame.size.width-200)/2.0,200,200,50);
+    self.butCamera.frame = CGRectMake((self.view.frame.size.width-200)/2.0,160,200,50);
     self.butCamera.backgroundColor = [UIColor grayColor];
-    [self.butCamera setTitle:@"摄像头拍照录像" forState:UIControlStateNormal];
-    [self.butCamera addTarget:self action:@selector(butClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.butCamera setTitle:@"摄像头操作按钮" forState:UIControlStateNormal];
+    [self.butCamera addTarget:self action:@selector(butCameraClick) forControlEvents:UIControlEventTouchUpInside];
     self.butCamera.layer.cornerRadius = 20;
     self.butCamera.layer.masksToBounds = YES;
     [self.view addSubview:self.butCamera];
+    
+}
+/**
+ 调用系统相册列表按钮
+ */
+-(void)createButtonForPhotoList{
+  
+    self.butPhotoList = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.butPhotoList.frame = CGRectMake((self.view.frame.size.width-200)/2.0,220,200,50);
+    self.butPhotoList.backgroundColor = [UIColor grayColor];
+    [self.butPhotoList setTitle:@"相册列表操作按钮" forState:UIControlStateNormal];
+    [self.butPhotoList addTarget:self action:@selector(butPhotoListClick) forControlEvents:UIControlEventTouchUpInside];
+    self.butPhotoList.layer.cornerRadius = 20;
+    self.butPhotoList.layer.masksToBounds = YES;
+    [self.view addSubview:self.butPhotoList];
+    
 
 }
--(void)butClick
+
+/**
+ 调用相册图片展示imageView
+ */
+-(void)createImageView{
+
+    self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 280, SC_WIDTH, 200)];
+    self.imageView.backgroundColor = [UIColor grayColor];
+    self.imageView.layer.masksToBounds = YES;
+    self.imageView.layer.cornerRadius = 10;
+    [self.view addSubview:self.imageView];
+}
+
+/**
+ 摄像头操作按钮点击事件
+ */
+-(void)butCameraClick
 {
     // 判断有摄像头，并且支持拍照功能
     if([self isCameraAvailable] && [self doesCameraSupportTakingPhotos]){
@@ -60,7 +112,47 @@
         NSLog(@"Camera is not available.");
     }
 }
+/**
+ 相册操作按钮点击事件
+ */
+-(void)butPhotoClick{
+    // 初始化图片选择控制器
+    UIImagePickerController *controller = [[UIImagePickerController alloc] init];
+    /*设置媒体来源，即调用出来的UIImagePickerController所显示出来的界面，有一下三种来源
+     typedef NS_ENUM(NSInteger, UIImagePickerControllerSourceType) { UIImagePickerControllerSourceTypePhotoLibrary, UIImagePickerControllerSourceTypeCamera, UIImagePickerControllerSourceTypeSavedPhotosAlbum };分别表示：图片列表，摄像头，相机相册*/
+    [controller setSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
+    // 设置所支持的媒体功能，即只能拍照，或则只能录像，或者两者都可以
+    NSString *requiredMediaType = ( NSString *)kUTTypeImage;
+    NSArray *arrMediaTypes=[NSArray arrayWithObjects:requiredMediaType,nil];
+    [controller setMediaTypes:arrMediaTypes];
+    // 设置是否可以管理已经存在的图片或者视频
+    [controller setAllowsEditing:YES];
+    // 设置代理
+    [controller setDelegate:self];
+    [self presentViewController:controller animated:YES completion:nil];
 
+    NSLog(@"%@+++",NSHomeDirectory());
+}
+/**
+ 相册列表操作按钮点击事件
+ */
+-(void)butPhotoListClick{
+    
+    // 初始化图片选择控制器
+    UIImagePickerController *controller = [[UIImagePickerController alloc] init];
+    /*设置媒体来源，即调用出来的UIImagePickerController所显示出来的界面，有一下三种来源
+     typedef NS_ENUM(NSInteger, UIImagePickerControllerSourceType) { UIImagePickerControllerSourceTypePhotoLibrary, UIImagePickerControllerSourceTypeCamera, UIImagePickerControllerSourceTypeSavedPhotosAlbum };分别表示：图片列表，摄像头，相机相册*/
+    [controller setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    // 设置所支持的媒体功能，即只能拍照，或则只能录像，或者两者都可以
+    NSString *requiredMediaType = ( NSString *)kUTTypeImage;
+    NSArray *arrMediaTypes=[NSArray arrayWithObjects:requiredMediaType,nil];
+    [controller setMediaTypes:arrMediaTypes];
+    // 设置是否可以管理已经存在的图片或者视频
+    [controller setAllowsEditing:YES];
+    // 设置代理
+    [controller setDelegate:self];
+    [self presentViewController:controller animated:YES completion:nil];
+}
 /**
  保存图片后到相册后，调用的相关方法，查看是否保存成功
 
@@ -79,9 +171,11 @@
 }
 // 当得到照片或者视频后，调用该方法
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+
     NSLog(@"Picker returned successfully.");
-    NSLog(@"%@", info);
+    NSLog(@"%@---", info);
     NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
+    picker.allowsEditing = NO;
     // 判断获取类型：图片
     if ([mediaType isEqualToString:( NSString *)kUTTypeImage]){
         UIImage *theImage = nil;
@@ -89,12 +183,18 @@
         if ([picker allowsEditing]){
             //获取用户编辑之后的图像
             theImage = [info objectForKey:UIImagePickerControllerEditedImage];
+            // 保存图片到相册中
+            SEL selectorToCall = @selector(imageWasSavedSuccessfully:didFinishSavingWithError:contextInfo:);
+            
+            UIImageWriteToSavedPhotosAlbum(theImage, self,selectorToCall, NULL);
+            
         } else {
             // 照片的原数据
             theImage = [info objectForKey:UIImagePickerControllerOriginalImage];
-        } // 保存图片到相册中
-        SEL selectorToCall = @selector(imageWasSavedSuccessfully:didFinishSavingWithError:contextInfo:);
-        UIImageWriteToSavedPhotosAlbum(theImage, self,selectorToCall, NULL);
+        }
+        self.imageView.image = theImage;
+
+        
     }else if ([mediaType isEqualToString:(NSString *)kUTTypeMovie]){
         // 判断获取类型：视频 //获取视频文件的url
         NSURL* mediaURL = [info objectForKey:UIImagePickerControllerMediaURL];
@@ -132,6 +232,7 @@
         // 设置代理
         [self.navigationController presentViewController:controller animated:YES completion:nil];
     }
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
