@@ -27,15 +27,17 @@
     self.left = [[LeftViewController alloc] init];
     self.left.view.frame = CGRectMake(0, 0,SC_WIDTH,SC_HEIGHT);
     self.left.view.backgroundColor = [UIColor colorWithPatternImage:[self createBackgroundImage:@"leftImage.jpg"]];
+//    self.left.view.contentMode = UIViewContentModeScaleAspectFit;
     
-    self.left.view.contentMode = UIViewContentModeScaleAspectFit;
     self.mid  = [[MidViewController alloc] init];
     self.mid.view.frame = CGRectMake(0, 0,SC_WIDTH,SC_HEIGHT);
-    self.mid.view.contentMode = UIViewContentModeScaleAspectFit;
     self.mid.view.backgroundColor = [UIColor colorWithPatternImage:[self createBackgroundImage:@"mid.jpg"]];
+//    self.mid.view.contentMode = UIViewContentModeScaleAspectFit;
+    
     self.right = [[RightViewController alloc] init];
     self.right.view.frame = CGRectMake(0, 0,SC_WIDTH,SC_HEIGHT);
     self.right.view.backgroundColor = [UIColor colorWithPatternImage:[self createBackgroundImage:@"right.jpg"]];
+//    self.right.view.contentMode = UIViewContentModeScaleAspectFit;
     
     [self addChildViewController:self.left];
     [self addChildViewController:self.right];
