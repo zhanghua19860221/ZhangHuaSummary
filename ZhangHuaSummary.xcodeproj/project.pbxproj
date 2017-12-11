@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		145308671FD921DF00F6DC8E /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308631FD921DF00F6DC8E /* line.png */; };
+		145308681FD921DF00F6DC8E /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308641FD921DF00F6DC8E /* line@2x.png */; };
+		145308691FD921DF00F6DC8E /* pick_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308651FD921DF00F6DC8E /* pick_bg.png */; };
+		1453086A1FD921DF00F6DC8E /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308661FD921DF00F6DC8E /* pick_bg@2x.png */; };
+		14A906E61FD8C8A9006E2E84 /* ZHQRCodePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A906E51FD8C8A9006E2E84 /* ZHQRCodePay.m */; };
+		14A906EC1FD8D48D006E2E84 /* ZHScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A906EB1FD8D48D006E2E84 /* ZHScanViewController.m */; };
 		70043ABE1F4E7C4A00E82B8F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043ABB1F4E7C4A00E82B8F /* RootViewController.m */; };
 		70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043ABD1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m */; };
 		70043AC21F4E7CDA00E82B8F /* viewLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043AC11F4E7CDA00E82B8F /* viewLayoutController.m */; };
@@ -60,6 +66,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		145308631FD921DF00F6DC8E /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = "Class模块/功能类封装/二维码扫描支付/line.png"; sourceTree = "<group>"; };
+		145308641FD921DF00F6DC8E /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "line@2x.png"; path = "Class模块/功能类封装/二维码扫描支付/line@2x.png"; sourceTree = "<group>"; };
+		145308651FD921DF00F6DC8E /* pick_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pick_bg.png; path = "Class模块/功能类封装/二维码扫描支付/pick_bg.png"; sourceTree = "<group>"; };
+		145308661FD921DF00F6DC8E /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pick_bg@2x.png"; path = "Class模块/功能类封装/二维码扫描支付/pick_bg@2x.png"; sourceTree = "<group>"; };
+		14A906E41FD8C8A9006E2E84 /* ZHQRCodePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHQRCodePay.h; path = "Class模块/功能类封装/二维码扫描支付/ZHQRCodePay.h"; sourceTree = "<group>"; };
+		14A906E51FD8C8A9006E2E84 /* ZHQRCodePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHQRCodePay.m; path = "Class模块/功能类封装/二维码扫描支付/ZHQRCodePay.m"; sourceTree = "<group>"; };
+		14A906EA1FD8D48D006E2E84 /* ZHScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHScanViewController.h; path = "Class模块/功能类封装/二维码扫描支付/ZHScanViewController.h"; sourceTree = "<group>"; };
+		14A906EB1FD8D48D006E2E84 /* ZHScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHScanViewController.m; path = "Class模块/功能类封装/二维码扫描支付/ZHScanViewController.m"; sourceTree = "<group>"; };
 		70043ABA1F4E7C4A00E82B8F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = "main入口/RootViewController.h"; sourceTree = "<group>"; };
 		70043ABB1F4E7C4A00E82B8F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = "main入口/RootViewController.m"; sourceTree = "<group>"; };
 		70043ABC1F4E7C4A00E82B8F /* ZHBasicsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHBasicsTableViewController.h; path = "main入口/ZHBasicsTableViewController.h"; sourceTree = "<group>"; };
@@ -157,6 +171,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A906E31FD8C69C006E2E84 /* 二维码扫描支付 */ = {
+			isa = PBXGroup;
+			children = (
+				145308631FD921DF00F6DC8E /* line.png */,
+				145308641FD921DF00F6DC8E /* line@2x.png */,
+				145308651FD921DF00F6DC8E /* pick_bg.png */,
+				145308661FD921DF00F6DC8E /* pick_bg@2x.png */,
+				14A906E41FD8C8A9006E2E84 /* ZHQRCodePay.h */,
+				14A906E51FD8C8A9006E2E84 /* ZHQRCodePay.m */,
+				14A906EA1FD8D48D006E2E84 /* ZHScanViewController.h */,
+				14A906EB1FD8D48D006E2E84 /* ZHScanViewController.m */,
+			);
+			name = "二维码扫描支付";
+			sourceTree = "<group>";
+		};
 		70043ACC1F4E7E3300E82B8F /* collectionView视图布局 */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +391,7 @@
 		709FEEB31F4D7DD400285983 /* 功能类封装 */ = {
 			isa = PBXGroup;
 			children = (
+				14A906E31FD8C69C006E2E84 /* 二维码扫描支付 */,
 				706E044F1F67E198001E58FA /* 调用摄像头 */,
 				706E044B1F67777C001E58FA /* 视频播放处理 */,
 				704ED3EA1F594DED00377DE3 /* 图片缓存处理 */,
@@ -542,11 +572,15 @@
 				70251C161F5E9FDD00405C57 /* 1.png in Resources */,
 				704915161F56546F00DA2B5A /* leftImage.jpg in Resources */,
 				704915181F56546F00DA2B5A /* right.jpg in Resources */,
+				145308671FD921DF00F6DC8E /* line.png in Resources */,
 				709FEEA71F4D63E100285983 /* Assets.xcassets in Resources */,
 				70FA4C941F53C6DD0078BFE6 /* cart.png in Resources */,
 				70251C191F5E9FDD00405C57 /* 4.png in Resources */,
+				145308681FD921DF00F6DC8E /* line@2x.png in Resources */,
 				70FA4C951F53C6DD0078BFE6 /* heheda.png in Resources */,
+				1453086A1FD921DF00F6DC8E /* pick_bg@2x.png in Resources */,
 				709FEEA51F4D63E100285983 /* Main.storyboard in Resources */,
+				145308691FD921DF00F6DC8E /* pick_bg.png in Resources */,
 				70A0D1D21F4E747000670625 /* banner_tp03@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -581,11 +615,13 @@
 				70C23ED51F553DF400FAEBAA /* RightViewController.m in Sources */,
 				70FA4C841F53C3490078BFE6 /* ZHWaterfallStyle.m in Sources */,
 				70251C2E1F5EA4BA00405C57 /* QinHaiLakeTransportLine.m in Sources */,
+				14A906EC1FD8D48D006E2E84 /* ZHScanViewController.m in Sources */,
 				70251C281F5EA3CD00405C57 /* ZHTravelStrategyController.m in Sources */,
 				70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */,
 				7019FE431F5FA63B0086F6C1 /* ZHPictureAndWordMixed.m in Sources */,
 				70043ABE1F4E7C4A00E82B8F /* RootViewController.m in Sources */,
 				70FA4C961F53C6DD0078BFE6 /* ZHShoppingCart.m in Sources */,
+				14A906E61FD8C8A9006E2E84 /* ZHQRCodePay.m in Sources */,
 				70C23ECC1F553DB600FAEBAA /* ZHDrawerRootController.m in Sources */,
 				70C23EC81F55071F00FAEBAA /* ZHRoundLayout.m in Sources */,
 			);

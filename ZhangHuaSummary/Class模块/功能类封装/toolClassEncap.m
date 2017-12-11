@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableListArray = @[@"调用摄像头",@"图片缓存处理",@"视频播放处理"];
-    self.controllerTitle = @[@"ZHCameraCall",@"ZHPictureCache",@"ZHAVPlayerClass"];
+    self.tableListArray = @[@"调用摄像头",@"图片缓存处理",@"视频播放处理",@"二维码扫描支付"];
+    self.controllerTitle = @[@"ZHCameraCall",@"ZHPictureCache",@"ZHAVPlayerClass",@"ZHQRCodePay"];
     // Do any additional setup after loading the view.
 }
 
@@ -25,7 +25,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 /*
 #pragma mark - Navigation
 
