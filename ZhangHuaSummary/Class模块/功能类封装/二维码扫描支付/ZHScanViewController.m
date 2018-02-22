@@ -135,8 +135,9 @@
  设置条码类型
  */
 - (void)setTypeCode{
-    
     self.outPut.metadataObjectTypes =@[AVMetadataObjectTypeQRCode];
+    
+
 }
 
 /**
@@ -177,6 +178,11 @@
 
     [self.session startRunning];
 }
+
+/**
+ 扫描外部二维码获取数据结果
+ 
+ */
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
     
     NSString *stringValue;
@@ -187,6 +193,8 @@
 
         AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex:0];
         stringValue = metadataObject.stringValue;
+        //通过对话框的形式呈现
+        [self alertControllerMessage:stringValue];
     }
 }
 
@@ -231,7 +239,10 @@
     [controller setDelegate:self];
     [self presentViewController:controller animated:YES completion:nil];
 }
-
+/**
+ 扫描相册二维码获取数据结果
+ 
+ */
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
     //获取选中的照片
     UIImage *image = info[UIImagePickerControllerEditedImage];

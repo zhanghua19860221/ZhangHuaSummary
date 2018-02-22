@@ -26,6 +26,8 @@
     
 }
 -(void)initTableViewData{
+    
+    
     self.tableListArray = @[@"视图布局",@"动画效果",@"文本文件",@"功能类封装"];
     self.controllerTitle = @[@"viewLayoutController",@"animationController",@"ZHTextFileController",@"toolClassEncap"];
 }

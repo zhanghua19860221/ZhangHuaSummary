@@ -73,7 +73,8 @@
     cell.selectionStyle = UITableViewCellSelectionStyleBlue;
     //添加cell上最后侧箭头
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    return cell;}
+    return cell;
+}
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     QinHaiLakeTransportLine *vc = [[QinHaiLakeTransportLine alloc]init];

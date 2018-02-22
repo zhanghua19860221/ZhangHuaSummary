@@ -77,6 +77,7 @@
 
     self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 280, SC_WIDTH, 200)];
     self.imageView.backgroundColor = [UIColor grayColor];
+    self.imageView.contentMode =UIViewContentModeScaleAspectFit;
     self.imageView.layer.masksToBounds = YES;
     self.imageView.layer.cornerRadius = 10;
     [self.view addSubview:self.imageView];
@@ -161,7 +162,7 @@
  @param paramContextInfo <#paramContextInfo description#>
  */
 -(void)imageWasSavedSuccessfully:(UIImage *)paramImage didFinishSavingWithError:(NSError *)paramError contextInfo:(void *)paramContextInfo{
-    
+    NSLog(@"131231231 +++++++++++++++%@",@"312412423");
     if (paramError == nil){
         NSLog(@"Image was saved successfully.");
     } else {
