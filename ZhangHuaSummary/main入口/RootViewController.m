@@ -28,8 +28,8 @@
 -(void)initTableViewData{
     
     
-    self.tableListArray = @[@"视图布局",@"动画效果",@"文本文件",@"功能类封装"];
-    self.controllerTitle = @[@"viewLayoutController",@"animationController",@"ZHTextFileController",@"toolClassEncap"];
+    self.tableListArray = @[@"视图布局",@"动画效果",@"文本文件",@"功能类封装",@"数据加密"];
+    self.controllerTitle = @[@"viewLayoutController",@"animationController",@"ZHTextFileController",@"toolClassEncap",@"ZHEncryptDataController"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

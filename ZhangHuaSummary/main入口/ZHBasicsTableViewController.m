@@ -18,8 +18,8 @@
     [super viewDidLoad];
     self.tableView.tableFooterView = [UIView new];
     self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    //    [self addHeaderView];
-    //    [self addFootView];
+//        [self addHeaderView];
+//        [self addFootView];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -67,7 +67,7 @@
     cell.textLabel.text = [NSString stringWithFormat:@"%ld - %@",(long)indexPath.row,self.tableListArray[indexPath.row]];
     cell.textLabel.font = [UIFont systemFontOfSize:18];
     
-    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //添加cell上最后侧箭头
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;

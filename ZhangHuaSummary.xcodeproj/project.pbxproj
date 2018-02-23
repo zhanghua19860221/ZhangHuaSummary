@@ -7,10 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1431EDA4203E6E3500F74EFA /* p.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 1431ED9F203E6E3500F74EFA /* p.p12 */; };
+		1431EDA5203E6E3500F74EFA /* rsa.csr in Resources */ = {isa = PBXBuildFile; fileRef = 1431EDA0203E6E3500F74EFA /* rsa.csr */; };
+		1431EDA6203E6E3500F74EFA /* rsa.der in Resources */ = {isa = PBXBuildFile; fileRef = 1431EDA1203E6E3500F74EFA /* rsa.der */; };
+		1431EDA7203E6E3500F74EFA /* rsa.crt in Resources */ = {isa = PBXBuildFile; fileRef = 1431EDA2203E6E3500F74EFA /* rsa.crt */; };
+		1431EDA8203E6E3500F74EFA /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 1431EDA3203E6E3500F74EFA /* private.pem */; };
+		1431EDB1203E6FA000F74EFA /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDB0203E6FA000F74EFA /* Base64.m */; };
+		1431EDB4203E705400F74EFA /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDB3203E705400F74EFA /* RSA.m */; };
+		1431EDB7203E70A300F74EFA /* ZHRsaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDB6203E70A300F74EFA /* ZHRsaController.m */; };
+		1431EDBA203E70D300F74EFA /* ZHMD5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDB9203E70D300F74EFA /* ZHMD5Controller.m */; };
+		1431EDBD203E716300F74EFA /* ZHEncryptDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDBC203E716300F74EFA /* ZHEncryptDataController.m */; };
 		145308671FD921DF00F6DC8E /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308631FD921DF00F6DC8E /* line.png */; };
 		145308681FD921DF00F6DC8E /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308641FD921DF00F6DC8E /* line@2x.png */; };
 		145308691FD921DF00F6DC8E /* pick_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308651FD921DF00F6DC8E /* pick_bg.png */; };
 		1453086A1FD921DF00F6DC8E /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308661FD921DF00F6DC8E /* pick_bg@2x.png */; };
+		148A24F7203EA01900FC1B2D /* ZHMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A24F6203EA01900FC1B2D /* ZHMD5.m */; };
 		14A906E61FD8C8A9006E2E84 /* ZHQRCodePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A906E51FD8C8A9006E2E84 /* ZHQRCodePay.m */; };
 		14A906EC1FD8D48D006E2E84 /* ZHScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A906EB1FD8D48D006E2E84 /* ZHScanViewController.m */; };
 		70043ABE1F4E7C4A00E82B8F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043ABB1F4E7C4A00E82B8F /* RootViewController.m */; };
@@ -66,10 +77,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1431ED9F203E6E3500F74EFA /* p.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = p.p12; sourceTree = "<group>"; };
+		1431EDA0203E6E3500F74EFA /* rsa.csr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa.csr; sourceTree = "<group>"; };
+		1431EDA1203E6E3500F74EFA /* rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = rsa.der; sourceTree = "<group>"; };
+		1431EDA2203E6E3500F74EFA /* rsa.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa.crt; sourceTree = "<group>"; };
+		1431EDA3203E6E3500F74EFA /* private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private.pem; sourceTree = "<group>"; };
+		1431EDAF203E6FA000F74EFA /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = "Class模块/数据加密/RSA/Base64.h"; sourceTree = "<group>"; };
+		1431EDB0203E6FA000F74EFA /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = "Class模块/数据加密/RSA/Base64.m"; sourceTree = "<group>"; };
+		1431EDB2203E705400F74EFA /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSA.h; path = "Class模块/数据加密/RSA/RSA.h"; sourceTree = "<group>"; };
+		1431EDB3203E705400F74EFA /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSA.m; path = "Class模块/数据加密/RSA/RSA.m"; sourceTree = "<group>"; };
+		1431EDB5203E70A300F74EFA /* ZHRsaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHRsaController.h; path = "Class模块/数据加密/RSA/ZHRsaController.h"; sourceTree = "<group>"; };
+		1431EDB6203E70A300F74EFA /* ZHRsaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHRsaController.m; path = "Class模块/数据加密/RSA/ZHRsaController.m"; sourceTree = "<group>"; };
+		1431EDB8203E70D300F74EFA /* ZHMD5Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHMD5Controller.h; path = "Class模块/数据加密/MD5/ZHMD5Controller.h"; sourceTree = "<group>"; };
+		1431EDB9203E70D300F74EFA /* ZHMD5Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHMD5Controller.m; path = "Class模块/数据加密/MD5/ZHMD5Controller.m"; sourceTree = "<group>"; };
+		1431EDBB203E716300F74EFA /* ZHEncryptDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHEncryptDataController.h; path = "Class模块/数据加密/ZHEncryptDataController.h"; sourceTree = "<group>"; };
+		1431EDBC203E716300F74EFA /* ZHEncryptDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHEncryptDataController.m; path = "Class模块/数据加密/ZHEncryptDataController.m"; sourceTree = "<group>"; };
 		145308631FD921DF00F6DC8E /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = "Class模块/功能类封装/二维码扫描支付/line.png"; sourceTree = "<group>"; };
 		145308641FD921DF00F6DC8E /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "line@2x.png"; path = "Class模块/功能类封装/二维码扫描支付/line@2x.png"; sourceTree = "<group>"; };
 		145308651FD921DF00F6DC8E /* pick_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pick_bg.png; path = "Class模块/功能类封装/二维码扫描支付/pick_bg.png"; sourceTree = "<group>"; };
 		145308661FD921DF00F6DC8E /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pick_bg@2x.png"; path = "Class模块/功能类封装/二维码扫描支付/pick_bg@2x.png"; sourceTree = "<group>"; };
+		148A24F5203EA01900FC1B2D /* ZHMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHMD5.h; path = "Class模块/数据加密/MD5/ZHMD5.h"; sourceTree = "<group>"; };
+		148A24F6203EA01900FC1B2D /* ZHMD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHMD5.m; path = "Class模块/数据加密/MD5/ZHMD5.m"; sourceTree = "<group>"; };
 		14A906E41FD8C8A9006E2E84 /* ZHQRCodePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHQRCodePay.h; path = "Class模块/功能类封装/二维码扫描支付/ZHQRCodePay.h"; sourceTree = "<group>"; };
 		14A906E51FD8C8A9006E2E84 /* ZHQRCodePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHQRCodePay.m; path = "Class模块/功能类封装/二维码扫描支付/ZHQRCodePay.m"; sourceTree = "<group>"; };
 		14A906EA1FD8D48D006E2E84 /* ZHScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHScanViewController.h; path = "Class模块/功能类封装/二维码扫描支付/ZHScanViewController.h"; sourceTree = "<group>"; };
@@ -171,6 +199,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1431ED9B203E6C5D00F74EFA /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				1431EDB2203E705400F74EFA /* RSA.h */,
+				1431EDB3203E705400F74EFA /* RSA.m */,
+				1431EDAF203E6FA000F74EFA /* Base64.h */,
+				1431EDB0203E6FA000F74EFA /* Base64.m */,
+				1431EDB5203E70A300F74EFA /* ZHRsaController.h */,
+				1431EDB6203E70A300F74EFA /* ZHRsaController.m */,
+				1431ED9E203E6E3500F74EFA /* RSA证书 */,
+			);
+			name = RSA;
+			sourceTree = "<group>";
+		};
+		1431ED9C203E6C6B00F74EFA /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				1431EDB8203E70D300F74EFA /* ZHMD5Controller.h */,
+				1431EDB9203E70D300F74EFA /* ZHMD5Controller.m */,
+				148A24F5203EA01900FC1B2D /* ZHMD5.h */,
+				148A24F6203EA01900FC1B2D /* ZHMD5.m */,
+			);
+			name = MD5;
+			sourceTree = "<group>";
+		};
+		1431ED9D203E6C7500F74EFA /* 数据加密 */ = {
+			isa = PBXGroup;
+			children = (
+				1431ED9B203E6C5D00F74EFA /* RSA */,
+				1431ED9C203E6C6B00F74EFA /* MD5 */,
+				1431EDBB203E716300F74EFA /* ZHEncryptDataController.h */,
+				1431EDBC203E716300F74EFA /* ZHEncryptDataController.m */,
+			);
+			name = "数据加密";
+			sourceTree = "<group>";
+		};
+		1431ED9E203E6E3500F74EFA /* RSA证书 */ = {
+			isa = PBXGroup;
+			children = (
+				1431ED9F203E6E3500F74EFA /* p.p12 */,
+				1431EDA0203E6E3500F74EFA /* rsa.csr */,
+				1431EDA1203E6E3500F74EFA /* rsa.der */,
+				1431EDA2203E6E3500F74EFA /* rsa.crt */,
+				1431EDA3203E6E3500F74EFA /* private.pem */,
+			);
+			name = "RSA证书";
+			path = "Class模块/数据加密/RSA/RSA证书";
+			sourceTree = "<group>";
+		};
 		14A906E31FD8C69C006E2E84 /* 二维码扫描支付 */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +446,7 @@
 		709FEEB11F4D7D8E00285983 /* Class 模块 */ = {
 			isa = PBXGroup;
 			children = (
+				1431ED9D203E6C7500F74EFA /* 数据加密 */,
 				70251BEB1F5E4D0900405C57 /* 文本文件 */,
 				709FEEB51F4D7DDB00285983 /* 视图布局 */,
 				709FEEB21F4D7DCF00285983 /* 动画效果 */,
@@ -532,7 +610,7 @@
 				TargetAttributes = {
 					709FEE961F4D63E100285983 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = J9MC53XV58;
+						DevelopmentTeam = WSMZXD2423;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -563,10 +641,13 @@
 				70251C181F5E9FDD00405C57 /* 3.png in Resources */,
 				709FEEAA1F4D63E100285983 /* LaunchScreen.storyboard in Resources */,
 				704915171F56546F00DA2B5A /* mid.jpg in Resources */,
+				1431EDA5203E6E3500F74EFA /* rsa.csr in Resources */,
+				1431EDA8203E6E3500F74EFA /* private.pem in Resources */,
 				70251C171F5E9FDD00405C57 /* 2.png in Resources */,
 				70A0D1D01F4E747000670625 /* banner_tp01@2x.png in Resources */,
 				70251C1A1F5E9FDD00405C57 /* 5.png in Resources */,
 				70251C251F5EA29400405C57 /* 6.jpeg in Resources */,
+				1431EDA7203E6E3500F74EFA /* rsa.crt in Resources */,
 				70A0D1D11F4E747000670625 /* banner_tp02@2x.png in Resources */,
 				70A0D1D31F4E747000670625 /* banner_tp04@2x.png in Resources */,
 				70251C161F5E9FDD00405C57 /* 1.png in Resources */,
@@ -577,10 +658,12 @@
 				70FA4C941F53C6DD0078BFE6 /* cart.png in Resources */,
 				70251C191F5E9FDD00405C57 /* 4.png in Resources */,
 				145308681FD921DF00F6DC8E /* line@2x.png in Resources */,
+				1431EDA6203E6E3500F74EFA /* rsa.der in Resources */,
 				70FA4C951F53C6DD0078BFE6 /* heheda.png in Resources */,
 				1453086A1FD921DF00F6DC8E /* pick_bg@2x.png in Resources */,
 				709FEEA51F4D63E100285983 /* Main.storyboard in Resources */,
 				145308691FD921DF00F6DC8E /* pick_bg.png in Resources */,
+				1431EDA4203E6E3500F74EFA /* p.p12 in Resources */,
 				70A0D1D21F4E747000670625 /* banner_tp03@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,10 +685,14 @@
 				70FA4C821F53C3490078BFE6 /* ZHCustomLayOut.m in Sources */,
 				705C1B481F6A6CC600D01751 /* ZHAVPlayerClass.m in Sources */,
 				70FA4C831F53C3490078BFE6 /* ZHWaterfallCell.m in Sources */,
+				1431EDB1203E6FA000F74EFA /* Base64.m in Sources */,
 				70FA4C9C1F53CB490078BFE6 /* ZHBannerLoopView.m in Sources */,
 				709FEE9C1F4D63E100285983 /* main.m in Sources */,
+				1431EDB7203E70A300F74EFA /* ZHRsaController.m in Sources */,
 				70C23ED21F553DE100FAEBAA /* MidViewController.m in Sources */,
+				1431EDB4203E705400F74EFA /* RSA.m in Sources */,
 				705C1B511F6A6CF300D01751 /* toolClassEncap.m in Sources */,
+				1431EDBD203E716300F74EFA /* ZHEncryptDataController.m in Sources */,
 				70043AC21F4E7CDA00E82B8F /* viewLayoutController.m in Sources */,
 				70C23ECF1F553DCE00FAEBAA /* LeftViewController.m in Sources */,
 				70251BEF1F5E887A00405C57 /* ZHTextFileController.m in Sources */,
@@ -616,7 +703,9 @@
 				70FA4C841F53C3490078BFE6 /* ZHWaterfallStyle.m in Sources */,
 				70251C2E1F5EA4BA00405C57 /* QinHaiLakeTransportLine.m in Sources */,
 				14A906EC1FD8D48D006E2E84 /* ZHScanViewController.m in Sources */,
+				148A24F7203EA01900FC1B2D /* ZHMD5.m in Sources */,
 				70251C281F5EA3CD00405C57 /* ZHTravelStrategyController.m in Sources */,
+				1431EDBA203E70D300F74EFA /* ZHMD5Controller.m in Sources */,
 				70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */,
 				7019FE431F5FA63B0086F6C1 /* ZHPictureAndWordMixed.m in Sources */,
 				70043ABE1F4E7C4A00E82B8F /* RootViewController.m in Sources */,
@@ -741,12 +830,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J9MC53XV58;
+				DEVELOPMENT_TEAM = WSMZXD2423;
 				GCC_PREFIX_HEADER = /Users/zhanghua/Desktop/ZhangHuaSummary/ZhangHuaSummary/ZHSummaryPch.pch;
 				INFOPLIST_FILE = ZhangHuaSummary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.zhanghua.mac.QianDing007;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hengfengyzf.yinzhifubusiness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -755,12 +844,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J9MC53XV58;
+				DEVELOPMENT_TEAM = WSMZXD2423;
 				GCC_PREFIX_HEADER = /Users/zhanghua/Desktop/ZhangHuaSummary/ZhangHuaSummary/ZHSummaryPch.pch;
 				INFOPLIST_FILE = ZhangHuaSummary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.zhanghua.mac.QianDing007;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hengfengyzf.yinzhifubusiness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
