@@ -7,8 +7,8 @@
 //
 
 #import "ZHBannerLoopView.h"
-#define SC_WIDTH  self.frame.size.width
-#define SC_HEIGHT self.frame.size.height
+#define WIDTH  self.frame.size.width
+#define HEIGHT self.frame.size.height
 
 @implementation ZHBannerLoopView
 
@@ -26,10 +26,10 @@
 -(void)creatScrollView{
     
     self.bannerScroll = [[UIScrollView alloc]init];
-    self.bannerScroll.frame = CGRectMake(0, 0,SC_WIDTH,SC_HEIGHT);
+    self.bannerScroll.frame = CGRectMake(0, 0,WIDTH,HEIGHT);
     [self addSubview:self.bannerScroll];
     
-    self.bannerScroll.contentSize = CGSizeMake((self.bannerArray.count+1)*SC_WIDTH, 0);
+    self.bannerScroll.contentSize = CGSizeMake((self.bannerArray.count+1)*WIDTH, 0);
     self.bannerScroll.pagingEnabled = YES;
     self.bannerScroll.showsHorizontalScrollIndicator = NO ;
     self.bannerScroll.delegate = self ;
@@ -39,7 +39,7 @@
     
     for (int i = 0; i < self.bannerArray.count+1; i++) {
         
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i*SC_WIDTH, 0, SC_WIDTH, SC_HEIGHT)];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i*WIDTH, 0, WIDTH, HEIGHT)];
         if (i == self.bannerArray.count) {
             
             imageView.image = [UIImage imageNamed:self.bannerArray[0]];
@@ -50,7 +50,7 @@
         [self.bannerScroll addSubview:imageView];
     }
     self.bannerPageControl = [[UIPageControl alloc] init];
-    self.bannerPageControl.frame = CGRectMake(0, SC_HEIGHT-25, SC_WIDTH, 25);
+    self.bannerPageControl.frame = CGRectMake(0, HEIGHT-25, WIDTH, 25);
     self.bannerPageControl.numberOfPages = self.pageCount;
     self.bannerPageControl.currentPage = 0;
     self.bannerPageControl.pageIndicatorTintColor = [UIColor orangeColor];
@@ -75,7 +75,7 @@
 }
 - (void)changeScrollOffset {
     
-    [self.bannerScroll setContentOffset:CGPointMake((self.bannerPageControl.currentPage+1) * SC_WIDTH, 0) animated:YES];
+    [self.bannerScroll setContentOffset:CGPointMake((self.bannerPageControl.currentPage+1) * WIDTH, 0) animated:YES];
     
 }
 - (void)stopTimer
@@ -91,22 +91,22 @@
     BOOL isRight = self.oldScrollOffset < point.x;
     self.oldScrollOffset = point.x;
     // 调整pageControl的当前 位置
-    if (point.x > SC_WIDTH*(self.pageCount-1)+SC_WIDTH*0.5 && !self.bannerTimer) {
+    if (point.x > WIDTH*(self.pageCount-1)+WIDTH*0.5 && !self.bannerTimer) {
         self.bannerPageControl.currentPage = 0;
-    }else if (point.x > SC_WIDTH*(self.pageCount-1) && self.bannerTimer && isRight){
+    }else if (point.x > WIDTH*(self.pageCount-1) && self.bannerTimer && isRight){
         self.bannerPageControl.currentPage = 0;
     }else{
-        self.bannerPageControl.currentPage = (point.x+SC_WIDTH*0.5)/ SC_WIDTH;
+        self.bannerPageControl.currentPage = (point.x+WIDTH*0.5)/ WIDTH;
     }
     
     //处理两种情况，1、当偏移量超出scrollView contentSize最大值时 2、当偏移量小于零时
-    if (point.x >= SC_WIDTH*self.pageCount) {
+    if (point.x >= WIDTH*self.pageCount) {
         
         [scrollView setContentOffset:CGPointMake(0, 0) animated:NO];
         
     }else if (point.x < 0) {
         
-        [scrollView setContentOffset:CGPointMake(point.x+SC_WIDTH*(self.pageCount), 0) animated:NO];
+        [scrollView setContentOffset:CGPointMake(point.x+WIDTH*(self.pageCount), 0) animated:NO];
     }
 }
 /**
