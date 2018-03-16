@@ -1,30 +1,39 @@
 //
-//  toolClassEncap.m
+//  ZHMenuController.m
 //  ZhangHuaSummary
 //
-//  Created by zhanghua0221 on 17/8/24.
-//  Copyright © 2017年 zhanghua0221. All rights reserved.
+//  Created by 张华 on 2018/3/13.
+//  Copyright © 2018年 zhanghua0221. All rights reserved.
 //
 
-#import "toolClassEncap.h"
-
-@interface toolClassEncap ()
+#import "ZHMenuController.h"
+#import "ZHMenuView.h"
+@interface ZHMenuController ()
 
 @end
 
-@implementation toolClassEncap
+@implementation ZHMenuController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableListArray = @[@"调用摄像头",@"图片缓存处理",@"视频播放处理",@"二维码扫描支付",@"选择控件"];
-    self.controllerTitle = @[@"ZHCameraCall",@"ZHPictureCache",@"ZHAVPlayerClass",@"ZHQRCodePay",@"ZHChooseController"];
+    [self createMenuView];
+    self.view.backgroundColor = COLORFromRGB(0xffffff);
     // Do any additional setup after loading the view.
 }
 
+/**
+ 创建菜单栏
+ */
+- (void)createMenuView{
+    ZHMenuView *view = [[ZHMenuView alloc] initWithFrame:CGRectMake(0, StatusHeight+44, SC_WIDTH, 40)];
+    [self.view addSubview:view];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 /*
 #pragma mark - Navigation
 

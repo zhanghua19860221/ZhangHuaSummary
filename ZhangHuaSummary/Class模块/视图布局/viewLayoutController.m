@@ -21,8 +21,8 @@
 }
 -(void)initTableViewData{
     
-    self.tableListArray = @[@"瀑布流",@"轮播图",@"环形"];
-    self.controllerTitle = @[@"ZHWaterfallStyle",@"ZHBannerLoop",@"ZHRoundDisplay"];
+    self.tableListArray = @[@"瀑布流",@"轮播图",@"环形",@"滑动菜单联动页面"];
+    self.controllerTitle = @[@"ZHWaterfallStyle",@"ZHBannerLoop",@"ZHRoundDisplay",@"ZHMenuController"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

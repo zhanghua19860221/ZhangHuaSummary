@@ -1,30 +1,37 @@
 //
-//  toolClassEncap.m
+//  ZHChooseBankController.m
 //  ZhangHuaSummary
 //
-//  Created by zhanghua0221 on 17/8/24.
-//  Copyright © 2017年 zhanghua0221. All rights reserved.
+//  Created by 张华 on 2018/3/16.
+//  Copyright © 2018年 zhanghua0221. All rights reserved.
 //
 
-#import "toolClassEncap.h"
-
-@interface toolClassEncap ()
+#import "ZHChooseBankController.h"
+#import "ZHChooseBankView.h"
+@interface ZHChooseBankController ()
 
 @end
 
-@implementation toolClassEncap
+@implementation ZHChooseBankController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableListArray = @[@"调用摄像头",@"图片缓存处理",@"视频播放处理",@"二维码扫描支付",@"选择控件"];
-    self.controllerTitle = @[@"ZHCameraCall",@"ZHPictureCache",@"ZHAVPlayerClass",@"ZHQRCodePay",@"ZHChooseController"];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self createSubview];
+
     // Do any additional setup after loading the view.
 }
+- (void)createSubview{
+    ZHChooseBankView * view = [[ZHChooseBankView alloc] initWithFrame:CGRectMake(0, SC_HEIGHT-240, SC_WIDTH, 240)];
 
+    [self.view addSubview:view];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 /*
 #pragma mark - Navigation
 

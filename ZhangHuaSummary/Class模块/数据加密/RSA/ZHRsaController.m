@@ -57,7 +57,7 @@
     textField.font = [UIFont systemFontOfSize:18];
     textField.backgroundColor = COLORFromRGB(0xf9f9f9);
     [textField setTextColor:[UIColor brownColor]];
-    textField.frame = CGRectMake(50, 100, 100, 30);
+    textField.frame = CGRectMake(50, 150, 100, 30);
     [self.view addSubview:textField];
     
     
@@ -65,7 +65,7 @@
     encryptionBtn.backgroundColor = COLORFromRGB(0xf9f9f9);
     [encryptionBtn setTitle:@"点击加密" forState:UIControlStateNormal];
     [encryptionBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
-    encryptionBtn.frame = CGRectMake(50, 140, 100, 30);
+    encryptionBtn.frame = CGRectMake(50, 190, 100, 30);
     [encryptionBtn addTarget:self action:@selector(encryptionClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:encryptionBtn];
     
@@ -80,7 +80,7 @@
 //    encryptionLabel.lineBreakMode =NSLineBreakByWordWrapping;
     encryptionLabel.numberOfLines = 0;
     [encryptionLabel setTextColor:[UIColor redColor]];
-    encryptionLabel.frame = CGRectMake(50, 180, SC_WIDTH-60, 30);
+    encryptionLabel.frame = CGRectMake(50, 230, SC_WIDTH-60, 30);
     [self.view addSubview:encryptionLabel];
 
     
@@ -89,7 +89,7 @@
     [decryptionBtn setTitle:@"点击解密" forState:UIControlStateNormal];
     [decryptionBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [decryptionBtn addTarget:self action:@selector(decryptionClick:) forControlEvents:UIControlEventTouchUpInside];
-    decryptionBtn.frame = CGRectMake(50, 300, 100, 30);
+    decryptionBtn.frame = CGRectMake(50, 350, 100, 30);
     [self.view addSubview:decryptionBtn];
     
     decryptionLabel = [[UILabel alloc] init];
@@ -102,21 +102,19 @@
     decryptionLabel.lineBreakMode =NSLineBreakByWordWrapping;
     [decryptionLabel setNumberOfLines:0];
     [decryptionLabel setTextColor:[UIColor redColor]];
-    decryptionLabel.frame = CGRectMake(50, 340, SC_WIDTH-60, 30);
+    decryptionLabel.frame = CGRectMake(50, 390, SC_WIDTH-60, 30);
     [self.view addSubview:decryptionLabel];
 
     
 }
 //加密按钮点击事件
 - (void)encryptionClick:(UIButton*)btn{
-    
-
-
     encryptionLabel.text = [self.rsa rsaEncryptString:textField.text];
     CGSize size = [encryptionLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(SC_WIDTH-60,MAXFLOAT)lineBreakMode:UILineBreakModeWordWrap];
-    encryptionLabel.frame = CGRectMake(50,180,size.width,size.height);
+    encryptionLabel.frame = CGRectMake(50,230,size.width,size.height);
     
     NSLog(@"encryptionLabel == %@",encryptionLabel.text);
+    
     
 }
 //解密按钮点击事件

@@ -26,22 +26,23 @@
 }
 - (void)createSubView{
     
-    inputField = [[UITextField alloc] initWithFrame:CGRectMake(50, 150, 200, 30)];
+    UIButton *button  = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(50, 120, 50, 50);
+    [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    button.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:button];
+    
+    inputField = [[UITextField alloc] initWithFrame:CGRectMake(50, 180, 200, 30)];
     inputField.borderStyle = UITextBorderStyleRoundedRect;
     inputField.backgroundColor = COLORFromRGB(0xf9f9f9);
-
     [self.view addSubview:inputField];
     
-    outputLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 190, SC_WIDTH-60, 30)];
+    outputLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 220, SC_WIDTH-60, 30)];
     outputLabel.backgroundColor = COLORFromRGB(0x666666);
     outputLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:outputLabel];
     
-    UIButton *button  = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(50, 80, 50, 50);
-    [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    button.backgroundColor = [UIColor orangeColor];
-    [self.view addSubview:button];
+
     
 }
 - (void)buttonPressed:(UIButton *)button{
