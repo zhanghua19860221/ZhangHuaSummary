@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140552D6206200FF00B39652 /* ZHBezierPathController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140552D5206200FF00B39652 /* ZHBezierPathController.m */; };
+		140552DC206201F800B39652 /* ZHMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 140552DB206201F800B39652 /* ZHMaskView.m */; };
 		1431EDA4203E6E3500F74EFA /* p.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 1431ED9F203E6E3500F74EFA /* p.p12 */; };
 		1431EDA5203E6E3500F74EFA /* rsa.csr in Resources */ = {isa = PBXBuildFile; fileRef = 1431EDA0203E6E3500F74EFA /* rsa.csr */; };
 		1431EDA6203E6E3500F74EFA /* rsa.der in Resources */ = {isa = PBXBuildFile; fileRef = 1431EDA1203E6E3500F74EFA /* rsa.der */; };
@@ -17,8 +19,6 @@
 		1431EDB7203E70A300F74EFA /* ZHRsaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDB6203E70A300F74EFA /* ZHRsaController.m */; };
 		1431EDBA203E70D300F74EFA /* ZHMD5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDB9203E70D300F74EFA /* ZHMD5Controller.m */; };
 		1431EDBD203E716300F74EFA /* ZHEncryptDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDBC203E716300F74EFA /* ZHEncryptDataController.m */; };
-		1443E6EA2057A50B00198A97 /* ZHMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1443E6E92057A50B00198A97 /* ZHMenuController.m */; };
-		1443E6ED2057A6B100198A97 /* ZHMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1443E6EC2057A6B100198A97 /* ZHMenuView.m */; };
 		144D05C1205B8F3C00A655A9 /* ZHWaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C0205B8F3C00A655A9 /* ZHWaveController.m */; };
 		144D05C4205B8F4900A655A9 /* ZHWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C2205B8F4900A655A9 /* ZHWaveView.m */; };
 		144D05CA205BB35000A655A9 /* ZHWaveTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C9205BB35000A655A9 /* ZHWaveTwoView.m */; };
@@ -29,10 +29,28 @@
 		144D05F0205BC1C400A655A9 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 144D05ED205BC1C300A655A9 /* city.plist */; };
 		144D05F3205BC28D00A655A9 /* ZHChooseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05F2205BC28D00A655A9 /* ZHChooseController.m */; };
 		144D05F6205BCCF500A655A9 /* QDPickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05F4205BCCF500A655A9 /* QDPickerModel.m */; };
+		144EBDB92063487E006BEC8D /* SecondeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDB82063487E006BEC8D /* SecondeController.m */; };
+		144EBDC020638945006BEC8D /* FirstBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDBF20638945006BEC8D /* FirstBarController.m */; };
+		144EBDC620638B8F006BEC8D /* ThirdBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDC520638B8F006BEC8D /* ThirdBarController.m */; };
+		144EBDC920639AE9006BEC8D /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDC820639AE9006BEC8D /* RootController.m */; };
+		144EBDCF2063A14E006BEC8D /* SecondeBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDCE2063A14E006BEC8D /* SecondeBarController.m */; };
 		145308671FD921DF00F6DC8E /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308631FD921DF00F6DC8E /* line.png */; };
 		145308681FD921DF00F6DC8E /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308641FD921DF00F6DC8E /* line@2x.png */; };
 		145308691FD921DF00F6DC8E /* pick_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308651FD921DF00F6DC8E /* pick_bg.png */; };
 		1453086A1FD921DF00F6DC8E /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308661FD921DF00F6DC8E /* pick_bg@2x.png */; };
+		146954E8205FA5AB00E0ADDC /* bankList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 146954E7205FA5AB00E0ADDC /* bankList.plist */; };
+		146954F1205FB67A00E0ADDC /* ZHBannerLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 146954ED205FB67900E0ADDC /* ZHBannerLoopView.m */; };
+		146954F2205FB67A00E0ADDC /* ZHBannerLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 146954F0205FB67900E0ADDC /* ZHBannerLoop.m */; };
+		146954F7205FB68A00E0ADDC /* ZHMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 146954F3205FB68A00E0ADDC /* ZHMenuView.m */; };
+		146954F8205FB68A00E0ADDC /* ZHMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146954F4205FB68A00E0ADDC /* ZHMenuController.m */; };
+		146954FF205FB69C00E0ADDC /* ZHCustomLayOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 146954FA205FB69C00E0ADDC /* ZHCustomLayOut.m */; };
+		14695500205FB69C00E0ADDC /* ZHWaterfallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 146954FC205FB69C00E0ADDC /* ZHWaterfallCell.m */; };
+		14695501205FB69C00E0ADDC /* ZHWaterfallStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 146954FE205FB69C00E0ADDC /* ZHWaterfallStyle.m */; };
+		14695507205FB6BD00E0ADDC /* ZHRoundLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 14695503205FB6BD00E0ADDC /* ZHRoundLayout.m */; };
+		14695508205FB6BD00E0ADDC /* ZHRoundDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 14695504205FB6BD00E0ADDC /* ZHRoundDisplay.m */; };
+		1469550C205FB79000E0ADDC /* FirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1469550B205FB79000E0ADDC /* FirstController.m */; };
+		14695512205FB7C400E0ADDC /* ThirdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14695511205FB7C400E0ADDC /* ThirdController.m */; };
+		14695515205FB7DD00E0ADDC /* FourController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14695514205FB7DD00E0ADDC /* FourController.m */; };
 		148861C22058FCE1001AEA7C /* ZHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148861C12058FCE1001AEA7C /* ZHLoadingView.m */; };
 		148861C8205901AC001AEA7C /* ZHProgressBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148861C7205901AC001AEA7C /* ZHProgressBarController.m */; };
 		148A24F7203EA01900FC1B2D /* ZHMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A24F6203EA01900FC1B2D /* ZHMD5.m */; };
@@ -76,25 +94,22 @@
 		70A0D1D11F4E747000670625 /* banner_tp02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A0D1CD1F4E747000670625 /* banner_tp02@2x.png */; };
 		70A0D1D21F4E747000670625 /* banner_tp03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A0D1CE1F4E747000670625 /* banner_tp03@2x.png */; };
 		70A0D1D31F4E747000670625 /* banner_tp04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A0D1CF1F4E747000670625 /* banner_tp04@2x.png */; };
-		70C23EC51F5506D700FAEBAA /* ZHRoundDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C23EC41F5506D700FAEBAA /* ZHRoundDisplay.m */; };
-		70C23EC81F55071F00FAEBAA /* ZHRoundLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C23EC71F55071F00FAEBAA /* ZHRoundLayout.m */; };
 		70C23ECC1F553DB600FAEBAA /* ZHDrawerRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C23ECB1F553DB600FAEBAA /* ZHDrawerRootController.m */; };
 		70C23ECF1F553DCE00FAEBAA /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C23ECE1F553DCE00FAEBAA /* LeftViewController.m */; };
 		70C23ED21F553DE100FAEBAA /* MidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C23ED11F553DE100FAEBAA /* MidViewController.m */; };
 		70C23ED51F553DF400FAEBAA /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C23ED41F553DF400FAEBAA /* RightViewController.m */; };
-		70FA4C821F53C3490078BFE6 /* ZHCustomLayOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FA4C7D1F53C3490078BFE6 /* ZHCustomLayOut.m */; };
-		70FA4C831F53C3490078BFE6 /* ZHWaterfallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FA4C7F1F53C3490078BFE6 /* ZHWaterfallCell.m */; };
-		70FA4C841F53C3490078BFE6 /* ZHWaterfallStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FA4C811F53C3490078BFE6 /* ZHWaterfallStyle.m */; };
 		70FA4C8F1F53C47F0078BFE6 /* ZHShoppingCartAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FA4C8E1F53C47F0078BFE6 /* ZHShoppingCartAnimation.m */; };
 		70FA4C941F53C6DD0078BFE6 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 70FA4C901F53C6DD0078BFE6 /* cart.png */; };
 		70FA4C951F53C6DD0078BFE6 /* heheda.png in Resources */ = {isa = PBXBuildFile; fileRef = 70FA4C911F53C6DD0078BFE6 /* heheda.png */; };
 		70FA4C961F53C6DD0078BFE6 /* ZHShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FA4C931F53C6DD0078BFE6 /* ZHShoppingCart.m */; };
-		70FA4C9C1F53CB490078BFE6 /* ZHBannerLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FA4C9B1F53CB490078BFE6 /* ZHBannerLoopView.m */; };
-		70FA4C9F1F53CC110078BFE6 /* ZHBannerLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FA4C9E1F53CC110078BFE6 /* ZHBannerLoop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1051596F24D6015DDBCCB4F9 /* Pods-ZhangHuaSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhangHuaSummary.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhangHuaSummary/Pods-ZhangHuaSummary.release.xcconfig"; sourceTree = "<group>"; };
+		140552D4206200FF00B39652 /* ZHBezierPathController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHBezierPathController.h; path = "Class模块/视图布局/贝塞尔曲线/ZHBezierPathController.h"; sourceTree = "<group>"; };
+		140552D5206200FF00B39652 /* ZHBezierPathController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHBezierPathController.m; path = "Class模块/视图布局/贝塞尔曲线/ZHBezierPathController.m"; sourceTree = "<group>"; };
+		140552DA206201F800B39652 /* ZHMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHMaskView.h; path = "Class模块/视图布局/贝塞尔曲线/ZHMaskView.h"; sourceTree = "<group>"; };
+		140552DB206201F800B39652 /* ZHMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHMaskView.m; path = "Class模块/视图布局/贝塞尔曲线/ZHMaskView.m"; sourceTree = "<group>"; };
 		1431ED9F203E6E3500F74EFA /* p.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = p.p12; sourceTree = "<group>"; };
 		1431EDA0203E6E3500F74EFA /* rsa.csr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa.csr; sourceTree = "<group>"; };
 		1431EDA1203E6E3500F74EFA /* rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = rsa.der; sourceTree = "<group>"; };
@@ -110,10 +125,6 @@
 		1431EDB9203E70D300F74EFA /* ZHMD5Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHMD5Controller.m; path = "Class模块/数据加密/MD5/ZHMD5Controller.m"; sourceTree = "<group>"; };
 		1431EDBB203E716300F74EFA /* ZHEncryptDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHEncryptDataController.h; path = "Class模块/数据加密/ZHEncryptDataController.h"; sourceTree = "<group>"; };
 		1431EDBC203E716300F74EFA /* ZHEncryptDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHEncryptDataController.m; path = "Class模块/数据加密/ZHEncryptDataController.m"; sourceTree = "<group>"; };
-		1443E6E82057A50B00198A97 /* ZHMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHMenuController.h; path = "Class模块/视图布局/scrollview视图布局/滑动菜单联动页面/ZHMenuController.h"; sourceTree = "<group>"; };
-		1443E6E92057A50B00198A97 /* ZHMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHMenuController.m; path = "Class模块/视图布局/scrollview视图布局/滑动菜单联动页面/ZHMenuController.m"; sourceTree = "<group>"; };
-		1443E6EB2057A6B100198A97 /* ZHMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHMenuView.h; path = "Class模块/视图布局/scrollview视图布局/滑动菜单联动页面/ZHMenuView.h"; sourceTree = "<group>"; };
-		1443E6EC2057A6B100198A97 /* ZHMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHMenuView.m; path = "Class模块/视图布局/scrollview视图布局/滑动菜单联动页面/ZHMenuView.m"; sourceTree = "<group>"; };
 		144D05BF205B8F3C00A655A9 /* ZHWaveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHWaveController.h; path = "Class模块/动画效果/波浪/ZHWaveController.h"; sourceTree = "<group>"; };
 		144D05C0205B8F3C00A655A9 /* ZHWaveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHWaveController.m; path = "Class模块/动画效果/波浪/ZHWaveController.m"; sourceTree = "<group>"; };
 		144D05C2205B8F4900A655A9 /* ZHWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHWaveView.m; path = "Class模块/动画效果/波浪/ZHWaveView.m"; sourceTree = "<group>"; };
@@ -133,10 +144,45 @@
 		144D05F2205BC28D00A655A9 /* ZHChooseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHChooseController.m; path = "Class模块/功能类封装/选择控件/ZHChooseController.m"; sourceTree = "<group>"; };
 		144D05F4205BCCF500A655A9 /* QDPickerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QDPickerModel.m; path = "Class模块/功能类封装/选择控件/银行选择控件/QDPickerModel.m"; sourceTree = "<group>"; };
 		144D05F5205BCCF500A655A9 /* QDPickerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QDPickerModel.h; path = "Class模块/功能类封装/选择控件/银行选择控件/QDPickerModel.h"; sourceTree = "<group>"; };
+		144EBDB72063487E006BEC8D /* SecondeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SecondeController.h; path = "Class模块/视图布局/滑动菜单联动页面/SubController/SecondeController.h"; sourceTree = "<group>"; };
+		144EBDB82063487E006BEC8D /* SecondeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SecondeController.m; path = "Class模块/视图布局/滑动菜单联动页面/SubController/SecondeController.m"; sourceTree = "<group>"; };
+		144EBDBE20638945006BEC8D /* FirstBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FirstBarController.h; path = "Class模块/视图布局/原生TabBarController/FirstBarController.h"; sourceTree = "<group>"; };
+		144EBDBF20638945006BEC8D /* FirstBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FirstBarController.m; path = "Class模块/视图布局/原生TabBarController/FirstBarController.m"; sourceTree = "<group>"; };
+		144EBDC420638B8F006BEC8D /* ThirdBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ThirdBarController.h; path = "Class模块/视图布局/原生TabBarController/ThirdBarController.h"; sourceTree = "<group>"; };
+		144EBDC520638B8F006BEC8D /* ThirdBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ThirdBarController.m; path = "Class模块/视图布局/原生TabBarController/ThirdBarController.m"; sourceTree = "<group>"; };
+		144EBDC720639AE9006BEC8D /* RootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootController.h; path = "Class模块/视图布局/原生TabBarController/RootController.h"; sourceTree = "<group>"; };
+		144EBDC820639AE9006BEC8D /* RootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RootController.m; path = "Class模块/视图布局/原生TabBarController/RootController.m"; sourceTree = "<group>"; };
+		144EBDCD2063A14E006BEC8D /* SecondeBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SecondeBarController.h; path = "Class模块/视图布局/原生TabBarController/SecondeBarController.h"; sourceTree = "<group>"; };
+		144EBDCE2063A14E006BEC8D /* SecondeBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SecondeBarController.m; path = "Class模块/视图布局/原生TabBarController/SecondeBarController.m"; sourceTree = "<group>"; };
 		145308631FD921DF00F6DC8E /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = "Class模块/功能类封装/二维码扫描支付/line.png"; sourceTree = "<group>"; };
 		145308641FD921DF00F6DC8E /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "line@2x.png"; path = "Class模块/功能类封装/二维码扫描支付/line@2x.png"; sourceTree = "<group>"; };
 		145308651FD921DF00F6DC8E /* pick_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pick_bg.png; path = "Class模块/功能类封装/二维码扫描支付/pick_bg.png"; sourceTree = "<group>"; };
 		145308661FD921DF00F6DC8E /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pick_bg@2x.png"; path = "Class模块/功能类封装/二维码扫描支付/pick_bg@2x.png"; sourceTree = "<group>"; };
+		146954E7205FA5AB00E0ADDC /* bankList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = bankList.plist; path = "Class模块/功能类封装/选择控件/银行选择控件/bankList.plist"; sourceTree = "<group>"; };
+		146954ED205FB67900E0ADDC /* ZHBannerLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHBannerLoopView.m; path = "Class模块/视图布局/轮播图/ZHBannerLoopView.m"; sourceTree = "<group>"; };
+		146954EE205FB67900E0ADDC /* ZHBannerLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHBannerLoopView.h; path = "Class模块/视图布局/轮播图/ZHBannerLoopView.h"; sourceTree = "<group>"; };
+		146954EF205FB67900E0ADDC /* ZHBannerLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHBannerLoop.h; path = "Class模块/视图布局/轮播图/ZHBannerLoop.h"; sourceTree = "<group>"; };
+		146954F0205FB67900E0ADDC /* ZHBannerLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHBannerLoop.m; path = "Class模块/视图布局/轮播图/ZHBannerLoop.m"; sourceTree = "<group>"; };
+		146954F3205FB68A00E0ADDC /* ZHMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHMenuView.m; path = "Class模块/视图布局/滑动菜单联动页面/ZHMenuView.m"; sourceTree = "<group>"; };
+		146954F4205FB68A00E0ADDC /* ZHMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHMenuController.m; path = "Class模块/视图布局/滑动菜单联动页面/ZHMenuController.m"; sourceTree = "<group>"; };
+		146954F5205FB68A00E0ADDC /* ZHMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHMenuView.h; path = "Class模块/视图布局/滑动菜单联动页面/ZHMenuView.h"; sourceTree = "<group>"; };
+		146954F6205FB68A00E0ADDC /* ZHMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHMenuController.h; path = "Class模块/视图布局/滑动菜单联动页面/ZHMenuController.h"; sourceTree = "<group>"; };
+		146954F9205FB69C00E0ADDC /* ZHCustomLayOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCustomLayOut.h; path = "Class模块/视图布局/瀑布流/ZHCustomLayOut.h"; sourceTree = "<group>"; };
+		146954FA205FB69C00E0ADDC /* ZHCustomLayOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCustomLayOut.m; path = "Class模块/视图布局/瀑布流/ZHCustomLayOut.m"; sourceTree = "<group>"; };
+		146954FB205FB69C00E0ADDC /* ZHWaterfallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHWaterfallCell.h; path = "Class模块/视图布局/瀑布流/ZHWaterfallCell.h"; sourceTree = "<group>"; };
+		146954FC205FB69C00E0ADDC /* ZHWaterfallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHWaterfallCell.m; path = "Class模块/视图布局/瀑布流/ZHWaterfallCell.m"; sourceTree = "<group>"; };
+		146954FD205FB69C00E0ADDC /* ZHWaterfallStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHWaterfallStyle.h; path = "Class模块/视图布局/瀑布流/ZHWaterfallStyle.h"; sourceTree = "<group>"; };
+		146954FE205FB69C00E0ADDC /* ZHWaterfallStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHWaterfallStyle.m; path = "Class模块/视图布局/瀑布流/ZHWaterfallStyle.m"; sourceTree = "<group>"; };
+		14695503205FB6BD00E0ADDC /* ZHRoundLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHRoundLayout.m; path = "Class模块/视图布局/环形/ZHRoundLayout.m"; sourceTree = "<group>"; };
+		14695504205FB6BD00E0ADDC /* ZHRoundDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHRoundDisplay.m; path = "Class模块/视图布局/环形/ZHRoundDisplay.m"; sourceTree = "<group>"; };
+		14695505205FB6BD00E0ADDC /* ZHRoundDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHRoundDisplay.h; path = "Class模块/视图布局/环形/ZHRoundDisplay.h"; sourceTree = "<group>"; };
+		14695506205FB6BD00E0ADDC /* ZHRoundLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHRoundLayout.h; path = "Class模块/视图布局/环形/ZHRoundLayout.h"; sourceTree = "<group>"; };
+		1469550A205FB79000E0ADDC /* FirstController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FirstController.h; path = "Class模块/视图布局/滑动菜单联动页面/SubController/FirstController.h"; sourceTree = "<group>"; };
+		1469550B205FB79000E0ADDC /* FirstController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FirstController.m; path = "Class模块/视图布局/滑动菜单联动页面/SubController/FirstController.m"; sourceTree = "<group>"; };
+		14695510205FB7C400E0ADDC /* ThirdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ThirdController.h; path = "Class模块/视图布局/滑动菜单联动页面/SubController/ThirdController.h"; sourceTree = "<group>"; };
+		14695511205FB7C400E0ADDC /* ThirdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ThirdController.m; path = "Class模块/视图布局/滑动菜单联动页面/SubController/ThirdController.m"; sourceTree = "<group>"; };
+		14695513205FB7DD00E0ADDC /* FourController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FourController.h; path = "Class模块/视图布局/滑动菜单联动页面/SubController/FourController.h"; sourceTree = "<group>"; };
+		14695514205FB7DD00E0ADDC /* FourController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FourController.m; path = "Class模块/视图布局/滑动菜单联动页面/SubController/FourController.m"; sourceTree = "<group>"; };
 		148861C02058FCE1001AEA7C /* ZHLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHLoadingView.h; path = "Class模块/动画效果/加载菊花/ZHLoadingView.h"; sourceTree = "<group>"; };
 		148861C12058FCE1001AEA7C /* ZHLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHLoadingView.m; path = "Class模块/动画效果/加载菊花/ZHLoadingView.m"; sourceTree = "<group>"; };
 		148861C6205901AC001AEA7C /* ZHProgressBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHProgressBarController.h; path = "Class模块/动画效果/进度条/ZHProgressBarController.h"; sourceTree = "<group>"; };
@@ -204,10 +250,6 @@
 		70A0D1CD1F4E747000670625 /* banner_tp02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner_tp02@2x.png"; sourceTree = "<group>"; };
 		70A0D1CE1F4E747000670625 /* banner_tp03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner_tp03@2x.png"; sourceTree = "<group>"; };
 		70A0D1CF1F4E747000670625 /* banner_tp04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner_tp04@2x.png"; sourceTree = "<group>"; };
-		70C23EC31F5506D700FAEBAA /* ZHRoundDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHRoundDisplay.h; path = "Class模块/视图布局/collectionView视图布局/环形/ZHRoundDisplay.h"; sourceTree = "<group>"; };
-		70C23EC41F5506D700FAEBAA /* ZHRoundDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHRoundDisplay.m; path = "Class模块/视图布局/collectionView视图布局/环形/ZHRoundDisplay.m"; sourceTree = "<group>"; };
-		70C23EC61F55071F00FAEBAA /* ZHRoundLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHRoundLayout.h; path = "Class模块/视图布局/collectionView视图布局/环形/ZHRoundLayout.h"; sourceTree = "<group>"; };
-		70C23EC71F55071F00FAEBAA /* ZHRoundLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHRoundLayout.m; path = "Class模块/视图布局/collectionView视图布局/环形/ZHRoundLayout.m"; sourceTree = "<group>"; };
 		70C23ECA1F553DB600FAEBAA /* ZHDrawerRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHDrawerRootController.h; path = "Class模块/动画效果/抽屉/ZHDrawerRootController.h"; sourceTree = "<group>"; };
 		70C23ECB1F553DB600FAEBAA /* ZHDrawerRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHDrawerRootController.m; path = "Class模块/动画效果/抽屉/ZHDrawerRootController.m"; sourceTree = "<group>"; };
 		70C23ECD1F553DCE00FAEBAA /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftViewController.h; path = "Class模块/动画效果/抽屉/LeftViewController.h"; sourceTree = "<group>"; };
@@ -217,22 +259,12 @@
 		70C23ED31F553DF400FAEBAA /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightViewController.h; path = "Class模块/动画效果/抽屉/RightViewController.h"; sourceTree = "<group>"; };
 		70C23ED41F553DF400FAEBAA /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RightViewController.m; path = "Class模块/动画效果/抽屉/RightViewController.m"; sourceTree = "<group>"; };
 		70C23ED61F556ECE00FAEBAA /* ZHSummaryPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHSummaryPch.pch; sourceTree = "<group>"; };
-		70FA4C7C1F53C3490078BFE6 /* ZHCustomLayOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCustomLayOut.h; path = "Class模块/视图布局/collectionView视图布局/瀑布流/ZHCustomLayOut.h"; sourceTree = "<group>"; };
-		70FA4C7D1F53C3490078BFE6 /* ZHCustomLayOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCustomLayOut.m; path = "Class模块/视图布局/collectionView视图布局/瀑布流/ZHCustomLayOut.m"; sourceTree = "<group>"; };
-		70FA4C7E1F53C3490078BFE6 /* ZHWaterfallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHWaterfallCell.h; path = "Class模块/视图布局/collectionView视图布局/瀑布流/ZHWaterfallCell.h"; sourceTree = "<group>"; };
-		70FA4C7F1F53C3490078BFE6 /* ZHWaterfallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHWaterfallCell.m; path = "Class模块/视图布局/collectionView视图布局/瀑布流/ZHWaterfallCell.m"; sourceTree = "<group>"; };
-		70FA4C801F53C3490078BFE6 /* ZHWaterfallStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHWaterfallStyle.h; path = "Class模块/视图布局/collectionView视图布局/瀑布流/ZHWaterfallStyle.h"; sourceTree = "<group>"; };
-		70FA4C811F53C3490078BFE6 /* ZHWaterfallStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHWaterfallStyle.m; path = "Class模块/视图布局/collectionView视图布局/瀑布流/ZHWaterfallStyle.m"; sourceTree = "<group>"; };
 		70FA4C8D1F53C47F0078BFE6 /* ZHShoppingCartAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHShoppingCartAnimation.h; path = "Class模块/动画效果/购物车/添加商品到购物车/ZHShoppingCartAnimation.h"; sourceTree = "<group>"; };
 		70FA4C8E1F53C47F0078BFE6 /* ZHShoppingCartAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHShoppingCartAnimation.m; path = "Class模块/动画效果/购物车/添加商品到购物车/ZHShoppingCartAnimation.m"; sourceTree = "<group>"; };
 		70FA4C901F53C6DD0078BFE6 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cart.png; path = "Class模块/动画效果/购物车/添加商品到购物车/cart.png"; sourceTree = "<group>"; };
 		70FA4C911F53C6DD0078BFE6 /* heheda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heheda.png; path = "Class模块/动画效果/购物车/添加商品到购物车/heheda.png"; sourceTree = "<group>"; };
 		70FA4C921F53C6DD0078BFE6 /* ZHShoppingCart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHShoppingCart.h; path = "Class模块/动画效果/购物车/添加商品到购物车/ZHShoppingCart.h"; sourceTree = "<group>"; };
 		70FA4C931F53C6DD0078BFE6 /* ZHShoppingCart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHShoppingCart.m; path = "Class模块/动画效果/购物车/添加商品到购物车/ZHShoppingCart.m"; sourceTree = "<group>"; };
-		70FA4C9A1F53CB490078BFE6 /* ZHBannerLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHBannerLoopView.h; path = "Class模块/视图布局/scrollview视图布局/轮播图/ZHBannerLoopView.h"; sourceTree = "<group>"; };
-		70FA4C9B1F53CB490078BFE6 /* ZHBannerLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHBannerLoopView.m; path = "Class模块/视图布局/scrollview视图布局/轮播图/ZHBannerLoopView.m"; sourceTree = "<group>"; };
-		70FA4C9D1F53CC110078BFE6 /* ZHBannerLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHBannerLoop.h; path = "Class模块/视图布局/scrollview视图布局/轮播图/ZHBannerLoop.h"; sourceTree = "<group>"; };
-		70FA4C9E1F53CC110078BFE6 /* ZHBannerLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHBannerLoop.m; path = "Class模块/视图布局/scrollview视图布局/轮播图/ZHBannerLoop.m"; sourceTree = "<group>"; };
 		E41A269E9143FEC8EFC38F60 /* libPods-ZhangHuaSummary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhangHuaSummary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE36F7D50D48D93D99DA00EC /* Pods-ZhangHuaSummary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhangHuaSummary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhangHuaSummary/Pods-ZhangHuaSummary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -258,6 +290,17 @@
 				1051596F24D6015DDBCCB4F9 /* Pods-ZhangHuaSummary.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		140552D32062000B00B39652 /* 贝塞尔曲线 */ = {
+			isa = PBXGroup;
+			children = (
+				140552DA206201F800B39652 /* ZHMaskView.h */,
+				140552DB206201F800B39652 /* ZHMaskView.m */,
+				140552D4206200FF00B39652 /* ZHBezierPathController.h */,
+				140552D5206200FF00B39652 /* ZHBezierPathController.m */,
+			);
+			name = "贝塞尔曲线";
 			sourceTree = "<group>";
 		};
 		1431ED9B203E6C5D00F74EFA /* RSA */ = {
@@ -312,10 +355,11 @@
 		1443E6E72057A42000198A97 /* 滑动菜单联动页面 */ = {
 			isa = PBXGroup;
 			children = (
-				1443E6EB2057A6B100198A97 /* ZHMenuView.h */,
-				1443E6EC2057A6B100198A97 /* ZHMenuView.m */,
-				1443E6E82057A50B00198A97 /* ZHMenuController.h */,
-				1443E6E92057A50B00198A97 /* ZHMenuController.m */,
+				14695509205FB73200E0ADDC /* SubController */,
+				146954F5205FB68A00E0ADDC /* ZHMenuView.h */,
+				146954F3205FB68A00E0ADDC /* ZHMenuView.m */,
+				146954F6205FB68A00E0ADDC /* ZHMenuController.h */,
+				146954F4205FB68A00E0ADDC /* ZHMenuController.m */,
 			);
 			name = "滑动菜单联动页面";
 			sourceTree = "<group>";
@@ -336,6 +380,7 @@
 		144D05CB205BBC8600A655A9 /* 银行选择控件 */ = {
 			isa = PBXGroup;
 			children = (
+				146954E7205FA5AB00E0ADDC /* bankList.plist */,
 				144D05F5205BCCF500A655A9 /* QDPickerModel.h */,
 				144D05F4205BCCF500A655A9 /* QDPickerModel.m */,
 				144D05E6205BC1AB00A655A9 /* ZHChooseBankView.h */,
@@ -367,6 +412,47 @@
 				144D05F2205BC28D00A655A9 /* ZHChooseController.m */,
 			);
 			name = "选择控件";
+			sourceTree = "<group>";
+		};
+		144EBDBA2063877B006BEC8D /* 原生TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				144EBDC720639AE9006BEC8D /* RootController.h */,
+				144EBDC820639AE9006BEC8D /* RootController.m */,
+				144EBDBE20638945006BEC8D /* FirstBarController.h */,
+				144EBDBF20638945006BEC8D /* FirstBarController.m */,
+				144EBDCD2063A14E006BEC8D /* SecondeBarController.h */,
+				144EBDCE2063A14E006BEC8D /* SecondeBarController.m */,
+				144EBDC420638B8F006BEC8D /* ThirdBarController.h */,
+				144EBDC520638B8F006BEC8D /* ThirdBarController.m */,
+			);
+			name = "原生TabBarController";
+			sourceTree = "<group>";
+		};
+		146954EC205FB65A00E0ADDC /* 轮播图 */ = {
+			isa = PBXGroup;
+			children = (
+				146954EF205FB67900E0ADDC /* ZHBannerLoop.h */,
+				146954F0205FB67900E0ADDC /* ZHBannerLoop.m */,
+				146954EE205FB67900E0ADDC /* ZHBannerLoopView.h */,
+				146954ED205FB67900E0ADDC /* ZHBannerLoopView.m */,
+			);
+			name = "轮播图";
+			sourceTree = "<group>";
+		};
+		14695509205FB73200E0ADDC /* SubController */ = {
+			isa = PBXGroup;
+			children = (
+				1469550A205FB79000E0ADDC /* FirstController.h */,
+				1469550B205FB79000E0ADDC /* FirstController.m */,
+				144EBDB72063487E006BEC8D /* SecondeController.h */,
+				144EBDB82063487E006BEC8D /* SecondeController.m */,
+				14695510205FB7C400E0ADDC /* ThirdController.h */,
+				14695511205FB7C400E0ADDC /* ThirdController.m */,
+				14695513205FB7DD00E0ADDC /* FourController.h */,
+				14695514205FB7DD00E0ADDC /* FourController.m */,
+			);
+			name = SubController;
 			sourceTree = "<group>";
 		};
 		148861BD2058F751001AEA7C /* 加载菊花 */ = {
@@ -406,24 +492,15 @@
 			name = "二维码扫描支付";
 			sourceTree = "<group>";
 		};
-		70043ACC1F4E7E3300E82B8F /* collectionView视图布局 */ = {
-			isa = PBXGroup;
-			children = (
-				70C23EC21F5505E800FAEBAA /* 环形 */,
-				70043ACD1F4E7EAB00E82B8F /* 瀑布流 */,
-			);
-			name = "collectionView视图布局";
-			sourceTree = "<group>";
-		};
 		70043ACD1F4E7EAB00E82B8F /* 瀑布流 */ = {
 			isa = PBXGroup;
 			children = (
-				70FA4C7C1F53C3490078BFE6 /* ZHCustomLayOut.h */,
-				70FA4C7D1F53C3490078BFE6 /* ZHCustomLayOut.m */,
-				70FA4C7E1F53C3490078BFE6 /* ZHWaterfallCell.h */,
-				70FA4C7F1F53C3490078BFE6 /* ZHWaterfallCell.m */,
-				70FA4C801F53C3490078BFE6 /* ZHWaterfallStyle.h */,
-				70FA4C811F53C3490078BFE6 /* ZHWaterfallStyle.m */,
+				146954F9205FB69C00E0ADDC /* ZHCustomLayOut.h */,
+				146954FA205FB69C00E0ADDC /* ZHCustomLayOut.m */,
+				146954FB205FB69C00E0ADDC /* ZHWaterfallCell.h */,
+				146954FC205FB69C00E0ADDC /* ZHWaterfallCell.m */,
+				146954FD205FB69C00E0ADDC /* ZHWaterfallStyle.h */,
+				146954FE205FB69C00E0ADDC /* ZHWaterfallStyle.m */,
 			);
 			name = "瀑布流";
 			sourceTree = "<group>";
@@ -631,8 +708,12 @@
 		709FEEB51F4D7DDB00285983 /* 视图布局 */ = {
 			isa = PBXGroup;
 			children = (
-				70FA4C981F53CA330078BFE6 /* scrollview视图布局 */,
-				70043ACC1F4E7E3300E82B8F /* collectionView视图布局 */,
+				144EBDBA2063877B006BEC8D /* 原生TabBarController */,
+				140552D32062000B00B39652 /* 贝塞尔曲线 */,
+				70C23EC21F5505E800FAEBAA /* 环形 */,
+				70043ACD1F4E7EAB00E82B8F /* 瀑布流 */,
+				146954EC205FB65A00E0ADDC /* 轮播图 */,
+				1443E6E72057A42000198A97 /* 滑动菜单联动页面 */,
 				70043AC01F4E7CDA00E82B8F /* viewLayoutController.h */,
 				70043AC11F4E7CDA00E82B8F /* viewLayoutController.m */,
 			);
@@ -662,10 +743,10 @@
 		70C23EC21F5505E800FAEBAA /* 环形 */ = {
 			isa = PBXGroup;
 			children = (
-				70C23EC31F5506D700FAEBAA /* ZHRoundDisplay.h */,
-				70C23EC41F5506D700FAEBAA /* ZHRoundDisplay.m */,
-				70C23EC61F55071F00FAEBAA /* ZHRoundLayout.h */,
-				70C23EC71F55071F00FAEBAA /* ZHRoundLayout.m */,
+				14695505205FB6BD00E0ADDC /* ZHRoundDisplay.h */,
+				14695504205FB6BD00E0ADDC /* ZHRoundDisplay.m */,
+				14695506205FB6BD00E0ADDC /* ZHRoundLayout.h */,
+				14695503205FB6BD00E0ADDC /* ZHRoundLayout.m */,
 			);
 			name = "环形";
 			sourceTree = "<group>";
@@ -707,26 +788,6 @@
 				70FA4C8E1F53C47F0078BFE6 /* ZHShoppingCartAnimation.m */,
 			);
 			name = "添加商品到购物车";
-			sourceTree = "<group>";
-		};
-		70FA4C981F53CA330078BFE6 /* scrollview视图布局 */ = {
-			isa = PBXGroup;
-			children = (
-				1443E6E72057A42000198A97 /* 滑动菜单联动页面 */,
-				70FA4C991F53CA4F0078BFE6 /* 轮播图 */,
-			);
-			name = "scrollview视图布局";
-			sourceTree = "<group>";
-		};
-		70FA4C991F53CA4F0078BFE6 /* 轮播图 */ = {
-			isa = PBXGroup;
-			children = (
-				70FA4C9D1F53CC110078BFE6 /* ZHBannerLoop.h */,
-				70FA4C9E1F53CC110078BFE6 /* ZHBannerLoop.m */,
-				70FA4C9A1F53CB490078BFE6 /* ZHBannerLoopView.h */,
-				70FA4C9B1F53CB490078BFE6 /* ZHBannerLoopView.m */,
-			);
-			name = "轮播图";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -801,6 +862,7 @@
 				70251C1A1F5E9FDD00405C57 /* 5.png in Resources */,
 				70251C251F5EA29400405C57 /* 6.jpeg in Resources */,
 				144D05F0205BC1C400A655A9 /* city.plist in Resources */,
+				146954E8205FA5AB00E0ADDC /* bankList.plist in Resources */,
 				1431EDA7203E6E3500F74EFA /* rsa.crt in Resources */,
 				70A0D1D11F4E747000670625 /* banner_tp02@2x.png in Resources */,
 				70A0D1D31F4E747000670625 /* banner_tp04@2x.png in Resources */,
@@ -881,50 +943,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				709FEE9F1F4D63E100285983 /* AppDelegate.m in Sources */,
-				1443E6EA2057A50B00198A97 /* ZHMenuController.m in Sources */,
 				70251C2B1F5EA42100405C57 /* ZHQinHaiLake.m in Sources */,
 				705C1B4E1F6A6CD900D01751 /* ZHWebImageCache.m in Sources */,
 				14C56745205A69AB00735FC8 /* ZHLoadingViewController.m in Sources */,
-				70FA4C9F1F53CC110078BFE6 /* ZHBannerLoop.m in Sources */,
 				144D05E7205BC1AB00A655A9 /* ZHChooseBankController.m in Sources */,
 				7019FE401F5FA5780086F6C1 /* ZHLearningController.m in Sources */,
 				705C1B451F6A6CAC00D01751 /* ZHCameraCall.m in Sources */,
 				70FA4C8F1F53C47F0078BFE6 /* ZHShoppingCartAnimation.m in Sources */,
-				70FA4C821F53C3490078BFE6 /* ZHCustomLayOut.m in Sources */,
 				705C1B481F6A6CC600D01751 /* ZHAVPlayerClass.m in Sources */,
-				70FA4C831F53C3490078BFE6 /* ZHWaterfallCell.m in Sources */,
 				1431EDB1203E6FA000F74EFA /* Base64.m in Sources */,
-				70FA4C9C1F53CB490078BFE6 /* ZHBannerLoopView.m in Sources */,
 				144D05CA205BB35000A655A9 /* ZHWaveTwoView.m in Sources */,
+				14695512205FB7C400E0ADDC /* ThirdController.m in Sources */,
 				709FEE9C1F4D63E100285983 /* main.m in Sources */,
+				144EBDC620638B8F006BEC8D /* ThirdBarController.m in Sources */,
+				144EBDC920639AE9006BEC8D /* RootController.m in Sources */,
+				140552D6206200FF00B39652 /* ZHBezierPathController.m in Sources */,
+				14695515205FB7DD00E0ADDC /* FourController.m in Sources */,
 				1431EDB7203E70A300F74EFA /* ZHRsaController.m in Sources */,
 				70C23ED21F553DE100FAEBAA /* MidViewController.m in Sources */,
+				1469550C205FB79000E0ADDC /* FirstController.m in Sources */,
+				14695507205FB6BD00E0ADDC /* ZHRoundLayout.m in Sources */,
 				14C5674B205A6A1900735FC8 /* ZHWaterView.m in Sources */,
+				146954F7205FB68A00E0ADDC /* ZHMenuView.m in Sources */,
 				148861C22058FCE1001AEA7C /* ZHLoadingView.m in Sources */,
 				1431EDB4203E705400F74EFA /* RSA.m in Sources */,
 				705C1B511F6A6CF300D01751 /* toolClassEncap.m in Sources */,
 				1431EDBD203E716300F74EFA /* ZHEncryptDataController.m in Sources */,
+				146954F2205FB67A00E0ADDC /* ZHBannerLoop.m in Sources */,
+				144EBDCF2063A14E006BEC8D /* SecondeBarController.m in Sources */,
+				144EBDC020638945006BEC8D /* FirstBarController.m in Sources */,
 				70043AC21F4E7CDA00E82B8F /* viewLayoutController.m in Sources */,
 				70C23ECF1F553DCE00FAEBAA /* LeftViewController.m in Sources */,
 				70251BEF1F5E887A00405C57 /* ZHTextFileController.m in Sources */,
 				70043ACB1F4E7D8B00E82B8F /* animationController.m in Sources */,
+				14695508205FB6BD00E0ADDC /* ZHRoundDisplay.m in Sources */,
 				705C1B4D1F6A6CD900D01751 /* ZHPictureCache.m in Sources */,
-				70C23EC51F5506D700FAEBAA /* ZHRoundDisplay.m in Sources */,
+				146954F1205FB67A00E0ADDC /* ZHBannerLoopView.m in Sources */,
 				144D05E8205BC1AB00A655A9 /* ZHChooseBankView.m in Sources */,
 				144D05C1205B8F3C00A655A9 /* ZHWaveController.m in Sources */,
-				1443E6ED2057A6B100198A97 /* ZHMenuView.m in Sources */,
 				70C23ED51F553DF400FAEBAA /* RightViewController.m in Sources */,
 				144D05F3205BC28D00A655A9 /* ZHChooseController.m in Sources */,
-				70FA4C841F53C3490078BFE6 /* ZHWaterfallStyle.m in Sources */,
 				70251C2E1F5EA4BA00405C57 /* QinHaiLakeTransportLine.m in Sources */,
 				14A906EC1FD8D48D006E2E84 /* ZHScanViewController.m in Sources */,
 				148A24F7203EA01900FC1B2D /* ZHMD5.m in Sources */,
 				70251C281F5EA3CD00405C57 /* ZHTravelStrategyController.m in Sources */,
 				1431EDBA203E70D300F74EFA /* ZHMD5Controller.m in Sources */,
+				146954FF205FB69C00E0ADDC /* ZHCustomLayOut.m in Sources */,
+				144EBDB92063487E006BEC8D /* SecondeController.m in Sources */,
 				70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */,
 				7019FE431F5FA63B0086F6C1 /* ZHPictureAndWordMixed.m in Sources */,
+				14695501205FB69C00E0ADDC /* ZHWaterfallStyle.m in Sources */,
 				144D05C4205B8F4900A655A9 /* ZHWaveView.m in Sources */,
+				140552DC206201F800B39652 /* ZHMaskView.m in Sources */,
 				144D05F6205BCCF500A655A9 /* QDPickerModel.m in Sources */,
+				146954F8205FB68A00E0ADDC /* ZHMenuController.m in Sources */,
+				14695500205FB69C00E0ADDC /* ZHWaterfallCell.m in Sources */,
 				148861C8205901AC001AEA7C /* ZHProgressBarController.m in Sources */,
 				70043ABE1F4E7C4A00E82B8F /* RootViewController.m in Sources */,
 				70FA4C961F53C6DD0078BFE6 /* ZHShoppingCart.m in Sources */,
@@ -932,7 +1005,6 @@
 				70C23ECC1F553DB600FAEBAA /* ZHDrawerRootController.m in Sources */,
 				144D05EF205BC1C400A655A9 /* ZHChooseCityController.m in Sources */,
 				144D05EE205BC1C300A655A9 /* ZHChooseCityView.m in Sources */,
-				70C23EC81F55071F00FAEBAA /* ZHRoundLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

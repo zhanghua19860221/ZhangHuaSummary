@@ -8,8 +8,16 @@
 
 #import "ZHChooseBankView.h"
 #import "QDPickerModel.h"
+//获取屏幕宽高
+#define WIDTH self.frame.size.width
+
+#define HEIGHT self.frame.size.height
 
 @interface ZHChooseBankView()<UIImagePickerControllerDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
+{
+    NSString *z_bankName;//记录当前银行名称
+    UIView *z_chooseView;//背景视图
+}
 
 @property (nonatomic,strong)UIPickerView * pickerView;//自定义pickerview
 @property (nonatomic,strong)NSMutableArray * dataArray;//保存要展示内容
@@ -22,142 +30,31 @@
 -(id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = COLORFromRGB(0xf9f9f9);
+        self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.4];
         [self initPickerDataSource];
+        z_bankName = @"中国银行";
         [self initView];
-        [self addSubview:self.pickerView];
+        [self pickerView];
+        [self changeChooseBlock];
     }
     return self;
+}
+-(void)changeChooseBlock{
+    [UIView animateWithDuration:0.5 animations:^{
+        z_chooseView.frame = CGRectMake(0, HEIGHT-240, WIDTH, 240);
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+    
 }
 /**
  初始化选择器数据
  */
 - (void)initPickerDataSource{
-    NSDictionary *tempDic = @{@"status":@"1000",
-                              @"desc": @"Normal Returned",
-                              @"data": @[
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"浦发银行(暂不支持)",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/SPDB.png",
-                                          @"numb": @"310290000013"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"工商银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/ICBC.png",
-                                          @"numb": @"102100099996"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"农业银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/ABC.png",
-                                          @"numb": @"103100000026"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"中国银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/BOC.png",
-                                          @"numb": @"104100000004"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"建设银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/CCB.png",
-                                          @"numb": @"105100000017"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"交通银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/BCM.png",
-                                          @"numb": @"301290000007"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"中信银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/CITIC.png",
-                                          @"numb": @"302100011000"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"招商银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/CMB.png",
-                                          @"numb": @"308584000013"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"光大银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/CEB.png",
-                                          @"numb": @"303100000006"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"华夏银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/HXBANK.png",
-                                          @"numb": @"304100040000"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"民生银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/CMBC.png",
-                                          @"numb": @"305100000013"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"广发银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/BCM.png",
-                                          @"numb": @"306581000003"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"兴业银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/CIB.png",
-                                          @"numb": @"309391000011"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"平安银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/PAB.png",
-                                          @"numb": @"307584007998"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"恒丰银行(暂不支持)",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/HF.png",
-                                          @"numb": @"315456000105"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"浙商银行(暂不支持)",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/ZHESHANG.png",
-                                          @"numb": @"316331000018"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"渤海银行(暂不支持)",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/BH.png",
-                                          @"numb": @"318110000014"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"邮储银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/PSBC.png",
-                                          @"numb": @"403100000004"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"北京银行",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/BOB.png",
-                                          @"numb": @"313100000013"
-                                          },
-                                      @{
-                                          @"summ": @"单笔5万，日累计20万",
-                                          @"name": @"上海银行(暂不支持)",
-                                          @"logo": @"http://oo6o93zxg.bkt.clouddn.com//BankInfo/BCM.png",
-                                          @"numb": @"325290000012"
-                                          }
-                                      ]
-                              };
+
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"bankList" ofType:@"plist"];
+    NSDictionary *tempDic = [NSDictionary dictionaryWithContentsOfFile:plistPath];
     NSArray *array = tempDic[@"data"];
     
     for (NSDictionary *dic in array) {
@@ -168,7 +65,13 @@
     
 }
 -(void)initView{
+    
+    z_chooseView = [[UIView alloc] initWithFrame:CGRectMake(0, HEIGHT, WIDTH, 240)];
+    [self addSubview:z_chooseView];
+    z_chooseView.backgroundColor = COLORFromRGB(0xf9f9f9);
+    
     UIButton *cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    cancelBtn.frame = CGRectMake(15, 5, 60, 30);
     [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
     cancelBtn.backgroundColor = COLORFromRGB(0xe10000);
     [cancelBtn setTitleColor:COLORFromRGB(0xffffff) forState:UIControlStateNormal];
@@ -176,28 +79,20 @@
     cancelBtn.layer.cornerRadius = 3;
     [cancelBtn addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
     cancelBtn.titleLabel.font = [UIFont systemFontOfSize:18];
-    [self addSubview:cancelBtn];
-    [cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self).offset(5);
-        make.left.equalTo(self).offset(15);
-        make.width.mas_equalTo(60);
-        make.height.mas_equalTo(30);
-    }];
+    [z_chooseView addSubview:cancelBtn];
+
+    
     UIButton *OKBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     OKBtn.backgroundColor = COLORFromRGB(0xe10000);
+    OKBtn.frame = CGRectMake(WIDTH-75, 5, 60, 30);
     [OKBtn addTarget:self action:@selector(okClick:) forControlEvents:UIControlEventTouchUpInside];
     [OKBtn setTitleColor:COLORFromRGB(0xffffff) forState:UIControlStateNormal];
     [OKBtn setTitle:@"确定" forState:UIControlStateNormal];
     OKBtn.titleLabel.font = [UIFont systemFontOfSize:18];
     OKBtn.layer.masksToBounds = YES;
     OKBtn.layer.cornerRadius = 3;
-    [self addSubview:OKBtn];
-    [OKBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self).offset(5);
-        make.right.equalTo(self).offset(-15);
-        make.width.mas_equalTo(60);
-        make.height.mas_equalTo(30);
-    }];
+    [z_chooseView addSubview:OKBtn];
+
     
 }
 
@@ -208,11 +103,17 @@
 - (UIPickerView *)pickerView {
     
     if (!_pickerView) {
-        _pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0,40, SC_WIDTH, 200/SCALE_Y)];
+        _pickerView = [[UIPickerView alloc] init];
         _pickerView.backgroundColor = [UIColor whiteColor];
         _pickerView.dataSource = self;
         _pickerView.delegate = self;
         [_pickerView selectRow:3 inComponent:0 animated:NO];
+        [z_chooseView addSubview:_pickerView];
+        [_pickerView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(z_chooseView.mas_bottom);
+            make.right.left.equalTo(z_chooseView);
+            make.height.mas_equalTo(200);
+        }];
         
     }
     return _pickerView;
@@ -240,7 +141,7 @@
 //行宽度
 - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component{
     
-    return SC_WIDTH;
+    return WIDTH;
 }
 //行高度
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component{
@@ -250,7 +151,9 @@
 //记录当前选择的那家银行
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     QDPickerModel *model = self.dataArray[row];
-    NSLog(@"%@",model.name);
+    z_bankName = model.name;
+//    NSLog(@"%@",model.name);
+    
     
 }
 //自定义pickerView的布局
@@ -284,9 +187,18 @@
     conditionLabel.frame = CGRectMake(100/SCALE_X+40,23,200,12);
     [view addSubview:conditionLabel];
     
-    
     return view;
 }
+
+/**
+ 确认选择银行按钮回调block
+
+ */
+-(void)getChooseBank:(chooseBankBlock)chooseBank{
+    
+    self.chooseBankBlock = chooseBank;
+}
+
 /**
  银行选择弹出框 确定按钮点击事件
  
@@ -294,6 +206,16 @@
 - (void)okClick:(UIButton*)btn{
 
     
+    [UIView animateWithDuration:0.5 animations:^{
+        z_chooseView.frame = CGRectMake(0, HEIGHT, WIDTH, 240);
+        self.alpha = 0.0;
+        
+    } completion:^(BOOL finished) {
+        self.chooseBankBlock(z_bankName);
+        self.hidden = YES;
+
+    }];
+
 }
 /**
  银行选择弹出框 取消按钮点击事件
@@ -301,8 +223,27 @@
  */
 - (void)cancelClick:(UIButton*)btn{
     
-    
+    [UIView animateWithDuration:0.5 animations:^{
+        z_chooseView.frame = CGRectMake(0, HEIGHT, WIDTH, 240);
+        self.alpha = 0.0;
 
+    } completion:^(BOOL finished) {
+        self.hidden = YES;
+
+    }];
+
+}
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        z_chooseView.frame = CGRectMake(0, HEIGHT, WIDTH, 240);
+        self.alpha = 0.0;
+
+    } completion:^(BOOL finished) {
+        self.hidden = YES;
+
+    }];
+    
 }
 /*
 // Only override drawRect: if you perform custom drawing.

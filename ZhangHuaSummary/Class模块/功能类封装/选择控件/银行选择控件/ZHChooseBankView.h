@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef void(^chooseBankBlock)(NSString *);
 
 @interface ZHChooseBankView : UIView
+
+@property (copy , nonatomic)chooseBankBlock  chooseBankBlock;
+
+-(void)getChooseBank:(chooseBankBlock)chooseBank;
 
 @end

@@ -1,29 +1,25 @@
 //
-//  viewLayoutController.m
+//  SecondeBarController.m
 //  ZhangHuaSummary
 //
-//  Created by zhanghua0221 on 17/8/24.
-//  Copyright © 2017年 zhanghua0221. All rights reserved.
+//  Created by 张华 on 2018/3/22.
+//  Copyright © 2018年 zhanghua0221. All rights reserved.
 //
 
-#import "viewLayoutController.h"
+#import "SecondeBarController.h"
 
-@interface viewLayoutController ()
+@interface SecondeBarController ()
 
 @end
 
-@implementation viewLayoutController
+@implementation SecondeBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initTableViewData];
+
     // Do any additional setup after loading the view.
 }
--(void)initTableViewData{
-    
-    self.tableListArray = @[@"瀑布流",@"轮播图",@"环形",@"滑动菜单联动页面",@"贝塞尔曲线",@"原生TabBarController"];
-    self.controllerTitle = @[@"ZHWaterfallStyle",@"ZHBannerLoop",@"ZHRoundDisplay",@"ZHMenuController",@"ZHBezierPathController",@"RootController"];
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

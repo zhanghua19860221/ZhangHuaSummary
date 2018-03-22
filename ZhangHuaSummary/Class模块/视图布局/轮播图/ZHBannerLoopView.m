@@ -7,6 +7,7 @@
 //
 
 #import "ZHBannerLoopView.h"
+
 #define WIDTH  self.frame.size.width
 #define HEIGHT self.frame.size.height
 
@@ -33,9 +34,6 @@
     self.bannerScroll.pagingEnabled = YES;
     self.bannerScroll.showsHorizontalScrollIndicator = NO ;
     self.bannerScroll.delegate = self ;
-    
-    //使用系统导航栏的话使用添加下面一句话，不然有错位
-    self.bannerScroll.contentInset=UIEdgeInsetsMake(-64, 0, 0, 0);
     
     for (int i = 0; i < self.bannerArray.count+1; i++) {
         

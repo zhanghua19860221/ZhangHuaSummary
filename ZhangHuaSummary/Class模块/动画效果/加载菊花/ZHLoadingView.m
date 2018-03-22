@@ -32,7 +32,7 @@
         [self addSubview:_progressView];
         [_progressView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self.mas_centerX);
-            make.centerY.equalTo(self.mas_centerY);
+            make.centerY.equalTo(self.mas_centerY).offset(-10);
             
         }];
         [_progressView startAnimating];
