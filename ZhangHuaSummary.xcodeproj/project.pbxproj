@@ -9,16 +9,11 @@
 /* Begin PBXBuildFile section */
 		140552D6206200FF00B39652 /* ZHBezierPathController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140552D5206200FF00B39652 /* ZHBezierPathController.m */; };
 		140552DC206201F800B39652 /* ZHMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 140552DB206201F800B39652 /* ZHMaskView.m */; };
-		1431EDA4203E6E3500F74EFA /* p.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 1431ED9F203E6E3500F74EFA /* p.p12 */; };
-		1431EDA5203E6E3500F74EFA /* rsa.csr in Resources */ = {isa = PBXBuildFile; fileRef = 1431EDA0203E6E3500F74EFA /* rsa.csr */; };
-		1431EDA6203E6E3500F74EFA /* rsa.der in Resources */ = {isa = PBXBuildFile; fileRef = 1431EDA1203E6E3500F74EFA /* rsa.der */; };
-		1431EDA7203E6E3500F74EFA /* rsa.crt in Resources */ = {isa = PBXBuildFile; fileRef = 1431EDA2203E6E3500F74EFA /* rsa.crt */; };
-		1431EDA8203E6E3500F74EFA /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 1431EDA3203E6E3500F74EFA /* private.pem */; };
-		1431EDB1203E6FA000F74EFA /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDB0203E6FA000F74EFA /* Base64.m */; };
-		1431EDB4203E705400F74EFA /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDB3203E705400F74EFA /* RSA.m */; };
-		1431EDB7203E70A300F74EFA /* ZHRsaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDB6203E70A300F74EFA /* ZHRsaController.m */; };
-		1431EDBA203E70D300F74EFA /* ZHMD5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDB9203E70D300F74EFA /* ZHMD5Controller.m */; };
-		1431EDBD203E716300F74EFA /* ZHEncryptDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431EDBC203E716300F74EFA /* ZHEncryptDataController.m */; };
+		1448DA112068CCDA002427D8 /* UIButton+ZHCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 1448DA0F2068CCDA002427D8 /* UIButton+ZHCountDown.m */; };
+		1448DA162068CDCC002427D8 /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1448DA152068CDCC002427D8 /* SwitchViewController.m */; };
+		1448DA1A2068D38D002427D8 /* ShareChooseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1448DA192068D38D002427D8 /* ShareChooseController.m */; };
+		1448DA1D2068D3D1002427D8 /* ZHShareChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1448DA1C2068D3D1002427D8 /* ZHShareChooseView.m */; };
+		1448DA212068F5C8002427D8 /* WaveButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1448DA202068F5C8002427D8 /* WaveButtonController.m */; };
 		144D05C1205B8F3C00A655A9 /* ZHWaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C0205B8F3C00A655A9 /* ZHWaveController.m */; };
 		144D05C4205B8F4900A655A9 /* ZHWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C2205B8F4900A655A9 /* ZHWaveView.m */; };
 		144D05CA205BB35000A655A9 /* ZHWaveTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C9205BB35000A655A9 /* ZHWaveTwoView.m */; };
@@ -34,6 +29,8 @@
 		144EBDC620638B8F006BEC8D /* ThirdBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDC520638B8F006BEC8D /* ThirdBarController.m */; };
 		144EBDC920639AE9006BEC8D /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDC820639AE9006BEC8D /* RootController.m */; };
 		144EBDCF2063A14E006BEC8D /* SecondeBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDCE2063A14E006BEC8D /* SecondeBarController.m */; };
+		144EBDD42063B028006BEC8D /* ZHCallTeleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDD32063B028006BEC8D /* ZHCallTeleController.m */; };
+		144EBDD72063B04A006BEC8D /* ZHReadTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDD62063B04A006BEC8D /* ZHReadTextController.m */; };
 		145308671FD921DF00F6DC8E /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308631FD921DF00F6DC8E /* line.png */; };
 		145308681FD921DF00F6DC8E /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308641FD921DF00F6DC8E /* line@2x.png */; };
 		145308691FD921DF00F6DC8E /* pick_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 145308651FD921DF00F6DC8E /* pick_bg.png */; };
@@ -53,11 +50,38 @@
 		14695515205FB7DD00E0ADDC /* FourController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14695514205FB7DD00E0ADDC /* FourController.m */; };
 		148861C22058FCE1001AEA7C /* ZHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148861C12058FCE1001AEA7C /* ZHLoadingView.m */; };
 		148861C8205901AC001AEA7C /* ZHProgressBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148861C7205901AC001AEA7C /* ZHProgressBarController.m */; };
-		148A24F7203EA01900FC1B2D /* ZHMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A24F6203EA01900FC1B2D /* ZHMD5.m */; };
 		14A906E61FD8C8A9006E2E84 /* ZHQRCodePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A906E51FD8C8A9006E2E84 /* ZHQRCodePay.m */; };
 		14A906EC1FD8D48D006E2E84 /* ZHScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A906EB1FD8D48D006E2E84 /* ZHScanViewController.m */; };
+		14AB5840206885640068A9B2 /* ZHCallAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AB583F206885640068A9B2 /* ZHCallAlbumController.m */; };
+		14AB5843206885890068A9B2 /* ZHAlbumListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AB5842206885890068A9B2 /* ZHAlbumListController.m */; };
+		14AB5846206885CD0068A9B2 /* ZHCallCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AB5845206885CD0068A9B2 /* ZHCallCameraController.m */; };
+		14AB584C206887630068A9B2 /* CallCameraAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AB584B206887630068A9B2 /* CallCameraAlbumController.m */; };
+		14AB584E206890C20068A9B2 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AB584D206890C20068A9B2 /* Photos.framework */; };
+		14AB58522068B9550068A9B2 /* ZHCameraAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AB58512068B9550068A9B2 /* ZHCameraAlbumController.m */; };
+		14AB58572068C1C90068A9B2 /* ZHCountdownBtnController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AB58562068C1C90068A9B2 /* ZHCountdownBtnController.m */; };
+		14AB585D2068C2260068A9B2 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AB585C2068C2260068A9B2 /* ButtonViewController.m */; };
 		14C56745205A69AB00735FC8 /* ZHLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C56743205A69AA00735FC8 /* ZHLoadingViewController.m */; };
 		14C5674B205A6A1900735FC8 /* ZHWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C5674A205A6A1900735FC8 /* ZHWaterView.m */; };
+		14D713D02064F53400B0C520 /* PictureManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D713CF2064F53400B0C520 /* PictureManageController.m */; };
+		14EDAEE42064B08800C1BE3E /* PictureCompressionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EDAEE32064B08800C1BE3E /* PictureCompressionController.m */; };
+		14EDAEE82064B18000C1BE3E /* shareDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EDAEE72064B18000C1BE3E /* shareDelegate.m */; };
+		14F7F080206B79C9008762CB /* ZHMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F07C206B79C9008762CB /* ZHMD5.m */; };
+		14F7F081206B79C9008762CB /* ZHMD5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F07E206B79C9008762CB /* ZHMD5Controller.m */; };
+		14F7F087206B79EF008762CB /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 14F7F082206B79EF008762CB /* private.pem */; };
+		14F7F088206B79EF008762CB /* rsa.der in Resources */ = {isa = PBXBuildFile; fileRef = 14F7F083206B79EF008762CB /* rsa.der */; };
+		14F7F089206B79EF008762CB /* rsa.crt in Resources */ = {isa = PBXBuildFile; fileRef = 14F7F084206B79EF008762CB /* rsa.crt */; };
+		14F7F08A206B79EF008762CB /* p.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 14F7F085206B79EF008762CB /* p.p12 */; };
+		14F7F08B206B79EF008762CB /* rsa.csr in Resources */ = {isa = PBXBuildFile; fileRef = 14F7F086206B79EF008762CB /* rsa.csr */; };
+		14F7F092206B7A05008762CB /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F08C206B7A04008762CB /* RSA.m */; };
+		14F7F093206B7A05008762CB /* ZHRsaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F08E206B7A04008762CB /* ZHRsaController.m */; };
+		14F7F094206B7A05008762CB /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F091206B7A05008762CB /* Base64.m */; };
+		14F7F099206B7AE3008762CB /* ZHKeyChina.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F098206B7AE3008762CB /* ZHKeyChina.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14F7F09C206B7B02008762CB /* KeyChinaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F09B206B7B02008762CB /* KeyChinaController.m */; };
+		14F7F09E206B7B31008762CB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F7F09D206B7B31008762CB /* Security.framework */; };
+		14F7F0A1206B7DB1008762CB /* ZHEncryptDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F0A0206B7DB0008762CB /* ZHEncryptDataController.m */; };
+		14F7F0A7206B8295008762CB /* ZHFMDBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F0A6206B8295008762CB /* ZHFMDBController.m */; };
+		14F7F0AA206B8984008762CB /* ZHFMDBDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F0A9206B8984008762CB /* ZHFMDBDataModel.m */; };
+		14F7F0AE206BA0E5008762CB /* ShowStateInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F0AD206BA0E5008762CB /* ShowStateInfoController.m */; };
 		3AAFDDAB443874F228F789FA /* libPods-ZhangHuaSummary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E41A269E9143FEC8EFC38F60 /* libPods-ZhangHuaSummary.a */; };
 		70043ABE1F4E7C4A00E82B8F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043ABB1F4E7C4A00E82B8F /* RootViewController.m */; };
 		70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043ABD1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m */; };
@@ -78,7 +102,6 @@
 		704915161F56546F00DA2B5A /* leftImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 704915131F56546F00DA2B5A /* leftImage.jpg */; };
 		704915171F56546F00DA2B5A /* mid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 704915141F56546F00DA2B5A /* mid.jpg */; };
 		704915181F56546F00DA2B5A /* right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 704915151F56546F00DA2B5A /* right.jpg */; };
-		705C1B451F6A6CAC00D01751 /* ZHCameraCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C1B441F6A6CAC00D01751 /* ZHCameraCall.m */; };
 		705C1B481F6A6CC600D01751 /* ZHAVPlayerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C1B471F6A6CC600D01751 /* ZHAVPlayerClass.m */; };
 		705C1B4D1F6A6CD900D01751 /* ZHPictureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C1B4A1F6A6CD900D01751 /* ZHPictureCache.m */; };
 		705C1B4E1F6A6CD900D01751 /* ZHWebImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C1B4C1F6A6CD900D01751 /* ZHWebImageCache.m */; };
@@ -110,21 +133,16 @@
 		140552D5206200FF00B39652 /* ZHBezierPathController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHBezierPathController.m; path = "Class模块/视图布局/贝塞尔曲线/ZHBezierPathController.m"; sourceTree = "<group>"; };
 		140552DA206201F800B39652 /* ZHMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHMaskView.h; path = "Class模块/视图布局/贝塞尔曲线/ZHMaskView.h"; sourceTree = "<group>"; };
 		140552DB206201F800B39652 /* ZHMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHMaskView.m; path = "Class模块/视图布局/贝塞尔曲线/ZHMaskView.m"; sourceTree = "<group>"; };
-		1431ED9F203E6E3500F74EFA /* p.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = p.p12; sourceTree = "<group>"; };
-		1431EDA0203E6E3500F74EFA /* rsa.csr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa.csr; sourceTree = "<group>"; };
-		1431EDA1203E6E3500F74EFA /* rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = rsa.der; sourceTree = "<group>"; };
-		1431EDA2203E6E3500F74EFA /* rsa.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa.crt; sourceTree = "<group>"; };
-		1431EDA3203E6E3500F74EFA /* private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private.pem; sourceTree = "<group>"; };
-		1431EDAF203E6FA000F74EFA /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = "Class模块/数据加密/RSA/Base64.h"; sourceTree = "<group>"; };
-		1431EDB0203E6FA000F74EFA /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = "Class模块/数据加密/RSA/Base64.m"; sourceTree = "<group>"; };
-		1431EDB2203E705400F74EFA /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSA.h; path = "Class模块/数据加密/RSA/RSA.h"; sourceTree = "<group>"; };
-		1431EDB3203E705400F74EFA /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSA.m; path = "Class模块/数据加密/RSA/RSA.m"; sourceTree = "<group>"; };
-		1431EDB5203E70A300F74EFA /* ZHRsaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHRsaController.h; path = "Class模块/数据加密/RSA/ZHRsaController.h"; sourceTree = "<group>"; };
-		1431EDB6203E70A300F74EFA /* ZHRsaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHRsaController.m; path = "Class模块/数据加密/RSA/ZHRsaController.m"; sourceTree = "<group>"; };
-		1431EDB8203E70D300F74EFA /* ZHMD5Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHMD5Controller.h; path = "Class模块/数据加密/MD5/ZHMD5Controller.h"; sourceTree = "<group>"; };
-		1431EDB9203E70D300F74EFA /* ZHMD5Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHMD5Controller.m; path = "Class模块/数据加密/MD5/ZHMD5Controller.m"; sourceTree = "<group>"; };
-		1431EDBB203E716300F74EFA /* ZHEncryptDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHEncryptDataController.h; path = "Class模块/数据加密/ZHEncryptDataController.h"; sourceTree = "<group>"; };
-		1431EDBC203E716300F74EFA /* ZHEncryptDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHEncryptDataController.m; path = "Class模块/数据加密/ZHEncryptDataController.m"; sourceTree = "<group>"; };
+		1448DA0F2068CCDA002427D8 /* UIButton+ZHCountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZHCountDown.m"; sourceTree = "<group>"; };
+		1448DA102068CCDA002427D8 /* UIButton+ZHCountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZHCountDown.h"; sourceTree = "<group>"; };
+		1448DA142068CDCC002427D8 /* SwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SwitchViewController.h; path = "Class模块/Button(按钮)/开关按钮/SwitchViewController.h"; sourceTree = "<group>"; };
+		1448DA152068CDCC002427D8 /* SwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SwitchViewController.m; path = "Class模块/Button(按钮)/开关按钮/SwitchViewController.m"; sourceTree = "<group>"; };
+		1448DA182068D38D002427D8 /* ShareChooseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ShareChooseController.h; path = "Class模块/功能类封装/选择控件/分享选择视图/ShareChooseController.h"; sourceTree = "<group>"; };
+		1448DA192068D38D002427D8 /* ShareChooseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ShareChooseController.m; path = "Class模块/功能类封装/选择控件/分享选择视图/ShareChooseController.m"; sourceTree = "<group>"; };
+		1448DA1B2068D3D1002427D8 /* ZHShareChooseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHShareChooseView.h; path = "Class模块/功能类封装/选择控件/分享选择视图/ZHShareChooseView.h"; sourceTree = "<group>"; };
+		1448DA1C2068D3D1002427D8 /* ZHShareChooseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHShareChooseView.m; path = "Class模块/功能类封装/选择控件/分享选择视图/ZHShareChooseView.m"; sourceTree = "<group>"; };
+		1448DA1F2068F5C8002427D8 /* WaveButtonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WaveButtonController.h; path = "Class模块/Button(按钮)/水纹按钮/WaveButtonController.h"; sourceTree = "<group>"; };
+		1448DA202068F5C8002427D8 /* WaveButtonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WaveButtonController.m; path = "Class模块/Button(按钮)/水纹按钮/WaveButtonController.m"; sourceTree = "<group>"; };
 		144D05BF205B8F3C00A655A9 /* ZHWaveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHWaveController.h; path = "Class模块/动画效果/波浪/ZHWaveController.h"; sourceTree = "<group>"; };
 		144D05C0205B8F3C00A655A9 /* ZHWaveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHWaveController.m; path = "Class模块/动画效果/波浪/ZHWaveController.m"; sourceTree = "<group>"; };
 		144D05C2205B8F4900A655A9 /* ZHWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHWaveView.m; path = "Class模块/动画效果/波浪/ZHWaveView.m"; sourceTree = "<group>"; };
@@ -154,6 +172,10 @@
 		144EBDC820639AE9006BEC8D /* RootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RootController.m; path = "Class模块/视图布局/原生TabBarController/RootController.m"; sourceTree = "<group>"; };
 		144EBDCD2063A14E006BEC8D /* SecondeBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SecondeBarController.h; path = "Class模块/视图布局/原生TabBarController/SecondeBarController.h"; sourceTree = "<group>"; };
 		144EBDCE2063A14E006BEC8D /* SecondeBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SecondeBarController.m; path = "Class模块/视图布局/原生TabBarController/SecondeBarController.m"; sourceTree = "<group>"; };
+		144EBDD22063B028006BEC8D /* ZHCallTeleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHCallTeleController.h; path = "Class模块/功能类封装/拨打电话/ZHCallTeleController.h"; sourceTree = "<group>"; };
+		144EBDD32063B028006BEC8D /* ZHCallTeleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHCallTeleController.m; path = "Class模块/功能类封装/拨打电话/ZHCallTeleController.m"; sourceTree = "<group>"; };
+		144EBDD52063B04A006BEC8D /* ZHReadTextController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHReadTextController.h; path = "Class模块/功能类封装/文本阅读播报/ZHReadTextController.h"; sourceTree = "<group>"; };
+		144EBDD62063B04A006BEC8D /* ZHReadTextController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHReadTextController.m; path = "Class模块/功能类封装/文本阅读播报/ZHReadTextController.m"; sourceTree = "<group>"; };
 		145308631FD921DF00F6DC8E /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = "Class模块/功能类封装/二维码扫描支付/line.png"; sourceTree = "<group>"; };
 		145308641FD921DF00F6DC8E /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "line@2x.png"; path = "Class模块/功能类封装/二维码扫描支付/line@2x.png"; sourceTree = "<group>"; };
 		145308651FD921DF00F6DC8E /* pick_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pick_bg.png; path = "Class模块/功能类封装/二维码扫描支付/pick_bg.png"; sourceTree = "<group>"; };
@@ -187,16 +209,63 @@
 		148861C12058FCE1001AEA7C /* ZHLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHLoadingView.m; path = "Class模块/动画效果/加载菊花/ZHLoadingView.m"; sourceTree = "<group>"; };
 		148861C6205901AC001AEA7C /* ZHProgressBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHProgressBarController.h; path = "Class模块/动画效果/进度条/ZHProgressBarController.h"; sourceTree = "<group>"; };
 		148861C7205901AC001AEA7C /* ZHProgressBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHProgressBarController.m; path = "Class模块/动画效果/进度条/ZHProgressBarController.m"; sourceTree = "<group>"; };
-		148A24F5203EA01900FC1B2D /* ZHMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHMD5.h; path = "Class模块/数据加密/MD5/ZHMD5.h"; sourceTree = "<group>"; };
-		148A24F6203EA01900FC1B2D /* ZHMD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHMD5.m; path = "Class模块/数据加密/MD5/ZHMD5.m"; sourceTree = "<group>"; };
 		14A906E41FD8C8A9006E2E84 /* ZHQRCodePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHQRCodePay.h; path = "Class模块/功能类封装/二维码扫描支付/ZHQRCodePay.h"; sourceTree = "<group>"; };
 		14A906E51FD8C8A9006E2E84 /* ZHQRCodePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHQRCodePay.m; path = "Class模块/功能类封装/二维码扫描支付/ZHQRCodePay.m"; sourceTree = "<group>"; };
 		14A906EA1FD8D48D006E2E84 /* ZHScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHScanViewController.h; path = "Class模块/功能类封装/二维码扫描支付/ZHScanViewController.h"; sourceTree = "<group>"; };
 		14A906EB1FD8D48D006E2E84 /* ZHScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHScanViewController.m; path = "Class模块/功能类封装/二维码扫描支付/ZHScanViewController.m"; sourceTree = "<group>"; };
+		14AB583E206885640068A9B2 /* ZHCallAlbumController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHCallAlbumController.h; path = "ZhangHuaSummary/Class模块/功能类封装/调用相机相册/调用相册/ZHCallAlbumController.h"; sourceTree = SOURCE_ROOT; };
+		14AB583F206885640068A9B2 /* ZHCallAlbumController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHCallAlbumController.m; path = "ZhangHuaSummary/Class模块/功能类封装/调用相机相册/调用相册/ZHCallAlbumController.m"; sourceTree = SOURCE_ROOT; };
+		14AB5841206885890068A9B2 /* ZHAlbumListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHAlbumListController.h; path = "ZhangHuaSummary/Class模块/功能类封装/调用相机相册/调用相册列表/ZHAlbumListController.h"; sourceTree = SOURCE_ROOT; };
+		14AB5842206885890068A9B2 /* ZHAlbumListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHAlbumListController.m; path = "ZhangHuaSummary/Class模块/功能类封装/调用相机相册/调用相册列表/ZHAlbumListController.m"; sourceTree = SOURCE_ROOT; };
+		14AB5844206885CD0068A9B2 /* ZHCallCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHCallCameraController.h; path = "ZhangHuaSummary/Class模块/功能类封装/调用相机相册/调用相机/ZHCallCameraController.h"; sourceTree = SOURCE_ROOT; };
+		14AB5845206885CD0068A9B2 /* ZHCallCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHCallCameraController.m; path = "ZhangHuaSummary/Class模块/功能类封装/调用相机相册/调用相机/ZHCallCameraController.m"; sourceTree = SOURCE_ROOT; };
+		14AB584A206887630068A9B2 /* CallCameraAlbumController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CallCameraAlbumController.h; path = "Class模块/功能类封装/调用相机相册/CallCameraAlbumController.h"; sourceTree = "<group>"; };
+		14AB584B206887630068A9B2 /* CallCameraAlbumController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CallCameraAlbumController.m; path = "Class模块/功能类封装/调用相机相册/CallCameraAlbumController.m"; sourceTree = "<group>"; };
+		14AB584D206890C20068A9B2 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		14AB58502068B9550068A9B2 /* ZHCameraAlbumController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHCameraAlbumController.h; path = "ZhangHuaSummary/Class模块/功能类封装/调用相机相册/相机和相册/ZHCameraAlbumController.h"; sourceTree = SOURCE_ROOT; };
+		14AB58512068B9550068A9B2 /* ZHCameraAlbumController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHCameraAlbumController.m; path = "ZhangHuaSummary/Class模块/功能类封装/调用相机相册/相机和相册/ZHCameraAlbumController.m"; sourceTree = SOURCE_ROOT; };
+		14AB58552068C1C90068A9B2 /* ZHCountdownBtnController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCountdownBtnController.h; sourceTree = "<group>"; };
+		14AB58562068C1C90068A9B2 /* ZHCountdownBtnController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCountdownBtnController.m; sourceTree = "<group>"; };
+		14AB585B2068C2260068A9B2 /* ButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ButtonViewController.h; path = "Class模块/Button(按钮)/ButtonViewController.h"; sourceTree = "<group>"; };
+		14AB585C2068C2260068A9B2 /* ButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ButtonViewController.m; path = "Class模块/Button(按钮)/ButtonViewController.m"; sourceTree = "<group>"; };
 		14C56743205A69AA00735FC8 /* ZHLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHLoadingViewController.m; path = "Class模块/动画效果/加载菊花/ZHLoadingViewController.m"; sourceTree = "<group>"; };
 		14C56744205A69AB00735FC8 /* ZHLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHLoadingViewController.h; path = "Class模块/动画效果/加载菊花/ZHLoadingViewController.h"; sourceTree = "<group>"; };
 		14C56749205A6A1900735FC8 /* ZHWaterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHWaterView.h; path = "Class模块/动画效果/进度条/ZHWaterView.h"; sourceTree = "<group>"; };
 		14C5674A205A6A1900735FC8 /* ZHWaterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHWaterView.m; path = "Class模块/动画效果/进度条/ZHWaterView.m"; sourceTree = "<group>"; };
+		14D713CE2064F53400B0C520 /* PictureManageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PictureManageController.h; path = "Class模块/功能类封装/图片处理功能/PictureManageController.h"; sourceTree = "<group>"; };
+		14D713CF2064F53400B0C520 /* PictureManageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PictureManageController.m; path = "Class模块/功能类封装/图片处理功能/PictureManageController.m"; sourceTree = "<group>"; };
+		14EDAEE22064B08800C1BE3E /* PictureCompressionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PictureCompressionController.h; path = "Class模块/功能类封装/图片压缩/PictureCompressionController.h"; sourceTree = "<group>"; };
+		14EDAEE32064B08800C1BE3E /* PictureCompressionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PictureCompressionController.m; path = "Class模块/功能类封装/图片压缩/PictureCompressionController.m"; sourceTree = "<group>"; };
+		14EDAEE62064B18000C1BE3E /* shareDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shareDelegate.h; sourceTree = "<group>"; };
+		14EDAEE72064B18000C1BE3E /* shareDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shareDelegate.m; sourceTree = "<group>"; };
+		14F7F07C206B79C9008762CB /* ZHMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHMD5.m; path = "Class模块/数据加密存储/MD5/ZHMD5.m"; sourceTree = "<group>"; };
+		14F7F07D206B79C9008762CB /* ZHMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHMD5.h; path = "Class模块/数据加密存储/MD5/ZHMD5.h"; sourceTree = "<group>"; };
+		14F7F07E206B79C9008762CB /* ZHMD5Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHMD5Controller.m; path = "Class模块/数据加密存储/MD5/ZHMD5Controller.m"; sourceTree = "<group>"; };
+		14F7F07F206B79C9008762CB /* ZHMD5Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHMD5Controller.h; path = "Class模块/数据加密存储/MD5/ZHMD5Controller.h"; sourceTree = "<group>"; };
+		14F7F082206B79EF008762CB /* private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = private.pem; path = "ZhangHuaSummary/Class模块/数据加密存储/RSA/RSA证书/private.pem"; sourceTree = SOURCE_ROOT; };
+		14F7F083206B79EF008762CB /* rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; name = rsa.der; path = "ZhangHuaSummary/Class模块/数据加密存储/RSA/RSA证书/rsa.der"; sourceTree = SOURCE_ROOT; };
+		14F7F084206B79EF008762CB /* rsa.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rsa.crt; path = "ZhangHuaSummary/Class模块/数据加密存储/RSA/RSA证书/rsa.crt"; sourceTree = SOURCE_ROOT; };
+		14F7F085206B79EF008762CB /* p.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; name = p.p12; path = "ZhangHuaSummary/Class模块/数据加密存储/RSA/RSA证书/p.p12"; sourceTree = SOURCE_ROOT; };
+		14F7F086206B79EF008762CB /* rsa.csr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rsa.csr; path = "ZhangHuaSummary/Class模块/数据加密存储/RSA/RSA证书/rsa.csr"; sourceTree = SOURCE_ROOT; };
+		14F7F08C206B7A04008762CB /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSA.m; path = "Class模块/数据加密存储/RSA/RSA.m"; sourceTree = "<group>"; };
+		14F7F08D206B7A04008762CB /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = "Class模块/数据加密存储/RSA/Base64.h"; sourceTree = "<group>"; };
+		14F7F08E206B7A04008762CB /* ZHRsaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHRsaController.m; path = "Class模块/数据加密存储/RSA/ZHRsaController.m"; sourceTree = "<group>"; };
+		14F7F08F206B7A04008762CB /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSA.h; path = "Class模块/数据加密存储/RSA/RSA.h"; sourceTree = "<group>"; };
+		14F7F090206B7A05008762CB /* ZHRsaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHRsaController.h; path = "Class模块/数据加密存储/RSA/ZHRsaController.h"; sourceTree = "<group>"; };
+		14F7F091206B7A05008762CB /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = "Class模块/数据加密存储/RSA/Base64.m"; sourceTree = "<group>"; };
+		14F7F097206B7AE3008762CB /* ZHKeyChina.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHKeyChina.h; path = "Class模块/数据加密存储/KeyChina/ZHKeyChina.h"; sourceTree = "<group>"; };
+		14F7F098206B7AE3008762CB /* ZHKeyChina.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHKeyChina.m; path = "Class模块/数据加密存储/KeyChina/ZHKeyChina.m"; sourceTree = "<group>"; };
+		14F7F09A206B7B02008762CB /* KeyChinaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KeyChinaController.h; path = "Class模块/数据加密存储/KeyChina/KeyChinaController.h"; sourceTree = "<group>"; };
+		14F7F09B206B7B02008762CB /* KeyChinaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KeyChinaController.m; path = "Class模块/数据加密存储/KeyChina/KeyChinaController.m"; sourceTree = "<group>"; };
+		14F7F09D206B7B31008762CB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		14F7F09F206B7DB0008762CB /* ZHEncryptDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHEncryptDataController.h; path = "Class模块/数据加密存储/ZHEncryptDataController.h"; sourceTree = "<group>"; };
+		14F7F0A0206B7DB0008762CB /* ZHEncryptDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHEncryptDataController.m; path = "Class模块/数据加密存储/ZHEncryptDataController.m"; sourceTree = "<group>"; };
+		14F7F0A5206B8295008762CB /* ZHFMDBController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHFMDBController.h; path = "Class模块/数据加密存储/FMDB/ZHFMDBController.h"; sourceTree = "<group>"; };
+		14F7F0A6206B8295008762CB /* ZHFMDBController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHFMDBController.m; path = "Class模块/数据加密存储/FMDB/ZHFMDBController.m"; sourceTree = "<group>"; };
+		14F7F0A8206B8984008762CB /* ZHFMDBDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHFMDBDataModel.h; path = "Class模块/数据加密存储/FMDB/ZHFMDBDataModel.h"; sourceTree = "<group>"; };
+		14F7F0A9206B8984008762CB /* ZHFMDBDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHFMDBDataModel.m; path = "Class模块/数据加密存储/FMDB/ZHFMDBDataModel.m"; sourceTree = "<group>"; };
+		14F7F0AC206BA0E5008762CB /* ShowStateInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ShowStateInfoController.h; path = "Class模块/动画效果/弹出展示信息/ShowStateInfoController.h"; sourceTree = "<group>"; };
+		14F7F0AD206BA0E5008762CB /* ShowStateInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ShowStateInfoController.m; path = "Class模块/动画效果/弹出展示信息/ShowStateInfoController.m"; sourceTree = "<group>"; };
 		70043ABA1F4E7C4A00E82B8F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = "main入口/RootViewController.h"; sourceTree = "<group>"; };
 		70043ABB1F4E7C4A00E82B8F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = "main入口/RootViewController.m"; sourceTree = "<group>"; };
 		70043ABC1F4E7C4A00E82B8F /* ZHBasicsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHBasicsTableViewController.h; path = "main入口/ZHBasicsTableViewController.h"; sourceTree = "<group>"; };
@@ -227,8 +296,6 @@
 		704915141F56546F00DA2B5A /* mid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mid.jpg; path = "Class模块/动画效果/抽屉/mid.jpg"; sourceTree = "<group>"; };
 		704915151F56546F00DA2B5A /* right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right.jpg; path = "Class模块/动画效果/抽屉/right.jpg"; sourceTree = "<group>"; };
 		7058FCDA1F6A304400369815 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		705C1B431F6A6CAC00D01751 /* ZHCameraCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCameraCall.h; path = "Class模块/功能类封装/调用摄像头/ZHCameraCall.h"; sourceTree = "<group>"; };
-		705C1B441F6A6CAC00D01751 /* ZHCameraCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCameraCall.m; path = "Class模块/功能类封装/调用摄像头/ZHCameraCall.m"; sourceTree = "<group>"; };
 		705C1B461F6A6CC600D01751 /* ZHAVPlayerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHAVPlayerClass.h; path = "Class模块/功能类封装/视频播放处理/ZHAVPlayerClass.h"; sourceTree = "<group>"; };
 		705C1B471F6A6CC600D01751 /* ZHAVPlayerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHAVPlayerClass.m; path = "Class模块/功能类封装/视频播放处理/ZHAVPlayerClass.m"; sourceTree = "<group>"; };
 		705C1B491F6A6CD900D01751 /* ZHPictureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPictureCache.h; path = "Class模块/功能类封装/图片的加载与缓存/ZHPictureCache.h"; sourceTree = "<group>"; };
@@ -274,6 +341,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F7F09E206B7B31008762CB /* Security.framework in Frameworks */,
+				14AB584E206890C20068A9B2 /* Photos.framework in Frameworks */,
 				705C1B541F6A74D900D01751 /* AssetsLibrary.framework in Frameworks */,
 				705C1B531F6A71A500D01751 /* MobileCoreServices.framework in Frameworks */,
 				3AAFDDAB443874F228F789FA /* libPods-ZhangHuaSummary.a in Frameworks */,
@@ -306,12 +375,12 @@
 		1431ED9B203E6C5D00F74EFA /* RSA */ = {
 			isa = PBXGroup;
 			children = (
-				1431EDB2203E705400F74EFA /* RSA.h */,
-				1431EDB3203E705400F74EFA /* RSA.m */,
-				1431EDAF203E6FA000F74EFA /* Base64.h */,
-				1431EDB0203E6FA000F74EFA /* Base64.m */,
-				1431EDB5203E70A300F74EFA /* ZHRsaController.h */,
-				1431EDB6203E70A300F74EFA /* ZHRsaController.m */,
+				14F7F08D206B7A04008762CB /* Base64.h */,
+				14F7F091206B7A05008762CB /* Base64.m */,
+				14F7F08F206B7A04008762CB /* RSA.h */,
+				14F7F08C206B7A04008762CB /* RSA.m */,
+				14F7F090206B7A05008762CB /* ZHRsaController.h */,
+				14F7F08E206B7A04008762CB /* ZHRsaController.m */,
 				1431ED9E203E6E3500F74EFA /* RSA证书 */,
 			);
 			name = RSA;
@@ -320,33 +389,35 @@
 		1431ED9C203E6C6B00F74EFA /* MD5 */ = {
 			isa = PBXGroup;
 			children = (
-				1431EDB8203E70D300F74EFA /* ZHMD5Controller.h */,
-				1431EDB9203E70D300F74EFA /* ZHMD5Controller.m */,
-				148A24F5203EA01900FC1B2D /* ZHMD5.h */,
-				148A24F6203EA01900FC1B2D /* ZHMD5.m */,
+				14F7F07D206B79C9008762CB /* ZHMD5.h */,
+				14F7F07C206B79C9008762CB /* ZHMD5.m */,
+				14F7F07F206B79C9008762CB /* ZHMD5Controller.h */,
+				14F7F07E206B79C9008762CB /* ZHMD5Controller.m */,
 			);
 			name = MD5;
 			sourceTree = "<group>";
 		};
-		1431ED9D203E6C7500F74EFA /* 数据加密 */ = {
+		1431ED9D203E6C7500F74EFA /* 数据加密存储 */ = {
 			isa = PBXGroup;
 			children = (
+				14F7F0A4206B823B008762CB /* FMDB */,
+				14F7F096206B7A69008762CB /* KeyChina */,
 				1431ED9B203E6C5D00F74EFA /* RSA */,
 				1431ED9C203E6C6B00F74EFA /* MD5 */,
-				1431EDBB203E716300F74EFA /* ZHEncryptDataController.h */,
-				1431EDBC203E716300F74EFA /* ZHEncryptDataController.m */,
+				14F7F09F206B7DB0008762CB /* ZHEncryptDataController.h */,
+				14F7F0A0206B7DB0008762CB /* ZHEncryptDataController.m */,
 			);
-			name = "数据加密";
+			name = "数据加密存储";
 			sourceTree = "<group>";
 		};
 		1431ED9E203E6E3500F74EFA /* RSA证书 */ = {
 			isa = PBXGroup;
 			children = (
-				1431ED9F203E6E3500F74EFA /* p.p12 */,
-				1431EDA0203E6E3500F74EFA /* rsa.csr */,
-				1431EDA1203E6E3500F74EFA /* rsa.der */,
-				1431EDA2203E6E3500F74EFA /* rsa.crt */,
-				1431EDA3203E6E3500F74EFA /* private.pem */,
+				14F7F085206B79EF008762CB /* p.p12 */,
+				14F7F082206B79EF008762CB /* private.pem */,
+				14F7F084206B79EF008762CB /* rsa.crt */,
+				14F7F086206B79EF008762CB /* rsa.csr */,
+				14F7F083206B79EF008762CB /* rsa.der */,
 			);
 			name = "RSA证书";
 			path = "Class模块/数据加密/RSA/RSA证书";
@@ -362,6 +433,35 @@
 				146954F4205FB68A00E0ADDC /* ZHMenuController.m */,
 			);
 			name = "滑动菜单联动页面";
+			sourceTree = "<group>";
+		};
+		1448DA122068CD25002427D8 /* 开关按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				1448DA142068CDCC002427D8 /* SwitchViewController.h */,
+				1448DA152068CDCC002427D8 /* SwitchViewController.m */,
+			);
+			name = "开关按钮";
+			sourceTree = "<group>";
+		};
+		1448DA172068D2E4002427D8 /* 分享选择视图 */ = {
+			isa = PBXGroup;
+			children = (
+				1448DA1B2068D3D1002427D8 /* ZHShareChooseView.h */,
+				1448DA1C2068D3D1002427D8 /* ZHShareChooseView.m */,
+				1448DA182068D38D002427D8 /* ShareChooseController.h */,
+				1448DA192068D38D002427D8 /* ShareChooseController.m */,
+			);
+			name = "分享选择视图";
+			sourceTree = "<group>";
+		};
+		1448DA1E2068F42F002427D8 /* 水纹按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				1448DA1F2068F5C8002427D8 /* WaveButtonController.h */,
+				1448DA202068F5C8002427D8 /* WaveButtonController.m */,
+			);
+			name = "水纹按钮";
 			sourceTree = "<group>";
 		};
 		144D05BB205B8E8500A655A9 /* 波浪 */ = {
@@ -406,6 +506,7 @@
 		144D05E1205BC13C00A655A9 /* 选择控件 */ = {
 			isa = PBXGroup;
 			children = (
+				1448DA172068D2E4002427D8 /* 分享选择视图 */,
 				144D05CB205BBC8600A655A9 /* 银行选择控件 */,
 				144D05CC205BBCAA00A655A9 /* 城市选择控件 */,
 				144D05F1205BC28D00A655A9 /* ZHChooseController.h */,
@@ -427,6 +528,24 @@
 				144EBDC520638B8F006BEC8D /* ThirdBarController.m */,
 			);
 			name = "原生TabBarController";
+			sourceTree = "<group>";
+		};
+		144EBDD02063AF91006BEC8D /* 文本阅读播报 */ = {
+			isa = PBXGroup;
+			children = (
+				144EBDD52063B04A006BEC8D /* ZHReadTextController.h */,
+				144EBDD62063B04A006BEC8D /* ZHReadTextController.m */,
+			);
+			name = "文本阅读播报";
+			sourceTree = "<group>";
+		};
+		144EBDD12063AFB5006BEC8D /* 拨打电话 */ = {
+			isa = PBXGroup;
+			children = (
+				144EBDD22063B028006BEC8D /* ZHCallTeleController.h */,
+				144EBDD32063B028006BEC8D /* ZHCallTeleController.m */,
+			);
+			name = "拨打电话";
 			sourceTree = "<group>";
 		};
 		146954EC205FB65A00E0ADDC /* 轮播图 */ = {
@@ -490,6 +609,150 @@
 				14A906EB1FD8D48D006E2E84 /* ZHScanViewController.m */,
 			);
 			name = "二维码扫描支付";
+			sourceTree = "<group>";
+		};
+		14AB583A206882950068A9B2 /* 调取相机相册 */ = {
+			isa = PBXGroup;
+			children = (
+				14AB584F2068B8C90068A9B2 /* 相机和相册 */,
+				14AB583D2068833D0068A9B2 /* 调用相册 */,
+				14AB583B2068833D0068A9B2 /* 调用相册列表 */,
+				14AB583C2068833D0068A9B2 /* 调用相机 */,
+				14AB584A206887630068A9B2 /* CallCameraAlbumController.h */,
+				14AB584B206887630068A9B2 /* CallCameraAlbumController.m */,
+			);
+			name = "调取相机相册";
+			sourceTree = "<group>";
+		};
+		14AB583B2068833D0068A9B2 /* 调用相册列表 */ = {
+			isa = PBXGroup;
+			children = (
+				14AB5841206885890068A9B2 /* ZHAlbumListController.h */,
+				14AB5842206885890068A9B2 /* ZHAlbumListController.m */,
+			);
+			name = "调用相册列表";
+			path = "Class模块/功能类封装/调用相册列表";
+			sourceTree = "<group>";
+		};
+		14AB583C2068833D0068A9B2 /* 调用相机 */ = {
+			isa = PBXGroup;
+			children = (
+				14AB5844206885CD0068A9B2 /* ZHCallCameraController.h */,
+				14AB5845206885CD0068A9B2 /* ZHCallCameraController.m */,
+			);
+			name = "调用相机";
+			path = "Class模块/功能类封装/调用相机";
+			sourceTree = "<group>";
+		};
+		14AB583D2068833D0068A9B2 /* 调用相册 */ = {
+			isa = PBXGroup;
+			children = (
+				14AB583E206885640068A9B2 /* ZHCallAlbumController.h */,
+				14AB583F206885640068A9B2 /* ZHCallAlbumController.m */,
+			);
+			name = "调用相册";
+			path = "Class模块/功能类封装/调用相册";
+			sourceTree = "<group>";
+		};
+		14AB584F2068B8C90068A9B2 /* 相机和相册 */ = {
+			isa = PBXGroup;
+			children = (
+				14AB58502068B9550068A9B2 /* ZHCameraAlbumController.h */,
+				14AB58512068B9550068A9B2 /* ZHCameraAlbumController.m */,
+			);
+			path = "相机和相册";
+			sourceTree = "<group>";
+		};
+		14AB58532068C1530068A9B2 /* Button(按钮) */ = {
+			isa = PBXGroup;
+			children = (
+				1448DA1E2068F42F002427D8 /* 水纹按钮 */,
+				1448DA122068CD25002427D8 /* 开关按钮 */,
+				14AB58542068C18B0068A9B2 /* 倒计时按钮 */,
+				14AB585B2068C2260068A9B2 /* ButtonViewController.h */,
+				14AB585C2068C2260068A9B2 /* ButtonViewController.m */,
+			);
+			name = "Button(按钮)";
+			sourceTree = "<group>";
+		};
+		14AB58542068C18B0068A9B2 /* 倒计时按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				14AB585E2068C5C40068A9B2 /* 倒计时按钮 */,
+			);
+			name = "倒计时按钮";
+			sourceTree = "<group>";
+		};
+		14AB585E2068C5C40068A9B2 /* 倒计时按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				1448DA102068CCDA002427D8 /* UIButton+ZHCountDown.h */,
+				1448DA0F2068CCDA002427D8 /* UIButton+ZHCountDown.m */,
+				14AB58552068C1C90068A9B2 /* ZHCountdownBtnController.h */,
+				14AB58562068C1C90068A9B2 /* ZHCountdownBtnController.m */,
+			);
+			name = "倒计时按钮";
+			path = "Class模块/Button(按钮)/倒计时按钮";
+			sourceTree = "<group>";
+		};
+		14D713CD2064F48900B0C520 /* 图片处理功能 */ = {
+			isa = PBXGroup;
+			children = (
+				704ED3EA1F594DED00377DE3 /* 图片缓存处理 */,
+				14EDAEE12064AE0200C1BE3E /* 图片压缩 */,
+				14D713CE2064F53400B0C520 /* PictureManageController.h */,
+				14D713CF2064F53400B0C520 /* PictureManageController.m */,
+			);
+			name = "图片处理功能";
+			sourceTree = "<group>";
+		};
+		14EDAEE12064AE0200C1BE3E /* 图片压缩 */ = {
+			isa = PBXGroup;
+			children = (
+				14EDAEE22064B08800C1BE3E /* PictureCompressionController.h */,
+				14EDAEE32064B08800C1BE3E /* PictureCompressionController.m */,
+			);
+			name = "图片压缩";
+			sourceTree = "<group>";
+		};
+		14EDAEE52064B18000C1BE3E /* ZHSingleClass(单例) */ = {
+			isa = PBXGroup;
+			children = (
+				14EDAEE62064B18000C1BE3E /* shareDelegate.h */,
+				14EDAEE72064B18000C1BE3E /* shareDelegate.m */,
+			);
+			path = "ZHSingleClass(单例)";
+			sourceTree = "<group>";
+		};
+		14F7F096206B7A69008762CB /* KeyChina */ = {
+			isa = PBXGroup;
+			children = (
+				14F7F097206B7AE3008762CB /* ZHKeyChina.h */,
+				14F7F098206B7AE3008762CB /* ZHKeyChina.m */,
+				14F7F09A206B7B02008762CB /* KeyChinaController.h */,
+				14F7F09B206B7B02008762CB /* KeyChinaController.m */,
+			);
+			name = KeyChina;
+			sourceTree = "<group>";
+		};
+		14F7F0A4206B823B008762CB /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				14F7F0A8206B8984008762CB /* ZHFMDBDataModel.h */,
+				14F7F0A9206B8984008762CB /* ZHFMDBDataModel.m */,
+				14F7F0A5206B8295008762CB /* ZHFMDBController.h */,
+				14F7F0A6206B8295008762CB /* ZHFMDBController.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		14F7F0AB206BA081008762CB /* 弹出展示信息 */ = {
+			isa = PBXGroup;
+			children = (
+				14F7F0AC206BA0E5008762CB /* ShowStateInfoController.h */,
+				14F7F0AD206BA0E5008762CB /* ShowStateInfoController.m */,
+			);
+			name = "弹出展示信息";
 			sourceTree = "<group>";
 		};
 		70043ACD1F4E7EAB00E82B8F /* 瀑布流 */ = {
@@ -585,6 +848,8 @@
 		7058FCD91F6A304400369815 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14F7F09D206B7B31008762CB /* Security.framework */,
+				14AB584D206890C20068A9B2 /* Photos.framework */,
 				705C1B521F6A71A500D01751 /* MobileCoreServices.framework */,
 				7058FCDA1F6A304400369815 /* AssetsLibrary.framework */,
 				E41A269E9143FEC8EFC38F60 /* libPods-ZhangHuaSummary.a */,
@@ -599,15 +864,6 @@
 				705C1B471F6A6CC600D01751 /* ZHAVPlayerClass.m */,
 			);
 			name = "视频播放处理";
-			sourceTree = "<group>";
-		};
-		706E044F1F67E198001E58FA /* 调用摄像头 */ = {
-			isa = PBXGroup;
-			children = (
-				705C1B431F6A6CAC00D01751 /* ZHCameraCall.h */,
-				705C1B441F6A6CAC00D01751 /* ZHCameraCall.m */,
-			);
-			name = "调用摄像头";
 			sourceTree = "<group>";
 		};
 		706FD2881F4D7EBE00E21A82 /* main 入口 */ = {
@@ -648,6 +904,7 @@
 		709FEE991F4D63E100285983 /* ZhangHuaSummary */ = {
 			isa = PBXGroup;
 			children = (
+				14EDAEE52064B18000C1BE3E /* ZHSingleClass(单例) */,
 				706FD2881F4D7EBE00E21A82 /* main 入口 */,
 				709FEEB11F4D7D8E00285983 /* Class 模块 */,
 				709FEE9A1F4D63E100285983 /* Supporting Files */,
@@ -668,7 +925,8 @@
 		709FEEB11F4D7D8E00285983 /* Class 模块 */ = {
 			isa = PBXGroup;
 			children = (
-				1431ED9D203E6C7500F74EFA /* 数据加密 */,
+				14AB58532068C1530068A9B2 /* Button(按钮) */,
+				1431ED9D203E6C7500F74EFA /* 数据加密存储 */,
 				70251BEB1F5E4D0900405C57 /* 文本文件 */,
 				709FEEB51F4D7DDB00285983 /* 视图布局 */,
 				709FEEB21F4D7DCF00285983 /* 动画效果 */,
@@ -680,6 +938,7 @@
 		709FEEB21F4D7DCF00285983 /* 动画效果 */ = {
 			isa = PBXGroup;
 			children = (
+				14F7F0AB206BA081008762CB /* 弹出展示信息 */,
 				144D05BB205B8E8500A655A9 /* 波浪 */,
 				148861BF2058F77B001AEA7C /* 进度条 */,
 				148861BD2058F751001AEA7C /* 加载菊花 */,
@@ -694,11 +953,13 @@
 		709FEEB31F4D7DD400285983 /* 功能类封装 */ = {
 			isa = PBXGroup;
 			children = (
+				14AB583A206882950068A9B2 /* 调取相机相册 */,
+				14D713CD2064F48900B0C520 /* 图片处理功能 */,
+				144EBDD12063AFB5006BEC8D /* 拨打电话 */,
+				144EBDD02063AF91006BEC8D /* 文本阅读播报 */,
 				144D05E1205BC13C00A655A9 /* 选择控件 */,
 				14A906E31FD8C69C006E2E84 /* 二维码扫描支付 */,
-				706E044F1F67E198001E58FA /* 调用摄像头 */,
 				706E044B1F67777C001E58FA /* 视频播放处理 */,
-				704ED3EA1F594DED00377DE3 /* 图片缓存处理 */,
 				705C1B4F1F6A6CF300D01751 /* toolClassEncap.h */,
 				705C1B501F6A6CF300D01751 /* toolClassEncap.m */,
 			);
@@ -855,32 +1116,32 @@
 				70251C181F5E9FDD00405C57 /* 3.png in Resources */,
 				709FEEAA1F4D63E100285983 /* LaunchScreen.storyboard in Resources */,
 				704915171F56546F00DA2B5A /* mid.jpg in Resources */,
-				1431EDA5203E6E3500F74EFA /* rsa.csr in Resources */,
-				1431EDA8203E6E3500F74EFA /* private.pem in Resources */,
+				14F7F089206B79EF008762CB /* rsa.crt in Resources */,
 				70251C171F5E9FDD00405C57 /* 2.png in Resources */,
 				70A0D1D01F4E747000670625 /* banner_tp01@2x.png in Resources */,
 				70251C1A1F5E9FDD00405C57 /* 5.png in Resources */,
 				70251C251F5EA29400405C57 /* 6.jpeg in Resources */,
 				144D05F0205BC1C400A655A9 /* city.plist in Resources */,
 				146954E8205FA5AB00E0ADDC /* bankList.plist in Resources */,
-				1431EDA7203E6E3500F74EFA /* rsa.crt in Resources */,
 				70A0D1D11F4E747000670625 /* banner_tp02@2x.png in Resources */,
 				70A0D1D31F4E747000670625 /* banner_tp04@2x.png in Resources */,
 				70251C161F5E9FDD00405C57 /* 1.png in Resources */,
 				704915161F56546F00DA2B5A /* leftImage.jpg in Resources */,
 				704915181F56546F00DA2B5A /* right.jpg in Resources */,
+				14F7F088206B79EF008762CB /* rsa.der in Resources */,
 				145308671FD921DF00F6DC8E /* line.png in Resources */,
 				709FEEA71F4D63E100285983 /* Assets.xcassets in Resources */,
 				70FA4C941F53C6DD0078BFE6 /* cart.png in Resources */,
 				70251C191F5E9FDD00405C57 /* 4.png in Resources */,
 				145308681FD921DF00F6DC8E /* line@2x.png in Resources */,
-				1431EDA6203E6E3500F74EFA /* rsa.der in Resources */,
 				70FA4C951F53C6DD0078BFE6 /* heheda.png in Resources */,
+				14F7F08A206B79EF008762CB /* p.p12 in Resources */,
 				1453086A1FD921DF00F6DC8E /* pick_bg@2x.png in Resources */,
+				14F7F087206B79EF008762CB /* private.pem in Resources */,
 				709FEEA51F4D63E100285983 /* Main.storyboard in Resources */,
 				145308691FD921DF00F6DC8E /* pick_bg.png in Resources */,
-				1431EDA4203E6E3500F74EFA /* p.p12 in Resources */,
 				70A0D1D21F4E747000670625 /* banner_tp03@2x.png in Resources */,
+				14F7F08B206B79EF008762CB /* rsa.csr in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,29 +1208,39 @@
 				705C1B4E1F6A6CD900D01751 /* ZHWebImageCache.m in Sources */,
 				14C56745205A69AB00735FC8 /* ZHLoadingViewController.m in Sources */,
 				144D05E7205BC1AB00A655A9 /* ZHChooseBankController.m in Sources */,
+				14AB5843206885890068A9B2 /* ZHAlbumListController.m in Sources */,
+				14AB5846206885CD0068A9B2 /* ZHCallCameraController.m in Sources */,
 				7019FE401F5FA5780086F6C1 /* ZHLearningController.m in Sources */,
-				705C1B451F6A6CAC00D01751 /* ZHCameraCall.m in Sources */,
+				14F7F080206B79C9008762CB /* ZHMD5.m in Sources */,
 				70FA4C8F1F53C47F0078BFE6 /* ZHShoppingCartAnimation.m in Sources */,
 				705C1B481F6A6CC600D01751 /* ZHAVPlayerClass.m in Sources */,
-				1431EDB1203E6FA000F74EFA /* Base64.m in Sources */,
+				14AB58572068C1C90068A9B2 /* ZHCountdownBtnController.m in Sources */,
+				14EDAEE42064B08800C1BE3E /* PictureCompressionController.m in Sources */,
+				1448DA212068F5C8002427D8 /* WaveButtonController.m in Sources */,
 				144D05CA205BB35000A655A9 /* ZHWaveTwoView.m in Sources */,
 				14695512205FB7C400E0ADDC /* ThirdController.m in Sources */,
 				709FEE9C1F4D63E100285983 /* main.m in Sources */,
 				144EBDC620638B8F006BEC8D /* ThirdBarController.m in Sources */,
+				14AB5840206885640068A9B2 /* ZHCallAlbumController.m in Sources */,
 				144EBDC920639AE9006BEC8D /* RootController.m in Sources */,
+				14F7F0A1206B7DB1008762CB /* ZHEncryptDataController.m in Sources */,
 				140552D6206200FF00B39652 /* ZHBezierPathController.m in Sources */,
 				14695515205FB7DD00E0ADDC /* FourController.m in Sources */,
-				1431EDB7203E70A300F74EFA /* ZHRsaController.m in Sources */,
+				14F7F092206B7A05008762CB /* RSA.m in Sources */,
 				70C23ED21F553DE100FAEBAA /* MidViewController.m in Sources */,
 				1469550C205FB79000E0ADDC /* FirstController.m in Sources */,
+				14AB584C206887630068A9B2 /* CallCameraAlbumController.m in Sources */,
 				14695507205FB6BD00E0ADDC /* ZHRoundLayout.m in Sources */,
+				14F7F0AA206B8984008762CB /* ZHFMDBDataModel.m in Sources */,
 				14C5674B205A6A1900735FC8 /* ZHWaterView.m in Sources */,
+				1448DA112068CCDA002427D8 /* UIButton+ZHCountDown.m in Sources */,
 				146954F7205FB68A00E0ADDC /* ZHMenuView.m in Sources */,
 				148861C22058FCE1001AEA7C /* ZHLoadingView.m in Sources */,
-				1431EDB4203E705400F74EFA /* RSA.m in Sources */,
+				14F7F09C206B7B02008762CB /* KeyChinaController.m in Sources */,
+				14AB58522068B9550068A9B2 /* ZHCameraAlbumController.m in Sources */,
 				705C1B511F6A6CF300D01751 /* toolClassEncap.m in Sources */,
-				1431EDBD203E716300F74EFA /* ZHEncryptDataController.m in Sources */,
 				146954F2205FB67A00E0ADDC /* ZHBannerLoop.m in Sources */,
+				14F7F0A7206B8295008762CB /* ZHFMDBController.m in Sources */,
 				144EBDCF2063A14E006BEC8D /* SecondeBarController.m in Sources */,
 				144EBDC020638945006BEC8D /* FirstBarController.m in Sources */,
 				70043AC21F4E7CDA00E82B8F /* viewLayoutController.m in Sources */,
@@ -982,14 +1253,18 @@
 				144D05E8205BC1AB00A655A9 /* ZHChooseBankView.m in Sources */,
 				144D05C1205B8F3C00A655A9 /* ZHWaveController.m in Sources */,
 				70C23ED51F553DF400FAEBAA /* RightViewController.m in Sources */,
+				144EBDD72063B04A006BEC8D /* ZHReadTextController.m in Sources */,
 				144D05F3205BC28D00A655A9 /* ZHChooseController.m in Sources */,
 				70251C2E1F5EA4BA00405C57 /* QinHaiLakeTransportLine.m in Sources */,
 				14A906EC1FD8D48D006E2E84 /* ZHScanViewController.m in Sources */,
-				148A24F7203EA01900FC1B2D /* ZHMD5.m in Sources */,
+				14D713D02064F53400B0C520 /* PictureManageController.m in Sources */,
 				70251C281F5EA3CD00405C57 /* ZHTravelStrategyController.m in Sources */,
-				1431EDBA203E70D300F74EFA /* ZHMD5Controller.m in Sources */,
+				14F7F094206B7A05008762CB /* Base64.m in Sources */,
+				14AB585D2068C2260068A9B2 /* ButtonViewController.m in Sources */,
+				14F7F081206B79C9008762CB /* ZHMD5Controller.m in Sources */,
 				146954FF205FB69C00E0ADDC /* ZHCustomLayOut.m in Sources */,
 				144EBDB92063487E006BEC8D /* SecondeController.m in Sources */,
+				1448DA162068CDCC002427D8 /* SwitchViewController.m in Sources */,
 				70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */,
 				7019FE431F5FA63B0086F6C1 /* ZHPictureAndWordMixed.m in Sources */,
 				14695501205FB69C00E0ADDC /* ZHWaterfallStyle.m in Sources */,
@@ -997,14 +1272,21 @@
 				140552DC206201F800B39652 /* ZHMaskView.m in Sources */,
 				144D05F6205BCCF500A655A9 /* QDPickerModel.m in Sources */,
 				146954F8205FB68A00E0ADDC /* ZHMenuController.m in Sources */,
+				14F7F099206B7AE3008762CB /* ZHKeyChina.m in Sources */,
 				14695500205FB69C00E0ADDC /* ZHWaterfallCell.m in Sources */,
 				148861C8205901AC001AEA7C /* ZHProgressBarController.m in Sources */,
 				70043ABE1F4E7C4A00E82B8F /* RootViewController.m in Sources */,
 				70FA4C961F53C6DD0078BFE6 /* ZHShoppingCart.m in Sources */,
 				14A906E61FD8C8A9006E2E84 /* ZHQRCodePay.m in Sources */,
+				1448DA1A2068D38D002427D8 /* ShareChooseController.m in Sources */,
 				70C23ECC1F553DB600FAEBAA /* ZHDrawerRootController.m in Sources */,
+				14EDAEE82064B18000C1BE3E /* shareDelegate.m in Sources */,
+				14F7F0AE206BA0E5008762CB /* ShowStateInfoController.m in Sources */,
+				144EBDD42063B028006BEC8D /* ZHCallTeleController.m in Sources */,
 				144D05EF205BC1C400A655A9 /* ZHChooseCityController.m in Sources */,
 				144D05EE205BC1C300A655A9 /* ZHChooseCityView.m in Sources */,
+				1448DA1D2068D3D1002427D8 /* ZHShareChooseView.m in Sources */,
+				14F7F093206B7A05008762CB /* ZHRsaController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

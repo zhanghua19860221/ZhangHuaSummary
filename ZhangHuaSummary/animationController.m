@@ -21,8 +21,8 @@
 }
 -(void)initTableViewData{
     
-    self.tableListArray = @[@"购物车效果",@"抽屉效果",@"加载菊花",@"进度条",@"波浪"];
-    self.controllerTitle = @[@"ZHShoppingCart",@"ZHDrawerRootController",@"ZHLoadingViewController",@"ZHProgressBarController",@"ZHWaveController"];
+    self.tableListArray = @[@"购物车效果",@"抽屉效果",@"加载菊花",@"进度条",@"波浪",@"弹出展示信息"];
+    self.controllerTitle = @[@"ZHShoppingCart",@"ZHDrawerRootController",@"ZHLoadingViewController",@"ZHProgressBarController",@"ZHWaveController",@"ShowStateInfoController"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

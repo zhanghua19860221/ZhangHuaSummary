@@ -16,12 +16,14 @@
 #import <Masonry.h>
 #import <MASConstraintMaker.h>
 
-//网络请求
-#import "AFHTTPSessionManager.h"
-
 //SDWebimage头文件
 #import "UIImageView+WebCache.h"
 #import <SDWebImage/UIButton+WebCache.h>
+
+//单利
+#import "shareDelegate.h"
+
+
 
 // 自定义宏
 //状态栏的高度

@@ -29,13 +29,44 @@
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
 }
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //注册通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTabBar:) name:@"removeTabBar" object:nil];
+    //注册通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showTabBar:) name:@"showTabBar" object:nil];
+    
+    self.tabBar.hidden = YES;
+    
+
+}
+//隐藏tabbar
+- (void)removeTabBar:(NSNotification *)noti{
+    [self.tabBar removeFromSuperview];
+    self.rc_tabberView.hidden = YES;
+    
+}
+//隐藏展示tabbar
+- (void)showTabBar:(NSNotification *)noti{
+    
+    self.rc_tabberView.hidden = NO;
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter]  removeObserver:self  name:@"removeTabBar"  object:nil];
+    [[NSNotificationCenter defaultCenter]  removeObserver:self  name:@"showTabBar"    object:nil];
+    
+}
 - (void)creatTabBarView{
     
-    NSArray *tabSelImageArray = @[@"收款1",@"消息1",@"我的1"];
-    NSArray *tabDafImageArray = @[@"收款2",@"消息2",@"我的2"];
+    NSArray *tabSelImageArray = @[@"收款1",@"消息1",@"我的1",@"我的1"];
+    NSArray *tabDafImageArray = @[@"收款2",@"消息2",@"我的2",@"我的2"];
     
     self.rc_tabberView = [[UIView alloc] init];
     self.rc_tabberView.backgroundColor =COLORFromRGB(0xffffff);
+    self.rc_tabberView.layer.borderColor = COLORFromRGB(0xe10000).CGColor;
+    self.rc_tabberView.layer.borderWidth = 0.4;
     
     CGFloat Y = 0;
     CGFloat HBar = 49;
@@ -58,9 +89,8 @@
         button.frame = CGRectMake(i*SC_WIDTH/3.0, Y, SC_WIDTH/3.0, 49);
         
         [self.rc_tabberView addSubview:button];
-        
+
         if (0==i) {
-            
             button.selected=YES;
             _selectedButton=button;
         }

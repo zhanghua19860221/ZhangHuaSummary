@@ -16,20 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self SetTitle];
+    [self addTitle];
     [self initTableViewData];
     // Do any additional setup after loading the view.
     
 }
--(void)SetTitle{
+-(void)addTitle{
     self.title = @"提纲";
-    
 }
 -(void)initTableViewData{
-    
-    
-    self.tableListArray = @[@"视图布局",@"动画效果",@"文本文件",@"功能类封装",@"数据加密"];
-    self.controllerTitle = @[@"viewLayoutController",@"animationController",@"ZHTextFileController",@"toolClassEncap",@"ZHEncryptDataController"];
+    NSArray *tempListArray = @[@"视图布局",@"动画效果",@"文本文件",@"功能类封装",@"数据加密存储",@"Button(按钮)"];
+    self.tableListArray = [tempListArray copy];
+    NSArray *tempTitle  = @[@"viewLayoutController",@"animationController",@"ZHTextFileController",@"toolClassEncap",@"ZHEncryptDataController",@"ButtonViewController"];
+    self.controllerTitle = [tempTitle copy];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -16,8 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableListArray = @[@"调用摄像头",@"图片缓存处理",@"视频播放处理",@"二维码扫描支付",@"选择控件"];
-    self.controllerTitle = @[@"ZHCameraCall",@"ZHPictureCache",@"ZHAVPlayerClass",@"ZHQRCodePay",@"ZHChooseController"];
+    self.view.backgroundColor = [UIColor whiteColor];
+
+    self.tableListArray = @[@"视频播放处理",@"二维码扫描支付",@"选择器控件",@"拨打电话功能",@"文本阅读功能",@"图片处理功能",@"调取相机相册"];
+    self.controllerTitle = @[@"ZHAVPlayerClass",@"ZHQRCodePay",@"ZHChooseController",@"ZHCallTeleController",@"ZHReadTextController",@"PictureManageController",@"CallCameraAlbumController"];
     // Do any additional setup after loading the view.
 }
 

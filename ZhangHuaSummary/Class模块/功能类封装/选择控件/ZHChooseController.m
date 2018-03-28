@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.tableListArray = @[@"银行选择",@"城市选择"];
-    self.controllerTitle = @[@"ZHChooseBankController",@"ZHChooseCityController"];
+    self.tableListArray = @[@"银行选择",@"城市选择",@"分享选择视图"];
+    self.controllerTitle = @[@"ZHChooseBankController",@"ZHChooseCityController",@"ShareChooseController"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

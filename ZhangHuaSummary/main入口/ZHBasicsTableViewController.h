@@ -14,11 +14,11 @@
  <#Description#> List - 目录列表
  
  */
-@property (strong, nonatomic) NSArray *tableListArray;
+@property (strong , nonatomic) NSArray *tableListArray;
 
 /**
  <#Description#> Name - 控制器名称
  */
-@property (strong, nonatomic) NSArray *controllerTitle;
+@property (strong , nonatomic) NSArray *controllerTitle;
 
 @end
