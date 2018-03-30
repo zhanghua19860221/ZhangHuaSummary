@@ -10,7 +10,6 @@
 
 @interface shareDelegate : NSObject
 
-
 + (shareDelegate *)sharedManager;
 
 /**

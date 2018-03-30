@@ -25,9 +25,9 @@
     self.title = @"提纲";
 }
 -(void)initTableViewData{
-    NSArray *tempListArray = @[@"视图布局",@"动画效果",@"文本文件",@"功能类封装",@"数据加密存储",@"Button(按钮)"];
+    NSArray *tempListArray = @[@"视图布局",@"动画效果",@"文本文件",@"功能类封装",@"数据加密存储",@"Button(按钮)",@"基本功能汇总"];
     self.tableListArray = [tempListArray copy];
-    NSArray *tempTitle  = @[@"viewLayoutController",@"animationController",@"ZHTextFileController",@"toolClassEncap",@"ZHEncryptDataController",@"ButtonViewController"];
+    NSArray *tempTitle  = @[@"viewLayoutController",@"animationController",@"ZHTextFileController",@"toolClassEncap",@"ZHEncryptDataController",@"ButtonViewController",@"BasicsFundationController"];
     self.controllerTitle = [tempTitle copy];
 }
 - (void)didReceiveMemoryWarning {

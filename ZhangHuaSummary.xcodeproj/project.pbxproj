@@ -50,6 +50,9 @@
 		14695515205FB7DD00E0ADDC /* FourController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14695514205FB7DD00E0ADDC /* FourController.m */; };
 		148861C22058FCE1001AEA7C /* ZHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148861C12058FCE1001AEA7C /* ZHLoadingView.m */; };
 		148861C8205901AC001AEA7C /* ZHProgressBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148861C7205901AC001AEA7C /* ZHProgressBarController.m */; };
+		1495CAE8206E3B0600ADA859 /* BasicsFundationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1495CAE7206E3B0600ADA859 /* BasicsFundationController.m */; };
+		1495CAEC206E3E9800ADA859 /* ZHKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1495CAEB206E3E9800ADA859 /* ZHKVOController.m */; };
+		1495CAEF206E3EE100ADA859 /* KVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1495CAEE206E3EE100ADA859 /* KVOModel.m */; };
 		14A906E61FD8C8A9006E2E84 /* ZHQRCodePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A906E51FD8C8A9006E2E84 /* ZHQRCodePay.m */; };
 		14A906EC1FD8D48D006E2E84 /* ZHScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A906EB1FD8D48D006E2E84 /* ZHScanViewController.m */; };
 		14AB5840206885640068A9B2 /* ZHCallAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AB583F206885640068A9B2 /* ZHCallAlbumController.m */; };
@@ -209,6 +212,12 @@
 		148861C12058FCE1001AEA7C /* ZHLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHLoadingView.m; path = "Class模块/动画效果/加载菊花/ZHLoadingView.m"; sourceTree = "<group>"; };
 		148861C6205901AC001AEA7C /* ZHProgressBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHProgressBarController.h; path = "Class模块/动画效果/进度条/ZHProgressBarController.h"; sourceTree = "<group>"; };
 		148861C7205901AC001AEA7C /* ZHProgressBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHProgressBarController.m; path = "Class模块/动画效果/进度条/ZHProgressBarController.m"; sourceTree = "<group>"; };
+		1495CAE6206E3B0600ADA859 /* BasicsFundationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BasicsFundationController.h; path = "Class模块/基本功能汇总/BasicsFundationController.h"; sourceTree = "<group>"; };
+		1495CAE7206E3B0600ADA859 /* BasicsFundationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BasicsFundationController.m; path = "Class模块/基本功能汇总/BasicsFundationController.m"; sourceTree = "<group>"; };
+		1495CAEA206E3E9800ADA859 /* ZHKVOController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHKVOController.h; path = "Class模块/基本功能汇总/KVO/ZHKVOController.h"; sourceTree = "<group>"; };
+		1495CAEB206E3E9800ADA859 /* ZHKVOController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHKVOController.m; path = "Class模块/基本功能汇总/KVO/ZHKVOController.m"; sourceTree = "<group>"; };
+		1495CAED206E3EE100ADA859 /* KVOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KVOModel.h; path = "Class模块/基本功能汇总/KVO/KVOModel.h"; sourceTree = "<group>"; };
+		1495CAEE206E3EE100ADA859 /* KVOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KVOModel.m; path = "Class模块/基本功能汇总/KVO/KVOModel.m"; sourceTree = "<group>"; };
 		14A906E41FD8C8A9006E2E84 /* ZHQRCodePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHQRCodePay.h; path = "Class模块/功能类封装/二维码扫描支付/ZHQRCodePay.h"; sourceTree = "<group>"; };
 		14A906E51FD8C8A9006E2E84 /* ZHQRCodePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHQRCodePay.m; path = "Class模块/功能类封装/二维码扫描支付/ZHQRCodePay.m"; sourceTree = "<group>"; };
 		14A906EA1FD8D48D006E2E84 /* ZHScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHScanViewController.h; path = "Class模块/功能类封装/二维码扫描支付/ZHScanViewController.h"; sourceTree = "<group>"; };
@@ -596,6 +605,27 @@
 			name = "进度条";
 			sourceTree = "<group>";
 		};
+		1495CAE5206E3A7600ADA859 /* 基本功能汇总 */ = {
+			isa = PBXGroup;
+			children = (
+				1495CAE9206E3B3100ADA859 /* KVO */,
+				1495CAE6206E3B0600ADA859 /* BasicsFundationController.h */,
+				1495CAE7206E3B0600ADA859 /* BasicsFundationController.m */,
+			);
+			name = "基本功能汇总";
+			sourceTree = "<group>";
+		};
+		1495CAE9206E3B3100ADA859 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				1495CAED206E3EE100ADA859 /* KVOModel.h */,
+				1495CAEE206E3EE100ADA859 /* KVOModel.m */,
+				1495CAEA206E3E9800ADA859 /* ZHKVOController.h */,
+				1495CAEB206E3E9800ADA859 /* ZHKVOController.m */,
+			);
+			name = KVO;
+			sourceTree = "<group>";
+		};
 		14A906E31FD8C69C006E2E84 /* 二维码扫描支付 */ = {
 			isa = PBXGroup;
 			children = (
@@ -925,6 +955,7 @@
 		709FEEB11F4D7D8E00285983 /* Class 模块 */ = {
 			isa = PBXGroup;
 			children = (
+				1495CAE5206E3A7600ADA859 /* 基本功能汇总 */,
 				14AB58532068C1530068A9B2 /* Button(按钮) */,
 				1431ED9D203E6C7500F74EFA /* 数据加密存储 */,
 				70251BEB1F5E4D0900405C57 /* 文本文件 */,
@@ -1225,6 +1256,7 @@
 				144EBDC920639AE9006BEC8D /* RootController.m in Sources */,
 				14F7F0A1206B7DB1008762CB /* ZHEncryptDataController.m in Sources */,
 				140552D6206200FF00B39652 /* ZHBezierPathController.m in Sources */,
+				1495CAEF206E3EE100ADA859 /* KVOModel.m in Sources */,
 				14695515205FB7DD00E0ADDC /* FourController.m in Sources */,
 				14F7F092206B7A05008762CB /* RSA.m in Sources */,
 				70C23ED21F553DE100FAEBAA /* MidViewController.m in Sources */,
@@ -1238,6 +1270,7 @@
 				148861C22058FCE1001AEA7C /* ZHLoadingView.m in Sources */,
 				14F7F09C206B7B02008762CB /* KeyChinaController.m in Sources */,
 				14AB58522068B9550068A9B2 /* ZHCameraAlbumController.m in Sources */,
+				1495CAE8206E3B0600ADA859 /* BasicsFundationController.m in Sources */,
 				705C1B511F6A6CF300D01751 /* toolClassEncap.m in Sources */,
 				146954F2205FB67A00E0ADDC /* ZHBannerLoop.m in Sources */,
 				14F7F0A7206B8295008762CB /* ZHFMDBController.m in Sources */,
@@ -1268,6 +1301,7 @@
 				70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */,
 				7019FE431F5FA63B0086F6C1 /* ZHPictureAndWordMixed.m in Sources */,
 				14695501205FB69C00E0ADDC /* ZHWaterfallStyle.m in Sources */,
+				1495CAEC206E3E9800ADA859 /* ZHKVOController.m in Sources */,
 				144D05C4205B8F4900A655A9 /* ZHWaveView.m in Sources */,
 				140552DC206201F800B39652 /* ZHMaskView.m in Sources */,
 				144D05F6205BCCF500A655A9 /* QDPickerModel.m in Sources */,

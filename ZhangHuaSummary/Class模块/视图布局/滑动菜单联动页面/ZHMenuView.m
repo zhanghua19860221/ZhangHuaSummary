@@ -115,8 +115,19 @@
     [self.delegate changeSelectMenuIndex:index];
 
 }
+
 -(void)updataSelectMenuIndex:(NSInteger)index{
+    //修改对应 button 的选中状态
+      NSInteger tag = index + zMenuBtnStartTag;
+      UIButton *tempBtn = [self viewWithTag:tag];
     
+      if (selectMenuBtn != tempBtn) {
+         selectMenuBtn.selected = NO;
+         tempBtn.selected = YES;
+         selectMenuBtn = tempBtn;
+     }
+    
+    //修改滚动条的相应位置
     CGFloat W = WIDTH/_menu_array.count;
     CGFloat WLine = W*0.7;
     CGFloat XLine = W*0.15;

@@ -29,7 +29,7 @@
         NSIndexPath *index = [NSIndexPath indexPathForItem:i inSection:0];
         //创建一个布局属性类，通过indexPath来创建
         UICollectionViewLayoutAttributes * attris = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:index];
-        //随机一个高度 在40——190之间
+        //随机一个高度 在70——170之间
         CGFloat hight = arc4random()%100+70;
         //哪一列高度小 则放到那一列下面
         //标记最短的列
