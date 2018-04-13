@@ -22,8 +22,8 @@
 }
 -(void)initTableViewData{
     
-    self.tableListArray = @[@"倒计时按钮",@"开关按钮"];
-    self.controllerTitle = @[@"ZHCountdownBtnController",@"SwitchViewController"];
+    self.tableListArray = @[@"倒计时按钮",@"开关按钮",@"图形验证码"];
+    self.controllerTitle = @[@"ZHCountdownBtnController",@"SwitchViewController",@"PatternCordController"];
     
 }
 - (void)didReceiveMemoryWarning {

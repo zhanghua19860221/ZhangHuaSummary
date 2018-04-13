@@ -68,6 +68,10 @@
 		14D713D02064F53400B0C520 /* PictureManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D713CF2064F53400B0C520 /* PictureManageController.m */; };
 		14EDAEE42064B08800C1BE3E /* PictureCompressionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EDAEE32064B08800C1BE3E /* PictureCompressionController.m */; };
 		14EDAEE82064B18000C1BE3E /* shareDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EDAEE72064B18000C1BE3E /* shareDelegate.m */; };
+		14F4E5E220804C33006C508A /* ZHPatternCordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E5E120804C33006C508A /* ZHPatternCordView.m */; };
+		14F4E5E520804C65006C508A /* PatternCordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E5E420804C65006C508A /* PatternCordController.m */; };
+		14F4E5E920806253006C508A /* ZHDropDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E5E820806253006C508A /* ZHDropDownMenuView.m */; };
+		14F4E5EC2080627B006C508A /* DropDownMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E5EB2080627B006C508A /* DropDownMenuController.m */; };
 		14F7F080206B79C9008762CB /* ZHMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F07C206B79C9008762CB /* ZHMD5.m */; };
 		14F7F081206B79C9008762CB /* ZHMD5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F07E206B79C9008762CB /* ZHMD5Controller.m */; };
 		14F7F087206B79EF008762CB /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 14F7F082206B79EF008762CB /* private.pem */; };
@@ -247,6 +251,14 @@
 		14EDAEE32064B08800C1BE3E /* PictureCompressionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PictureCompressionController.m; path = "Class模块/功能类封装/图片压缩/PictureCompressionController.m"; sourceTree = "<group>"; };
 		14EDAEE62064B18000C1BE3E /* shareDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shareDelegate.h; sourceTree = "<group>"; };
 		14EDAEE72064B18000C1BE3E /* shareDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shareDelegate.m; sourceTree = "<group>"; };
+		14F4E5E020804C33006C508A /* ZHPatternCordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHPatternCordView.h; path = "Class模块/Button(按钮)/图形验证码/ZHPatternCordView.h"; sourceTree = "<group>"; };
+		14F4E5E120804C33006C508A /* ZHPatternCordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHPatternCordView.m; path = "Class模块/Button(按钮)/图形验证码/ZHPatternCordView.m"; sourceTree = "<group>"; };
+		14F4E5E320804C65006C508A /* PatternCordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PatternCordController.h; path = "Class模块/Button(按钮)/图形验证码/PatternCordController.h"; sourceTree = "<group>"; };
+		14F4E5E420804C65006C508A /* PatternCordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PatternCordController.m; path = "Class模块/Button(按钮)/图形验证码/PatternCordController.m"; sourceTree = "<group>"; };
+		14F4E5E720806253006C508A /* ZHDropDownMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHDropDownMenuView.h; path = "Class模块/功能类封装/下拉菜单/ZHDropDownMenuView.h"; sourceTree = "<group>"; };
+		14F4E5E820806253006C508A /* ZHDropDownMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHDropDownMenuView.m; path = "Class模块/功能类封装/下拉菜单/ZHDropDownMenuView.m"; sourceTree = "<group>"; };
+		14F4E5EA2080627A006C508A /* DropDownMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DropDownMenuController.h; path = "Class模块/功能类封装/下拉菜单/DropDownMenuController.h"; sourceTree = "<group>"; };
+		14F4E5EB2080627B006C508A /* DropDownMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DropDownMenuController.m; path = "Class模块/功能类封装/下拉菜单/DropDownMenuController.m"; sourceTree = "<group>"; };
 		14F7F07C206B79C9008762CB /* ZHMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHMD5.m; path = "Class模块/数据加密存储/MD5/ZHMD5.m"; sourceTree = "<group>"; };
 		14F7F07D206B79C9008762CB /* ZHMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHMD5.h; path = "Class模块/数据加密存储/MD5/ZHMD5.h"; sourceTree = "<group>"; };
 		14F7F07E206B79C9008762CB /* ZHMD5Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHMD5Controller.m; path = "Class模块/数据加密存储/MD5/ZHMD5Controller.m"; sourceTree = "<group>"; };
@@ -696,6 +708,7 @@
 		14AB58532068C1530068A9B2 /* Button(按钮) */ = {
 			isa = PBXGroup;
 			children = (
+				14F4E5DF20804B8D006C508A /* 图形验证码 */,
 				1448DA1E2068F42F002427D8 /* 水纹按钮 */,
 				1448DA122068CD25002427D8 /* 开关按钮 */,
 				14AB58542068C18B0068A9B2 /* 倒计时按钮 */,
@@ -752,6 +765,28 @@
 				14EDAEE72064B18000C1BE3E /* shareDelegate.m */,
 			);
 			path = "ZHSingleClass(单例)";
+			sourceTree = "<group>";
+		};
+		14F4E5DF20804B8D006C508A /* 图形验证码 */ = {
+			isa = PBXGroup;
+			children = (
+				14F4E5E020804C33006C508A /* ZHPatternCordView.h */,
+				14F4E5E120804C33006C508A /* ZHPatternCordView.m */,
+				14F4E5E320804C65006C508A /* PatternCordController.h */,
+				14F4E5E420804C65006C508A /* PatternCordController.m */,
+			);
+			name = "图形验证码";
+			sourceTree = "<group>";
+		};
+		14F4E5E620805858006C508A /* 下拉菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				14F4E5E720806253006C508A /* ZHDropDownMenuView.h */,
+				14F4E5E820806253006C508A /* ZHDropDownMenuView.m */,
+				14F4E5EA2080627A006C508A /* DropDownMenuController.h */,
+				14F4E5EB2080627B006C508A /* DropDownMenuController.m */,
+			);
+			name = "下拉菜单";
 			sourceTree = "<group>";
 		};
 		14F7F096206B7A69008762CB /* KeyChina */ = {
@@ -984,6 +1019,7 @@
 		709FEEB31F4D7DD400285983 /* 功能类封装 */ = {
 			isa = PBXGroup;
 			children = (
+				14F4E5E620805858006C508A /* 下拉菜单 */,
 				14AB583A206882950068A9B2 /* 调取相机相册 */,
 				14D713CD2064F48900B0C520 /* 图片处理功能 */,
 				144EBDD12063AFB5006BEC8D /* 拨打电话 */,
@@ -1245,6 +1281,7 @@
 				14F7F080206B79C9008762CB /* ZHMD5.m in Sources */,
 				70FA4C8F1F53C47F0078BFE6 /* ZHShoppingCartAnimation.m in Sources */,
 				705C1B481F6A6CC600D01751 /* ZHAVPlayerClass.m in Sources */,
+				14F4E5E520804C65006C508A /* PatternCordController.m in Sources */,
 				14AB58572068C1C90068A9B2 /* ZHCountdownBtnController.m in Sources */,
 				14EDAEE42064B08800C1BE3E /* PictureCompressionController.m in Sources */,
 				1448DA212068F5C8002427D8 /* WaveButtonController.m in Sources */,
@@ -1267,6 +1304,7 @@
 				14C5674B205A6A1900735FC8 /* ZHWaterView.m in Sources */,
 				1448DA112068CCDA002427D8 /* UIButton+ZHCountDown.m in Sources */,
 				146954F7205FB68A00E0ADDC /* ZHMenuView.m in Sources */,
+				14F4E5E220804C33006C508A /* ZHPatternCordView.m in Sources */,
 				148861C22058FCE1001AEA7C /* ZHLoadingView.m in Sources */,
 				14F7F09C206B7B02008762CB /* KeyChinaController.m in Sources */,
 				14AB58522068B9550068A9B2 /* ZHCameraAlbumController.m in Sources */,
@@ -1282,6 +1320,7 @@
 				70043ACB1F4E7D8B00E82B8F /* animationController.m in Sources */,
 				14695508205FB6BD00E0ADDC /* ZHRoundDisplay.m in Sources */,
 				705C1B4D1F6A6CD900D01751 /* ZHPictureCache.m in Sources */,
+				14F4E5EC2080627B006C508A /* DropDownMenuController.m in Sources */,
 				146954F1205FB67A00E0ADDC /* ZHBannerLoopView.m in Sources */,
 				144D05E8205BC1AB00A655A9 /* ZHChooseBankView.m in Sources */,
 				144D05C1205B8F3C00A655A9 /* ZHWaveController.m in Sources */,
@@ -1304,6 +1343,7 @@
 				1495CAEC206E3E9800ADA859 /* ZHKVOController.m in Sources */,
 				144D05C4205B8F4900A655A9 /* ZHWaveView.m in Sources */,
 				140552DC206201F800B39652 /* ZHMaskView.m in Sources */,
+				14F4E5E920806253006C508A /* ZHDropDownMenuView.m in Sources */,
 				144D05F6205BCCF500A655A9 /* QDPickerModel.m in Sources */,
 				146954F8205FB68A00E0ADDC /* ZHMenuController.m in Sources */,
 				14F7F099206B7AE3008762CB /* ZHKeyChina.m in Sources */,
