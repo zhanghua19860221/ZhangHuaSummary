@@ -44,8 +44,8 @@
     [addButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view.mas_centerX);
         make.centerY.equalTo(self.view.mas_centerY).offset(-130);
-        make.height.mas_equalTo(40/SCALE_Y);
-        make.width.mas_equalTo(140/SCALE_X);
+        make.height.mas_equalTo(H(40));
+        make.width.mas_equalTo(W(140));
 
         
     }];
@@ -62,8 +62,8 @@
     [deleButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view.mas_centerX);
         make.centerY.equalTo(addButton.mas_centerY).offset(60);
-        make.height.mas_equalTo(40/SCALE_Y);
-        make.width.mas_equalTo(140/SCALE_X);
+        make.height.mas_equalTo(H(40));
+        make.width.mas_equalTo(W(140));
         
         
     }];
@@ -80,8 +80,8 @@
     [changeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view.mas_centerX);
         make.centerY.equalTo(deleButton.mas_centerY).offset(60);
-        make.height.mas_equalTo(40/SCALE_Y);
-        make.width.mas_equalTo(140/SCALE_X);
+        make.height.mas_equalTo(H(40));
+        make.width.mas_equalTo(W(140));
         
     }];
     
@@ -98,8 +98,8 @@
     [searchButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view.mas_centerX);
         make.centerY.equalTo(changeButton.mas_centerY).offset(60);
-        make.height.mas_equalTo(40/SCALE_Y);
-        make.width.mas_equalTo(140/SCALE_X);
+        make.height.mas_equalTo(H(40));
+        make.width.mas_equalTo(W(140));
         
     }];
     

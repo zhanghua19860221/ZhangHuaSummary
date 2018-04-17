@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ProblemArray</key>
+	<array>
+		<dict>
+			<key>problem</key>
+			<string>Q0、TCP UDP概述及差异</string>
+			<key>answer</key>
+			<string>TCP（Transmission Control Protocol，传输控制协议）是基于连接的协议，也就是说，在正式收发数据前，必须和对方建立可靠的连接。一个TCP连接必须要经过三次“对话”才能建立起来，其中的过程非常复杂，我们这里只做简单、形象的介绍，你只要做到能够理解这个过程即可。我们来看看这三次对话的简单过程：主机A向主机B发出连接请求数据包：“我想给你发数据，可以吗？”，这是第一次对话；主机B向主机A发送同意连接和要求同步（同步就是两台主机一个在发送，一个在接收，协调工作）的数据包：“可以，你什么时候发？”，这是第二次对话；主机A再发出一个数据包确认主机B的要求同步：“我现在就发，你接着吧！”，这是第三次对话。三次“对话”的目的是使数据包的发送和接收同步，经过三次“对话”之后，主机A才向主机B正式发送数据。 
+
+UDP（User Data Protocol，用户数据报协议）是与TCP相对应的协议。它是面向非连接的协议，它不与对方建立连接，而是直接就把数据包发送过去！ 
+UDP适用于一次只传送少量数据、对可靠性要求不高的应用环境。比如，我们经常使用“ping”命令来测试两台主机之间TCP/IP通信是否正常，其实“ping”命令的原理就是向对方主机发送UDP数据包，然后对方主机确认收到数据包，如果数据包是否到达的消息及时反馈回来，那么网络就是通的。例如，在默认状态下，一次“ping”操作发送4个数据包（如图2所示）。大家可以看到，发送的数据包数量是4包，收到的也是4包（因为对方主机收到后会发回一个确认收到的数据包）。这充分说明了UDP协议是面向非连接的协议，没有建立连接的过程。正因为UDP协议没有连接的过程，所以它的通信效果高；但也正因为如此，它的可靠性不如TCP协议高。QQ就使用UDP发消息，因此有时会出现收不到消息的情况。 
+
+tcp协议和udp协议的差别 
+TCP UDP 
+1、是否连接 面向连接 面向非连接 
+2、传输可靠性 可靠 不可靠 
+3、应用场合 传输大量数据 少量数据 
+4、速度 慢 快</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q1、Xcode调试证书路径</string>
+			<key>answer</key>
+			<string>      /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q2、环信集成单聊流程</string>
+			<key>answer</key>
+			<string>     1.环信开发者平台创建新应用并 获得 AppKey  ，推送证书名      2.工程内初始化 AppKey 及 推送证书名      3.注册用户 ，获得 用户ID 设置密码      4.通过识别用户ID 收发消息.</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q3、把项目上传到GitHub流程</string>
+			<key>answer</key>
+			<string>    1、cd 到需要提交的文件目录下
+    2、git init     3、git add .
+    4、git commit - m “注释”
+    5、GitHub 上创建 空仓库
+    6、关联远程空仓库 git remote add origin git@github.com:GitHub账户名/GitHub空仓库名.git
+    7、把文件推送上去 git push -u origin master
+    把GitHub上的项目克隆下来
+    1、cd 进入想要保存到的文件夹下
+    2、执行命令 git clone git@github.com:sunshineYG/demodemo.git</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q4、指纹识别</string>
+			<key>answer</key>
+			<string>    1.判断设备是否支持3DTounch     2.调用系统指纹识别 api</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q5、网络请求的并发概述与处理</string>
+			<key>answer</key>
+			<string>如何处理多个网络请求的并发的情况
+一、概念
+1.并发 当有多个线程在操作时,如果系统只有一个CPU,则它根本不可能真正同时进行一个以上的线程，它只能把CPU运行时间划分成若干个时间段,再将时间 段分配给各个线程执行，在一个时间段的线程代码运行时，其它线程处于挂起状。.这种方式我们称之为并发(Concurrent)。
+2.并行 当系统有一个以上CPU时,则线程的操作有可能非并发。当一个CPU执行一个线程时，另一个CPU可以执行另一个线程，两个线程互不抢占CPU资源，可以同时进行，这种方式我们称之为并行(Parallel)。
+3.区别 并发和并行是即相似又有区别的两个概念，并行是指两个或者多个事件在同一时刻发生；而并发是指两个或多个事件在同一时间间隔内发生。
+举个栗子
+1).并发 一个送外卖的A需要把两份外卖分别送到两个客户B和C手里。 A必须先送完B外卖才能接着送C的。这就是并发
+2).并行 客户C 分别从饿了么和美团订了一共两份外卖。那么外卖员A和外卖员B需要把外卖一同送到客户C手里。 这就是并行
+　　在iOS中，经常可以看见有这样的需求，就是一个方法要等另外一个方法执行完毕再做相对应的处理，比如说一些网络请求，需要根据上一个请求的返回值做相对应的处理再执行第二个请求，所以我们不能让两个请求同时去请求网络。下面就记录以下通过GCD和NSOperationQueue来控制并发。
+二、代码部分（GCD）
+dispatch_semaphore  信号量
+ 
+　　信号量是一个整型值并且具有初始计数值，信号量通常支持两个操作：通知和等待。当信号被通知的时候计数值会增加，当信号量在线程上等待的时候，必要的情况下线程会被阻塞掉，直至信号被通知时计数值大于0，然后线程会减少这个计数继续工作。
+ 
+GCD中又3个信号量有关的操作：
+ 
+dispatch_semaphore_create　　　　信号量创建
+ 
+dispatch_semaphore_signal　　　　发送通知
+ 
+dispatch_semaphore_wait　　　　　信号量等待
+GCD
+ 
+
+#import &lt;Foundation/Foundation.h&gt;
+
+	int main(int argc, const char * argv[]) {
+
+     @autoreleasepool {
+  
+         // 创建信号量
+ 
+         __block dispatch_semaphore_t sem = dispatch_semaphore_create(0); 
+         // 创建队列
+         dispatch_queue_t queue = dispatch_queue_create(&quot;testBlock&quot;, NULL);
+ 
+         dispatch_async(queue, ^{
+ 
+             for (int i = 0; i&lt;10; i++) {
+ 
+                 NSLog(@&quot;i的值是:%d&quot;,i);
+ 
+             }
+ 
+         // 发送通知
+ 
+             dispatch_semaphore_signal(sem);
+ 
+         });
+ 
+         
+ 
+         // 信号量等待
+ 
+         dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+ 
+         
+ 
+         for (int j = 0; j&lt;20; j++) {
+ 
+             NSLog(@&quot;j的值是:%d&quot;,j);
+ 
+         }
+ 
+     }
+ 
+     return 0;
+ 
+ }
+
+ 
+ 
+ 
+打印结果为
+2015-07-28 16:17:04.195 多线程[16370:1833932] i的值是:0
+2015-07-28 16:17:04.197 多线程[16370:1833932] i的值是:1
+2015-07-28 16:17:04.197 多线程[16370:1833932] i的值是:2
+2015-07-28 16:17:04.197 多线程[16370:1833932] i的值是:3
+2015-07-28 16:17:04.197 多线程[16370:1833932] i的值是:4
+2015-07-28 16:17:04.198 多线程[16370:1833932] i的值是:5
+2015-07-28 16:17:04.198 多线程[16370:1833932] i的值是:6
+2015-07-28 16:17:04.198 多线程[16370:1833932] i的值是:7
+2015-07-28 16:17:04.198 多线程[16370:1833932] i的值是:8
+2015-07-28 16:17:04.198 多线程[16370:1833932] i的值是:9
+2015-07-28 16:17:04.198 多线程[16370:1833932] j的值是:0
+2015-07-28 16:17:04.199 多线程[16370:1833932] j的值是:1
+2015-07-28 16:17:04.199 多线程[16370:1833932] j的值是:2
+2015-07-28 16:17:04.199 多线程[16370:1833932] j的值是:3
+2015-07-28 16:17:04.199 多线程[16370:1833932] j的值是:4
+2015-07-28 16:17:04.199 多线程[16370:1833932] j的值是:5
+2015-07-28 16:17:04.199 多线程[16370:1833932] j的值是:6
+2015-07-28 16:17:04.199 多线程[16370:1833932] j的值是:7
+2015-07-28 16:17:04.221 多线程[16370:1833932] j的值是:8
+2015-07-28 16:17:04.221 多线程[16370:1833932] j的值是:9
+2015-07-28 16:17:04.222 多线程[16370:1833932] j的值是:10
+2015-07-28 16:17:04.222 多线程[16370:1833932] j的值是:11
+2015-07-28 16:17:04.222 多线程[16370:1833932] j的值是:12
+2015-07-28 16:17:04.222 多线程[16370:1833932] j的值是:13
+2015-07-28 16:17:04.222 多线程[16370:1833932] j的值是:14
+2015-07-28 16:17:04.222 多线程[16370:1833932] j的值是:15
+2015-07-28 16:17:04.222 多线程[16370:1833932] j的值是:16
+2015-07-28 16:17:04.223 多线程[16370:1833932] j的值是:17
+2015-07-28 16:17:04.223 多线程[16370:1833932] j的值是:18
+2015-07-28 16:17:04.223 多线程[16370:1833932] j的值是:19
+ 我们看到先打印完i值后在打印j值 这就完成了并发请求
+NSOperationQueue 
+ 
+
+- (void)viewDidLoad {
+
+ 
+
+    [super viewDidLoad];
+
+    // Do any additional setup after loading the view, typically from a nib.
+
+    // 创建一个队列
+
+    NSOperationQueue *queue = [[NSOperationQueue alloc]init]; 
+
+    // 设置最大线程数
+
+    queue.maxConcurrentOperationCount = 5;
+
+    // 创建一个A操作
+
+    NSBlockOperation *operationA = [NSBlockOperation blockOperationWithBlock:^{
+
+ 
+
+        for (int i = 0; i&lt;10; i++) {
+            NSLog(@&quot;i的值是:%d&quot;,i);
+        }
+    }];
+
+    // 创建一个B操作
+
+    NSBlockOperation *operationB = [NSBlockOperation blockOperationWithBlock:^{
+
+ 
+
+        for (int j = 0; j&lt;20; j++) {
+
+            NSLog(@&quot;j的值是:%d&quot;,j);
+
+        }
+
+    }];
+
+    // 分别加入到队列中
+
+    [queue addOperation:operationA];
+
+    [queue addOperation:operationB];
+
+}
+
+ 
+ 
+ 打印结果
+2015-07-28 17:51:09.508 111[16598:1880752] j的值是:0
+2015-07-28 17:51:09.508 111[16598:1880750] i的值是:0
+2015-07-28 17:51:09.509 111[16598:1880752] j的值是:1
+2015-07-28 17:51:09.509 111[16598:1880750] i的值是:1
+2015-07-28 17:51:09.509 111[16598:1880752] j的值是:2
+2015-07-28 17:51:09.509 111[16598:1880750] i的值是:2
+2015-07-28 17:51:09.509 111[16598:1880752] j的值是:3
+2015-07-28 17:51:09.509 111[16598:1880750] i的值是:3
+2015-07-28 17:51:09.509 111[16598:1880752] j的值是:4
+2015-07-28 17:51:09.509 111[16598:1880750] i的值是:4
+2015-07-28 17:51:09.509 111[16598:1880752] j的值是:5
+2015-07-28 17:51:09.509 111[16598:1880750] i的值是:5
+2015-07-28 17:51:09.509 111[16598:1880752] j的值是:6
+2015-07-28 17:51:09.509 111[16598:1880750] i的值是:6
+2015-07-28 17:51:09.509 111[16598:1880752] j的值是:7
+2015-07-28 17:51:09.509 111[16598:1880750] i的值是:7
+2015-07-28 17:51:09.509 111[16598:1880752] j的值是:8
+2015-07-28 17:51:09.509 111[16598:1880750] i的值是:8
+2015-07-28 17:51:09.510 111[16598:1880752] j的值是:9
+2015-07-28 17:51:09.510 111[16598:1880750] i的值是:9
+ 
+我们看到打印顺序是交替进行的。 那么如何进行顺序操作呢。只需一行代码。
+
+- (void)viewDidLoad {
+
+ 
+
+    [super viewDidLoad];
+
+ 
+
+    // Do any additional setup after loading the view, typically from a nib.
+
+ 
+
+    // 创建一个队列
+
+ 
+
+    NSOperationQueue *queue = [[NSOperationQueue alloc]init];
+
+ 
+
+    // 设置最大线程数
+
+ 
+
+    queue.maxConcurrentOperationCount = 5;
+
+ 
+
+    // 创建一个A操作
+
+ 
+
+    NSBlockOperation *operationA = [NSBlockOperation blockOperationWithBlock:^{
+
+ 
+
+        for (int i = 0; i&lt;10; i++) {
+
+            NSLog(@&quot;i的值是:%d&quot;,i); 
+
+        }
+
+ 
+
+    }];
+
+ 
+
+    // 创建一个B操作
+
+ 
+
+    NSBlockOperation *operationB = [NSBlockOperation blockOperationWithBlock:^{
+
+ 
+
+        for (int j = 0; j&lt;20; j++) {
+
+ 
+
+            NSLog(@&quot;j的值是:%d&quot;,j);
+
+ 
+
+        }
+
+ 
+
+    }];
+
+ 
+
+　// 添加依赖 B要在A打印完在进行打印 所以是B依赖于A 那么只需要添加如下代码即可完成
+
+　　[operationB addDependency:operationA];
+
+    // 分别加入到队列中
+
+     [queue addOperation:operationA];
+
+    [queue addOperation:operationB];
+
+ 
+
+}
+
+ 
+打印结果
+2015-07-28 17:54:02.606 111[16625:1882738] i的值是:0
+2015-07-28 17:54:02.609 111[16625:1882738] i的值是:1
+2015-07-28 17:54:02.609 111[16625:1882738] i的值是:2
+2015-07-28 17:54:02.609 111[16625:1882738] i的值是:3
+2015-07-28 17:54:02.609 111[16625:1882738] i的值是:4
+2015-07-28 17:54:02.609 111[16625:1882738] i的值是:5
+2015-07-28 17:54:02.609 111[16625:1882738] i的值是:6
+2015-07-28 17:54:02.609 111[16625:1882738] i的值是:7
+2015-07-28 17:54:02.610 111[16625:1882738] i的值是:8
+2015-07-28 17:54:02.610 111[16625:1882738] i的值是:9
+2015-07-28 17:54:02.610 111[16625:1882738] j的值是:0
+2015-07-28 17:54:02.610 111[16625:1882738] j的值是:1
+2015-07-28 17:54:02.610 111[16625:1882738] j的值是:2
+2015-07-28 17:54:02.610 111[16625:1882738] j的值是:3
+2015-07-28 17:54:02.610 111[16625:1882738] j的值是:4
+2015-07-28 17:54:02.611 111[16625:1882738] j的值是:5
+2015-07-28 17:54:02.611 111[16625:1882738] j的值是:6
+2015-07-28 17:54:02.611 111[16625:1882738] j的值是:7
+2015-07-28 17:54:02.611 111[16625:1882738] j的值是:8
+2015-07-28 17:54:02.611 111[16625:1882738] j的值是:9
+顺序操作请求完成。
+</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q6、引用计数器</string>
+			<key>answer</key>
+			<string>引用计数器 是针对 堆中的 对象进行的 + - 操作； retain +1  releaese -1 （在堆以外的其他 内存空间 不可对计数器操 + - 作 ，栈中对象 即没有开辟内存的nil对象 计数器始终为 0 ，常量区的对象 计数器始终为 -1</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q7、copy和strong修饰变量的区别</string>
+			<key>answer</key>
+			<string>copy和strong修饰变量的区别 
+
+大部分的时候NSString的属性都是copy，那copy与strong底有什么区别呢?  比如： @property (retain,nonatomic) NSString *rStr; @property (copy, nonatomic)   NSString *cStr;  - (void)test: {     NSMutableString *mStr = [NSMutableStringstringWithFormat:@&quot;abc&quot;];     self.rStr   = mStr;     self.cStr     = mStr;     NSLog(@&quot;mStr:%p,%p&quot;,  mStr,&amp;mStr);     NSLog(@&quot;retainStr:%p,%p&quot;, _rStr, &amp;_rStr);     NSLog(@&quot;copyStr:%p,%p&quot;,   _cStr, &amp;_cStr); ｝ 输出结果是 self.rStr 与  mStr 地址相同 共有同一个内存地址，是进行了一次浅拷贝，而copy的内存地址则不同，是进行了一次深拷贝。
+  如果现在改变mStr的值：     [mStr appendString:@&quot;de&quot;];     NSLog(@&quot;retainStr:%@&quot;,  _rStr);     NSLog(@&quot;copyStr:%@&quot;,    _cStr);  结果， 使用retain的字串rStr的值：@&quot;abcde&quot;, 而使用copy的字串cStr的值:@&quot;abc&quot;, 所以，如果一般情况下，我们都不希望字串的值跟着mStr变化，所以我们一般用copy来设置string的属性。 如果希望字串的值跟着赋值的字串的值变化，可以使用strong，retain。 注意：上面的情况是针对于当把NSMutableString赋值给NSString的时候，才会有不同，如果是赋值是NSString对象，那么使用copy还是strong，结果都是一样的，因为NSString对象根本就不能改变自身的值，他是不可变的。  把一个对象赋值给一个属性变量，当这个对象变化了，如果希望属性变量变化就使用strong属性，如果希望属性变量不跟着变化，就是用copy属性。  由此可以看出： 对源头是NSMutableString的字符串，retain仅仅是指针引用，增加了引用计数器，这样源头改变的时候，用这种retain方式声明的变量（无论被赋值的变量是可变的还是不可变的），它也会跟着改变;而copy声明的变量，它不会跟着源头改变，它实际上是深拷贝。  对源头是NSString的字符串，无论是retain声明的变量还是copy声明的变量，当第二次源头的字符串重新指向其它的地方的时候，它还是指向原来的最初的那个位置，也就是说其实二者都是指针引用，也就是浅拷贝。  另外说明一下，这两者对内存计数的影响都是一样的，都会增加内存引用计数，都需要在最后的时候做处理。  其实说白了，对字符串为啥要用这两种方式？我觉得还是一个安全问题，比如声明的一个NSString *str变量，然后把一个NSMutableString *mStr变量的赋值给它了，如果要求str跟着mStr变化，那么就用retain;如果str不能跟着mStr一起变化，那就用copy。而对于要把NSString类型的字符串赋值给str，那两都没啥区别。不会影响安全性，内存管理也一样。</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q8、KeyChina的使用</string>
+			<key>answer</key>
+			<string>今天了解一下KeyChina,之前保存的用户信息都放在NSUserDefaults,这样很不安全,现在写的话我会放在KeyChina中,因为他存储的信息还是比较安全的,Keychain的信息是存在于每个应用（app）的沙盒之外的，所以keychain里保存的信息不会因App被删除而丢失，在用户重新安装App后依然有效，数据还在。(就是将一些敏感信息,储存起来);
+接下来我们来简单的集成一下吧,保存用户的账号和密码,还有其他用处,这里并没有介绍:
+集成之前先说一下,KeyChina现在不支持ARC,所以需要我们手动的配置工程,在代码中会有体现,
+首先导入系统的框架: Security.framework
+
+然后我们新建一个类:KeyChina;
+
+.m:
+#import &lt;Foundation/Foundation.h&gt;
+#import &lt;Security/Security.h&gt;
+
+@interface KeyChina : NSObject
+/**
+ *  用KeyChaina去保存用户名和密码
+ */
++(void)save:(NSString *)service data:(id)data;
+/**
+ *  从KeyChina取出用户名和密码
+ */
++(id)load:(NSString *)service;
+/**
+ *  从KeyChina中删除用户名和密码
+ */
++ (void)delete:(NSString *)service;
+
+
+@end
+.h实现:
+#import &quot;KeyChina.h&quot;
+@implementation KeyChina
+
+/**
+ *  该类需要工作在mrc模式下,如果项目是arc,按照下面进行操作
+ *  选中工程-&gt;TARGETS-&gt;相应的target然后选中右侧的“Build Phases”，向下就找到“Compile Sources”了。然后在相应的文件后面添加:-fno-objc-arc参数
+ */
+
++(NSMutableDictionary *)getKeychinaQuery:(NSString *)service{
+    
+    return [NSMutableDictionary dictionaryWithObjectsAndKeys:(id)kSecClassGenericPassword, (id)kSecClass, service, (id)kSecAttrService, service, (id)kSecAttrAccount, (id)kSecAttrAccessibleAfterFirstUnlock, (id)kSecAttrAccessible, nil];
+    
+}
+
+#pragma mark -- 写入
++(void)save:(NSString *)service data:(id)data{
+    
+    //Get search dictionary
+    NSMutableDictionary *keyChinaQuery = [self getKeychinaQuery:service];
+    //Delete old item before add new item
+    SecItemDelete((CFDictionaryRef)keyChinaQuery);
+    //Add new object to search dictionary(Attention:the data format)
+    [keyChinaQuery setObject:[NSKeyedArchiver archivedDataWithRootObject:data] forKey:(id)kSecValueData];
+    //Add item to keychain with the search dictionary
+    SecItemAdd((CFDictionaryRef)keyChinaQuery, NULL);
+}
+#pragma mark -- 读取
++ (id)load:(NSString *)service{
+    
+    id ret = nil;
+    NSMutableDictionary *keychinaQuery = [self getKeychinaQuery:service];
+    //Configure the search setting
+    //Since in our simple case we are expecting only a single attribute to be returned (the password) we can set the attribute kSecReturnData to kCFBooleanTrue
+    [keychinaQuery setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnData];
+    [keychinaQuery setObject:(id)kSecMatchLimitOne forKey:(id)kSecMatchLimit];
+    
+    CFDataRef keyData = NULL;
+    if (SecItemCopyMatching((CFDictionaryRef)keychinaQuery, (CFTypeRef *)&amp;keyData) == noErr) {
+        @try {
+            ret = [NSKeyedUnarchiver unarchiveObjectWithData:(NSData *)keyData];
+        } @catch (NSException *e) {
+            NSLog(@&quot;Unarchive of %@ failed: %@&quot;, service, e);
+        } @finally {
+        }
+    }
+    if (keyData)
+        CFRelease(keyData);
+        return ret;
+    
+}
+#pragma mark -- 删除
++(void)delete:(NSString *)service{
+    NSMutableDictionary *keychinaQuery = [self getKeychinaQuery:service];
+    SecItemDelete((CFDictionaryRef)keychinaQuery);
+}
+
+
+@end
+在需要的地方调用:
+#import &quot;ViewController.h&quot;
+#import &quot;KeyChina.h&quot;
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    NSString * const KEY_USERNAME_PASSWORD = @&quot;com.company.app.usernamepassword&quot;;
+    NSString * const KEY_USERNAME = @&quot;com.company.app.username&quot;;
+    NSString * const KEY_PASSWORD = @&quot;com.company.app.password&quot;;
+    
+    NSMutableDictionary *userNamePasswordKVPairs = [NSMutableDictionary dictionary];
+    [userNamePasswordKVPairs setObject:@&quot;userName&quot; forKey:KEY_USERNAME];
+    [userNamePasswordKVPairs setObject:@&quot;password&quot; forKey:KEY_PASSWORD];
+
+    // A、将用户名和密码写入keychain
+   [KeyChina save:KEY_USERNAME_PASSWORD data:userNamePasswordKVPairs];
+    // B、从keychain中读取用户名和密码
+    NSMutableDictionary *readUsernamePassword = (NSMutableDictionary *)[KeyChina load:KEY_USERNAME_PASSWORD];
+    NSString *userName = [readUsernamePassword objectForKey:KEY_USERNAME];
+    NSString *password = [readUsernamePassword objectForKey:KEY_PASSWORD];
+    NSLog(@&quot;username = %@&quot;, userName);
+    NSLog(@&quot;password = %@&quot;, password);
+    
+    // C、将用户名和密码从keychain中删除
+    [KeyChina delete:KEY_USERNAME_PASSWORD];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+    
+}
+
+@end
+OK了!!!
+</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q9、KVO原理</string>
+			<key>answer</key>
+			<string>一、KVO是什么？
+KVO 是 Objective-C 对观察者设计模式的一种实现。【另外一种是：通知机制（notification），详情参考：iOS 趣谈设计模式——通知】； KVO提供一种机制，指定一个被观察对象(例如A类)，当对象某个属性(例如A中的字符串name)发生更改时，对象会获得通知，并作出相应处理；【且不需要给被观察的对象添加任何额外代码，就能使用KVO机制】
+在MVC设计架构下的项目，KVO机制很适合实现mode模型和view视图之间的通讯。 例如：代码中，在模型类A创建属性数据，在控制器中创建观察者，一旦属性数据发生改变就收到观察者收到通知，通过KVO再在控制器使用回调方法处理实现视图B的更新；(本文中的应用就是这样的例子.)
+二、实现原理？ 
+KVO在Apple中的API文档如下： 
+     Automatic key-value observing is implemented using a technique called 
+isa-swizzling… When an observer is registered for an attribute of an object the 
+isa pointer of the observed object is modified, pointing to an intermediate class 
+rather than at the true class …
+KVO 的实现依赖于 Objective-C 强大的 Runtime，从以上Apple 的文档可以看出苹果对于KVO机制的实现是一笔带过，而具体的细节没有过多的描述，但是我们可以通过Runtime的所提供的方法去探索【可参考：Runtime的几个小例子】，关于KVO机制的底层实现原理。为此啊左从网上的一些关于KVO的资料总结了有关的内容：
+基本的原理：
+当观察某对象A时，KVO机制动态创建一个对象A当前类的子类，并为这个新的子类重写了被观察属性keyPath的setter 方法。setter 方法随后负责通知观察对象属性的改变状况。
+深入剖析：
+Apple 使用了 isa 混写（isa-swizzling）来实现 KVO 。当观察对象A时，KVO机制动态创建一个新的名为： NSKVONotifying_A的新类，该类继承自对象A的本类，且KVO为NSKVONotifying_A重写观察属性的setter 方法，setter 方法会负责在调用原 setter 方法之前和之后，通知所有观察对象属性值的更改情况。 （备注： isa 混写（isa-swizzling）isa：is a kind of ； swizzling：混合，搅合；）
+①NSKVONotifying_A类剖析：在这个过程，被观察对象的 isa 指针从指向原来的A类，被KVO机制修改为指向系统新创建的子类 NSKVONotifying_A类，来实现当前类属性值改变的监听； 所以当我们从应用层面上看来，完全没有意识到有新的类出现，这是系统“隐瞒”了对KVO的底层实现过程，让我们误以为还是原来的类。但是此时如果我们创建一个新的名为“NSKVONotifying_A”的类()，就会发现系统运行到注册KVO的那段代码时程序就崩溃，因为系统在注册监听的时候动态创建了名为NSKVONotifying_A的中间类，并指向这个中间类了。 （isa 指针的作用：每个对象都有isa 指针，指向该对象的类，它告诉 Runtime 系统这个对象的类是什么。所以对象注册为观察者时，isa指针指向新子类，那么这个被观察的对象就神奇地变成新子类的对象（或实例）了。） 因而在该对象上对 setter 的调用就会调用已重写的 setter，从而激活键值通知机制。 —&gt;我猜，这也是KVO回调机制，为什么都俗称KVO技术为黑魔法的原因之一吧：内部神秘、外观简洁。 ②子类setter方法剖析：KVO的键值观察通知依赖于 NSObject 的两个方法:willChangeValueForKey:和 didChangevlueForKey:，在存取数值的前后分别调用2个方法： 被观察属性发生改变之前，willChangeValueForKey:被调用，通知系统该 keyPath 的属性值即将变更；当改变发生后， didChangeValueForKey: 被调用，通知系统该 keyPath 的属性值已经变更；之后， observeValueForKey:ofObject:change:context: 也会被调用。且重写观察属性的setter 方法这种继承方式的注入是在运行时而不是编译时实现的。 KVO为子类的观察者属性重写调用存取方法的工作原理在代码中相当于：
+-(void)setName:(NSString *)newName{ 
+[self willChangeValueForKey:@&quot;name&quot;];    //KVO在调用存取方法之前总调用 
+[super setValue:newName forKey:@&quot;name&quot;]; //调用父类的存取方法 
+[self didChangeValueForKey:@&quot;name&quot;];     //KVO在调用存取方法之后总调用}
+三、特点：
+观察者观察的是属性，只有遵循 KVO 变更属性值的方式才会执行KVO的回调方法，例如是否执行了setter方法、或者是否使用了KVC赋值。 如果赋值没有通过setter方法或者KVC，而是直接修改属性对应的成员变量，例如：仅调用_name = @&quot;newName&quot;，这时是不会触发kvo机制，更加不会调用回调方法的。 所以使用KVO机制的前提是遵循 KVO 的属性设置方式来变更属性值。
+四、步骤
+	•	1.注册观察者，实施监听；
+	•	2.在回调方法中处理属性发生的变化；
+	•	3.移除观察者  
+[应用部分] 
+五.实现方法（苹果API文档中的方法）：
+A.注册观察者：
+//第一个参数observer：观察者 （这里观察self.myKVO对象的属性变化）
+//第二个参数keyPath： 被观察的属性名称(这里观察self.myKVO中num属性值的改变)
+//第三个参数options： 观察属性的新值、旧值等的一些配置（枚举值，可以根据需要设置，例如这里可以使用两项）
+//第四个参数context： 上下文，可以为kvo的回调方法传值（例如设定为一个放置数据的字典）
+[self.myKVO addObserver:self forKeyPath:@&quot;num&quot; options:
+NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
+B. 属性(keyPath)的值发生变化时，收到通知，调用以下方法:
+//keyPath:属性名称
+//object:被观察的对象
+//change:变化前后的值都存储在change字典中
+//context:注册观察者时，context传过来的值
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary&lt;NSString *,id&gt; *)change context:(void *)context
+{
+}</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q10、SDWebImage底层实现有沙盒缓存机制</string>
+			<key>answer</key>
+			<string>SDWebImage底层实现有沙盒缓存机制，主要由三块组成 1、内存图片缓存 2、内存操作缓存 3、磁盘沙盒缓存 看着这里我只想说，有了封装真好 内部实现过程： 第一步，下载SDWebImage，导入工程。github托管地址https://github.com/rs/SDWebImage
+第二步，在需要的地方导入头文件
+1    #import &quot;UIImageView+WebCache.h&quot;
+第三步，调用sd_setImageWithURL：方法缓存图片，注意，这就是新版本的新方法，旧方法是setImageWithURL:。下面将几个方法都介绍一下。
+1. sd_setImageWithURL：
+
+1    //图片缓存的基本代码，就是这么简单
+
+        [self.image1 sd_setImageWithURL:imagePath1];
+2. sd_setImageWithURL:  completed:
+
+1    //用block 可以在图片加载完成之后做些事情
+2        [self.image2 sd_setImageWithURL:imagePath2 completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+3             
+4            NSLog(@&quot;这里可以在图片加载完成之后做些事情&quot;);
+5             
+6        }];
+3. sd_setImageWithURL:  placeholderImage:
+
+1    //给一张默认图片，先使用默认图片，当图片加载完成后再替换
+2        [self.image1 sd_setImageWithURL:imagePath1 placeholderImage:[UIImage imageNamed:@&quot;default&quot;]];
+4. sd_setImageWithURL:  placeholderImage:  completed:
+
+1    //使用默认图片，而且用block 在完成后做一些事情
+2        [self.image1 sd_setImageWithURL:imagePath1 placeholderImage:[UIImage imageNamed:@&quot;default&quot;] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+3             
+4            NSLog(@&quot;图片加载完成后做的事情&quot;);
+5             
+6        }];
+5. sd_setImageWithURL:  placeholderImage:  options:
+
+1    //options 选择方式
+2         
+3        [self.image1 sd_setImageWithURL:imagePath1 placeholderImage:[UIImage imageNamed:@&quot;default&quot;] options:SDWebImageRetryFailed];
+其他就不一一介绍了，oc是自文档语言，看方法名就知道干什么的了。除了带options选项的方法，其他的方法都是综合存储，也就是内存缓存和磁盘缓存结合的方式，如果你只需要内存缓存，那么在options这里选择SDWebImageCacheMemoryOnly就可以了。
+如果不想深入了解，到这里你已经可以用SDWebimage进行图片缓存了，接下来我要解释options的所有选项，以及SDWebImage内部执行流程。
+一、options所有选项：
+    　　//失败后重试
+         SDWebImageRetryFailed = 1 &lt;&lt; 0,
+
+         //UI交互期间开始下载，导致延迟下载比如UIScrollView减速。
+         SDWebImageLowPriority = 1 &lt;&lt; 1,
+
+         //只进行内存缓存
+         SDWebImageCacheMemoryOnly = 1 &lt;&lt; 2,
+
+         //这个标志可以渐进式下载,显示的图像是逐步在下载
+         SDWebImageProgressiveDownload = 1 &lt;&lt; 3,
+
+         //刷新缓存
+         SDWebImageRefreshCached = 1 &lt;&lt; 4,
+
+         //后台下载
+         SDWebImageContinueInBackground = 1 &lt;&lt; 5,
+
+         //NSMutableURLRequest.HTTPShouldHandleCookies = YES;
+
+         SDWebImageHandleCookies = 1 &lt;&lt; 6,
+
+         //允许使用无效的SSL证书
+         //SDWebImageAllowInvalidSSLCertificates = 1 &lt;&lt; 7,          
+         //优先下载
+         SDWebImageHighPriority = 1 &lt;&lt; 8,
+
+         //延迟占位符
+         SDWebImageDelayPlaceholder = 1 &lt;&lt; 9,
+
+         //改变动画形象
+         SDWebImageTransformAnimatedImage = 1 &lt;&lt; 10
+二、SDWebImage内部实现过程
+入口 setImageWithURL:placeholderImage:options: 会先把 placeholderImage 显示，然后 SDWebImageManager 根据 URL 开始处理图片。
+进入 SDWebImageManager-downloadWithURL:delegate:options:userInfo:，交给 SDImageCache 从缓存查找图片是否已经下载 queryDiskCacheForKey:delegate:userInfo:.
+先从内存图片缓存查找是否有图片，如果内存中已经有图片缓存，SDImageCacheDelegate 回调 imageCache:didFindImage:forKey:userInfo: 到 SDWebImageManager。
+SDWebImageManagerDelegate 回调 webImageManager:didFinishWithImage: 到 UIImageView+WebCache 等前端展示图片。
+如果内存缓存中没有，生成 NSInvocationOperation 添加到队列开始从硬盘查找图片是否已经缓存。
+根据 URLKey 在硬盘缓存目录下尝试读取图片文件。这一步是在 NSOperation 进行的操作，所以回主线程进行结果回调 notifyDelegate:。
+如果上一操作从硬盘读取到了图片，将图片添加到内存缓存中（如果空闲内存过小，会先清空内存缓存）。SDImageCacheDelegate 回调 imageCache:didFindImage:forKey:userInfo:。进而回调展示图片。
+如果从硬盘缓存目录读取不到图片，说明所有缓存都不存在该图片，需要下载图片，回调 imageCache:didNotFindImageForKey:userInfo:。
+共享或重新生成一个下载器 SDWebImageDownloader 开始下载图片。
+图片下载由 NSURLConnection 来做，实现相关 delegate 来判断图片下载中、下载完成和下载失败。
+connection:didReceiveData: 中利用 ImageIO 做了按图片下载进度加载效果。
+connectionDidFinishLoading: 数据下载完成后交给 SDWebImageDecoder 做图片解码处理。
+图片解码处理在一个 NSOperationQueue 完成，不会拖慢主线程 UI。如果有需要对下载的图片进行二次处理，最好也在这里完成，效率会好很多。
+在主线程 notifyDelegateOnMainThreadWithInfo: 宣告解码完成，imageDecoder:didFinishDecodingImage:userInfo: 回调给 SDWebImageDownloader。
+imageDownloader:didFinishWithImage: 回调给 SDWebImageManager 告知图片下载完成。
+通知所有的 downloadDelegates 下载完成，回调给需要的地方展示图片。
+将图片保存到 SDImageCache 中，内存缓存和硬盘缓存同时保存。写文件到硬盘也在以单独 NSInvocationOperation 完成，避免拖慢主线程。
+SDImageCache 在初始化的时候会注册一些消息通知，在内存警告或退到后台的时候清理内存图片缓存，应用结束的时候清理过期图片。
+SDWI 也提供了 UIButton+WebCache 和 MKAnnotationView+WebCache，方便使用。
+SDWebImagePrefetcher 可以预先下载图片，方便后续使用。
+从上面流程可以看出，当你调用setImageWithURL:方法的时候，他会自动去给你干这么多事，当你需要在某一具体时刻做事情的时候，你可以覆盖这些方法。比如在下载某个图片的过程中要响应一个事件，就覆盖这个方法：
+    //覆盖方法，指哪打哪，这个方法是下载imagePath2的时候响应
+        SDWebImageManager *manager = [SDWebImageManager sharedManager];
+
+        [manager downloadImageWithURL:imagePath2 options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+
+            NSLog(@&quot;显示当前进度&quot;);
+
+        } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+
+            NSLog(@&quot;下载完成&quot;);
+    }];</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q11、KVC与KVO的不同</string>
+			<key>answer</key>
+			<string>1.KVC与KVO的不同？
+KVC(键值编码)，即Key-Value Coding，一个非正式的Protocol，使用字符串(键)访问一个对象实例变量的机制。而不是通过调用Setter、Getter方法等显式的存取方式去访问。 KVO(键值监听)，即Key-Value Observing，它提供一种机制,当指定的对象的属性被修改后,对象就会接受到通知，前提是执行了setter方法、或者使用了KVC赋值。
+2.和notification(通知)的区别？
+notification比KVO多了发送通知的一步。 两者都是一对多，但是对象之间直接的交互，notification明显得多，需要notificationCenter来做为中间交互。而KVO如我们介绍的，设置观察者-&gt;处理属性变化，至于中间通知这一环，则隐秘多了，只留一句“交由系统通知”，具体的可参照以上实现过程的剖析。
+notification的优点是监听不局限于属性的变化，还可以对多种多样的状态变化进行监听，监听范围广，例如键盘、前后台等系统通知的使用也更显灵活方便。 （参照通知机制第五节系统通知名称内容）
+3.与delegate的不同？
+和delegate一样，KVO和NSNotification的作用都是类与类之间的通信。但是与delegate不同的是： 这两个都是负责发送接收通知，剩下的事情由系统处理，所以不用返回值；而delegate 则需要通信的对象通过变量(代理)联系； delegate一般是一对一，而这两个可以一对多。
+4.涉及技术：
+KVC/KVO实现的根本是Objective-C的动态性和runtime，以及访问器方法的实现；
+总结:
+对比其他的回调方式，KVO机制的运用的实现，更多的由系统支持，相比notification、delegate等更简洁些，并且能够提供观察属性的最新值以及原始值；但是相应的在创建子类、重写方法等等方面的内存消耗是很巨大的。所以对于两个类之间的通信，我们可以根据实际开发的环境采用不同的方法，使得开发的项目更加简洁实用。   另外需要注意的是，由于这种继承方式的注入是在运行时而不是编译时实现的，如果给定的实例没有观察者，那么KVO不会有任何开销，因为此时根本就没有KVO代码存在。但是即使没有观察者，委托和NSNotification还是得工作，这也是KVO此处零开销观察的优势。
+
+
+</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q12、Socket通信</string>
+			<key>answer</key>
+			<string>概念
+	•	socket又称“套接字”，socket在应用层和传输层之间，我们的应用层只要将数据传递给socket就可以了，socket会传递给传输层、网络层等。
+	•	网络通信其实就是Socket之间的通信。
+	•	数据在两个Socket之间通过IO传输数据。
+	•	Socket是纯C语言的，是跨平台的。
+	•	HTTP协议是基于Socket的，HTTP协议的底层使用的就是Socket 
+	•	socket的位置.png  
+socket通信过程，使用步骤：
+	1.	创建Socket
+	2.	连接到服务器
+	3.	发送数据给服务器
+	4.	从服务器接收数据
+	5.	关闭连接</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q13、修改状态栏颜色</string>
+			<key>answer</key>
+			<string>	1.首先是设置info.plist 文件：
+　　		将View controller-based status bar appearance 的值设置为NO。
+	2.在AppDelegate.m 的方法中如下设置,默认会显示黑色等于为你的app状态栏设置一个主颜色
+
+	- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+		//设置全局状态栏字体颜色为黑色
+		[UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+		//设置全局状态栏字体颜色为白色
+		// [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+
+		return YES;
+	}
+	3.在需要设置为白色的地方添加如下代码：  	[UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;  
+	4.在需要变回黑色的地方添加如下代码：  	[UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+ 	例如你想将一个控制器的状态栏的字体颜色设为白色代码如下：  	#pragma mark - 设置状态栏颜色 	-(void)viewWillAppear:(BOOL)animated{ 		[super viewWillAppear:animated];
+		//设置状态栏字体颜色为白色 		[UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;   	}
+	-(void)viewWillDisappear:(BOOL)animated
+	{  		[super viewWillDisappear:animated]; 		//恢复状态栏字体为黑色 		[UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault; 
+	}</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q14、alpha 与 clear的 区别</string>
+			<key>answer</key>
+			<string>当两个控件重合的话、假如上层的控件 的透明度 为0 或者 颜色为clear的话 ，都会显示下层 控件；不同的是 透明度为零时 点击触发的是下层控件的点击事件，clear的话触发的是上层控件的事件。
+</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q15、iOS 9之后横屏时，状态栏会消失</string>
+			<key>answer</key>
+			<string>在iOS 9之后横屏时，状态栏会消失。
+	//解决方法：确保plist 中的【View controller-based status bar appearance】为YES，
+	然后重写ViewController的 - (BOOL)prefersStatusBarHidden ，返回值是NO。
+	- (BOOL)prefersStatusBarHidden{
+
+   		 return NO;
+	}</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q16、iOS分类(category)类扩展(extension)</string>
+			<key>answer</key>
+			<string>
+iOS分类(category),类扩展(extension)—史上最全攻略
+分类（Category）：
+概念
+分类（Category）是OC中的特有语法，它是表示一个指向分类的结构体的指针。原则上它只能增加方法，不能增加成员（实例）变量。具体原因看源码组成:
+Category源码：
+Category
+Category 是表示一个指向分类的结构体的指针，其定义如下：
+typedef struct objc_category *Category;
+struct objc_category {
+  char *category_name                          OBJC2_UNAVAILABLE; // 分类名
+  char *class_name                             OBJC2_UNAVAILABLE; // 分类所属的类名
+  struct objc_method_list *instance_methods    OBJC2_UNAVAILABLE; // 实例方法列表
+  struct objc_method_list *class_methods       OBJC2_UNAVAILABLE; // 类方法列表
+  struct objc_protocol_list *protocols         OBJC2_UNAVAILABLE; // 分类所实现的协议列表
+}
+通过上面我们可以发现，这个结构体主要包含了分类定义的实例方法与类方法，其中instance_methods 列表是 objc_class 中方法列表的一个子集，而class_methods列表是元类方法列表的一个子集。
+但这个结构体里面
+
+根本没有属性列表，
+根本没有属性列表，
+根本没有属性列表。
+注意： 1.分类是用于给原有类添加方法的,因为分类的结构体指针中，没有属性列表，只有方法列表。所以&lt; 原则上讲它只能添加方法, 不能添加属性(成员变量),实际上可以通过其它方式添加属性&gt; ; 2.分类中的可以写@property, 但不会生成setter/getter方法, 也不会生成实现以及私有的成员变量（编译时会报警告）; 3.可以在分类中访问原有类中.h中的属性; 4.如果分类中有和原有类同名的方法, 会优先调用分类中的方法, 就是说会忽略原有类的方法。所以同名方法调用的优先级为 分类 &gt; 本类 &gt; 父类。因此在开发中尽量不要覆盖原有类; 5.如果多个分类中都有和原有类中同名的方法, 那么调用该方法的时候执行谁由编译器决定；编译器会执行最后一个参与编译的分类中的方法。
+分类格式：
+@interface 待扩展的类（分类的名称）
+@end
+
+@implementation 待扩展的名称（分类的名称）
+@end
+
+实际代码如下：
+//  Programmer+Category.h文件中
+@interface Programmer (Category)
+
+@property(nonatomic,copy) NSString *nameWithSetterGetter;           //设置setter/getter方法的属性
+
+@property(nonatomic,copy) NSString *nameWithoutSetterGetter;        //不设置setter/getter方法的属性（注意是可以写在这，而且编译只会报警告，运行不报错）
+
+- (void) programCategoryMethod;                                     //分类方法
+
+@end
+
+//  Programmer+Category.m文件中
+
+那么问题来了：
+为什么在分类中声明属性时，运行不会出错呢？ 既然分类不让添加属性，那为什么我写了@property仍然还以编译通过呢？
+接下来我们探究下分类不能添加属性的实质原因：
+我们知道在一个类中用@property声明属性，编译器会自动帮我们生成_成员变量和setter/getter，但分类的指针结构体中，根本没有属性列表。所以在分类中用@property声明属性，既无法生成_成员变量也无法生成setter/getter。 因此结论是：我们可以用@property声明属性，编译和运行都会通过，只要不使用程序也不会崩溃。但如果调用了_成员变量和setter/getter方法，报错就在所难免了。
+
+报错原因如下
+//普通声明，无setter/getter
+//    programmer.nameWithoutSetterGetter = @&quot;无setter/getter&quot;;    //调用setter，编译成功，运行报错为：（-[Programmer setNameWithSetterGetter:]: unrecognized selector sent to instance 0x7f9de358fd70&apos;）
+    
+//    NSLog(@&quot;%@&quot;,programmer.nameWithoutSetterGetter);           //调用getter，编译成功，运行报错为-[Programmer setNameWithSetterGetter:]: unrecognized selector sent to instance 0x7fe22be11ea0&apos;
+
+//    NSLog(@&quot;%@&quot;,_nameWithoutSetterGetter);        //这是调用_成员变量,错误提示为：（Use of undeclared identifier &apos;_nameWithoutSetterGetter&apos;）
+那接下来我们继续思考: 既然报错的根本原因是使用了系统没有生成的setter/getter方法，可不可以在手动添加setter/getter来避免崩溃，完成调用呢？ 其实是可以的。由于OC是动态语言，方法真正的实现是通过runtime完成的，虽然系统不给我们生成setter/getter，但我们可以通过runtime手动添加setter/getter方法。那具体怎么实现呢？
+代码实现如下:
+按照这个思路，我们通过运行时手动添加这个方法。
+#import &lt;objc/runtime.h&gt;
+
+static NSString *nameWithSetterGetterKey = @&quot;nameWithSetterGetterKey&quot;;   //定义一个key值
+@implementation Programmer (Category)
+
+//运行时实现setter方法
+- (void)setNameWithSetterGetter:(NSString *)nameWithSetterGetter {
+        objc_setAssociatedObject(self, &amp;nameWithSetterGetterKey, nameWithSetterGetter, OBJC_ASSOCIATION_COPY);
+}
+
+//运行时实现getter方法
+- (NSString *)nameWithSetterGetter {
+    return objc_getAssociatedObject(self, &amp;nameWithSetterGetterKey);
+}
+
+@end
+
+实际使用效果
+//通过runtime实现了setter/getter
+    programmer.nameWithSetterGetter = @&quot;有setter/getter&quot;;    //调用setter，成功
+    NSLog(@&quot;%@&quot;,programmer.nameWithSetterGetter);            //调用getter，成功
+//    NSLog(@&quot;%@&quot;,_nameWithSetterGter); //这是调用_成员变量，错误提示为：（Use of undeclared identifier &apos;_nameWithSetterGetter&apos;）
+
+问题解决。
+但是注意，以上代码仅仅是手动实现了setter/getter方法，但调用_成员变量依然报错。
+类扩展（Class Extension）
+Extension是Category的一个特例。类扩展与分类相比只少了分类的名称，所以称之为“匿名分类”。 其实开发当中，我们几乎天天在使用。对于有些人来说像是最熟悉的陌生人。
+类扩展格式：
+@interface XXX ()
+//私有属性
+//私有方法（如果不实现，编译时会报警,Method definition for &apos;XXX&apos; not found）
+@end
+作用：
+为一个类添加额外的原来没有变量，方法和属性 一般的类扩展写到.m文件中 一般的私有属性写到.m文件中的类扩展中
+
+类别与类扩展的区别：
+①类别中原则上只能增加方法（能添加属性的的原因只是通过runtime解决无setter/getter的问题而已）； ②类扩展不仅可以增加方法，还可以增加实例变量（或者属性），只是该实例变量默认是@private类型的（ 用范围只能在自身类，而不是子类或其他地方）； ③类扩展中声明的方法没被实现，编译器会报警，但是类别中的方法没被实现编译器是不会有任何警告的。这是因为类扩展是在编译阶段被添加到类中，而类别是在运行时添加到类中。 ④类扩展不能像类别那样拥有独立的实现部分（@implementation部分），也就是说，类扩展所声明的方法必须依托对应类的实现部分来实现。 ⑤定义在 .m 文件中的类扩展方法为私有的，定义在 .h 文件（头文件）中的类扩展方法为公有的。类扩展是在 .m 文件中声明私有方法的非常好的方式。
+
+类别与类扩展的使用场景：
+1.继承Inherit
+这个是面向对象语言都有的一个特性，子类会继承父类的方法和属性。
+对于以下情况，无法使用类别，必须使用继承。
+1）新扩展的方法与原方法同名，但是还需要使用父类的实现。因为使用类别，会覆盖原类的实现，无法访问到原来的方法。
+2）扩展类的属性，这个类别无法做到。
+
+
+2.类别category 
+这是Objective-C语言的一个特性，可以在不改变类名和原来类的实现的前提下，实现对类的方法扩展。
+以下两种方式最后使用类别。
+1）针对系统提供的一些类，例如：NSString,NSArray,NSNumber等类，系统本身不提倡使用继承去扩展方法，因为这些类内部实现对继承有所限制，所以最后使用类别来进行方法扩展。
+2）类别支持开发人员针对自己构建的类，把相关的方法分组到多个单独的文件中，对于大型而复杂的类，这有助于提高可维护性，并简化单个源文件的管理。
+
+
+
+</string>
+		</dict>
+	</array>
+</dict>
+</plist>

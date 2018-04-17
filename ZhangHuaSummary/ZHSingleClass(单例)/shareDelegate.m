@@ -61,5 +61,16 @@
     }
     return nil;
 }
-
+/**
+ 根据字符串 获取控件高度
+ 
+ @param text 字符串
+ @param font 字符串字号
+ @param wid  承载字符串控件宽度
+ @return控件高度
+ */
++ (CGFloat)labelHeightText:(NSString * )text  Font:(float)font Width:(float)wid{
+    CGRect rect = [text boundingRectWithSize:CGSizeMake(wid, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font]} context:nil];
+    return rect.size.height;
+}
 @end

@@ -41,8 +41,8 @@
 #define SC_HEIGHT [UIScreen mainScreen].bounds.size.height
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
 //屏幕比例适配
-#define SCALE_X 375.0*SC_WIDTH
-#define SCALE_Y 667.0*SC_HEIGHT
+#define W(R) R*(SC_WIDTH/375.0)
+#define H(R) R*(SC_HEIGHT/667.0)
 
 //设置颜色
 #define COLORFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000)>>16))/255.0 green:((float)((rgbValue & 0xFF00)>>8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]

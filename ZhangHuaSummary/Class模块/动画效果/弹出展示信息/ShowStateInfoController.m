@@ -33,8 +33,8 @@
     [addButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view.mas_centerX);
         make.centerY.equalTo(self.view.mas_centerY);
-        make.height.mas_equalTo(40/SCALE_Y);
-        make.width.mas_equalTo(140/SCALE_X);
+        make.height.mas_equalTo(H(40));
+        make.width.mas_equalTo(W(140));
         
         
     }];

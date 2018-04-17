@@ -41,6 +41,9 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
+    
+    self.tableView.tableFooterView = [UIView new];
+    self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
 
 }
 -(void)handleSingleTap{

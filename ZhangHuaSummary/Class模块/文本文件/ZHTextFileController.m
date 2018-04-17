@@ -17,12 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initTableViewData];
+
     // Do any additional setup after loading the view.
 }
 -(void)initTableViewData{
     
-    self.tableListArray = @[@"学习类",@"旅游攻略"];
-    self.controllerTitle = @[@"ZHLearningController",@"ZHTravelStrategyController"];
+    self.tableListArray = @[@"知识总结",@"文字样式设置",@"旅游攻略"];
+    self.controllerTitle = @[@"ZHSummaryController",@"ZHTextStyleController",@"ZHTravelStrategyController"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

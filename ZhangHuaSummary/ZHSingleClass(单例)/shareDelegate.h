@@ -18,4 +18,10 @@
  */
 +(NSData *)PictureCompressionImage:(UIImage *)image;
 
+/**
+ 
+ 根据字符串 获取控件高度
+ */
++ (CGFloat)labelHeightText:(NSString * ) text Font:(float) font Width:(float)wid;
+
 @end

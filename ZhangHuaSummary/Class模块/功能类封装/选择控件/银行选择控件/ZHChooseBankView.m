@@ -165,7 +165,7 @@
     }
     QDPickerModel *model = self.dataArray[row];
     UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.frame = CGRectMake(100/SCALE_X,5,30,30);
+    imageView.frame = CGRectMake(W(100),5,30,30);
     imageView.backgroundColor = [UIColor whiteColor];
     NSURL *imageUrl = [NSURL URLWithString:model.logo];
     [imageView sd_setImageWithURL:imageUrl];
@@ -176,7 +176,7 @@
     nameLabel.font = [UIFont systemFontOfSize:16];
     [nameLabel setTextColor:COLORFromRGB(0x333333)];
     nameLabel.text = model.name;
-    nameLabel.frame = CGRectMake(100/SCALE_X+40,5,200,16);
+    nameLabel.frame = CGRectMake(W(100)+40,5,200,16);
     [view addSubview:nameLabel];
     
     UILabel * conditionLabel = [[UILabel alloc] init];
@@ -184,7 +184,7 @@
     [conditionLabel setTextColor:COLORFromRGB(0x666666)];
     conditionLabel.font = [UIFont systemFontOfSize:12];
     conditionLabel.text = model.summ;
-    conditionLabel.frame = CGRectMake(100/SCALE_X+40,23,200,12);
+    conditionLabel.frame = CGRectMake(W(100)+40,23,200,12);
     [view addSubview:conditionLabel];
     
     return view;

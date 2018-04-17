@@ -17,13 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initTableViewData];
-    self.view.backgroundColor = [UIColor whiteColor];
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 -(void)initTableViewData{
     
-    self.tableListArray = @[@"倒计时按钮",@"开关按钮",@"图形验证码"];
-    self.controllerTitle = @[@"ZHCountdownBtnController",@"SwitchViewController",@"PatternCordController"];
+    self.tableListArray = @[@"倒计时按钮",@"开关按钮",@"图形验证码",@"水纹按钮"];
+    self.controllerTitle = @[@"ZHCountdownBtnController",@"SwitchViewController",@"PatternCordController",@"WaveButtonController"];
     
 }
 - (void)didReceiveMemoryWarning {

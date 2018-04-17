@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [self initTableViewData];
+    self.tableView.tableFooterView = [UIView new];
+    self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+
     // Do any additional setup after loading the view.
 }
 -(void)initTableViewData{
