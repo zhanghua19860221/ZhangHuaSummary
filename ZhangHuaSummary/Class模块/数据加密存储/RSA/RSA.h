@@ -126,7 +126,7 @@
 /**
  *  加密字符串
  *
- *  @param str 需要加密的字符串
+ *  @param string 需要加密的字符串
  */
 - (NSString *)rsaEncryptString:(NSString *)string;
 

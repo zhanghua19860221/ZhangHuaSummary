@@ -68,7 +68,7 @@
 - (void)selectPhoto:(UIBarButtonItem *)itemCamera {
 
     //创建sheet提示框，提示选择相机还是相册
-    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"请选择打开方式" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
 
     
     //相册选项

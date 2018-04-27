@@ -851,6 +851,76 @@ Extension是Category的一个特例。类扩展与分类相比只少了分类的
 
 </string>
 		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q17、MVVM原理</string>
+			<key>answer</key>
+			<string>	对于从java过度过来的程序员来说，对MVC的影响是深远的。但是在做iOS开发中使用MVC导致Controller越来越臃肿，既要承担view又要做网络请求，Controller变得难以维护。  所以使用MVVM将Controller解放出来，让Controller只需要专注数据调配工作。  	ViewModel则去负责数据加工并通过机制让view相应ViewModel的变化。  	MVVM是基于胖model的架构思路构造的，然后将胖model拆出成model和viewmodel两部分。  	viewmodel本质上算是model层，所以view并不适合直接持有viewmodel，因为viewmodel有可能并不是只服务于特定的一个view，使用更加松散的绑定关系降低viewmodel和view之间的耦合度。  源码分析:  	1 、首先model层代码实现kvc赋值  	2 、view层代码，view层空间全部使用懒加载方式，尽可能减少内存消耗  	3 、viewmodel层，对封装的network进行处理，将请求的网络数据存储在model模型里面。然后使用block带出去，方便在VC中使用处理。  	4 、在VC中调用viewmodel方法
+主要思想：           1 、由于展示逻辑被抽取到viewmodel中，所以view中的代码变得非常轻量级。           2 、由于viewmodel中的代码与UI无关，所以它具有良好的测试性。           3 、对于一个封装大量业务逻辑的model来说，改变它可能会比较困难，并且存在一定风险，在这种场景下，viewmodel可以作为model的适配器使用。从而避免对model进行较大的改动。
+部分示例代码:  Model
+	@interface HomeModel : BaseModel
+	@property (nonatomic,strong) NSString &lt;Optional&gt;*createdAt;
+	@property (nonatomic,strong) NSString &lt;Optional&gt;*newsCreateTime;
+	@property (nonatomic,strong) NSString &lt;Optional&gt;*newsId;
+	@end
+
+
+
+View
+	#import &lt;UIKit/UIKit.h&gt;
+	#import &quot;HomeModel.h&quot;
+	@interface HomeTableViewCell : UITableViewCell
+	@property (nonatomic,strong) HomeModel *data;
+	@end
+
+
+ViewModel
+	- (void)handleDataWithSuccess:(void (^)(NSArray *arr))success failure:(void(^)(NSError *error))failure{
+   	 /**
+   	  *  APIClient 网络连接
+   	  */
+   	 [[APIClient sharedManager] netWorkGetHomePageListWithPageSize:20 pageNum:1 success:^(Response *respone) {
+      	  NSLog(@&quot;.......respone.description : %@&quot;,respone.description);
+      	  if (respone.status==kEnumServerStateSuccess) {
+          	  NSLog(@&quot;请求成功!&quot;);
+           	 NSMutableArray *tmpArr=[NSMutableArray array];
+           	 for (NSDictionary *subDic in (NSArray *)[respone.data valueForKey:@&quot;results&quot;]) {
+             	   HomeModel *model=[[HomeModel alloc]initWithDic:subDic];
+              	  [tmpArr addObject:model];
+           	 }
+           	 success(tmpArr);
+       	 }
+   	 } failure:^(NSError *error) {
+     	   failure(error);
+   	 }];
+	}
+
+
+Controller
+	- (void)dataAccess{
+  	  HomeViewModel *homeViewModel=[[HomeViewModel alloc]init];
+   	 __WeakSelf__ wSelf=self;
+	 [homeViewModel handleDataWithSuccess:^(NSArray *arr) {
+
+       	 [wSelf.dataArr removeAllObjects];
+       	 [wSelf.dataArr addObjectsFromArray:arr];
+       	 dispatch_async(dispatch_get_main_queue(), ^{
+           	 [wSelf.homeTableView reloadData];
+       	 });
+   	 } failure:^(NSError *error) {
+       	 NSLog(@&quot;请求失败 error:%@&quot;,error.description);
+    	}];
+	}
+</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q18、NSSet  与 NSArray 差别</string>
+			<key>answer</key>
+			<string>1、set集合中一种,
+2 、set是无序（不像array那样有顺序），例如：元素分别是@&quot;1&quot;, @&quot;2&quot;, @&quot;3&quot;，实际显示时，可能是@&quot;1&quot;, @&quot;3&quot;, @&quot;2&quot;，或@&quot;2&quot;, @&quot;3&quot;, @&quot;1&quot;这样无充的,
+3 、set中元素是不可重复的.</string>
+		</dict>
 	</array>
 </dict>
 </plist>

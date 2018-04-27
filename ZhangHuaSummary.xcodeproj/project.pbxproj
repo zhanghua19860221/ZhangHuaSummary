@@ -51,7 +51,15 @@
 		1469550C205FB79000E0ADDC /* FirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1469550B205FB79000E0ADDC /* FirstController.m */; };
 		14695512205FB7C400E0ADDC /* ThirdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14695511205FB7C400E0ADDC /* ThirdController.m */; };
 		14695515205FB7DD00E0ADDC /* FourController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14695514205FB7DD00E0ADDC /* FourController.m */; };
+		146A175F20871971000ED880 /* dropdownMenu_cornerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 146A175E20871971000ED880 /* dropdownMenu_cornerIcon.png */; };
 		146B4ECB208470BF00D2EE66 /* ProblemDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146B4ECA208470BF00D2EE66 /* ProblemDetailController.m */; };
+		1485AE5720933C4900C01519 /* ZHCustomAFNController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1485AE5620933C4900C01519 /* ZHCustomAFNController.m */; };
+		1485AE6520933CFA00C01519 /* ZHNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1485AE5820933CFA00C01519 /* ZHNetWorking.m */; };
+		1485AE6620933CFA00C01519 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1485AE5B20933CFA00C01519 /* SVRadialGradientLayer.m */; };
+		1485AE6720933CFA00C01519 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1485AE5E20933CFA00C01519 /* SVProgressAnimatedView.m */; };
+		1485AE6820933CFA00C01519 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1485AE6120933CFA00C01519 /* SVProgressHUD.m */; };
+		1485AE6920933CFA00C01519 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1485AE6220933CFA00C01519 /* SVIndefiniteAnimatedView.m */; };
+		1485AE6A20933CFA00C01519 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1485AE6320933CFA00C01519 /* SVProgressHUD.bundle */; };
 		148861C22058FCE1001AEA7C /* ZHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148861C12058FCE1001AEA7C /* ZHLoadingView.m */; };
 		148861C8205901AC001AEA7C /* ZHProgressBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148861C7205901AC001AEA7C /* ZHProgressBarController.m */; };
 		1495CAE8206E3B0600ADA859 /* BasicsFundationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1495CAE7206E3B0600ADA859 /* BasicsFundationController.m */; };
@@ -219,8 +227,23 @@
 		14695511205FB7C400E0ADDC /* ThirdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ThirdController.m; path = "Class模块/视图布局/滑动菜单联动页面/SubController/ThirdController.m"; sourceTree = "<group>"; };
 		14695513205FB7DD00E0ADDC /* FourController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FourController.h; path = "Class模块/视图布局/滑动菜单联动页面/SubController/FourController.h"; sourceTree = "<group>"; };
 		14695514205FB7DD00E0ADDC /* FourController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FourController.m; path = "Class模块/视图布局/滑动菜单联动页面/SubController/FourController.m"; sourceTree = "<group>"; };
+		146A175E20871971000ED880 /* dropdownMenu_cornerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dropdownMenu_cornerIcon.png; path = "Class模块/功能类封装/下拉菜单/dropdownMenu_cornerIcon.png"; sourceTree = "<group>"; };
 		146B4EC9208470BF00D2EE66 /* ProblemDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProblemDetailController.h; path = "Class模块/文本文件/知识总结/ProblemDetailController.h"; sourceTree = "<group>"; };
 		146B4ECA208470BF00D2EE66 /* ProblemDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProblemDetailController.m; path = "Class模块/文本文件/知识总结/ProblemDetailController.m"; sourceTree = "<group>"; };
+		1485AE5520933C4900C01519 /* ZHCustomAFNController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHCustomAFNController.h; path = "Class模块/功能类封装/网络请求封装/ZHCustomAFNController.h"; sourceTree = "<group>"; };
+		1485AE5620933C4900C01519 /* ZHCustomAFNController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHCustomAFNController.m; path = "Class模块/功能类封装/网络请求封装/ZHCustomAFNController.m"; sourceTree = "<group>"; };
+		1485AE5820933CFA00C01519 /* ZHNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHNetWorking.m; path = "Class模块/功能类封装/网络请求封装/ZHNetWorking.m"; sourceTree = "<group>"; };
+		1485AE5920933CFA00C01519 /* ZHNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHNetWorking.h; path = "Class模块/功能类封装/网络请求封装/ZHNetWorking.h"; sourceTree = "<group>"; };
+		1485AE5B20933CFA00C01519 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		1485AE5C20933CFA00C01519 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		1485AE5D20933CFA00C01519 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		1485AE5E20933CFA00C01519 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		1485AE5F20933CFA00C01519 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		1485AE6020933CFA00C01519 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		1485AE6120933CFA00C01519 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		1485AE6220933CFA00C01519 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		1485AE6320933CFA00C01519 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		1485AE6420933CFA00C01519 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
 		148861C02058FCE1001AEA7C /* ZHLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHLoadingView.h; path = "Class模块/动画效果/加载菊花/ZHLoadingView.h"; sourceTree = "<group>"; };
 		148861C12058FCE1001AEA7C /* ZHLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHLoadingView.m; path = "Class模块/动画效果/加载菊花/ZHLoadingView.m"; sourceTree = "<group>"; };
 		148861C6205901AC001AEA7C /* ZHProgressBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHProgressBarController.h; path = "Class模块/动画效果/进度条/ZHProgressBarController.h"; sourceTree = "<group>"; };
@@ -621,6 +644,66 @@
 			name = "知识总结";
 			sourceTree = "<group>";
 		};
+		146CC67620883AD20047426B /* 项目经验总结 */ = {
+			isa = PBXGroup;
+			children = (
+				146CC67920883B4A0047426B /* 导航栏修改 */,
+				146CC67820883B320047426B /* 状态栏修改 */,
+			);
+			name = "项目经验总结";
+			sourceTree = "<group>";
+		};
+		146CC67720883B1A0047426B /* 理论知识总结 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "理论知识总结";
+			sourceTree = "<group>";
+		};
+		146CC67820883B320047426B /* 状态栏修改 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "状态栏修改";
+			sourceTree = "<group>";
+		};
+		146CC67920883B4A0047426B /* 导航栏修改 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "导航栏修改";
+			sourceTree = "<group>";
+		};
+		1485AE5420933BD900C01519 /* 网络请求封装 */ = {
+			isa = PBXGroup;
+			children = (
+				1485AE5A20933CFA00C01519 /* SVProgressHUD */,
+				1485AE5920933CFA00C01519 /* ZHNetWorking.h */,
+				1485AE5820933CFA00C01519 /* ZHNetWorking.m */,
+				1485AE5520933C4900C01519 /* ZHCustomAFNController.h */,
+				1485AE5620933C4900C01519 /* ZHCustomAFNController.m */,
+			);
+			name = "网络请求封装";
+			sourceTree = "<group>";
+		};
+		1485AE5A20933CFA00C01519 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1485AE5B20933CFA00C01519 /* SVRadialGradientLayer.m */,
+				1485AE5C20933CFA00C01519 /* SVIndefiniteAnimatedView.h */,
+				1485AE5D20933CFA00C01519 /* SVProgressHUD.h */,
+				1485AE5E20933CFA00C01519 /* SVProgressAnimatedView.m */,
+				1485AE5F20933CFA00C01519 /* SVProgressHUD-Prefix.pch */,
+				1485AE6020933CFA00C01519 /* SVRadialGradientLayer.h */,
+				1485AE6120933CFA00C01519 /* SVProgressHUD.m */,
+				1485AE6220933CFA00C01519 /* SVIndefiniteAnimatedView.m */,
+				1485AE6320933CFA00C01519 /* SVProgressHUD.bundle */,
+				1485AE6420933CFA00C01519 /* SVProgressAnimatedView.h */,
+			);
+			name = SVProgressHUD;
+			path = "Class模块/功能类封装/网络请求封装/SVProgressHUD";
+			sourceTree = "<group>";
+		};
 		148861BD2058F751001AEA7C /* 加载菊花 */ = {
 			isa = PBXGroup;
 			children = (
@@ -807,6 +890,7 @@
 		14F4E5E620805858006C508A /* 下拉菜单 */ = {
 			isa = PBXGroup;
 			children = (
+				146A175E20871971000ED880 /* dropdownMenu_cornerIcon.png */,
 				14F4E5E720806253006C508A /* ZHDropDownMenuView.h */,
 				14F4E5E820806253006C508A /* ZHDropDownMenuView.m */,
 				14F4E5EA2080627A006C508A /* DropDownMenuController.h */,
@@ -862,23 +946,25 @@
 		70251BEB1F5E4D0900405C57 /* 文本文件 */ = {
 			isa = PBXGroup;
 			children = (
+				146CC67720883B1A0047426B /* 理论知识总结 */,
+				146CC67620883AD20047426B /* 项目经验总结 */,
 				1427F1BD20858B540037E693 /* 文字样式设置 */,
 				146B4EC520846CDA00D2EE66 /* 知识总结 */,
-				70251BF31F5E98C500405C57 /* 旅游攻略 */,
+				70251BF31F5E98C500405C57 /* 旅游攻略方案 */,
 				70251BED1F5E887A00405C57 /* ZHTextFileController.h */,
 				70251BEE1F5E887A00405C57 /* ZHTextFileController.m */,
 			);
 			name = "文本文件";
 			sourceTree = "<group>";
 		};
-		70251BF31F5E98C500405C57 /* 旅游攻略 */ = {
+		70251BF31F5E98C500405C57 /* 旅游攻略方案 */ = {
 			isa = PBXGroup;
 			children = (
 				70251C0A1F5E9FDD00405C57 /* 青海湖 */,
 				70251C261F5EA3CD00405C57 /* ZHTravelStrategyController.h */,
 				70251C271F5EA3CD00405C57 /* ZHTravelStrategyController.m */,
 			);
-			name = "旅游攻略";
+			name = "旅游攻略方案";
 			sourceTree = "<group>";
 		};
 		70251C0A1F5E9FDD00405C57 /* 青海湖 */ = {
@@ -1027,6 +1113,7 @@
 		709FEEB31F4D7DD400285983 /* 功能类封装 */ = {
 			isa = PBXGroup;
 			children = (
+				1485AE5420933BD900C01519 /* 网络请求封装 */,
 				14F4E5E620805858006C508A /* 下拉菜单 */,
 				14AB583A206882950068A9B2 /* 调取相机相册 */,
 				14D713CD2064F48900B0C520 /* 图片处理功能 */,
@@ -1195,6 +1282,7 @@
 				70251C171F5E9FDD00405C57 /* 2.png in Resources */,
 				70A0D1D01F4E747000670625 /* banner_tp01@2x.png in Resources */,
 				70251C1A1F5E9FDD00405C57 /* 5.png in Resources */,
+				146A175F20871971000ED880 /* dropdownMenu_cornerIcon.png in Resources */,
 				70251C251F5EA29400405C57 /* 6.jpeg in Resources */,
 				144D05F0205BC1C400A655A9 /* city.plist in Resources */,
 				146954E8205FA5AB00E0ADDC /* bankList.plist in Resources */,
@@ -1214,6 +1302,7 @@
 				14F7F08A206B79EF008762CB /* p.p12 in Resources */,
 				1453086A1FD921DF00F6DC8E /* pick_bg@2x.png in Resources */,
 				14F7F087206B79EF008762CB /* private.pem in Resources */,
+				1485AE6A20933CFA00C01519 /* SVProgressHUD.bundle in Resources */,
 				709FEEA51F4D63E100285983 /* Main.storyboard in Resources */,
 				145308691FD921DF00F6DC8E /* pick_bg.png in Resources */,
 				70A0D1D21F4E747000670625 /* banner_tp03@2x.png in Resources */,
@@ -1298,10 +1387,12 @@
 				709FEE9C1F4D63E100285983 /* main.m in Sources */,
 				144EBDC620638B8F006BEC8D /* ThirdBarController.m in Sources */,
 				14AB5840206885640068A9B2 /* ZHCallAlbumController.m in Sources */,
+				1485AE6920933CFA00C01519 /* SVIndefiniteAnimatedView.m in Sources */,
 				144EBDC920639AE9006BEC8D /* RootController.m in Sources */,
 				14F7F0A1206B7DB1008762CB /* ZHEncryptDataController.m in Sources */,
 				140552D6206200FF00B39652 /* ZHBezierPathController.m in Sources */,
 				1495CAEF206E3EE100ADA859 /* KVOModel.m in Sources */,
+				1485AE5720933C4900C01519 /* ZHCustomAFNController.m in Sources */,
 				14695515205FB7DD00E0ADDC /* FourController.m in Sources */,
 				14F7F092206B7A05008762CB /* RSA.m in Sources */,
 				70C23ED21F553DE100FAEBAA /* MidViewController.m in Sources */,
@@ -1319,13 +1410,17 @@
 				1495CAE8206E3B0600ADA859 /* BasicsFundationController.m in Sources */,
 				1427F1C020858BBC0037E693 /* ZHTextStyleController.m in Sources */,
 				705C1B511F6A6CF300D01751 /* toolClassEncap.m in Sources */,
+				1485AE6520933CFA00C01519 /* ZHNetWorking.m in Sources */,
+				1485AE6820933CFA00C01519 /* SVProgressHUD.m in Sources */,
 				146954F2205FB67A00E0ADDC /* ZHBannerLoop.m in Sources */,
 				14F7F0A7206B8295008762CB /* ZHFMDBController.m in Sources */,
 				144EBDCF2063A14E006BEC8D /* SecondeBarController.m in Sources */,
 				144EBDC020638945006BEC8D /* FirstBarController.m in Sources */,
 				70043AC21F4E7CDA00E82B8F /* viewLayoutController.m in Sources */,
+				1485AE6720933CFA00C01519 /* SVProgressAnimatedView.m in Sources */,
 				70C23ECF1F553DCE00FAEBAA /* LeftViewController.m in Sources */,
 				70251BEF1F5E887A00405C57 /* ZHTextFileController.m in Sources */,
+				1485AE6620933CFA00C01519 /* SVRadialGradientLayer.m in Sources */,
 				70043ACB1F4E7D8B00E82B8F /* animationController.m in Sources */,
 				14695508205FB6BD00E0ADDC /* ZHRoundDisplay.m in Sources */,
 				705C1B4D1F6A6CD900D01751 /* ZHPictureCache.m in Sources */,

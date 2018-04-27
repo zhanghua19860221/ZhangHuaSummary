@@ -9,6 +9,12 @@
 #ifndef ZHSummaryPch_pch
 #define ZHSummaryPch_pch
 
+//设置NSLog的打印显示行
+#ifdef DEBUG
+#   define CCPLog(fmt, ...) NSLog((@"[Line: %d] " fmt), __LINE__, ##__VA_ARGS__);
+#else
+#   define CCPLog(...)
+#endif
 
 // 公用头文件
 
