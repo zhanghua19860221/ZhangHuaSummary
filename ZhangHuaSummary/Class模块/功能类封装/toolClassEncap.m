@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableListArray = @[@"网络请求封装",@"视频播放处理",@"二维码扫描支付",@"选择器控件",@"拨打电话功能",@"文本阅读功能",@"图片处理功能",@"调取相机相册",@"下拉菜单"];
-    self.controllerTitle = @[@"ZHCustomAFNController",@"ZHAVPlayerClass",@"ZHQRCodePay",@"ZHChooseController",@"ZHCallTeleController",@"ZHReadTextController",@"PictureManageController",@"CallCameraAlbumController",@"DropDownMenuController"];
+    self.tableListArray = @[@"网络请求封装",@"视频播放处理",@"二维码扫描支付",@"选择器控件",@"拨打电话功能",@"文本阅读功能",@"图片处理功能",@"调取相机相册",@"下拉菜单",@"视图渐变色"];
+    self.controllerTitle = @[@"ZHCustomAFNController",@"ZHAVPlayerClass",@"ZHQRCodePay",@"ZHChooseController",@"ZHCallTeleController",@"ZHReadTextController",@"PictureManageController",@"CallCameraAlbumController",@"DropDownMenuController",@"ChangeColorController"];
     // Do any additional setup after loading the view.
 }
 

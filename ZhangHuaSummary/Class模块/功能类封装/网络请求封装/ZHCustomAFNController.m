@@ -8,6 +8,7 @@
 
 #import "ZHCustomAFNController.h"
 #import "ZHNetWorking.h"
+#import "SVProgressHUD.h"
 
 @interface ZHCustomAFNController ()
 
@@ -63,7 +64,11 @@
                                                 error:NULL];
     return str;
 }
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [SVProgressHUD dismiss];
 
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

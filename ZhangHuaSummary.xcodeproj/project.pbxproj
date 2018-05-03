@@ -80,6 +80,7 @@
 		14D713D02064F53400B0C520 /* PictureManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D713CF2064F53400B0C520 /* PictureManageController.m */; };
 		14EDAEE42064B08800C1BE3E /* PictureCompressionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EDAEE32064B08800C1BE3E /* PictureCompressionController.m */; };
 		14EDAEE82064B18000C1BE3E /* shareDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EDAEE72064B18000C1BE3E /* shareDelegate.m */; };
+		14F47517209464C700C206C3 /* ChangeColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F47516209464C700C206C3 /* ChangeColorController.m */; };
 		14F4E5E220804C33006C508A /* ZHPatternCordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E5E120804C33006C508A /* ZHPatternCordView.m */; };
 		14F4E5E520804C65006C508A /* PatternCordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E5E420804C65006C508A /* PatternCordController.m */; };
 		14F4E5E920806253006C508A /* ZHDropDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E5E820806253006C508A /* ZHDropDownMenuView.m */; };
@@ -283,6 +284,8 @@
 		14EDAEE32064B08800C1BE3E /* PictureCompressionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PictureCompressionController.m; path = "Class模块/功能类封装/图片压缩/PictureCompressionController.m"; sourceTree = "<group>"; };
 		14EDAEE62064B18000C1BE3E /* shareDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shareDelegate.h; sourceTree = "<group>"; };
 		14EDAEE72064B18000C1BE3E /* shareDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shareDelegate.m; sourceTree = "<group>"; };
+		14F47515209464C700C206C3 /* ChangeColorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ChangeColorController.h; path = "Class模块/功能类封装/视图颜色渐变/ChangeColorController.h"; sourceTree = "<group>"; };
+		14F47516209464C700C206C3 /* ChangeColorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ChangeColorController.m; path = "Class模块/功能类封装/视图颜色渐变/ChangeColorController.m"; sourceTree = "<group>"; };
 		14F4E5E020804C33006C508A /* ZHPatternCordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHPatternCordView.h; path = "Class模块/Button(按钮)/图形验证码/ZHPatternCordView.h"; sourceTree = "<group>"; };
 		14F4E5E120804C33006C508A /* ZHPatternCordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHPatternCordView.m; path = "Class模块/Button(按钮)/图形验证码/ZHPatternCordView.m"; sourceTree = "<group>"; };
 		14F4E5E320804C65006C508A /* PatternCordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PatternCordController.h; path = "Class模块/Button(按钮)/图形验证码/PatternCordController.h"; sourceTree = "<group>"; };
@@ -876,6 +879,15 @@
 			path = "ZHSingleClass(单例)";
 			sourceTree = "<group>";
 		};
+		14F475112094640900C206C3 /* 视图颜色渐变 */ = {
+			isa = PBXGroup;
+			children = (
+				14F47515209464C700C206C3 /* ChangeColorController.h */,
+				14F47516209464C700C206C3 /* ChangeColorController.m */,
+			);
+			name = "视图颜色渐变";
+			sourceTree = "<group>";
+		};
 		14F4E5DF20804B8D006C508A /* 图形验证码 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1113,6 +1125,7 @@
 		709FEEB31F4D7DD400285983 /* 功能类封装 */ = {
 			isa = PBXGroup;
 			children = (
+				14F475112094640900C206C3 /* 视图颜色渐变 */,
 				1485AE5420933BD900C01519 /* 网络请求封装 */,
 				14F4E5E620805858006C508A /* 下拉菜单 */,
 				14AB583A206882950068A9B2 /* 调取相机相册 */,
@@ -1373,6 +1386,7 @@
 				705C1B4E1F6A6CD900D01751 /* ZHWebImageCache.m in Sources */,
 				14C56745205A69AB00735FC8 /* ZHLoadingViewController.m in Sources */,
 				144D05E7205BC1AB00A655A9 /* ZHChooseBankController.m in Sources */,
+				14F47517209464C700C206C3 /* ChangeColorController.m in Sources */,
 				14AB5843206885890068A9B2 /* ZHAlbumListController.m in Sources */,
 				14AB5846206885CD0068A9B2 /* ZHCallCameraController.m in Sources */,
 				14F7F080206B79C9008762CB /* ZHMD5.m in Sources */,

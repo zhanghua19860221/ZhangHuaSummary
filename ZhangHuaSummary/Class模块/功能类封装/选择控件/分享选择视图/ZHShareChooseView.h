@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ZHShareChooseView : UIView
-
+@property (strong , nonatomic)NSArray *dataArray;
 
 @end

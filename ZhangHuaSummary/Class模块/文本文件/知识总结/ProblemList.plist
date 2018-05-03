@@ -921,6 +921,119 @@ Controller
 2 、set是无序（不像array那样有顺序），例如：元素分别是@&quot;1&quot;, @&quot;2&quot;, @&quot;3&quot;，实际显示时，可能是@&quot;1&quot;, @&quot;3&quot;, @&quot;2&quot;，或@&quot;2&quot;, @&quot;3&quot;, @&quot;1&quot;这样无充的,
 3 、set中元素是不可重复的.</string>
 		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q19、iOS原生与H5交互</string>
+			<key>answer</key>
+			<string>一、原生框架&lt;JavaScriptCore/JavaScriptCore&gt;
+1、JavaScriptCore: 是一种JavaScript引擎，主要为webKit提供脚本处理能力，可以JS调用OC，也可以OC调用JS;
+2、JSContext: 代表了JS的执行环境，通过-evalueScript: 方法就可以执行-- JS代码；
+3、 JSValue: 他封装了JS与OC中对应的类型，以及调用JS的API等；
+4、JSExport: 是一个协议，遵守此协议，就可以定义我们自己的协议，在协议中声明的API都会在JS中暴露出来，才能调用;
+二、交互方法
+1、第一种:直接拦截H5页面中点击事件的URL，可以截取这个URL中的参数，进行拼接，然后跳转到自己指定的界面
+#pragma mark ------------ 交互  
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType  {  
+//  直接 截取后面的id  
+   NSString *str = request.URL.resourceSpecifier;  
+   NSLog(@&quot;request.URL.resourceSpecifier = %@&quot;,request.URL.resourceSpecifier);  
+   NSString *strTwo = [NSString stringWithFormat:@&quot;http:%@&quot;,str];  
+   NSRange range = [strTwo rangeOfString:@&quot;newbieImg/&quot;];  
+   if (range.location != NSNotFound) {  
+       NSArray *array = [strTwo componentsSeparatedByString:@&quot;newbieImg/&quot;];  
+       NSString *strId = array[1];  
+       NSLog(@&quot;strId = %@&quot;, strId);  
+       CCCCCViewController *courseVC = [[CCCCCViewController alloc] init];  
+       courseVC.urlId = strTwo;  
+       [self.navigationController pushViewController:courseVC animated:YES];  
+       return NO;  
+	}  
+    return YES;  
+}     
+
+2、第二种:需要与后台也就是写H5的人约定方法。但这里有两种方法，一种是JS调用OC， 一种是OC调用JS
+
+(1)JS调用OC,并且传递参数
+第一步 添加框架，引入头文件  
+#import &lt;JavaScriptCore/JavaScriptCore.h&gt;    
+@interface WebCenterViewController ()&lt;UIWebViewDelegate&gt;  
+@property(nonatomic,strong) UIWebView *webView;  
+第二步 声明属性  
+@property (nonatomic, strong) JSContext *context;    
+@end  
+
+第三步，就需要知道后台指定的方法是什么了，比如
+
+test1是一个无参数的方法，test2是一个有参数的方法，这时我们就可以在webView网页加载完毕的那个方法中写到：
+
+#pragma mark ------------ webView加载完毕  
+-(void)webViewDidFinishLoad:(UIWebView *)webView  {   
+  NSLog(@&quot;网页加载完毕&quot;);  
+  //在网页加载完成后，获取每个参数  
+  //获取JS的运行环境  
+  _context = [webView valueForKeyPath:@&quot;documentView.webView.mainFrame.javaScriptContext&quot;];  
+  //JS调用无参数OC  
+  __weak WebCenterViewController *weakSelf = self;  
+  _context[@&quot;test1&quot;] = ^() {  
+  [weakSelf methond];  
+};  
+      
+    //JS调用有参数的OC  
+    _context[@&quot;test2&quot;] = ^() {  
+    //用数组接收传过来的多个参数  
+        NSArray *paramArray = [JSContext currentArguments];  
+        //然后取出相对应的值  
+        NSString *str1 = paramArray[0];  
+        NSString *str2 = paramArray[1];  
+        [weakSelf methondParam:str1 withStr:str2];  
+    };    
+}    
+//无参数的方法  
+- (void)methond {  
+    NSLog(@&quot;调用无参数的方法&quot;);    
+}    
+//有参数的方法  
+- (void)methondParam:(NSString *)str1 withStr:(NSString *)str2 {  
+    NSLog(@&quot;str1 = %@, str2 = %@&quot;, str1, str2);  
+}  
+注意：：：：调用的方法名test1，test2，一定要和html中的保持一致！！！！！！
+(2)OC调用JS方法  , OC 向 JS 传递参数
+只需要在点击方法中，初始化所要传递的对象，然后，利用stringByEvaluatingJavaScriptFromString此方法进行传参数：
+oc:
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @&quot;OC调用JS&quot;;
+    UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 40, self.view.frame.size.width, self.view.frame.size.height-40)];
+    webView.delegate = self;
+    NSString *path = [[NSBundle mainBundle]pathForResource:@&quot;index&quot; ofType:@&quot;html&quot;];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
+    [self.view addSubview:webView];
+    self.webView = webView;
+}
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    NSString *str = [self.webView stringByEvaluatingJavaScriptFromString:@&quot;show();&quot;];
+    NSLog(@&quot;%@&quot;,str);
+}
+html:
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;OC与JS互相调用&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;input type=&quot;button&quot; value=&quot;JS调用OC方法&quot; onclick=&quot;js_call_oc()&quot;/&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    function show(){
+        return &quot;oc调用js&quot;;
+    }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</string>
+		</dict>
 	</array>
 </dict>
 </plist>

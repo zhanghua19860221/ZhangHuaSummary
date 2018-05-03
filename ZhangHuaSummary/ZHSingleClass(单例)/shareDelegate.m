@@ -41,7 +41,6 @@
 
     if (sizeOne<1000) {
         return dataOne;
-
     }
     //循环语句压缩size
     int i = 1;

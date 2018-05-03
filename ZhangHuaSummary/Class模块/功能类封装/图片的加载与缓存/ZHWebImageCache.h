@@ -10,7 +10,7 @@
 
 
 /**
- 在协议方法里面对图片缓
+ 在协议方法里面对图片缓存
  */
 @protocol ZHWebImageDelegate <NSObject>
 
