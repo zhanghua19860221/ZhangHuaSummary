@@ -10,6 +10,10 @@
 		1427F1C020858BBC0037E693 /* ZHTextStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427F1BF20858BBC0037E693 /* ZHTextStyleController.m */; };
 		1427F1C22085C4520037E693 /* ProblemList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1427F1C12085C4520037E693 /* ProblemList.plist */; };
 		1427F1C52085C4960037E693 /* ZHSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427F1C42085C4960037E693 /* ZHSummaryController.m */; };
+		143B01F1209F21DD0002ED0A /* WaveBtnController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B01F0209F21DD0002ED0A /* WaveBtnController.m */; };
+		143B01F4209F22290002ED0A /* ZHWaveBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B01F3209F22290002ED0A /* ZHWaveBtnView.m */; };
+		143B0201209F27960002ED0A /* RunDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B01FD209F27960002ED0A /* RunDisplayController.m */; };
+		143B0202209F27960002ED0A /* StaticDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B0200209F27960002ED0A /* StaticDisplayController.m */; };
 		144D05C1205B8F3C00A655A9 /* ZHWaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C0205B8F3C00A655A9 /* ZHWaveController.m */; };
 		144D05C4205B8F4900A655A9 /* ZHWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C2205B8F4900A655A9 /* ZHWaveView.m */; };
 		144D05CA205BB35000A655A9 /* ZHWaveTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C9205BB35000A655A9 /* ZHWaveTwoView.m */; };
@@ -70,7 +74,6 @@
 		14F914DF209EDC8200A05D24 /* ZHCountdownBtnController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F914CB209EDC8100A05D24 /* ZHCountdownBtnController.m */; };
 		14F914E0209EDC8200A05D24 /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F914CE209EDC8100A05D24 /* SwitchViewController.m */; };
 		14F914E1209EDC8200A05D24 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F914D0209EDC8100A05D24 /* ButtonViewController.m */; };
-		14F914E2209EDC8200A05D24 /* WaveButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F914D2209EDC8100A05D24 /* WaveButtonController.m */; };
 		14F914FA209EE1C300A05D24 /* ZHWaterfallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F914EF209EE1C300A05D24 /* ZHWaterfallCell.m */; };
 		14F914FB209EE1C300A05D24 /* ZHCustomLayOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F914F1209EE1C300A05D24 /* ZHCustomLayOut.m */; };
 		14F914FC209EE1C300A05D24 /* ZHWaterfallStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F914F3209EE1C300A05D24 /* ZHWaterfallStyle.m */; };
@@ -160,6 +163,14 @@
 		1427F1C12085C4520037E693 /* ProblemList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ProblemList.plist; path = "Class模块/文本文件/知识总结/ProblemList.plist"; sourceTree = "<group>"; };
 		1427F1C32085C4960037E693 /* ZHSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHSummaryController.h; path = "Class模块/文本文件/知识总结/ZHSummaryController.h"; sourceTree = "<group>"; };
 		1427F1C42085C4960037E693 /* ZHSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHSummaryController.m; path = "Class模块/文本文件/知识总结/ZHSummaryController.m"; sourceTree = "<group>"; };
+		143B01EF209F21DD0002ED0A /* WaveBtnController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveBtnController.h; sourceTree = "<group>"; };
+		143B01F0209F21DD0002ED0A /* WaveBtnController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveBtnController.m; sourceTree = "<group>"; };
+		143B01F2209F22290002ED0A /* ZHWaveBtnView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHWaveBtnView.h; sourceTree = "<group>"; };
+		143B01F3209F22290002ED0A /* ZHWaveBtnView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHWaveBtnView.m; sourceTree = "<group>"; };
+		143B01FC209F27960002ED0A /* RunDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunDisplayController.h; sourceTree = "<group>"; };
+		143B01FD209F27960002ED0A /* RunDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunDisplayController.m; sourceTree = "<group>"; };
+		143B01FF209F27960002ED0A /* StaticDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticDisplayController.h; sourceTree = "<group>"; };
+		143B0200209F27960002ED0A /* StaticDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticDisplayController.m; sourceTree = "<group>"; };
 		144D05BF205B8F3C00A655A9 /* ZHWaveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHWaveController.h; path = "Class模块/动画效果/波浪/ZHWaveController.h"; sourceTree = "<group>"; };
 		144D05C0205B8F3C00A655A9 /* ZHWaveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHWaveController.m; path = "Class模块/动画效果/波浪/ZHWaveController.m"; sourceTree = "<group>"; };
 		144D05C2205B8F4900A655A9 /* ZHWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHWaveView.m; path = "Class模块/动画效果/波浪/ZHWaveView.m"; sourceTree = "<group>"; };
@@ -269,8 +280,6 @@
 		14F914CE209EDC8100A05D24 /* SwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
 		14F914CF209EDC8100A05D24 /* SwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
 		14F914D0209EDC8100A05D24 /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
-		14F914D2209EDC8100A05D24 /* WaveButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveButtonController.m; sourceTree = "<group>"; };
-		14F914D3209EDC8100A05D24 /* WaveButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveButtonController.h; sourceTree = "<group>"; };
 		14F914D4209EDC8100A05D24 /* ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
 		14F914EF209EE1C300A05D24 /* ZHWaterfallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHWaterfallCell.m; sourceTree = "<group>"; };
 		14F914F0209EE1C300A05D24 /* ZHWaterfallStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHWaterfallStyle.h; sourceTree = "<group>"; };
@@ -494,6 +503,37 @@
 			);
 			name = "RSA证书";
 			path = "Class模块/数据加密/RSA/RSA证书";
+			sourceTree = "<group>";
+		};
+		143B01EB209F219E0002ED0A /* 水纹效果 */ = {
+			isa = PBXGroup;
+			children = (
+				143B01FB209F27960002ED0A /* 点击开启 */,
+				143B01FE209F27960002ED0A /* 默认开启 */,
+				143B01F2209F22290002ED0A /* ZHWaveBtnView.h */,
+				143B01F3209F22290002ED0A /* ZHWaveBtnView.m */,
+				143B01EF209F21DD0002ED0A /* WaveBtnController.h */,
+				143B01F0209F21DD0002ED0A /* WaveBtnController.m */,
+			);
+			path = "水纹效果";
+			sourceTree = "<group>";
+		};
+		143B01FB209F27960002ED0A /* 点击开启 */ = {
+			isa = PBXGroup;
+			children = (
+				143B01FC209F27960002ED0A /* RunDisplayController.h */,
+				143B01FD209F27960002ED0A /* RunDisplayController.m */,
+			);
+			path = "点击开启";
+			sourceTree = "<group>";
+		};
+		143B01FE209F27960002ED0A /* 默认开启 */ = {
+			isa = PBXGroup;
+			children = (
+				143B01FF209F27960002ED0A /* StaticDisplayController.h */,
+				143B0200209F27960002ED0A /* StaticDisplayController.m */,
+			);
+			path = "默认开启";
 			sourceTree = "<group>";
 		};
 		1443E6E72057A42000198A97 /* 滑动菜单联动页面 */ = {
@@ -769,9 +809,9 @@
 		14F914C2209EDC8100A05D24 /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				143B01EB209F219E0002ED0A /* 水纹效果 */,
 				14F914C8209EDC8100A05D24 /* 倒计时按钮 */,
 				14F914CD209EDC8100A05D24 /* 开关按钮 */,
-				14F914D1209EDC8100A05D24 /* 水纹按钮 */,
 				14F914D4209EDC8100A05D24 /* ButtonViewController.h */,
 				14F914D0209EDC8100A05D24 /* ButtonViewController.m */,
 			);
@@ -796,15 +836,6 @@
 				14F914CF209EDC8100A05D24 /* SwitchViewController.h */,
 			);
 			path = "开关按钮";
-			sourceTree = "<group>";
-		};
-		14F914D1209EDC8100A05D24 /* 水纹按钮 */ = {
-			isa = PBXGroup;
-			children = (
-				14F914D2209EDC8100A05D24 /* WaveButtonController.m */,
-				14F914D3209EDC8100A05D24 /* WaveButtonController.h */,
-			);
-			path = "水纹按钮";
 			sourceTree = "<group>";
 		};
 		14F914EE209EE1C300A05D24 /* 瀑布流 */ = {
@@ -1457,6 +1488,7 @@
 				70251C2B1F5EA42100405C57 /* ZHQinHaiLake.m in Sources */,
 				14F914FD209EE1C300A05D24 /* ZHRoundLayout.m in Sources */,
 				14F914D7209EDC8200A05D24 /* ScrollViewController.m in Sources */,
+				143B0201209F27960002ED0A /* RunDisplayController.m in Sources */,
 				14F914E1209EDC8200A05D24 /* ButtonViewController.m in Sources */,
 				14F9153A209EEECE00A05D24 /* SVProgressAnimatedView.m in Sources */,
 				14C56745205A69AB00735FC8 /* ZHLoadingViewController.m in Sources */,
@@ -1498,6 +1530,7 @@
 				14F7F09C206B7B02008762CB /* KeyChinaController.m in Sources */,
 				14F91504209EE26600A05D24 /* ZHBannerLoopView.m in Sources */,
 				14F91524209EED3500A05D24 /* ZHPictureCache.m in Sources */,
+				143B01F1209F21DD0002ED0A /* WaveBtnController.m in Sources */,
 				1427F1C020858BBC0037E693 /* ZHTextStyleController.m in Sources */,
 				14F9143B209EB47C00A05D24 /* ZHChooseCityController.m in Sources */,
 				14F91505209EE26600A05D24 /* ZHBannerLoop.m in Sources */,
@@ -1529,6 +1562,7 @@
 				14F7F094206B7A05008762CB /* Base64.m in Sources */,
 				14F7F081206B79C9008762CB /* ZHMD5Controller.m in Sources */,
 				144EBDB92063487E006BEC8D /* SecondeController.m in Sources */,
+				143B0202209F27960002ED0A /* StaticDisplayController.m in Sources */,
 				14F914D8209EDC8200A05D24 /* UIScrollView+EmptyDataSet.m in Sources */,
 				70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */,
 				144D05C4205B8F4900A655A9 /* ZHWaveView.m in Sources */,
@@ -1539,6 +1573,7 @@
 				14F914DB209EDC8200A05D24 /* TableViewController.m in Sources */,
 				14F9155D209EF00600A05D24 /* PictureManageController.m in Sources */,
 				146954F8205FB68A00E0ADDC /* ZHMenuController.m in Sources */,
+				143B01F4209F22290002ED0A /* ZHWaveBtnView.m in Sources */,
 				14F91577209EF05400A05D24 /* ZHCallTeleController.m in Sources */,
 				14F7F099206B7AE3008762CB /* ZHKeyChina.m in Sources */,
 				1427F1C52085C4960037E693 /* ZHSummaryController.m in Sources */,
@@ -1548,7 +1583,6 @@
 				14F9154F209EEF5A00A05D24 /* ZHAVPlayerClass.m in Sources */,
 				70043ABE1F4E7C4A00E82B8F /* RootViewController.m in Sources */,
 				14F914FA209EE1C300A05D24 /* ZHWaterfallCell.m in Sources */,
-				14F914E2209EDC8200A05D24 /* WaveButtonController.m in Sources */,
 				70FA4C961F53C6DD0078BFE6 /* ZHShoppingCart.m in Sources */,
 				70C23ECC1F553DB600FAEBAA /* ZHDrawerRootController.m in Sources */,
 				14F91557209EEF6500A05D24 /* DropDownMenuController.m in Sources */,

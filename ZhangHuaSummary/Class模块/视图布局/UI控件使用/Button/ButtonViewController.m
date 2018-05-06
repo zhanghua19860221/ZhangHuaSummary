@@ -21,8 +21,8 @@
 }
 -(void)initTableViewData{
     
-    self.tableListArray = @[@"倒计时按钮",@"开关按钮",@"水纹按钮"];
-    self.controllerTitle = @[@"ZHCountdownBtnController",@"SwitchViewController",@"WaveButtonController"];
+    self.tableListArray = @[@"倒计时按钮",@"开关按钮",@"水纹效果"];
+    self.controllerTitle = @[@"ZHCountdownBtnController",@"SwitchViewController",@"WaveBtnController"];
     
 }
 - (void)didReceiveMemoryWarning {
