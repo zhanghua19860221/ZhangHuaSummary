@@ -7,7 +7,10 @@
 //
 
 #import "KeyChinaController.h"
+#import "SVProgressHUD.h"
 #import "ZHKeyChina.h"
+//#import "SVProgressHUD.h"
+
 @interface KeyChinaController ()
 
 @end
@@ -37,6 +40,7 @@
     [ZHKeyChina save:KEY_USERNAME_PASSWORD data:userNamePasswordKVPairs];
     
     
+    
     //B、从keychain中读取用户名和密码
     NSMutableDictionary *readUsernamePassword = (NSMutableDictionary *)[ZHKeyChina load:KEY_USERNAME_PASSWORD];
     NSString *userName = [readUsernamePassword objectForKey:KEY_USERNAME];
@@ -44,14 +48,22 @@
     NSLog(@"username = %@", userName);
     NSLog(@"password = %@", password);
     
-    
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
+    [SVProgressHUD setBackgroundColor:[UIColor brownColor]];
+    NSString *str = [NSString stringWithFormat:@"数据读取成功:username=%@ password=%@",userName,password];
+    [SVProgressHUD showSuccessWithStatus:str];
     
     // C、将用户名和密码从keychain中删除
     [ZHKeyChina delete:KEY_USERNAME_PASSWORD];
     
     
 }
+- (void)viewWillDisappear:(BOOL)animated{
+    
+    [super viewWillDisappear:animated];
+    [SVProgressHUD dismiss];
 
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

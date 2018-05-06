@@ -21,8 +21,8 @@
 }
 -(void)initTableViewData{
     
-    self.tableListArray = @[@"瀑布流",@"轮播图",@"环形",@"滑动菜单联动页面",@"贝塞尔曲线",@"原生TabBarController"];
-    self.controllerTitle = @[@"ZHWaterfallStyle",@"ZHBannerLoop",@"ZHRoundDisplay",@"ZHMenuController",@"ZHBezierPathController",@"RootController"];
+    self.tableListArray = @[@"选择器控件",@"UI控件使用",@"原生TabBarController",@"滑动菜单联动页面"];
+    self.controllerTitle = @[@"ZHChooseController",@"UIControlController",@"RootController",@"ZHMenuController"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

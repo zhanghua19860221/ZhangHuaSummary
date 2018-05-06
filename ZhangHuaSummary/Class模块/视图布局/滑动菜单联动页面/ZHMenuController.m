@@ -12,6 +12,8 @@
 #import "SecondeController.h"
 #import "ThirdController.h"
 #import "FourController.h"
+#import "FiveController.h"
+#import "SixController.h"
 
 #define menuHeight 40 //菜单栏高度
 
@@ -40,7 +42,7 @@
  */
 - (void)createMenuView{
     
-    NSArray *array = @[@"春",@"夏",@"秋",@"冬"];
+    NSArray *array = @[@"全部",@"充值",@"提现",@"投资",@"回款",@"收益"];
     [self.titleArray addObjectsFromArray:array];
     
     _menuView = [[ZHMenuView alloc] initTitleArray:self.titleArray];
@@ -62,11 +64,15 @@
     SecondeController *seconde = [[SecondeController alloc] init];
     ThirdController *third = [[ThirdController alloc] init];
     FourController *four = [[FourController alloc] init];
+    FiveController *five = [[FiveController alloc] init];
+    SixController *six = [[SixController alloc] init];
     
     [self addChildViewController:first];
     [self addChildViewController:seconde];
     [self addChildViewController:third];
     [self addChildViewController:four];
+    [self addChildViewController:five];
+    [self addChildViewController:six];
     
     
     for (int i=0; i<self.titleArray.count; i++) {

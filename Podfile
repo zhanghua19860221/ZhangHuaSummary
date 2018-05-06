@@ -4,5 +4,6 @@ target ‘ZhangHuaSummary’ do
   pod 'SDWebImage', '~> 3.8.1'
   pod 'FMDB', '~> 2.7.2'
   pod 'AFNetworking', '~> 3.1.0’
+  pod 'MJRefresh', '~> 3.1.15.3'
 end
 
