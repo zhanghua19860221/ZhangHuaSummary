@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.tableListArray = @[@"KVO"];
-//    self.controllerTitle = @[@"ZHKVOController"];
+    self.tableListArray = @[@"KVO"];
+    self.controllerTitle = @[@"ZHKVOController"];
     
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
