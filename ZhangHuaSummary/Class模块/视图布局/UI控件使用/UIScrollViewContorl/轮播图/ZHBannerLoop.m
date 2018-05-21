@@ -17,13 +17,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (@available(iOS 11, *)) {
+        [UIScrollView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        //iOS11 解决SafeArea的问题，同时能解决pop时上级页面scrollView抖动的问题
+    }
     NSArray * array = @[@"banner_tp01@2x.png",@"banner_tp02@2x.png",@"banner_tp03@2x.png",@"banner_tp04@2x.png"];
-    ZHBannerLoopView * view = [[ZHBannerLoopView alloc]initWithFrame:CGRectMake(0, 100,self.view.frame.size.width, 266)];
-    view.bannerArray = array;
+    ZHBannerLoopView * view = [[ZHBannerLoopView alloc]initWithFrame:CGRectMake(0, 0,self.view.frame.size.width, 266)];
     view.delegate = self;
+    view.bannerArray = array;
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:view];
+    
+
     // Do any additional setup after loading the view.
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+    self.navigationController.navigationBar.translucent = NO;
 }
 - (void)click:(NSInteger)index{
         switch (index) {

@@ -71,6 +71,25 @@
     //创建定时器
     [self creatTimer];
 }
+- (void)creatTimer {
+    
+    self.bannerTimer = [NSTimer scheduledTimerWithTimeInterval:self.timerInterval
+                                                        target:self
+                                                      selector:@selector(changeScrollOffset)
+                                                      userInfo:nil
+                                                       repeats:YES];
+    // 调整timer 的优先级
+    NSRunLoop *mainLoop = [NSRunLoop mainRunLoop];
+    [mainLoop addTimer:self.bannerTimer forMode:NSRunLoopCommonModes];
+}
+- (void)changeScrollOffset {
+    [self.bannerScroll setContentOffset:CGPointMake((self.bannerPageControl.currentPage+1) * WIDTH, 0) animated:YES];
+}
+- (void)stopTimer{
+    
+    [self.bannerTimer invalidate];
+    self.bannerTimer = nil;
+}
 #pragma mark - 处理单击手势
 
 -(void)selectHeaderImage:(UIGestureRecognizer *)sender{
@@ -96,25 +115,7 @@
 //    }
    
 }
-- (void)creatTimer {
-    
-    self.bannerTimer = [NSTimer scheduledTimerWithTimeInterval:self.timerInterval
-                                                        target:self
-                                                      selector:@selector(changeScrollOffset)
-                                                      userInfo:nil
-                                                       repeats:YES];
-    // 调整timer 的优先级
-    NSRunLoop *mainLoop = [NSRunLoop mainRunLoop];
-    [mainLoop addTimer:self.bannerTimer forMode:NSRunLoopCommonModes];
-}
-- (void)changeScrollOffset {
-    [self.bannerScroll setContentOffset:CGPointMake((self.bannerPageControl.currentPage+1) * WIDTH, 0) animated:YES];
-}
-- (void)stopTimer{
-    
-    [self.bannerTimer invalidate];
-    self.bannerTimer = nil;
-}
+
 #pragma  mark **************UIScrollViewDelegate*******************
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
@@ -158,12 +159,11 @@
     [self creatTimer];
 }
 - (void)setBannerArray:(NSArray *)bannerArray{
-    if (_bannerArray == nil) {
+    if (_bannerArray != bannerArray) {
         _bannerArray = bannerArray;
     }
     self.pageCount = self.bannerArray.count;
 
-    
 }
 /*
  // Only override drawRect: if you perform custom drawing.
