@@ -30,6 +30,7 @@
     gradientLayer.frame = CGRectMake(0, 0, self.view.frame.size.width, 200);
     [view.layer addSublayer:gradientLayer];
     
+    
     UIView *viewOne = [[UIView alloc] initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, 200)];
     [self.view addSubview:viewOne];
     CAGradientLayer *gradientLayerOne = [CAGradientLayer layer];
@@ -39,6 +40,7 @@
     gradientLayerOne.endPoint = CGPointMake(1, 1);
     gradientLayerOne.frame = CGRectMake(0, 0, self.view.frame.size.width, 200);
     [viewOne.layer addSublayer:gradientLayerOne];
+    
     
     UIView *viewTwo = [[UIView alloc] initWithFrame:CGRectMake(0, 520, self.view.frame.size.width, 80)];
     [self.view addSubview:viewTwo];

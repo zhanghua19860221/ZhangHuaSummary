@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141919F720ABC7A7003FF19D /* PictureGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141919F620ABC7A7003FF19D /* PictureGestureController.m */; };
+		141919FD20ABFAE2003FF19D /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 141919FC20ABFAE2003FF19D /* city.plist */; };
 		1427F1C020858BBC0037E693 /* ZHTextStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427F1BF20858BBC0037E693 /* ZHTextStyleController.m */; };
 		1427F1C22085C4520037E693 /* ProblemList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1427F1C12085C4520037E693 /* ProblemList.plist */; };
 		1427F1C52085C4960037E693 /* ZHSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427F1C42085C4960037E693 /* ZHSummaryController.m */; };
@@ -61,7 +63,6 @@
 		14F9143A209EB47C00A05D24 /* ShareChooseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F9142B209EB47C00A05D24 /* ShareChooseController.m */; };
 		14F9143B209EB47C00A05D24 /* ZHChooseCityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F9142F209EB47C00A05D24 /* ZHChooseCityController.m */; };
 		14F9143C209EB47C00A05D24 /* ZHChooseCityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F91430209EB47C00A05D24 /* ZHChooseCityView.m */; };
-		14F9143D209EB47C00A05D24 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14F91432209EB47C00A05D24 /* city.plist */; };
 		14F9143E209EB47C00A05D24 /* ZHChooseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F91434209EB47C00A05D24 /* ZHChooseController.m */; };
 		14F914D5209EDC8200A05D24 /* UIControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F914AC209EDC8100A05D24 /* UIControlController.m */; };
 		14F914D6209EDC8200A05D24 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F914B4209EDC8100A05D24 /* CollectionViewController.m */; };
@@ -158,6 +159,9 @@
 
 /* Begin PBXFileReference section */
 		1051596F24D6015DDBCCB4F9 /* Pods-ZhangHuaSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhangHuaSummary.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhangHuaSummary/Pods-ZhangHuaSummary.release.xcconfig"; sourceTree = "<group>"; };
+		141919F520ABC7A7003FF19D /* PictureGestureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PictureGestureController.h; path = "Class模块/动画效果/图片手势放大缩小/PictureGestureController.h"; sourceTree = "<group>"; };
+		141919F620ABC7A7003FF19D /* PictureGestureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PictureGestureController.m; path = "Class模块/动画效果/图片手势放大缩小/PictureGestureController.m"; sourceTree = "<group>"; };
+		141919FC20ABFAE2003FF19D /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
 		1427F1BE20858BBC0037E693 /* ZHTextStyleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHTextStyleController.h; path = "Class模块/文本文件/文字样式设置/ZHTextStyleController.h"; sourceTree = "<group>"; };
 		1427F1BF20858BBC0037E693 /* ZHTextStyleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHTextStyleController.m; path = "Class模块/文本文件/文字样式设置/ZHTextStyleController.m"; sourceTree = "<group>"; };
 		1427F1C12085C4520037E693 /* ProblemList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ProblemList.plist; path = "Class模块/文本文件/知识总结/ProblemList.plist"; sourceTree = "<group>"; };
@@ -257,7 +261,6 @@
 		14F9142F209EB47C00A05D24 /* ZHChooseCityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHChooseCityController.m; sourceTree = "<group>"; };
 		14F91430209EB47C00A05D24 /* ZHChooseCityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHChooseCityView.m; sourceTree = "<group>"; };
 		14F91431209EB47C00A05D24 /* ZHChooseCityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHChooseCityController.h; sourceTree = "<group>"; };
-		14F91432209EB47C00A05D24 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
 		14F91433209EB47C00A05D24 /* ZHChooseCityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHChooseCityView.h; sourceTree = "<group>"; };
 		14F91434209EB47C00A05D24 /* ZHChooseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHChooseController.m; sourceTree = "<group>"; };
 		14F914AC209EDC8100A05D24 /* UIControlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIControlController.m; sourceTree = "<group>"; };
@@ -443,6 +446,15 @@
 				1051596F24D6015DDBCCB4F9 /* Pods-ZhangHuaSummary.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		141919F420ABC42E003FF19D /* 图片手势放大缩小 */ = {
+			isa = PBXGroup;
+			children = (
+				141919F520ABC7A7003FF19D /* PictureGestureController.h */,
+				141919F620ABC7A7003FF19D /* PictureGestureController.m */,
+			);
+			name = "图片手势放大缩小";
 			sourceTree = "<group>";
 		};
 		1427F1BD20858B540037E693 /* 文字样式设置 */ = {
@@ -703,9 +715,9 @@
 			isa = PBXGroup;
 			children = (
 				14F91420209EB47C00A05D24 /* 银行选择控件 */,
-				14F91428209EB47C00A05D24 /* ZHChooseController.h */,
 				14F91429209EB47C00A05D24 /* 分享选择视图 */,
 				14F9142E209EB47C00A05D24 /* 城市选择控件 */,
+				14F91428209EB47C00A05D24 /* ZHChooseController.h */,
 				14F91434209EB47C00A05D24 /* ZHChooseController.m */,
 			);
 			name = "选择控件";
@@ -716,10 +728,10 @@
 			isa = PBXGroup;
 			children = (
 				14F91421209EB47C00A05D24 /* QDPickerModel.h */,
-				14F91422209EB47C00A05D24 /* ZHChooseBankView.h */,
-				14F91423209EB47C00A05D24 /* ZHChooseBankController.h */,
 				14F91424209EB47C00A05D24 /* QDPickerModel.m */,
+				14F91422209EB47C00A05D24 /* ZHChooseBankView.h */,
 				14F91425209EB47C00A05D24 /* ZHChooseBankView.m */,
+				14F91423209EB47C00A05D24 /* ZHChooseBankController.h */,
 				14F91426209EB47C00A05D24 /* ZHChooseBankController.m */,
 				14F91427209EB47C00A05D24 /* bankList.plist */,
 			);
@@ -740,11 +752,11 @@
 		14F9142E209EB47C00A05D24 /* 城市选择控件 */ = {
 			isa = PBXGroup;
 			children = (
-				14F9142F209EB47C00A05D24 /* ZHChooseCityController.m */,
+				141919FC20ABFAE2003FF19D /* city.plist */,
+				14F91433209EB47C00A05D24 /* ZHChooseCityView.h */,
 				14F91430209EB47C00A05D24 /* ZHChooseCityView.m */,
 				14F91431209EB47C00A05D24 /* ZHChooseCityController.h */,
-				14F91432209EB47C00A05D24 /* city.plist */,
-				14F91433209EB47C00A05D24 /* ZHChooseCityView.h */,
+				14F9142F209EB47C00A05D24 /* ZHChooseCityController.m */,
 			);
 			path = "城市选择控件";
 			sourceTree = "<group>";
@@ -822,9 +834,9 @@
 			isa = PBXGroup;
 			children = (
 				14F914C9209EDC8100A05D24 /* ZHCountdownBtnController.h */,
-				14F914CA209EDC8100A05D24 /* UIButton+ZHCountDown.m */,
 				14F914CB209EDC8100A05D24 /* ZHCountdownBtnController.m */,
 				14F914CC209EDC8100A05D24 /* UIButton+ZHCountDown.h */,
+				14F914CA209EDC8100A05D24 /* UIButton+ZHCountDown.m */,
 			);
 			path = "倒计时按钮";
 			sourceTree = "<group>";
@@ -841,12 +853,12 @@
 		14F914EE209EE1C300A05D24 /* 瀑布流 */ = {
 			isa = PBXGroup;
 			children = (
-				14F914EF209EE1C300A05D24 /* ZHWaterfallCell.m */,
 				14F914F0209EE1C300A05D24 /* ZHWaterfallStyle.h */,
-				14F914F1209EE1C300A05D24 /* ZHCustomLayOut.m */,
-				14F914F2209EE1C300A05D24 /* ZHWaterfallCell.h */,
 				14F914F3209EE1C300A05D24 /* ZHWaterfallStyle.m */,
 				14F914F4209EE1C300A05D24 /* ZHCustomLayOut.h */,
+				14F914F1209EE1C300A05D24 /* ZHCustomLayOut.m */,
+				14F914F2209EE1C300A05D24 /* ZHWaterfallCell.h */,
+				14F914EF209EE1C300A05D24 /* ZHWaterfallCell.m */,
 			);
 			path = "瀑布流";
 			sourceTree = "<group>";
@@ -865,9 +877,9 @@
 		14F914FF209EE26600A05D24 /* 轮播图 */ = {
 			isa = PBXGroup;
 			children = (
+				14F91502209EE26600A05D24 /* ZHBannerLoopView.h */,
 				14F91500209EE26600A05D24 /* ZHBannerLoopView.m */,
 				14F91501209EE26600A05D24 /* ZHBannerLoop.h */,
-				14F91502209EE26600A05D24 /* ZHBannerLoopView.h */,
 				14F91503209EE26600A05D24 /* ZHBannerLoop.m */,
 			);
 			path = "轮播图";
@@ -1241,6 +1253,7 @@
 		709FEEB21F4D7DCF00285983 /* 动画效果 */ = {
 			isa = PBXGroup;
 			children = (
+				141919F420ABC42E003FF19D /* 图片手势放大缩小 */,
 				14F7F0AB206BA081008762CB /* 弹出展示信息 */,
 				144D05BB205B8E8500A655A9 /* 波浪 */,
 				148861BF2058F77B001AEA7C /* 进度条 */,
@@ -1403,6 +1416,7 @@
 				70A0D1D11F4E747000670625 /* banner_tp02@2x.png in Resources */,
 				70A0D1D31F4E747000670625 /* banner_tp04@2x.png in Resources */,
 				70251C161F5E9FDD00405C57 /* 1.png in Resources */,
+				141919FD20ABFAE2003FF19D /* city.plist in Resources */,
 				14F9156C209EF03F00A05D24 /* pick_bg@2x.png in Resources */,
 				14F9156D209EF03F00A05D24 /* line@2x.png in Resources */,
 				704915161F56546F00DA2B5A /* leftImage.jpg in Resources */,
@@ -1411,7 +1425,6 @@
 				709FEEA71F4D63E100285983 /* Assets.xcassets in Resources */,
 				70FA4C941F53C6DD0078BFE6 /* cart.png in Resources */,
 				70251C191F5E9FDD00405C57 /* 4.png in Resources */,
-				14F9143D209EB47C00A05D24 /* city.plist in Resources */,
 				14F91556209EEF6500A05D24 /* dropdownMenu_cornerIcon.png in Resources */,
 				1427F1C22085C4520037E693 /* ProblemList.plist in Resources */,
 				70FA4C951F53C6DD0078BFE6 /* heheda.png in Resources */,
@@ -1502,6 +1515,7 @@
 				14695512205FB7C400E0ADDC /* ThirdController.m in Sources */,
 				709FEE9C1F4D63E100285983 /* main.m in Sources */,
 				144EBDC620638B8F006BEC8D /* ThirdBarController.m in Sources */,
+				141919F720ABC7A7003FF19D /* PictureGestureController.m in Sources */,
 				14F91555209EEF6500A05D24 /* ZHDropDownMenuView.m in Sources */,
 				144EBDC920639AE9006BEC8D /* RootController.m in Sources */,
 				14F7F0A1206B7DB1008762CB /* ZHEncryptDataController.m in Sources */,

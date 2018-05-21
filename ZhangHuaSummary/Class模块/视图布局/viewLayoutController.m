@@ -21,7 +21,7 @@
 }
 -(void)initTableViewData{
     
-    self.tableListArray = @[@"选择器控件",@"UI控件使用",@"原生TabBarController",@"滑动菜单联动页面"];
+    self.tableListArray = @[@"选择器",@"UI使用",@"原生TabBarController",@"滑动菜单联动页面"];
     self.controllerTitle = @[@"ZHChooseController",@"UIControlController",@"RootController",@"ZHMenuController"];
 }
 - (void)didReceiveMemoryWarning {

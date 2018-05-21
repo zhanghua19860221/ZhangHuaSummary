@@ -233,17 +233,18 @@
     }];
 
 }
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
-    [UIView animateWithDuration:0.5 animations:^{
-        z_chooseView.frame = CGRectMake(0, HEIGHT, WIDTH, 240);
-        self.alpha = 0.0;
-
-    } completion:^(BOOL finished) {
-        self.hidden = YES;
-
-    }];
-    
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    if ([touches.anyObject.view isKindOfClass:[self class]]) {
+        [UIView animateWithDuration:0.5 animations:^{
+            z_chooseView.frame = CGRectMake(0, HEIGHT, WIDTH, 240);
+            self.alpha = 0.0;
+            
+        } completion:^(BOOL finished) {
+            self.hidden = YES;
+            
+        }];
+        
+    }
 }
 /*
 // Only override drawRect: if you perform custom drawing.

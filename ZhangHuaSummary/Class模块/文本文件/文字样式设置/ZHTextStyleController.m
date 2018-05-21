@@ -44,9 +44,11 @@
     [attributedText setAttributes:@{NSExpansionAttributeName:@0.4} range:NSMakeRange(57, 7)];
     
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    //设置行间距
     [paragraphStyle setLineSpacing:W(8)];
     //设置文字的距中
     [paragraphStyle setAlignment:NSTextAlignmentCenter];
+    
     //设置文字的头缩进
     //[paragraphStyle setFirstLineHeadIndent:W(26)];
     [attributedText addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, str.length)];

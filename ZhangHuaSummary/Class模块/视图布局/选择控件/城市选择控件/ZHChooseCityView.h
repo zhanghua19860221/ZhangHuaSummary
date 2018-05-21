@@ -9,9 +9,15 @@
 #import <UIKit/UIKit.h>
 
 typedef void(^SelectedHandle)(NSString * province, NSString * city, NSString * area);
-
 @interface ZHChooseCityView : UIView
-
 @property(nonatomic, copy) SelectedHandle selectedBlock;
 
+/**
+ 设置默认选中项
+
+ @param province 省
+ @param city 市
+ @param area 区
+ */
+- (void)updateAddressAtProvince:(NSString *)province city:(NSString *)city area:(NSString *)area;
 @end
