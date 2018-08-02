@@ -1034,6 +1034,95 @@ html:
 &lt;/html&gt;
 </string>
 		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q20、友盟统计错误定位流程</string>
+			<key>answer</key>
+			<string>定位错误代码，我们需要将 xx.app 和 xx.app.dSYM 文件找出来. 1、在Windows-&gt;Organizer-&gt;archivers可以看到你的每一次的打包。然后选择你要查看的错误报告所在的版本，这个一定要选对了。
+
+查找所有的archivers包
+
+选择你的错误报告所对应的包
+
+找到对应的包后，点击右键，然后选择Show in Finder的选项，查看这个包中的内容，如图
+
+archivers包
+再右键选择显示包内容，这时我们看到 有dSYMs，Products，SCMBlueprint三个文件夹，我们需要用到的是前两个文件夹
+
+dSYMs文件夹
+
+Products文件夹
+此时，将这俩文件夹中最里层的文件都取出来，放到一个新的文件夹中
+
+将俩文件放到新的文件夹中
+2.打开终端，cd到刚才新建的文件夹(错误报告)的目录下 输入命令xcrun atos -arch arm64 -o xxxx.app/xxxx 0x10019bc48
+其中 arm64是CPU Type； xxxx对应的是你的工程名，也就是上文友盟错误报告图片中打红色马赛克的部分； 0x10019bc48 是错误代码的地址，也就是上文友盟错误报告图片中淡绿色的那个内存地址。
+
+定位错误代码
+其中-[SubscribeViewController isSubcribeSuccess:] (in woshiPM) (SubscribeViewController.m:342)就是错误代码的位置，在SubscribeViewController.m中的isSubcribeSuccess方法中，342是代码所在</string>
+		</dict>
+		<dict>
+			<key>problem</key>
+			<string>Q21、UIView 与 CALayer 关系详解</string>
+			<key>answer</key>
+			<string>1)UIView和CALayer都是的老祖都是NSObjet。
+
+1: UIView的继承结构为: UIResponder : NSObject。
+可以看出UIView的直接父类为UIResponder 类,UIResponder是用来响应事件的，也就是UIView可以响应用户事件。
+ 
+2：CALayer的继承结构为： NSObject。
+直接从 NSObject继承，因为缺少了UIResponder类，所以CALayer悲催的不能响应任何用户事件。
+ 
+CALayer定义了position、size、transform、animations 等基本属性。
+那UIView的size、frame、position这些属性是从那里来的呢？
+ 
+2)所属框架
+1：UIView是在 /System/Library/Frameworks/UIKit.framework中定义的。
+这个又是做什么的呢？
+ UIKit主要是用来构建用户界面，并且是可以响应事件的
+ 在这里思考一个问题UIView既然是构建用户界面的，那他是通过什么方式绘制这些图片、文字之类的信息的呢？ 
+Ios中的2D图像绘制都是通过QuartzCore.framework实现的。
+难道是通过QuartzCore.framework实现的？
+那又是通过什么方式和QuartzCore.framework联系起来的呢？？我们一会再看。
+ 
+2：CALayer是在/System/Library/Frameworks/QuartzCore.framework定义的。而且CALayer作为一个低级的，可以承载绘制内容的底层对象出现在该框架中。
+ 
+现在比较一下uiview和calayer都可以显示图片文字等信息。难道apple提供了，两套绘图机制吗？不会。
+UIView相比CALayer最大区别是UIView可以响应用户事件，而CALayer不可以。
+UIView侧重于对显示内容的管理，CALayer侧重于对内容的绘制。
+大家都知道QuartzCore是IOS中提供图像绘制的基础库。
+并且CALayer是定义该框架中。难道UIView的底层实现是CALayer？？
+ 
+ 事实上UIView是基于CALayer的高层封装。
+UIView 的方法：layerClass 
+该方法保留了UIView的本质。即对UIView所管理的内容，任何显示也是受到CALayer的影响的。
+ 
+3)相似支持
+
+ 1：相似的树形结构
+ 2：显示内容绘制方式
+ 3: 布局约束
+
+4) UIView 是什么，做什么
+
+UIView是用来显示内容的，可以处理用户事件
+ 5)CALayer是什么，做什么
+
+CALayer是用来绘制内容的，对内容进行动画处理依赖与UIView来进行显示，不能处理用户事件。
+ 6)为何有两套结构
+
+并不是两套体系，UIView和CALayer是相互依赖的关系。
+UIView依赖与calayer提供的内容，CALayer依赖uivew提供的容器来显示绘制的内容。
+归根到底CALayer是这一切的基础，如果没有CALayer，UIView自身也不会存在，
+UIView是一个特殊的CALayer实现，添加了响应事件的能力。
+ 
+7)两者之间的关系
+发之于肤，血之于肉，灵之于魄，男人之于肾的关系。依存的关系
+ 
+结论：
+UIView来自CALayer，高于CALayer，是CALayer高层实现与封装。UIView的所有特性来源于CALayer支持。
+</string>
+		</dict>
 	</array>
 </dict>
 </plist>

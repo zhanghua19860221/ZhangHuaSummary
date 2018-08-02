@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableListArray = @[@"Button",@"ScrollView",@"TableView",@"CollectionView"];
-    self.controllerTitle = @[@"ButtonViewController",@"ScrollViewController",@"TableViewController",@"CollectionViewController"];
+    self.tableListArray = @[@"Button",@"ScrollView",@"TableView",@"CollectionView",@"UISegmentedControl"];
+    self.controllerTitle = @[@"ButtonViewController",@"ScrollViewController",@"TableViewController",@"CollectionViewController",@"ZHSegmentedControl"];
 }
 
 - (void)didReceiveMemoryWarning {

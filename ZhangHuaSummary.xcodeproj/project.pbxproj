@@ -34,6 +34,7 @@
 		146B4ECB208470BF00D2EE66 /* ProblemDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146B4ECA208470BF00D2EE66 /* ProblemDetailController.m */; };
 		148861C22058FCE1001AEA7C /* ZHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148861C12058FCE1001AEA7C /* ZHLoadingView.m */; };
 		148861C8205901AC001AEA7C /* ZHProgressBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148861C7205901AC001AEA7C /* ZHProgressBarController.m */; };
+		14AAA6E52112993A002C1EC1 /* ZHSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AAA6E42112993A002C1EC1 /* ZHSegmentedControl.m */; };
 		14AB584E206890C20068A9B2 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AB584D206890C20068A9B2 /* Photos.framework */; };
 		14C56745205A69AB00735FC8 /* ZHLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C56743205A69AA00735FC8 /* ZHLoadingViewController.m */; };
 		14C5674B205A6A1900735FC8 /* ZHWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C5674A205A6A1900735FC8 /* ZHWaterView.m */; };
@@ -211,6 +212,8 @@
 		148861C12058FCE1001AEA7C /* ZHLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHLoadingView.m; path = "Class模块/动画效果/加载菊花/ZHLoadingView.m"; sourceTree = "<group>"; };
 		148861C6205901AC001AEA7C /* ZHProgressBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHProgressBarController.h; path = "Class模块/动画效果/进度条/ZHProgressBarController.h"; sourceTree = "<group>"; };
 		148861C7205901AC001AEA7C /* ZHProgressBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHProgressBarController.m; path = "Class模块/动画效果/进度条/ZHProgressBarController.m"; sourceTree = "<group>"; };
+		14AAA6E32112993A002C1EC1 /* ZHSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHSegmentedControl.h; sourceTree = "<group>"; };
+		14AAA6E42112993A002C1EC1 /* ZHSegmentedControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHSegmentedControl.m; sourceTree = "<group>"; };
 		14AB584D206890C20068A9B2 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		14C56743205A69AA00735FC8 /* ZHLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHLoadingViewController.m; path = "Class模块/动画效果/加载菊花/ZHLoadingViewController.m"; sourceTree = "<group>"; };
 		14C56744205A69AB00735FC8 /* ZHLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHLoadingViewController.h; path = "Class模块/动画效果/加载菊花/ZHLoadingViewController.h"; sourceTree = "<group>"; };
@@ -671,6 +674,15 @@
 			name = "进度条";
 			sourceTree = "<group>";
 		};
+		14AAA6E2211298DB002C1EC1 /* UISegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				14AAA6E32112993A002C1EC1 /* ZHSegmentedControl.h */,
+				14AAA6E42112993A002C1EC1 /* ZHSegmentedControl.m */,
+			);
+			path = UISegmentedControl;
+			sourceTree = "<group>";
+		};
 		14EDAEE52064B18000C1BE3E /* ZHSingleClass(单例) */ = {
 			isa = PBXGroup;
 			children = (
@@ -764,6 +776,7 @@
 		14F914AB209EDC8100A05D24 /* UI控件使用 */ = {
 			isa = PBXGroup;
 			children = (
+				14AAA6E2211298DB002C1EC1 /* UISegmentedControl */,
 				14F914C2209EDC8100A05D24 /* Button */,
 				14F914B2209EDC8100A05D24 /* UICollectionViewContorl */,
 				14F914B5209EDC8100A05D24 /* UIScrollViewContorl */,
@@ -1517,6 +1530,7 @@
 				144EBDC620638B8F006BEC8D /* ThirdBarController.m in Sources */,
 				141919F720ABC7A7003FF19D /* PictureGestureController.m in Sources */,
 				14F91555209EEF6500A05D24 /* ZHDropDownMenuView.m in Sources */,
+				14AAA6E52112993A002C1EC1 /* ZHSegmentedControl.m in Sources */,
 				144EBDC920639AE9006BEC8D /* RootController.m in Sources */,
 				14F7F0A1206B7DB1008762CB /* ZHEncryptDataController.m in Sources */,
 				14695515205FB7DD00E0ADDC /* FourController.m in Sources */,

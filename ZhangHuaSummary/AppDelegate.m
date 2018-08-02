@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "RootController.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +25,10 @@
     self.mainNav = [[UINavigationController alloc]initWithRootViewController:rootVc];
     self.window.rootViewController = self.mainNav;
     
+//    RootController *rootVc = [[RootController alloc]init];
+//    self.window.rootViewController = rootVc;
 
+    
     return YES;
 }
 
