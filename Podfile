@@ -5,5 +5,6 @@ target ‘ZhangHuaSummary’ do
   pod 'FMDB', '~> 2.7.2'
   pod 'AFNetworking', '~> 3.1.0’
   pod 'MJRefresh', '~> 3.1.15.3'
+  pod 'PGDatePicker'
 end
 
