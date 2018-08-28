@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1418923C212165A60024BFEB /* CrashOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418923B212165A60024BFEB /* CrashOneViewController.m */; };
+		1418923F212165B40024BFEB /* CrashTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418923E212165B40024BFEB /* CrashTwoViewController.m */; };
 		141919F720ABC7A7003FF19D /* PictureGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141919F620ABC7A7003FF19D /* PictureGestureController.m */; };
 		141919FD20ABFAE2003FF19D /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 141919FC20ABFAE2003FF19D /* city.plist */; };
 		1427F1C020858BBC0037E693 /* ZHTextStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427F1BF20858BBC0037E693 /* ZHTextStyleController.m */; };
 		1427F1C22085C4520037E693 /* ProblemList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1427F1C12085C4520037E693 /* ProblemList.plist */; };
 		1427F1C52085C4960037E693 /* ZHSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427F1C42085C4960037E693 /* ZHSummaryController.m */; };
+		1437E6E3211D864200384DCD /* ProjectSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1437E6E2211D864200384DCD /* ProjectSummaryController.m */; };
+		1437E6E6211D878600384DCD /* GetIpAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1437E6E5211D878600384DCD /* GetIpAddressController.m */; };
 		143B01F1209F21DD0002ED0A /* WaveBtnController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B01F0209F21DD0002ED0A /* WaveBtnController.m */; };
 		143B01F4209F22290002ED0A /* ZHWaveBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B01F3209F22290002ED0A /* ZHWaveBtnView.m */; };
 		143B0201209F27960002ED0A /* RunDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B01FD209F27960002ED0A /* RunDisplayController.m */; };
@@ -40,6 +44,11 @@
 		14C5674B205A6A1900735FC8 /* ZHWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C5674A205A6A1900735FC8 /* ZHWaterView.m */; };
 		14E6A7E420B298E900BF14A0 /* ZHBannerLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E6A7E320B298E900BF14A0 /* ZHBannerLoopView.m */; };
 		14EDAEE82064B18000C1BE3E /* shareDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EDAEE72064B18000C1BE3E /* shareDelegate.m */; };
+		14F62CFF2134EA6A006F0071 /* ProjectOptimizationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F62CFE2134EA6A006F0071 /* ProjectOptimizationController.m */; };
+		14F62D022134EB24006F0071 /* OptimizationModuleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F62D012134EB24006F0071 /* OptimizationModuleController.m */; };
+		14F62D082134EBD2006F0071 /* OptimizationSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F62D072134EBD2006F0071 /* OptimizationSummaryController.m */; };
+		14F62D0A2134EC80006F0071 /* Optimization.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14F62D092134EC80006F0071 /* Optimization.plist */; };
+		14F62D0D2134EF31006F0071 /* OptimizationDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F62D0C2134EF31006F0071 /* OptimizationDetailController.m */; };
 		14F7F080206B79C9008762CB /* ZHMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F07C206B79C9008762CB /* ZHMD5.m */; };
 		14F7F081206B79C9008762CB /* ZHMD5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7F07E206B79C9008762CB /* ZHMD5Controller.m */; };
 		14F7F087206B79EF008762CB /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 14F7F082206B79EF008762CB /* private.pem */; };
@@ -162,6 +171,10 @@
 
 /* Begin PBXFileReference section */
 		1051596F24D6015DDBCCB4F9 /* Pods-ZhangHuaSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhangHuaSummary.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhangHuaSummary/Pods-ZhangHuaSummary.release.xcconfig"; sourceTree = "<group>"; };
+		1418923A212165A60024BFEB /* CrashOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashOneViewController.h; sourceTree = "<group>"; };
+		1418923B212165A60024BFEB /* CrashOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashOneViewController.m; sourceTree = "<group>"; };
+		1418923D212165B40024BFEB /* CrashTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashTwoViewController.h; sourceTree = "<group>"; };
+		1418923E212165B40024BFEB /* CrashTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashTwoViewController.m; sourceTree = "<group>"; };
 		141919F520ABC7A7003FF19D /* PictureGestureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PictureGestureController.h; path = "Class模块/动画效果/图片手势放大缩小/PictureGestureController.h"; sourceTree = "<group>"; };
 		141919F620ABC7A7003FF19D /* PictureGestureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PictureGestureController.m; path = "Class模块/动画效果/图片手势放大缩小/PictureGestureController.m"; sourceTree = "<group>"; };
 		141919FC20ABFAE2003FF19D /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
@@ -170,6 +183,10 @@
 		1427F1C12085C4520037E693 /* ProblemList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ProblemList.plist; path = "Class模块/文本文件/知识总结/ProblemList.plist"; sourceTree = "<group>"; };
 		1427F1C32085C4960037E693 /* ZHSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHSummaryController.h; path = "Class模块/文本文件/知识总结/ZHSummaryController.h"; sourceTree = "<group>"; };
 		1427F1C42085C4960037E693 /* ZHSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHSummaryController.m; path = "Class模块/文本文件/知识总结/ZHSummaryController.m"; sourceTree = "<group>"; };
+		1437E6E1211D864200384DCD /* ProjectSummaryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProjectSummaryController.h; path = "Class模块/文本文件/项目经验总结/ProjectSummaryController.h"; sourceTree = "<group>"; };
+		1437E6E2211D864200384DCD /* ProjectSummaryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProjectSummaryController.m; path = "Class模块/文本文件/项目经验总结/ProjectSummaryController.m"; sourceTree = "<group>"; };
+		1437E6E4211D878600384DCD /* GetIpAddressController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GetIpAddressController.h; path = "Class模块/文本文件/项目经验总结/获取网络ip地址/GetIpAddressController.h"; sourceTree = "<group>"; };
+		1437E6E5211D878600384DCD /* GetIpAddressController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GetIpAddressController.m; path = "Class模块/文本文件/项目经验总结/获取网络ip地址/GetIpAddressController.m"; sourceTree = "<group>"; };
 		143B01EF209F21DD0002ED0A /* WaveBtnController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveBtnController.h; sourceTree = "<group>"; };
 		143B01F0209F21DD0002ED0A /* WaveBtnController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveBtnController.m; sourceTree = "<group>"; };
 		143B01F2209F22290002ED0A /* ZHWaveBtnView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHWaveBtnView.h; sourceTree = "<group>"; };
@@ -225,6 +242,15 @@
 		14E6A7E320B298E900BF14A0 /* ZHBannerLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHBannerLoopView.m; sourceTree = "<group>"; };
 		14EDAEE62064B18000C1BE3E /* shareDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shareDelegate.h; sourceTree = "<group>"; };
 		14EDAEE72064B18000C1BE3E /* shareDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shareDelegate.m; sourceTree = "<group>"; };
+		14F62CFD2134EA6A006F0071 /* ProjectOptimizationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProjectOptimizationController.h; path = "Class模块/项目优化/ProjectOptimizationController.h"; sourceTree = "<group>"; };
+		14F62CFE2134EA6A006F0071 /* ProjectOptimizationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProjectOptimizationController.m; path = "Class模块/项目优化/ProjectOptimizationController.m"; sourceTree = "<group>"; };
+		14F62D002134EB24006F0071 /* OptimizationModuleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OptimizationModuleController.h; path = "Class模块/项目优化/优化模块/OptimizationModuleController.h"; sourceTree = "<group>"; };
+		14F62D012134EB24006F0071 /* OptimizationModuleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OptimizationModuleController.m; path = "Class模块/项目优化/优化模块/OptimizationModuleController.m"; sourceTree = "<group>"; };
+		14F62D062134EBD2006F0071 /* OptimizationSummaryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OptimizationSummaryController.h; path = "Class模块/项目优化/优化总结/OptimizationSummaryController.h"; sourceTree = "<group>"; };
+		14F62D072134EBD2006F0071 /* OptimizationSummaryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OptimizationSummaryController.m; path = "Class模块/项目优化/优化总结/OptimizationSummaryController.m"; sourceTree = "<group>"; };
+		14F62D092134EC80006F0071 /* Optimization.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Optimization.plist; path = "Class模块/项目优化/优化总结/Optimization.plist"; sourceTree = "<group>"; };
+		14F62D0B2134EF31006F0071 /* OptimizationDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OptimizationDetailController.h; path = "Class模块/项目优化/优化总结/OptimizationDetailController.h"; sourceTree = "<group>"; };
+		14F62D0C2134EF31006F0071 /* OptimizationDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OptimizationDetailController.m; path = "Class模块/项目优化/优化总结/OptimizationDetailController.m"; sourceTree = "<group>"; };
 		14F7F07C206B79C9008762CB /* ZHMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHMD5.m; path = "Class模块/数据加密存储/MD5/ZHMD5.m"; sourceTree = "<group>"; };
 		14F7F07D206B79C9008762CB /* ZHMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHMD5.h; path = "Class模块/数据加密存储/MD5/ZHMD5.h"; sourceTree = "<group>"; };
 		14F7F07E206B79C9008762CB /* ZHMD5Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHMD5Controller.m; path = "Class模块/数据加密存储/MD5/ZHMD5Controller.m"; sourceTree = "<group>"; };
@@ -457,6 +483,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		14189239212164500024BFEB /* 崩溃异常处理 */ = {
+			isa = PBXGroup;
+			children = (
+				1418923A212165A60024BFEB /* CrashOneViewController.h */,
+				1418923B212165A60024BFEB /* CrashOneViewController.m */,
+				1418923D212165B40024BFEB /* CrashTwoViewController.h */,
+				1418923E212165B40024BFEB /* CrashTwoViewController.m */,
+			);
+			path = "崩溃异常处理";
+			sourceTree = "<group>";
+		};
 		141919F420ABC42E003FF19D /* 图片手势放大缩小 */ = {
 			isa = PBXGroup;
 			children = (
@@ -524,6 +561,15 @@
 			);
 			name = "RSA证书";
 			path = "Class模块/数据加密/RSA/RSA证书";
+			sourceTree = "<group>";
+		};
+		1437E6DD211D852700384DCD /* 获取网络ip地址 */ = {
+			isa = PBXGroup;
+			children = (
+				1437E6E4211D878600384DCD /* GetIpAddressController.h */,
+				1437E6E5211D878600384DCD /* GetIpAddressController.m */,
+			);
+			name = "获取网络ip地址";
 			sourceTree = "<group>";
 		};
 		143B01EB209F219E0002ED0A /* 水纹效果 */ = {
@@ -631,8 +677,11 @@
 		146CC67620883AD20047426B /* 项目经验总结 */ = {
 			isa = PBXGroup;
 			children = (
+				1437E6DD211D852700384DCD /* 获取网络ip地址 */,
 				146CC67920883B4A0047426B /* 导航栏修改 */,
 				146CC67820883B320047426B /* 状态栏修改 */,
+				1437E6E1211D864200384DCD /* ProjectSummaryController.h */,
+				1437E6E2211D864200384DCD /* ProjectSummaryController.m */,
 			);
 			name = "项目经验总结";
 			sourceTree = "<group>";
@@ -696,6 +745,38 @@
 				14EDAEE72064B18000C1BE3E /* shareDelegate.m */,
 			);
 			path = "ZHSingleClass(单例)";
+			sourceTree = "<group>";
+		};
+		14F62CF92134E893006F0071 /* 项目优化 */ = {
+			isa = PBXGroup;
+			children = (
+				14F62CFC2134E94D006F0071 /* 优化模块 */,
+				14F62CFB2134E93B006F0071 /* 优化总结 */,
+				14F62CFD2134EA6A006F0071 /* ProjectOptimizationController.h */,
+				14F62CFE2134EA6A006F0071 /* ProjectOptimizationController.m */,
+			);
+			name = "项目优化";
+			sourceTree = "<group>";
+		};
+		14F62CFB2134E93B006F0071 /* 优化总结 */ = {
+			isa = PBXGroup;
+			children = (
+				14F62D092134EC80006F0071 /* Optimization.plist */,
+				14F62D062134EBD2006F0071 /* OptimizationSummaryController.h */,
+				14F62D072134EBD2006F0071 /* OptimizationSummaryController.m */,
+				14F62D0B2134EF31006F0071 /* OptimizationDetailController.h */,
+				14F62D0C2134EF31006F0071 /* OptimizationDetailController.m */,
+			);
+			name = "优化总结";
+			sourceTree = "<group>";
+		};
+		14F62CFC2134E94D006F0071 /* 优化模块 */ = {
+			isa = PBXGroup;
+			children = (
+				14F62D002134EB24006F0071 /* OptimizationModuleController.h */,
+				14F62D012134EB24006F0071 /* OptimizationModuleController.m */,
+			);
+			name = "优化模块";
 			sourceTree = "<group>";
 		};
 		14F7F096206B7A69008762CB /* KeyChina */ = {
@@ -908,6 +989,7 @@
 		14F91506209EED3500A05D24 /* 功能类封装 */ = {
 			isa = PBXGroup;
 			children = (
+				14189239212164500024BFEB /* 崩溃异常处理 */,
 				14F91521209EED3500A05D24 /* 拨打电话 */,
 				14F91514209EED3500A05D24 /* 下拉菜单 */,
 				14F91596209EF72600A05D24 /* 贝塞尔曲线 */,
@@ -1132,8 +1214,8 @@
 		14F91596209EF72600A05D24 /* 贝塞尔曲线 */ = {
 			isa = PBXGroup;
 			children = (
-				14F91597209EF72600A05D24 /* ZHMaskView.m */,
 				14F91599209EF72600A05D24 /* ZHMaskView.h */,
+				14F91597209EF72600A05D24 /* ZHMaskView.m */,
 				14F9159A209EF72600A05D24 /* ZHBezierPathController.h */,
 				14F91598209EF72600A05D24 /* ZHBezierPathController.m */,
 			);
@@ -1272,6 +1354,7 @@
 		709FEEB11F4D7D8E00285983 /* Class 模块 */ = {
 			isa = PBXGroup;
 			children = (
+				14F62CF92134E893006F0071 /* 项目优化 */,
 				14F91506209EED3500A05D24 /* 功能类封装 */,
 				70251BEB1F5E4D0900405C57 /* 文本文件 */,
 				709FEEB51F4D7DDB00285983 /* 视图布局 */,
@@ -1437,6 +1520,7 @@
 				704915171F56546F00DA2B5A /* mid.jpg in Resources */,
 				14F7F089206B79EF008762CB /* rsa.crt in Resources */,
 				70251C171F5E9FDD00405C57 /* 2.png in Resources */,
+				14F62D0A2134EC80006F0071 /* Optimization.plist in Resources */,
 				70A0D1D01F4E747000670625 /* banner_tp01@2x.png in Resources */,
 				14F91538209EEECE00A05D24 /* SVProgressHUD.bundle in Resources */,
 				70251C1A1F5E9FDD00405C57 /* 5.png in Resources */,
@@ -1548,9 +1632,11 @@
 				14695512205FB7C400E0ADDC /* ThirdController.m in Sources */,
 				709FEE9C1F4D63E100285983 /* main.m in Sources */,
 				144EBDC620638B8F006BEC8D /* ThirdBarController.m in Sources */,
+				14F62D022134EB24006F0071 /* OptimizationModuleController.m in Sources */,
 				141919F720ABC7A7003FF19D /* PictureGestureController.m in Sources */,
 				14F91555209EEF6500A05D24 /* ZHDropDownMenuView.m in Sources */,
 				14AAA6E52112993A002C1EC1 /* ZHSegmentedControl.m in Sources */,
+				1437E6E6211D878600384DCD /* GetIpAddressController.m in Sources */,
 				144EBDC920639AE9006BEC8D /* RootController.m in Sources */,
 				14F7F0A1206B7DB1008762CB /* ZHEncryptDataController.m in Sources */,
 				14695515205FB7DD00E0ADDC /* FourController.m in Sources */,
@@ -1592,6 +1678,7 @@
 				70043AC21F4E7CDA00E82B8F /* viewLayoutController.m in Sources */,
 				14F914D5209EDC8200A05D24 /* UIControlController.m in Sources */,
 				70C23ECF1F553DCE00FAEBAA /* LeftViewController.m in Sources */,
+				14F62D0D2134EF31006F0071 /* OptimizationDetailController.m in Sources */,
 				14F9152B209EEEBD00A05D24 /* KVOModel.m in Sources */,
 				14F91523209EED3500A05D24 /* ZHWebImageCache.m in Sources */,
 				70251BEF1F5E887A00405C57 /* ZHTextFileController.m in Sources */,
@@ -1611,6 +1698,7 @@
 				14F7F081206B79C9008762CB /* ZHMD5Controller.m in Sources */,
 				144EBDB92063487E006BEC8D /* SecondeController.m in Sources */,
 				143B0202209F27960002ED0A /* StaticDisplayController.m in Sources */,
+				14F62D082134EBD2006F0071 /* OptimizationSummaryController.m in Sources */,
 				14F914D8209EDC8200A05D24 /* UIScrollView+EmptyDataSet.m in Sources */,
 				70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */,
 				144D05C4205B8F4900A655A9 /* ZHWaveView.m in Sources */,
@@ -1636,7 +1724,11 @@
 				70FA4C961F53C6DD0078BFE6 /* ZHShoppingCart.m in Sources */,
 				70C23ECC1F553DB600FAEBAA /* ZHDrawerRootController.m in Sources */,
 				14F91557209EEF6500A05D24 /* DropDownMenuController.m in Sources */,
+				1437E6E3211D864200384DCD /* ProjectSummaryController.m in Sources */,
+				14F62CFF2134EA6A006F0071 /* ProjectOptimizationController.m in Sources */,
+				1418923F212165B40024BFEB /* CrashTwoViewController.m in Sources */,
 				14F9159B209EF72600A05D24 /* ZHPatternCordView.m in Sources */,
+				1418923C212165A60024BFEB /* CrashOneViewController.m in Sources */,
 				14EDAEE82064B18000C1BE3E /* shareDelegate.m in Sources */,
 				146B4ECB208470BF00D2EE66 /* ProblemDetailController.m in Sources */,
 				14F7F0AE206BA0E5008762CB /* ShowStateInfoController.m in Sources */,
@@ -1764,7 +1856,7 @@
 				DEVELOPMENT_TEAM = WSMZXD2423;
 				GCC_PREFIX_HEADER = /Users/zhanghua/Desktop/ZhangHuaSummary/ZhangHuaSummary/ZHSummaryPch.pch;
 				INFOPLIST_FILE = ZhangHuaSummary/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hengfengyzf.yinzhifubusiness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1779,7 +1871,7 @@
 				DEVELOPMENT_TEAM = WSMZXD2423;
 				GCC_PREFIX_HEADER = /Users/zhanghua/Desktop/ZhangHuaSummary/ZhangHuaSummary/ZHSummaryPch.pch;
 				INFOPLIST_FILE = ZhangHuaSummary/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hengfengyzf.yinzhifubusiness;
 				PRODUCT_NAME = "$(TARGET_NAME)";

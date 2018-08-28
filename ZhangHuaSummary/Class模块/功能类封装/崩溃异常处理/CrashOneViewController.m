@@ -1,35 +1,36 @@
 //
-//  ZHTextFileController.m
+//  CrashOneViewController.m
 //  ZhangHuaSummary
 //
-//  Created by zhanghua0221 on 17/9/5.
-//  Copyright © 2017年 zhanghua0221. All rights reserved.
+//  Created by 张华 on 2018/8/13.
+//  Copyright © 2018年 zhanghua0221. All rights reserved.
 //
 
-#import "ZHTextFileController.h"
-
-@interface ZHTextFileController ()
+#import "CrashOneViewController.h"
+#import "CrashTwoViewController.h"
+@interface CrashOneViewController ()
 
 @end
 
-@implementation ZHTextFileController
+@implementation CrashOneViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initTableViewData];
+    self.view.layer.backgroundColor = [UIColor whiteColor].CGColor;
 
     // Do any additional setup after loading the view.
 }
--(void)initTableViewData{
-    self.tableListArray = @[@"知识总结",@"旅游攻略",@"文字样式设置",@"项目经验总结"];
-    self.controllerTitle = @[@"ZHSummaryController",@"ZHTravelStrategyController",@"ZHTextStyleController",@"ProjectSummaryController"];
-    
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    CrashTwoViewController *oneVC =  [[CrashTwoViewController alloc] init];
+    [self.navigationController pushViewController:oneVC animated:YES];
+    
+}
 /*
 #pragma mark - Navigation
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ProblemArray</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>T0、imageNamed 和 imageWithContentOfFile加载本地图片区别</string>
+			<key>describe</key>
+			<string>一.资源打包
+     图片是被放在image.xcassets里面
+	1.	部署版本在&gt;=iOS8.0时,打包的资源包图片被放在Assets.car中 ,图片被压缩
+	2.	部署版本在&lt;iOS8.0时,打包的资源包图片被放在MainBudnle中,图片没有被压缩 
+	3.	图片如果是被直接拖到项目当中,无论部署版本是多少,都会被放到MainBundle中,图片没有被压缩
+二.内存分配
+     使用imageNamed:加载图片
+	1.	加载到内存中后,会一直停留在内存中,不会随着对象销毁而销毁
+	2.	加载进图片后,占用的内存归系统管理,我们无法管理
+	3.	相同的图片,图片不会重新加载
+	4.	加载到内存中后,占据内存空间较大
+使用 imageWithContentOfFile:加载图片
+	1.	加载到内存中后,占据内存空间比较小
+	2.	相同的图片会被重复加载到内存中
+	3.	对象销毁的时候,加载到内存中得图片会被一起销毁
+
+结论:
+	1.	如果图片较小,并且频繁使用的图片,使用imageName:来加载图片(按钮图片/主页图片/占位图)
+	2.	如果图片较大,并且使用次数较少,使用 imageWithContentOfFile:来加载(相册/版本新特性)</string>
+		</dict>
+	</array>
+</dict>
+</plist>

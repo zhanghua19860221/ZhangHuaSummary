@@ -69,6 +69,7 @@
         
         UIViewController *VC =[[NSClassFromString(tempName) alloc] init];
         VC.title = self.tableListArray[indexPath.row];
+        VC.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:VC animated:YES];
         
     }
