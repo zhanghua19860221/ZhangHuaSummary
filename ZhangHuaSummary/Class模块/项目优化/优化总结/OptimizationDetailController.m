@@ -25,7 +25,7 @@
 }
 - (UIScrollView*)scrollView{
     if (_scrollView == nil) {
-        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SC_WIDTH, SC_HEIGHT)];
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
         _scrollView.backgroundColor = COLORFromRGB(0xf9f9f9);
         [self.view addSubview:_scrollView];
     }
@@ -54,7 +54,7 @@
     [problem mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.scrollView).offset(H(20));
         make.left.equalTo(self.view).offset(W(15));
-        make.width.mas_equalTo(SC_WIDTH-W(30));
+        make.width.mas_equalTo(kScreenWidth-W(30));
         make.height.mas_equalTo(H(16));
         
     }];
@@ -70,7 +70,7 @@
         
     }];
     
-    UILabel *answerLab = [[UILabel alloc] initWithFrame:CGRectMake(W(15), H(77), SC_WIDTH - W(30), SC_HEIGHT)];
+    UILabel *answerLab = [[UILabel alloc] initWithFrame:CGRectMake(W(15), H(77), kScreenWidth - W(30), kScreenHeight)];
     answerLab.textColor = COLORFromRGB(0x333333);
     answerLab.numberOfLines = 0;
     answerLab.font = [UIFont systemFontOfSize:W(13)];
@@ -86,7 +86,7 @@
     
     
     CGFloat LY = answerLab.frame.origin.y+answerLab.frame.size.height+H(20);
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(W(15),LY, SC_WIDTH-W(30), H(13))];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(W(15),LY, kScreenWidth-W(30), H(13))];
     label.font = [UIFont systemFontOfSize:W(13)];
     label.textAlignment = NSTextAlignmentRight;
     label.text = @"张华解答";
@@ -101,7 +101,7 @@
         
     }];
     
-    self.scrollView.contentSize = CGSizeMake(SC_WIDTH, BY);
+    self.scrollView.contentSize = CGSizeMake(kScreenWidth, BY);
 }
 
 - (void)didReceiveMemoryWarning {

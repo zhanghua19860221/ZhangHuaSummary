@@ -14,12 +14,22 @@
 		1427F1C020858BBC0037E693 /* ZHTextStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427F1BF20858BBC0037E693 /* ZHTextStyleController.m */; };
 		1427F1C22085C4520037E693 /* ProblemList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1427F1C12085C4520037E693 /* ProblemList.plist */; };
 		1427F1C52085C4960037E693 /* ZHSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427F1C42085C4960037E693 /* ZHSummaryController.m */; };
+		14285D6B216B528E00894C46 /* ZHShopCartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14285D64216B528E00894C46 /* ZHShopCartController.m */; };
+		14285D6C216B528E00894C46 /* ShopCarNew.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14285D65216B528E00894C46 /* ShopCarNew.plist */; };
+		14285D6D216B528E00894C46 /* ZHShopingCartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14285D69216B528E00894C46 /* ZHShopingCartModel.m */; };
+		14285D70216B537B00894C46 /* ZHShopppingCartBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14285D6F216B537B00894C46 /* ZHShopppingCartBottomView.m */; };
+		14285D73216B58F800894C46 /* ZHShopingCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14285D72216B58F800894C46 /* ZHShopingCartCell.m */; };
+		14285D76216B5DDC00894C46 /* ZHShopingCartHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14285D75216B5DDC00894C46 /* ZHShopingCartHeaderView.m */; };
+		14285D7A216B643200894C46 /* 店铺.png in Resources */ = {isa = PBXBuildFile; fileRef = 14285D77216B643200894C46 /* 店铺.png */; };
+		14285D7B216B643200894C46 /* box_choose.png in Resources */ = {isa = PBXBuildFile; fileRef = 14285D78216B643200894C46 /* box_choose.png */; };
+		14285D7C216B643200894C46 /* box_unchoose.png in Resources */ = {isa = PBXBuildFile; fileRef = 14285D79216B643200894C46 /* box_unchoose.png */; };
 		1437E6E3211D864200384DCD /* ProjectSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1437E6E2211D864200384DCD /* ProjectSummaryController.m */; };
 		1437E6E6211D878600384DCD /* GetIpAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1437E6E5211D878600384DCD /* GetIpAddressController.m */; };
 		143B01F1209F21DD0002ED0A /* WaveBtnController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B01F0209F21DD0002ED0A /* WaveBtnController.m */; };
 		143B01F4209F22290002ED0A /* ZHWaveBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B01F3209F22290002ED0A /* ZHWaveBtnView.m */; };
 		143B0201209F27960002ED0A /* RunDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B01FD209F27960002ED0A /* RunDisplayController.m */; };
 		143B0202209F27960002ED0A /* StaticDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B0200209F27960002ED0A /* StaticDisplayController.m */; };
+		144B6C11216EF34E00FC0087 /* LabAddPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144B6C10216EF34E00FC0087 /* LabAddPictureController.m */; };
 		144D05C1205B8F3C00A655A9 /* ZHWaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C0205B8F3C00A655A9 /* ZHWaveController.m */; };
 		144D05C4205B8F4900A655A9 /* ZHWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C2205B8F4900A655A9 /* ZHWaveView.m */; };
 		144D05CA205BB35000A655A9 /* ZHWaveTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C9205BB35000A655A9 /* ZHWaveTwoView.m */; };
@@ -183,6 +193,20 @@
 		1427F1C12085C4520037E693 /* ProblemList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ProblemList.plist; path = "Class模块/文本文件/知识总结/ProblemList.plist"; sourceTree = "<group>"; };
 		1427F1C32085C4960037E693 /* ZHSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHSummaryController.h; path = "Class模块/文本文件/知识总结/ZHSummaryController.h"; sourceTree = "<group>"; };
 		1427F1C42085C4960037E693 /* ZHSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHSummaryController.m; path = "Class模块/文本文件/知识总结/ZHSummaryController.m"; sourceTree = "<group>"; };
+		14285D64216B528E00894C46 /* ZHShopCartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHShopCartController.m; sourceTree = "<group>"; };
+		14285D65216B528E00894C46 /* ShopCarNew.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShopCarNew.plist; sourceTree = "<group>"; };
+		14285D66216B528E00894C46 /* ZHShopCartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHShopCartController.h; sourceTree = "<group>"; };
+		14285D68216B528E00894C46 /* ZHShopingCartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHShopingCartModel.h; sourceTree = "<group>"; };
+		14285D69216B528E00894C46 /* ZHShopingCartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHShopingCartModel.m; sourceTree = "<group>"; };
+		14285D6E216B537B00894C46 /* ZHShopppingCartBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHShopppingCartBottomView.h; sourceTree = "<group>"; };
+		14285D6F216B537B00894C46 /* ZHShopppingCartBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHShopppingCartBottomView.m; sourceTree = "<group>"; };
+		14285D71216B58F800894C46 /* ZHShopingCartCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHShopingCartCell.h; sourceTree = "<group>"; };
+		14285D72216B58F800894C46 /* ZHShopingCartCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHShopingCartCell.m; sourceTree = "<group>"; };
+		14285D74216B5DDC00894C46 /* ZHShopingCartHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHShopingCartHeaderView.h; sourceTree = "<group>"; };
+		14285D75216B5DDC00894C46 /* ZHShopingCartHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHShopingCartHeaderView.m; sourceTree = "<group>"; };
+		14285D77216B643200894C46 /* 店铺.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "店铺.png"; sourceTree = "<group>"; };
+		14285D78216B643200894C46 /* box_choose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_choose.png; sourceTree = "<group>"; };
+		14285D79216B643200894C46 /* box_unchoose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_unchoose.png; sourceTree = "<group>"; };
 		1437E6E1211D864200384DCD /* ProjectSummaryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProjectSummaryController.h; path = "Class模块/文本文件/项目经验总结/ProjectSummaryController.h"; sourceTree = "<group>"; };
 		1437E6E2211D864200384DCD /* ProjectSummaryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProjectSummaryController.m; path = "Class模块/文本文件/项目经验总结/ProjectSummaryController.m"; sourceTree = "<group>"; };
 		1437E6E4211D878600384DCD /* GetIpAddressController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GetIpAddressController.h; path = "Class模块/文本文件/项目经验总结/获取网络ip地址/GetIpAddressController.h"; sourceTree = "<group>"; };
@@ -195,6 +219,8 @@
 		143B01FD209F27960002ED0A /* RunDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunDisplayController.m; sourceTree = "<group>"; };
 		143B01FF209F27960002ED0A /* StaticDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticDisplayController.h; sourceTree = "<group>"; };
 		143B0200209F27960002ED0A /* StaticDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticDisplayController.m; sourceTree = "<group>"; };
+		144B6C0F216EF34E00FC0087 /* LabAddPictureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LabAddPictureController.h; path = "Class模块/文本文件/文字样式设置/文字中添加图片/LabAddPictureController.h"; sourceTree = "<group>"; };
+		144B6C10216EF34E00FC0087 /* LabAddPictureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LabAddPictureController.m; path = "Class模块/文本文件/文字样式设置/文字中添加图片/LabAddPictureController.m"; sourceTree = "<group>"; };
 		144D05BF205B8F3C00A655A9 /* ZHWaveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHWaveController.h; path = "Class模块/动画效果/波浪/ZHWaveController.h"; sourceTree = "<group>"; };
 		144D05C0205B8F3C00A655A9 /* ZHWaveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHWaveController.m; path = "Class模块/动画效果/波浪/ZHWaveController.m"; sourceTree = "<group>"; };
 		144D05C2205B8F4900A655A9 /* ZHWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHWaveView.m; path = "Class模块/动画效果/波浪/ZHWaveView.m"; sourceTree = "<group>"; };
@@ -506,10 +532,49 @@
 		1427F1BD20858B540037E693 /* 文字样式设置 */ = {
 			isa = PBXGroup;
 			children = (
+				144B6C0E216EF28F00FC0087 /* 文字中添加图片 */,
 				1427F1BE20858BBC0037E693 /* ZHTextStyleController.h */,
 				1427F1BF20858BBC0037E693 /* ZHTextStyleController.m */,
 			);
 			name = "文字样式设置";
+			sourceTree = "<group>";
+		};
+		14285D63216B528E00894C46 /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				14285D77216B643200894C46 /* 店铺.png */,
+				14285D78216B643200894C46 /* box_choose.png */,
+				14285D79216B643200894C46 /* box_unchoose.png */,
+				14285D65216B528E00894C46 /* ShopCarNew.plist */,
+				14285D66216B528E00894C46 /* ZHShopCartController.h */,
+				14285D64216B528E00894C46 /* ZHShopCartController.m */,
+				14285D67216B528E00894C46 /* Model */,
+				14285D6A216B528E00894C46 /* View */,
+			);
+			name = "购物车";
+			path = "Class模块/视图布局/购物车";
+			sourceTree = "<group>";
+		};
+		14285D67216B528E00894C46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14285D68216B528E00894C46 /* ZHShopingCartModel.h */,
+				14285D69216B528E00894C46 /* ZHShopingCartModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14285D6A216B528E00894C46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14285D71216B58F800894C46 /* ZHShopingCartCell.h */,
+				14285D72216B58F800894C46 /* ZHShopingCartCell.m */,
+				14285D74216B5DDC00894C46 /* ZHShopingCartHeaderView.h */,
+				14285D75216B5DDC00894C46 /* ZHShopingCartHeaderView.m */,
+				14285D6E216B537B00894C46 /* ZHShopppingCartBottomView.h */,
+				14285D6F216B537B00894C46 /* ZHShopppingCartBottomView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1431ED9B203E6C5D00F74EFA /* RSA */ = {
@@ -613,6 +678,15 @@
 				146954F4205FB68A00E0ADDC /* ZHMenuController.m */,
 			);
 			name = "滑动菜单联动页面";
+			sourceTree = "<group>";
+		};
+		144B6C0E216EF28F00FC0087 /* 文字中添加图片 */ = {
+			isa = PBXGroup;
+			children = (
+				144B6C0F216EF34E00FC0087 /* LabAddPictureController.h */,
+				144B6C10216EF34E00FC0087 /* LabAddPictureController.m */,
+			);
+			name = "文字中添加图片";
 			sourceTree = "<group>";
 		};
 		144D05BB205B8E8500A655A9 /* 波浪 */ = {
@@ -1383,6 +1457,7 @@
 		709FEEB51F4D7DDB00285983 /* 视图布局 */ = {
 			isa = PBXGroup;
 			children = (
+				14285D63216B528E00894C46 /* 购物车 */,
 				14F914AB209EDC8100A05D24 /* UI控件使用 */,
 				14F9141F209EB47C00A05D24 /* 选择控件 */,
 				144EBDBA2063877B006BEC8D /* 原生TabBarController */,
@@ -1463,7 +1538,6 @@
 				709FEE931F4D63E100285983 /* Sources */,
 				709FEE941F4D63E100285983 /* Frameworks */,
 				709FEE951F4D63E100285983 /* Resources */,
-				9EB3C4AC3FF2B9B49F9F4146 /* [CP] Embed Pods Frameworks */,
 				DCB55E6A614083E692285523 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1486,7 +1560,7 @@
 				TargetAttributes = {
 					709FEE961F4D63E100285983 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = WSMZXD2423;
+						DevelopmentTeam = 223MWV8YZF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1520,13 +1594,16 @@
 				704915171F56546F00DA2B5A /* mid.jpg in Resources */,
 				14F7F089206B79EF008762CB /* rsa.crt in Resources */,
 				70251C171F5E9FDD00405C57 /* 2.png in Resources */,
+				14285D7A216B643200894C46 /* 店铺.png in Resources */,
 				14F62D0A2134EC80006F0071 /* Optimization.plist in Resources */,
 				70A0D1D01F4E747000670625 /* banner_tp01@2x.png in Resources */,
 				14F91538209EEECE00A05D24 /* SVProgressHUD.bundle in Resources */,
 				70251C1A1F5E9FDD00405C57 /* 5.png in Resources */,
+				14285D7B216B643200894C46 /* box_choose.png in Resources */,
 				14F914D9209EDC8200A05D24 /* emptyhd.png in Resources */,
 				14F9156E209EF03F00A05D24 /* pick_bg.png in Resources */,
 				70251C251F5EA29400405C57 /* 6.jpeg in Resources */,
+				14285D7C216B643200894C46 /* box_unchoose.png in Resources */,
 				14F9156B209EF03F00A05D24 /* line.png in Resources */,
 				70A0D1D11F4E747000670625 /* banner_tp02@2x.png in Resources */,
 				70A0D1D31F4E747000670625 /* banner_tp04@2x.png in Resources */,
@@ -1543,6 +1620,7 @@
 				14F91556209EEF6500A05D24 /* dropdownMenu_cornerIcon.png in Resources */,
 				1427F1C22085C4520037E693 /* ProblemList.plist in Resources */,
 				70FA4C951F53C6DD0078BFE6 /* heheda.png in Resources */,
+				14285D6C216B528E00894C46 /* ShopCarNew.plist in Resources */,
 				14F7F08A206B79EF008762CB /* p.p12 in Resources */,
 				14F7F087206B79EF008762CB /* private.pem in Resources */,
 				709FEEA51F4D63E100285983 /* Main.storyboard in Resources */,
@@ -1570,21 +1648,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9EB3C4AC3FF2B9B49F9F4146 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhangHuaSummary/Pods-ZhangHuaSummary-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DCB55E6A614083E692285523 /* [CP] Copy Pods Resources */ = {
@@ -1641,6 +1704,7 @@
 				14F7F0A1206B7DB1008762CB /* ZHEncryptDataController.m in Sources */,
 				14695515205FB7DD00E0ADDC /* FourController.m in Sources */,
 				14F91525209EED3500A05D24 /* PictureCompressionController.m in Sources */,
+				14285D6B216B528E00894C46 /* ZHShopCartController.m in Sources */,
 				14F7F092206B7A05008762CB /* RSA.m in Sources */,
 				14F9156A209EF03F00A05D24 /* ZHScanViewController.m in Sources */,
 				70C23ED21F553DE100FAEBAA /* MidViewController.m in Sources */,
@@ -1665,6 +1729,7 @@
 				14F7F09C206B7B02008762CB /* KeyChinaController.m in Sources */,
 				14F91524209EED3500A05D24 /* ZHPictureCache.m in Sources */,
 				143B01F1209F21DD0002ED0A /* WaveBtnController.m in Sources */,
+				14285D76216B5DDC00894C46 /* ZHShopingCartHeaderView.m in Sources */,
 				1427F1C020858BBC0037E693 /* ZHTextStyleController.m in Sources */,
 				14F9143B209EB47C00A05D24 /* ZHChooseCityController.m in Sources */,
 				14F91505209EE26600A05D24 /* ZHBannerLoop.m in Sources */,
@@ -1683,6 +1748,7 @@
 				14F91523209EED3500A05D24 /* ZHWebImageCache.m in Sources */,
 				70251BEF1F5E887A00405C57 /* ZHTextFileController.m in Sources */,
 				14F91536209EEECE00A05D24 /* SVIndefiniteAnimatedView.m in Sources */,
+				14285D70216B537B00894C46 /* ZHShopppingCartBottomView.m in Sources */,
 				14F914E0209EDC8200A05D24 /* SwitchViewController.m in Sources */,
 				70043ACB1F4E7D8B00E82B8F /* animationController.m in Sources */,
 				144D05C1205B8F3C00A655A9 /* ZHWaveController.m in Sources */,
@@ -1703,6 +1769,7 @@
 				70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */,
 				144D05C4205B8F4900A655A9 /* ZHWaveView.m in Sources */,
 				14F914DA209EDC8200A05D24 /* TableViewRefreshController.m in Sources */,
+				144B6C11216EF34E00FC0087 /* LabAddPictureController.m in Sources */,
 				14F914FE209EE1C300A05D24 /* ZHRoundDisplay.m in Sources */,
 				14F91540209EEED900A05D24 /* ZHNetWorking.m in Sources */,
 				14F9154C209EEF3F00A05D24 /* ZHCallAlbumController.m in Sources */,
@@ -1712,6 +1779,7 @@
 				143B01F4209F22290002ED0A /* ZHWaveBtnView.m in Sources */,
 				14F91577209EF05400A05D24 /* ZHCallTeleController.m in Sources */,
 				14F9CF96211422740093D8F0 /* DatePickViewController.m in Sources */,
+				14285D6D216B528E00894C46 /* ZHShopingCartModel.m in Sources */,
 				14F7F099206B7AE3008762CB /* ZHKeyChina.m in Sources */,
 				1427F1C52085C4960037E693 /* ZHSummaryController.m in Sources */,
 				145B6863209C2236002CF168 /* SixController.m in Sources */,
@@ -1721,6 +1789,7 @@
 				14F9154F209EEF5A00A05D24 /* ZHAVPlayerClass.m in Sources */,
 				70043ABE1F4E7C4A00E82B8F /* RootViewController.m in Sources */,
 				14F914FA209EE1C300A05D24 /* ZHWaterfallCell.m in Sources */,
+				14285D73216B58F800894C46 /* ZHShopingCartCell.m in Sources */,
 				70FA4C961F53C6DD0078BFE6 /* ZHShoppingCart.m in Sources */,
 				70C23ECC1F553DB600FAEBAA /* ZHDrawerRootController.m in Sources */,
 				14F91557209EEF6500A05D24 /* DropDownMenuController.m in Sources */,
@@ -1853,13 +1922,16 @@
 			baseConfigurationReference = FE36F7D50D48D93D99DA00EC /* Pods-ZhangHuaSummary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WSMZXD2423;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 223MWV8YZF;
 				GCC_PREFIX_HEADER = /Users/zhanghua/Desktop/ZhangHuaSummary/ZhangHuaSummary/ZHSummaryPch.pch;
 				INFOPLIST_FILE = ZhangHuaSummary/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hengfengyzf.yinzhifubusiness;
+				PRODUCT_BUNDLE_IDENTIFIER = com.changxingtianxia.ZHShopingCartDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1868,13 +1940,16 @@
 			baseConfigurationReference = 1051596F24D6015DDBCCB4F9 /* Pods-ZhangHuaSummary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WSMZXD2423;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 223MWV8YZF;
 				GCC_PREFIX_HEADER = /Users/zhanghua/Desktop/ZhangHuaSummary/ZhangHuaSummary/ZHSummaryPch.pch;
 				INFOPLIST_FILE = ZhangHuaSummary/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hengfengyzf.yinzhifubusiness;
+				PRODUCT_BUNDLE_IDENTIFIER = com.changxingtianxia.ZHShopingCartDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

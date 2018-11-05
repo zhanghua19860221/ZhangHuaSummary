@@ -30,25 +30,40 @@
 #import "shareDelegate.h"
 
 
-
 // 自定义宏
 //状态栏的高度
-#define StatusHeight  [[UIApplication sharedApplication] statusBarFrame].size.height
-
-//导航栏高度
-#define navHight self.navigationController.navigationBar.frame.size.height、
+#define kStatusHeight  [[UIApplication sharedApplication] statusBarFrame].size.height
 
 //状态栏和导航栏高度
-#define navAndStatusHight self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNavAndStatusHeight (kScreenHeight == 812 ? 88 : 64)
+
+//获取Tabar高度
+#define kTabBarHeight  (kScreenHeight == 812 ? 83 : 49)
 
 
 //获取屏幕宽高
-#define SC_WIDTH  [UIScreen mainScreen].bounds.size.width
-#define SC_HEIGHT [UIScreen mainScreen].bounds.size.height
-#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//系统检测
+#define IOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0 ? YES : NO)
+#define IOS11 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0 ? YES : NO)
+
+//弱引用
+#define kWeakSelf(type)__weak typeof(type)weak##type = type
+//强引用
+#define kStrongSelf(type)__strong typeof(type)type = weak##type
+
+//自定义视图宽高
+#define kSubWidth  self.frame.size.width
+#define kSubHeight self.frame.size.height
+
+
+
+
 //屏幕比例适配
-#define W(R) R*(SC_WIDTH/375.0)
-#define H(R) R*(SC_HEIGHT/667.0)
+#define W(R) R*(kScreenWidth/375.0)
+#define H(R) R*(kScreenHeight/667.0)
 
 //设置颜色
 #define COLORFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000)>>16))/255.0 green:((float)((rgbValue & 0xFF00)>>8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]

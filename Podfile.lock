@@ -36,6 +36,17 @@ DEPENDENCIES:
   - PGDatePicker
   - SDWebImage (~> 3.8.1)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - AvoidCrash
+    - FMDB
+    - Masonry
+    - MJRefresh
+    - PGDatePicker
+    - PGPickerView
+    - SDWebImage
+
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
@@ -48,4 +59,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ca7f0125962bc42cfc45adb6353976ab10f5ee12
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

@@ -25,6 +25,7 @@
     self.title = @"提纲";
 }
 -(void)initTableViewData{
+
     NSArray *tempListArray = @[@"视图布局",@"动画效果",@"文本文件",@"功能类封装",@"数据加密存储",@"项目优化"];
     self.tableListArray = [tempListArray copy];
     NSArray *tempTitle  = @[@"viewLayoutController",@"animationController",@"ZHTextFileController",@"toolClassEncap",@"ZHEncryptDataController",@"ProjectOptimizationController"];

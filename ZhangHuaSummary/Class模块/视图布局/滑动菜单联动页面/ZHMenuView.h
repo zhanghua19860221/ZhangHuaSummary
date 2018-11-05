@@ -19,11 +19,15 @@
 
 @interface ZHMenuView : UIView
 
--(id)initTitleArray:(NSArray*)titles;
+- (id)initWithFrame:(CGRect)rect titleArray:(NSArray*)titles;
+- (void)updataSelectMenuIndex:(NSInteger)index;
 
--(void)updataSelectMenuIndex:(NSInteger)index;
+@property (weak, nonatomic) id<ZHMenuDelegateIndex>delegate;
+@property (assign ,nonatomic)BOOL isShowSpaceLine;//是否显示分割线
+@property (assign ,nonatomic)BOOL isShowSlideLine;//是否显示滚动条
+@property (assign ,nonatomic)CGFloat selectFont; //选中按钮字体大小
+@property (strong ,nonatomic)UIColor *selectColor;//选中按钮字体颜色
 
-@property (nonatomic) id<ZHMenuDelegateIndex>delegate;
 
 
 @end

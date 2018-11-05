@@ -37,7 +37,7 @@
     inputField.backgroundColor = COLORFromRGB(0xf9f9f9);
     [self.view addSubview:inputField];
     
-    outputLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 220, SC_WIDTH-60, 30)];
+    outputLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 220, kScreenWidth-60, 30)];
     outputLabel.backgroundColor = COLORFromRGB(0x666666);
     outputLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:outputLabel];

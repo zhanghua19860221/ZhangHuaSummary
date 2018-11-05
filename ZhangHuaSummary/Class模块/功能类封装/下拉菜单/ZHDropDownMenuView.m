@@ -45,9 +45,7 @@
 
 #define AnimateTime 0.25f   // 下拉动画时间
 
-@implementation ZHDropDownMenuView
-
-{
+@implementation ZHDropDownMenuView{
     UIImageView * _arrowMark;   // 尖头图标
     UIView      * _listView;    // 下拉列表背景View
     UITableView * _tableView;   // 下拉列表

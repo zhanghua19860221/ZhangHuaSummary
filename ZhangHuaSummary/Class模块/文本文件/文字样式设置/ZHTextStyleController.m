@@ -23,7 +23,7 @@
     label.font = [UIFont systemFontOfSize:30];
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
-    NSString *str = @"测试文字:\n改变文字间距\n改变文字大小\n改变文字颜色\n改变文字背景\n添加文字删除线\n添加文字下划线\n设置字体倾斜\n设置文本扁平化";
+    NSString *str = @"测试文字:\n改变文字间距\n改变文字大小\n改变文字颜色\n改变文字背景\n添加文字删除线\n添加文字下划线\n设置字体倾斜\n设置文本扁平化\n添加文本边框";
     
     NSMutableAttributedString * attributedText = [[NSMutableAttributedString alloc] initWithString:str];
     // 改变文字间距
@@ -43,12 +43,13 @@
     // 设置文本扁平化
     [attributedText setAttributes:@{NSExpansionAttributeName:@0.4} range:NSMakeRange(57, 7)];
     
+    
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     //设置行间距
     [paragraphStyle setLineSpacing:W(8)];
     //设置文字的距中
     [paragraphStyle setAlignment:NSTextAlignmentCenter];
-    
+
     //设置文字的头缩进
     //[paragraphStyle setFirstLineHeadIndent:W(26)];
     [attributedText addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, str.length)];

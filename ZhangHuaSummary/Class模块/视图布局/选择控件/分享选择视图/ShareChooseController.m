@@ -22,7 +22,7 @@
 }
 - (void)createSubview{
     
-    ZHShareChooseView * chooseView = [[ZHShareChooseView alloc] initWithFrame:CGRectMake(0, 0, SC_WIDTH, SC_HEIGHT)];
+    ZHShareChooseView * chooseView = [[ZHShareChooseView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
     NSArray *listArr = @[@{@"img":@"QQ", @"text":@"QQ"}, @{@"img":@"微信", @"text":@"微信"}, @{@"img":@"通讯录", @"text":@"通讯录"}];
     chooseView.dataArray = listArr;
     [self.view addSubview:chooseView];

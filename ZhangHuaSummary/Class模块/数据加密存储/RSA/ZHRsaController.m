@@ -80,7 +80,7 @@
 //    encryptionLabel.lineBreakMode =NSLineBreakByWordWrapping;
     encryptionLabel.numberOfLines = 0;
     [encryptionLabel setTextColor:[UIColor redColor]];
-    encryptionLabel.frame = CGRectMake(50, 230, SC_WIDTH-60, 30);
+    encryptionLabel.frame = CGRectMake(50, 230, kScreenWidth-60, 30);
     [self.view addSubview:encryptionLabel];
 
     
@@ -102,7 +102,7 @@
     decryptionLabel.lineBreakMode =NSLineBreakByWordWrapping;
     [decryptionLabel setNumberOfLines:0];
     [decryptionLabel setTextColor:[UIColor redColor]];
-    decryptionLabel.frame = CGRectMake(50, 390, SC_WIDTH-60, 30);
+    decryptionLabel.frame = CGRectMake(50, 390, kScreenWidth-60, 30);
     [self.view addSubview:decryptionLabel];
 
     
@@ -110,7 +110,7 @@
 //加密按钮点击事件
 - (void)encryptionClick:(UIButton*)btn{
     encryptionLabel.text = [self.rsa rsaEncryptString:textField.text];
-    CGSize size = [encryptionLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(SC_WIDTH-60,MAXFLOAT)lineBreakMode:UILineBreakModeWordWrap];
+    CGSize size = [encryptionLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(kScreenWidth-60,MAXFLOAT)lineBreakMode:UILineBreakModeWordWrap];
     encryptionLabel.frame = CGRectMake(50,230,size.width,size.height);
     
     NSLog(@"encryptionLabel == %@",encryptionLabel.text);

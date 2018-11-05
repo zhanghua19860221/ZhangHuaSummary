@@ -36,7 +36,7 @@
     [self.view addSubview:waterView];
     [waterView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view).offset(150);
-        make.centerX.mas_equalTo(self.view.mas_centerX).offset(-SC_WIDTH/4.0);
+        make.centerX.mas_equalTo(self.view.mas_centerX).offset(-kScreenWidth/4.0);
         make.width.height.mas_equalTo(150);
     } ];
     

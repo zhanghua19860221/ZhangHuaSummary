@@ -23,7 +23,7 @@
 }
 - (void)createSubview{
     
-    ZHChooseBankView * chooseView = [[ZHChooseBankView alloc] initWithFrame:CGRectMake(0, 0, SC_WIDTH, SC_HEIGHT)];
+    ZHChooseBankView * chooseView = [[ZHChooseBankView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
     
     //确定按钮的点击回调事件
 //    __weak typeof(self) weakSelf = self;

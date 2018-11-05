@@ -27,7 +27,7 @@
     
     // Do any additional setup after loading the view.
 }
-#pragma mark - LMJDropdownMenu Delegate
+#pragma mark - ZHDropDownMenuDelegate Delegate
 
 - (void)dropdownMenu:(ZHDropDownMenuView *)menu selectedCellNumber:(NSInteger)number{
     NSLog(@"你选择了：%ld",number);

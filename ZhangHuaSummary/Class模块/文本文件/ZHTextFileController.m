@@ -21,8 +21,8 @@
     // Do any additional setup after loading the view.
 }
 -(void)initTableViewData{
-    self.tableListArray = @[@"知识总结",@"旅游攻略",@"文字样式设置",@"项目经验总结"];
-    self.controllerTitle = @[@"ZHSummaryController",@"ZHTravelStrategyController",@"ZHTextStyleController",@"ProjectSummaryController"];
+    self.tableListArray = @[@"知识总结",@"旅游攻略",@"文字样式设置",@"项目经验总结",@"图文混排"];
+    self.controllerTitle =  @[@"ZHSummaryController",@"ZHTravelStrategyController",@"ZHTextStyleController",@"ProjectSummaryController",@"LabAddPictureController"];
     
 }
 - (void)didReceiveMemoryWarning {

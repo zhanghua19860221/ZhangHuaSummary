@@ -25,17 +25,17 @@
 -(void)addsubController{
     
     self.left = [[LeftViewController alloc] init];
-    self.left.view.frame = CGRectMake(0, 0,SC_WIDTH,SC_HEIGHT);
+    self.left.view.frame = CGRectMake(0, 0,kScreenWidth,kScreenHeight);
     self.left.view.backgroundColor = [UIColor colorWithPatternImage:[self createBackgroundImage:@"leftImage.jpg"]];
 //    self.left.view.contentMode = UIViewContentModeScaleAspectFit;
     
     self.mid  = [[MidViewController alloc] init];
-    self.mid.view.frame = CGRectMake(0, 0,SC_WIDTH,SC_HEIGHT);
+    self.mid.view.frame = CGRectMake(0, 0,kScreenWidth,kScreenHeight);
     self.mid.view.backgroundColor = [UIColor colorWithPatternImage:[self createBackgroundImage:@"mid.jpg"]];
 //    self.mid.view.contentMode = UIViewContentModeScaleAspectFit;
     
     self.right = [[RightViewController alloc] init];
-    self.right.view.frame = CGRectMake(0, 0,SC_WIDTH,SC_HEIGHT);
+    self.right.view.frame = CGRectMake(0, 0,kScreenWidth,kScreenHeight);
     self.right.view.backgroundColor = [UIColor colorWithPatternImage:[self createBackgroundImage:@"right.jpg"]];
 //    self.right.view.contentMode = UIViewContentModeScaleAspectFit;
     
@@ -56,7 +56,7 @@
     [leftButton setTitle:@"左抽屉" forState:UIControlStateNormal];
     [leftButton addTarget:self action:@selector(leftClick:) forControlEvents:UIControlEventTouchUpInside];
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    rightButton.frame = CGRectMake(SC_WIDTH-120, 200, 80, 40);
+    rightButton.frame = CGRectMake(kScreenWidth-120, 200, 80, 40);
     rightButton.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1];
     [rightButton setTitle:@"右抽屉" forState:UIControlStateNormal];
     [rightButton addTarget:self action:@selector(rightClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -70,11 +70,11 @@
 
     if (self.mid.view.frame.origin.x == 0) {
         
-        self.right.view.frame = CGRectMake(SC_WIDTH, 0,SC_WIDTH,SC_HEIGHT);
+        self.right.view.frame = CGRectMake(kScreenWidth, 0,kScreenWidth,kScreenHeight);
         
         [UIView animateWithDuration:0.5 animations:^{
             
-            self.mid.view.frame = CGRectMake(200, 0,SC_WIDTH,SC_HEIGHT);
+            self.mid.view.frame = CGRectMake(200, 0,kScreenWidth,kScreenHeight);
             self.mid.view.transform = CGAffineTransformMakeScale(0.8, 0.8);
 
         } completion:^(BOOL finished) {
@@ -86,11 +86,11 @@
         [UIView animateWithDuration:0.5 animations:^{
             
             self.mid.view.transform = CGAffineTransformIdentity;
-            self.mid.view.frame = CGRectMake(0, 0,SC_WIDTH,SC_HEIGHT);
+            self.mid.view.frame = CGRectMake(0, 0,kScreenWidth,kScreenHeight);
 
         } completion:^(BOOL finished) {
             
-            self.right.view.frame = CGRectMake(0, 0,SC_WIDTH,SC_HEIGHT);
+            self.right.view.frame = CGRectMake(0, 0,kScreenWidth,kScreenHeight);
             
         }];
         
@@ -101,11 +101,11 @@
     
     if (self.mid.view.frame.origin.x == 0) {
         
-        self.left.view.frame = CGRectMake(-SC_WIDTH, 0,SC_WIDTH,SC_HEIGHT);
+        self.left.view.frame = CGRectMake(-kScreenWidth, 0,kScreenWidth,kScreenHeight);
         
         [UIView animateWithDuration:0.5 animations:^{
             
-            self.mid.view.frame = CGRectMake(-200,0,SC_WIDTH,SC_HEIGHT);
+            self.mid.view.frame = CGRectMake(-200,0,kScreenWidth,kScreenHeight);
             self.mid.view.transform = CGAffineTransformMakeScale(0.8, 0.8);
 
         } completion:^(BOOL finished) {
@@ -117,11 +117,11 @@
         [UIView animateWithDuration:0.5 animations:^{
             
             self.mid.view.transform = CGAffineTransformIdentity;
-            self.mid.view.frame = CGRectMake(0, 0,SC_WIDTH,SC_HEIGHT);
+            self.mid.view.frame = CGRectMake(0, 0,kScreenWidth,kScreenHeight);
 
         } completion:^(BOOL finished) {
             
-            self.left.view.frame = CGRectMake(0, 0,SC_WIDTH,SC_HEIGHT);
+            self.left.view.frame = CGRectMake(0, 0,kScreenWidth,kScreenHeight);
             
         }];
         

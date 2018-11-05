@@ -104,10 +104,10 @@
     [self.outPut setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
     
     //设置扫描区域
-    CGFloat top = TOP/SC_HEIGHT;
-    CGFloat left = LEFT/SC_WIDTH;
-    CGFloat width = 220/SC_WIDTH;
-    CGFloat height = 220/SC_HEIGHT;
+    CGFloat top = TOP/kScreenHeight;
+    CGFloat left = LEFT/kScreenWidth;
+    CGFloat width = 220/kScreenWidth;
+    CGFloat height = 220/kScreenHeight;
     ///top 与 left 互换  width 与 height 互换
     [self.outPut setRectOfInterest:CGRectMake(top,left, height, width)];
     

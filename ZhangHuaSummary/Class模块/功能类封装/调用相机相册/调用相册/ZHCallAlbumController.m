@@ -42,7 +42,7 @@
 - (void)makeConstraintsForUI {
     __weak typeof(self)weakSelf = self;
     [_imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(SC_WIDTH, SC_WIDTH));
+        make.size.mas_equalTo(CGSizeMake(kScreenWidth, kScreenWidth));
         make.centerX.mas_equalTo(weakSelf.view.mas_centerX);
         make.centerY.mas_equalTo(weakSelf.view.mas_centerY);
     }];

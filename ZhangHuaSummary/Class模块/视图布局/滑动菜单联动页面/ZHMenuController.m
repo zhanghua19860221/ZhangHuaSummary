@@ -45,15 +45,12 @@
     NSArray *array = @[@"全部",@"充值",@"提现",@"投资",@"回款",@"收益"];
     [self.titleArray addObjectsFromArray:array];
     
-    _menuView = [[ZHMenuView alloc] initTitleArray:self.titleArray];
-    [self.view addSubview:_menuView];
+    _menuView = [[ZHMenuView alloc] initWithFrame:CGRectMake(0,kNavAndStatusHeight, kScreenWidth, menuHeight) titleArray:self.titleArray];
     _menuView.delegate = self;
-    [_menuView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view).offset(navAndStatusHight);
-        make.left.right.equalTo(self.view);
-        make.height.mas_equalTo(menuHeight);
-        
-    }];
+    _menuView.isShowSpaceLine = YES;
+    _menuView.isShowSlideLine = YES;
+    [self.view addSubview:_menuView];
+
     
 }
 //ScrollView添加子控制器
@@ -78,7 +75,7 @@
     for (int i=0; i<self.titleArray.count; i++) {
         UIViewController *vc = self.childViewControllers[i];
         vc.view.backgroundColor =  randomColor;
-        vc.view.frame= CGRectMake(SC_WIDTH*i, 0, SC_WIDTH, self.scrollView.frame.size.height);
+        vc.view.frame= CGRectMake(kScreenWidth*i, 0, kScreenWidth, self.scrollView.frame.size.height);
         [self.scrollView addSubview:vc.view];
     }
 
@@ -94,13 +91,13 @@
         _scrollView.delegate = self ;
         _scrollView.bounces = NO;
         _scrollView.backgroundColor = [UIColor whiteColor];
-        _scrollView.contentSize = CGSizeMake(SC_WIDTH*self.titleArray.count, 0);
+        _scrollView.contentSize = CGSizeMake(kScreenWidth*self.titleArray.count, 0);
         [self.view addSubview:self.scrollView];
         [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(_menuView.mas_bottom);
             make.left.equalTo(self.view);
             make.right.equalTo(self.view);
-            make.height.mas_equalTo(SC_HEIGHT-navAndStatusHight-menuHeight);
+            make.height.mas_equalTo(kScreenHeight-kNavAndStatusHeight-menuHeight);
             
         }];
     }
@@ -124,7 +121,7 @@
     NSLog(@"scrollViewDidScroll");
     if (scrollView == _scrollView){//因为tableview 中的scrollView 也使用同一代理，所以要判断，否则取得x值不是预期的
         CGPoint point=scrollView.contentOffset;
-        int index = point.x/SC_WIDTH;
+        int index = point.x/kScreenWidth;
         [_menuView updataSelectMenuIndex:index];
         
     }
@@ -156,7 +153,7 @@
 
 -(void)changeSelectMenuIndex:(NSInteger)index{
 
-    self.scrollView.contentOffset = CGPointMake(index*SC_WIDTH, 0);
+    self.scrollView.contentOffset = CGPointMake(index*kScreenWidth, 0);
 
 }
 - (void)didReceiveMemoryWarning {

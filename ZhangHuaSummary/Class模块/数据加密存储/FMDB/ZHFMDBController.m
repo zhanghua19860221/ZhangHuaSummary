@@ -11,11 +11,11 @@
 //数据库
 #import <FMDatabase.h>
 #import <FMDB.h>
-
 @interface ZHFMDBController ()
 {
     FMDatabase * collectBase ;//创建数据库
     NSMutableArray *mutbaleArray;
+    int num;
     
 }
 
@@ -26,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = COLORFromRGB(0xffffff);
+    num = 0;
     [self createSubView];
     [self createDatabase];
     // Do any additional setup after loading the view.
@@ -135,8 +136,11 @@
  */
 -(void)addDataToBase{
     //添加的语句    nsert into 表名 values(值,值);  ？类似我们的%@，添加参数时候使用的
-
-    BOOL isSucceed=[collectBase executeUpdate:@"insert into CollectBase values(?,?,?,?)",@"auth_succese",@"没有失败",@"还是没有失败",@"2018-01-29"];
+    BOOL isSucceed ;
+    if (num%2 == 0) {
+        isSucceed=[collectBase executeUpdate:@"insert into CollectBase values(?,?,?,?)",@"auth_faile",@"失败",@"失败",@"2018-01-29"];
+    }
+        isSucceed=[collectBase executeUpdate:@"insert into CollectBase values(?,?,?,?)",@"auth_succese",@"成功",@"成功",@"2018-01-29"];
     
     if (isSucceed) {
         NSLog(@"添加成功");
@@ -163,7 +167,7 @@
 - (void)changeDataFromBase{
     
     //修改把remark字段对应 的type类型修改为@"auth_fail"
-    BOOL isSucceed = [collectBase executeUpdate:@"UPDATE CollectBase SET type = ? WHERE remark = ?",@"auth_fail",@"还是没有失败"];
+    BOOL isSucceed = [collectBase executeUpdate:@"UPDATE CollectBase SET remark = ? WHERE type = ?",@"没有成功",@"auth_faile"];
     
     if (isSucceed) {
         NSLog(@"修改成功");
@@ -172,7 +176,6 @@
         NSLog(@"修改失败");
         
     }
-
 
 }
 //检索 数据库中的数据

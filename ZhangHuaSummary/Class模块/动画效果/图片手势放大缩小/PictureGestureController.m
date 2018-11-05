@@ -29,7 +29,7 @@ static CGRect oldframe;//用于记录按钮放大之前的frame
     // Do any additional setup after loading the view.
 }
 - (void)createSubview{
-    CGFloat Wid = (SC_WIDTH - W(40))/3.0;
+    CGFloat Wid = (kScreenWidth - W(40))/3.0;
     CGFloat height = H(80);
     CGFloat space = W(10);
     

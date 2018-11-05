@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view.
 }
 - (void)createSubviews{
-    ZHDatePickView * chooseView = [[ZHDatePickView alloc] initWithFrame:CGRectMake(0, 0, SC_WIDTH, SC_HEIGHT)];
+    ZHDatePickView * chooseView = [[ZHDatePickView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
     
     //确定按钮的点击回调事件
     //    __weak typeof(self) weakSelf = self;

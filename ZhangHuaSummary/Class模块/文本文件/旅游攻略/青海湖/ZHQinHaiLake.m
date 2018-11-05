@@ -31,7 +31,7 @@
     //为头视图添加点击手势
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap)];
     
-    _headView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SC_WIDTH, 200)];
+    _headView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 200)];
     [_headView setImage:[UIImage imageNamed:@"5.png"]];
     [_headView addGestureRecognizer:singleTap];
     _headView.userInteractionEnabled = YES;
@@ -48,10 +48,10 @@
 }
 -(void)handleSingleTap{
     if (_isClick) {
-        _headView.frame = CGRectMake(0, 0, SC_WIDTH, 200);
+        _headView.frame = CGRectMake(0, 0, kScreenWidth, 200);
         _isClick = NO;
     }else{
-        _headView.frame = CGRectMake(0, 0, SC_WIDTH, 300);
+        _headView.frame = CGRectMake(0, 0, kScreenWidth, 300);
         _isClick = YES;
     }
 }

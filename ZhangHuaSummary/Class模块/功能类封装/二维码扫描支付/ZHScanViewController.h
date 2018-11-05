@@ -11,8 +11,8 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
-#define TOP (SC_HEIGHT-220)/2
-#define LEFT (SC_WIDTH-220)/2
+#define TOP (kScreenHeight-220)/2
+#define LEFT (kScreenWidth-220)/2
 
 #define kScanRect CGRectMake(LEFT, TOP, 220, 220)
 

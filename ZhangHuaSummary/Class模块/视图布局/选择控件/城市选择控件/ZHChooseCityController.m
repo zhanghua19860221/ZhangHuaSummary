@@ -22,7 +22,7 @@
 }
 - (void)createSubview{
     
-    ZHChooseCityView * view = [[ZHChooseCityView alloc] initWithFrame:CGRectMake(0, 0, SC_WIDTH, SC_HEIGHT)];
+    ZHChooseCityView * view = [[ZHChooseCityView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
     //添加默认选中的省市
 //    [view updateAddressAtProvince:@"山东省" city:@"济宁市" area:@"鱼台县"];
     view.selectedBlock = ^(NSString * province, NSString * city, NSString * area){

@@ -47,11 +47,11 @@
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.view);
             make.left.right.equalTo(self.view);
-            if (SC_HEIGHT == 812) {
-                make.height.mas_equalTo(SC_HEIGHT);
+            if (kScreenHeight == 812) {
+                make.height.mas_equalTo(kScreenHeight);
                 
             }else{
-                make.height.mas_equalTo(SC_HEIGHT);
+                make.height.mas_equalTo(kScreenHeight);
                 
             }
             

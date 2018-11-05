@@ -33,7 +33,7 @@
     iPLab.text = @"网络ip地址";
     iPLab.textAlignment = NSTextAlignmentCenter;
     iPLab.textColor = [UIColor brownColor];
-    iPLab.frame = CGRectMake(0, 200, SC_WIDTH, 50);
+    iPLab.frame = CGRectMake(0, 200, kScreenWidth, 50);
     [self.view addSubview:iPLab];
 
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];

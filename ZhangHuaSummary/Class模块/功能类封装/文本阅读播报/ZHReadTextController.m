@@ -37,8 +37,8 @@
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.view.mas_centerY).offset(-50);
         make.centerX.equalTo(self.view.mas_centerX);
-        make.width.mas_equalTo(SC_WIDTH-150);
-        make.height.mas_equalTo(SC_HEIGHT/3.0);
+        make.width.mas_equalTo(kScreenWidth-150);
+        make.height.mas_equalTo(kScreenHeight/3.0);
 
         
     }];
