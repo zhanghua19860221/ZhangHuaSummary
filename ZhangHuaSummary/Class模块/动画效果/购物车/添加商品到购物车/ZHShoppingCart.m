@@ -62,20 +62,18 @@
     self.goodsNumLabel.text = @"99+";
 }
 
-
 /** 加入购物车按钮点击 */
 - (void)addButtonClicked:(UIButton *)sender {
     [ZHShoppingCartAnimation addToShoppingCartWithGoodsImage:[UIImage imageNamed:@"heheda"] startPoint:self.addButton.center endPoint:self.shoppingCartButton.center completion:^(BOOL finished) {
         NSLog(@"动画结束了");
-        
         //------- 颤抖吧 -------//
         CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-        scaleAnimation.fromValue = [NSNumber numberWithFloat:1.0];
-        scaleAnimation.toValue = [NSNumber numberWithFloat:0.7];
-        scaleAnimation.duration = 0.1;
+        scaleAnimation.fromValue = [NSNumber numberWithFloat:1.0];//所改变属性的起始值
+        scaleAnimation.toValue = [NSNumber numberWithFloat:0.8];//所改变属性的结束时的值
+        scaleAnimation.duration = 0.1;//动画时长
         scaleAnimation.repeatCount = 2; // 颤抖两次
-        scaleAnimation.autoreverses = YES;
-        scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        scaleAnimation.autoreverses = YES;//动画结束时是否执行逆动画
+        scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];//设置动画的速度变化
         [self.goodsNumLabel.layer addAnimation:scaleAnimation forKey:nil];
     }];
 }

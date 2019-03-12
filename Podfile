@@ -7,5 +7,10 @@ target ‘ZhangHuaSummary’ do
   pod 'MJRefresh', '~> 3.1.15.3'
   pod 'PGDatePicker'
   pod 'AvoidCrash', '~> 2.5.2'
+  pod 'UMCCommon'
+  pod 'UMCSecurityPlugins'
+  pod 'UMCShare/UI'
+  pod 'UMCShare/Social/ReducedWeChat'
+  pod 'UMCShare/Social/ReducedQQ'
 end
 

@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableListArray = @[@"下拉菜单",@"崩溃异常处理",@"视图渐变色",@"贝塞尔曲线",@"图形验证码",@"网络请求封装",@"视频播放处理",@"拨打电话功能",@"文本阅读功能",@"图片处理功能",@"调取相机相册",@"开发设计模式",@"二维码扫描支付"];
-    self.controllerTitle = @[@"DropDownMenuController",@"CrashOneViewController",@"ChangeColorController",@"ZHBezierPathController",@"PatternCordController",@"ZHCustomAFNController",@"ZHAVPlayerClass",@"ZHCallTeleController",@"ZHReadTextController",@"PictureManageController",@"CallCameraAlbumController",@"DevelopmentController",@"ZHQRCodePay"];
+    self.tableListArray = @[@"菜单导航",@"H5与原生交互",@"下拉菜单",@"崩溃异常处理",@"视图渐变色",@"贝塞尔曲线",@"图形验证码",@"网络请求封装",@"视频播放处理",@"拨打电话功能",@"文本阅读功能",@"图片处理功能",@"调取相机相册",@"开发设计模式",@"二维码扫描支付",@"限时抢购"];
+    self.controllerTitle = @[@"MenuNavigationController",@"NativeAndH5InteractiveController",@"DropDownMenuController",@"CrashOneViewController",@"ChangeColorController",@"ZHBezierPathController",@"PatternCordController",@"ZHCustomAFNController",@"ZHAVPlayerClass",@"ZHCallTeleController",@"ZHReadTextController",@"PictureManageController",@"CallCameraAlbumController",@"DevelopmentController",@"ZHQRCodePay",@"RushToBuyController"];
     // Do any additional setup after loading the view.
 }
 

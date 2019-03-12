@@ -26,6 +26,19 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - UMCCommon (1.5.2)
+  - UMCSecurityPlugins (1.0.6)
+  - UMCShare/Core (6.9.4):
+    - UMCCommon
+  - UMCShare/Social/ReducedQQ (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/UI (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -35,6 +48,11 @@ DEPENDENCIES:
   - MJRefresh (~> 3.1.15.3)
   - PGDatePicker
   - SDWebImage (~> 3.8.1)
+  - UMCCommon
+  - UMCSecurityPlugins
+  - UMCShare/Social/ReducedQQ
+  - UMCShare/Social/ReducedWeChat
+  - UMCShare/UI
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -46,6 +64,9 @@ SPEC REPOS:
     - PGDatePicker
     - PGPickerView
     - SDWebImage
+    - UMCCommon
+    - UMCSecurityPlugins
+    - UMCShare
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -56,7 +77,10 @@ SPEC CHECKSUMS:
   PGDatePicker: fc06992291742ed7afc051bb369f4c8cad465cad
   PGPickerView: 2807bdee09ff4f8e0c62f9a974820ce585c21e33
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  UMCCommon: 4392868ac47ff1b101663106bb114ba616fabbad
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  UMCShare: aa233aecad67979930fe43f3a2f676023b669439
 
-PODFILE CHECKSUM: ca7f0125962bc42cfc45adb6353976ab10f5ee12
+PODFILE CHECKSUM: 59da93ed37198d7e5c561f368e1732fcf33173c9
 
 COCOAPODS: 1.5.3

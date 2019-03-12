@@ -29,6 +29,16 @@
 //单利
 #import "shareDelegate.h"
 
+//友盟分享
+#import <UMShare/UMShare.h>
+#import <UMCommon/UMCommon.h>
+#import "UMShareManege.h"
+#import <UShareUI/UShareUI.h>
+#import <WebKit/WebKit.h>
+
+//HUD
+//#import "SVProgressHUD.h"
+
 
 // 自定义宏
 //状态栏的高度
@@ -48,6 +58,9 @@
 //系统检测
 #define IOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0 ? YES : NO)
 #define IOS11 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0 ? YES : NO)
+#define IOS9_0_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0 ? YES : NO)
+
+
 
 //弱引用
 #define kWeakSelf(type)__weak typeof(type)weak##type = type

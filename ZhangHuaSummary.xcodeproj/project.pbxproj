@@ -23,6 +23,10 @@
 		14285D7A216B643200894C46 /* 店铺.png in Resources */ = {isa = PBXBuildFile; fileRef = 14285D77216B643200894C46 /* 店铺.png */; };
 		14285D7B216B643200894C46 /* box_choose.png in Resources */ = {isa = PBXBuildFile; fileRef = 14285D78216B643200894C46 /* box_choose.png */; };
 		14285D7C216B643200894C46 /* box_unchoose.png in Resources */ = {isa = PBXBuildFile; fileRef = 14285D79216B643200894C46 /* box_unchoose.png */; };
+		142A613922140C74009F8D12 /* ThirdPartyLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A613822140C74009F8D12 /* ThirdPartyLibraryController.m */; };
+		142A613C22140CFA009F8D12 /* SmallProgramController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A613B22140CFA009F8D12 /* SmallProgramController.m */; };
+		142A613F22140D1E009F8D12 /* YouMengShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A613E22140D1E009F8D12 /* YouMengShareController.m */; };
+		142A614222141393009F8D12 /* UMShareManege.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A614122141393009F8D12 /* UMShareManege.m */; };
 		1437E6E3211D864200384DCD /* ProjectSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1437E6E2211D864200384DCD /* ProjectSummaryController.m */; };
 		1437E6E6211D878600384DCD /* GetIpAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1437E6E5211D878600384DCD /* GetIpAddressController.m */; };
 		143B01F1209F21DD0002ED0A /* WaveBtnController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B01F0209F21DD0002ED0A /* WaveBtnController.m */; };
@@ -30,6 +34,7 @@
 		143B0201209F27960002ED0A /* RunDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B01FD209F27960002ED0A /* RunDisplayController.m */; };
 		143B0202209F27960002ED0A /* StaticDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143B0200209F27960002ED0A /* StaticDisplayController.m */; };
 		144B6C11216EF34E00FC0087 /* LabAddPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144B6C10216EF34E00FC0087 /* LabAddPictureController.m */; };
+		144CC5C222150B570049111E /* PictureJitterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CC5C122150B570049111E /* PictureJitterController.m */; };
 		144D05C1205B8F3C00A655A9 /* ZHWaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C0205B8F3C00A655A9 /* ZHWaveController.m */; };
 		144D05C4205B8F4900A655A9 /* ZHWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C2205B8F4900A655A9 /* ZHWaveView.m */; };
 		144D05CA205BB35000A655A9 /* ZHWaveTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D05C9205BB35000A655A9 /* ZHWaveTwoView.m */; };
@@ -38,14 +43,26 @@
 		144EBDC620638B8F006BEC8D /* ThirdBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDC520638B8F006BEC8D /* ThirdBarController.m */; };
 		144EBDC920639AE9006BEC8D /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDC820639AE9006BEC8D /* RootController.m */; };
 		144EBDCF2063A14E006BEC8D /* SecondeBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144EBDCE2063A14E006BEC8D /* SecondeBarController.m */; };
+		145038472213F76200A696BA /* ZHLimitBuyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145038462213F76200A696BA /* ZHLimitBuyView.m */; };
+		1453D152222E6BBE0066252F /* NativeAndH5InteractiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1453D151222E6BBE0066252F /* NativeAndH5InteractiveController.m */; };
+		1453D155222E6C950066252F /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1453D154222E6C950066252F /* UIWebViewController.m */; };
+		1453D158222E6CA30066252F /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1453D157222E6CA30066252F /* WKWebViewController.m */; };
+		1453D15E222E6D790066252F /* UIWebNativeToH5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1453D15D222E6D790066252F /* UIWebNativeToH5Controller.m */; };
+		1453D161222E6D920066252F /* UIWebH5ToNativeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1453D160222E6D920066252F /* UIWebH5ToNativeController.m */; };
+		1453D164222E6DAE0066252F /* WKWebH5ToNativeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1453D163222E6DAE0066252F /* WKWebH5ToNativeController.m */; };
+		1453D167222E6DC40066252F /* WKWebNativeToH5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1453D166222E6DC40066252F /* WKWebNativeToH5Controller.m */; };
+		1453D16A222E6EA20066252F /* index1.html in Resources */ = {isa = PBXBuildFile; fileRef = 1453D168222E6EA20066252F /* index1.html */; };
+		1453D16B222E6EA20066252F /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 1453D169222E6EA20066252F /* index.html */; };
 		145B6860209C221A002CF168 /* FiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145B685F209C221A002CF168 /* FiveController.m */; };
 		145B6863209C2236002CF168 /* SixController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145B6862209C2236002CF168 /* SixController.m */; };
-		146954F7205FB68A00E0ADDC /* ZHMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 146954F3205FB68A00E0ADDC /* ZHMenuView.m */; };
 		146954F8205FB68A00E0ADDC /* ZHMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146954F4205FB68A00E0ADDC /* ZHMenuController.m */; };
 		1469550C205FB79000E0ADDC /* FirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1469550B205FB79000E0ADDC /* FirstController.m */; };
 		14695512205FB7C400E0ADDC /* ThirdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14695511205FB7C400E0ADDC /* ThirdController.m */; };
 		14695515205FB7DD00E0ADDC /* FourController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14695514205FB7DD00E0ADDC /* FourController.m */; };
 		146B4ECB208470BF00D2EE66 /* ProblemDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146B4ECA208470BF00D2EE66 /* ProblemDetailController.m */; };
+		14723BAC2223BAAA00C1E8A3 /* HorseRaceLampController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14723BAB2223BAAA00C1E8A3 /* HorseRaceLampController.m */; };
+		14723BB22223D2F400C1E8A3 /* LMJScrollTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14723BB12223D2F400C1E8A3 /* LMJScrollTextView.m */; };
+		1481143D219035FE0051AE47 /* RushToBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1481143C219035FE0051AE47 /* RushToBuyController.m */; };
 		148861C22058FCE1001AEA7C /* ZHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148861C12058FCE1001AEA7C /* ZHLoadingView.m */; };
 		148861C8205901AC001AEA7C /* ZHProgressBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148861C7205901AC001AEA7C /* ZHProgressBarController.m */; };
 		14AAA6E52112993A002C1EC1 /* ZHSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AAA6E42112993A002C1EC1 /* ZHSegmentedControl.m */; };
@@ -140,6 +157,8 @@
 		14F9159E209EF72600A05D24 /* ZHBezierPathController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F91598209EF72600A05D24 /* ZHBezierPathController.m */; };
 		14F9CF96211422740093D8F0 /* DatePickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F9CF95211422740093D8F0 /* DatePickViewController.m */; };
 		14F9CF9C211439640093D8F0 /* ZHDatePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F9CF9B211439640093D8F0 /* ZHDatePickView.m */; };
+		14FBB51922378D0100E1564B /* ZHMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBB51822378D0100E1564B /* ZHMenuView.m */; };
+		14FBB51D22378FB800E1564B /* MenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBB51C22378FB800E1564B /* MenuNavigationController.m */; };
 		3AAFDDAB443874F228F789FA /* libPods-ZhangHuaSummary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E41A269E9143FEC8EFC38F60 /* libPods-ZhangHuaSummary.a */; };
 		70043ABE1F4E7C4A00E82B8F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043ABB1F4E7C4A00E82B8F /* RootViewController.m */; };
 		70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70043ABD1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m */; };
@@ -207,6 +226,14 @@
 		14285D77216B643200894C46 /* 店铺.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "店铺.png"; sourceTree = "<group>"; };
 		14285D78216B643200894C46 /* box_choose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_choose.png; sourceTree = "<group>"; };
 		14285D79216B643200894C46 /* box_unchoose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_unchoose.png; sourceTree = "<group>"; };
+		142A613722140C74009F8D12 /* ThirdPartyLibraryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ThirdPartyLibraryController.h; path = "Class模块/第三方库集成/ThirdPartyLibraryController.h"; sourceTree = "<group>"; };
+		142A613822140C74009F8D12 /* ThirdPartyLibraryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ThirdPartyLibraryController.m; path = "Class模块/第三方库集成/ThirdPartyLibraryController.m"; sourceTree = "<group>"; };
+		142A613A22140CFA009F8D12 /* SmallProgramController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SmallProgramController.h; path = "Class模块/第三方库集成/友盟调起微信小程序/SmallProgramController.h"; sourceTree = "<group>"; };
+		142A613B22140CFA009F8D12 /* SmallProgramController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SmallProgramController.m; path = "Class模块/第三方库集成/友盟调起微信小程序/SmallProgramController.m"; sourceTree = "<group>"; };
+		142A613D22140D1E009F8D12 /* YouMengShareController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YouMengShareController.h; path = "Class模块/第三方库集成/友盟分享/YouMengShareController.h"; sourceTree = "<group>"; };
+		142A613E22140D1E009F8D12 /* YouMengShareController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YouMengShareController.m; path = "Class模块/第三方库集成/友盟分享/YouMengShareController.m"; sourceTree = "<group>"; };
+		142A614022141393009F8D12 /* UMShareManege.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UMShareManege.h; path = "Class模块/第三方库集成/友盟分享/UMShareManege.h"; sourceTree = "<group>"; };
+		142A614122141393009F8D12 /* UMShareManege.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UMShareManege.m; path = "Class模块/第三方库集成/友盟分享/UMShareManege.m"; sourceTree = "<group>"; };
 		1437E6E1211D864200384DCD /* ProjectSummaryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProjectSummaryController.h; path = "Class模块/文本文件/项目经验总结/ProjectSummaryController.h"; sourceTree = "<group>"; };
 		1437E6E2211D864200384DCD /* ProjectSummaryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProjectSummaryController.m; path = "Class模块/文本文件/项目经验总结/ProjectSummaryController.m"; sourceTree = "<group>"; };
 		1437E6E4211D878600384DCD /* GetIpAddressController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GetIpAddressController.h; path = "Class模块/文本文件/项目经验总结/获取网络ip地址/GetIpAddressController.h"; sourceTree = "<group>"; };
@@ -221,6 +248,8 @@
 		143B0200209F27960002ED0A /* StaticDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticDisplayController.m; sourceTree = "<group>"; };
 		144B6C0F216EF34E00FC0087 /* LabAddPictureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LabAddPictureController.h; path = "Class模块/文本文件/文字样式设置/文字中添加图片/LabAddPictureController.h"; sourceTree = "<group>"; };
 		144B6C10216EF34E00FC0087 /* LabAddPictureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LabAddPictureController.m; path = "Class模块/文本文件/文字样式设置/文字中添加图片/LabAddPictureController.m"; sourceTree = "<group>"; };
+		144CC5C022150B570049111E /* PictureJitterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PictureJitterController.h; path = "Class模块/动画效果/图片抖动/PictureJitterController.h"; sourceTree = "<group>"; };
+		144CC5C122150B570049111E /* PictureJitterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PictureJitterController.m; path = "Class模块/动画效果/图片抖动/PictureJitterController.m"; sourceTree = "<group>"; };
 		144D05BF205B8F3C00A655A9 /* ZHWaveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHWaveController.h; path = "Class模块/动画效果/波浪/ZHWaveController.h"; sourceTree = "<group>"; };
 		144D05C0205B8F3C00A655A9 /* ZHWaveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHWaveController.m; path = "Class模块/动画效果/波浪/ZHWaveController.m"; sourceTree = "<group>"; };
 		144D05C2205B8F4900A655A9 /* ZHWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHWaveView.m; path = "Class模块/动画效果/波浪/ZHWaveView.m"; sourceTree = "<group>"; };
@@ -237,13 +266,29 @@
 		144EBDC820639AE9006BEC8D /* RootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RootController.m; path = "Class模块/视图布局/原生TabBarController/RootController.m"; sourceTree = "<group>"; };
 		144EBDCD2063A14E006BEC8D /* SecondeBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SecondeBarController.h; path = "Class模块/视图布局/原生TabBarController/SecondeBarController.h"; sourceTree = "<group>"; };
 		144EBDCE2063A14E006BEC8D /* SecondeBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SecondeBarController.m; path = "Class模块/视图布局/原生TabBarController/SecondeBarController.m"; sourceTree = "<group>"; };
+		145038452213F76200A696BA /* ZHLimitBuyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLimitBuyView.h; sourceTree = "<group>"; };
+		145038462213F76200A696BA /* ZHLimitBuyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLimitBuyView.m; sourceTree = "<group>"; };
+		1453D150222E6BBE0066252F /* NativeAndH5InteractiveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeAndH5InteractiveController.h; sourceTree = "<group>"; };
+		1453D151222E6BBE0066252F /* NativeAndH5InteractiveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeAndH5InteractiveController.m; sourceTree = "<group>"; };
+		1453D153222E6C950066252F /* UIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
+		1453D154222E6C950066252F /* UIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
+		1453D156222E6CA30066252F /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		1453D157222E6CA30066252F /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		1453D15C222E6D790066252F /* UIWebNativeToH5Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebNativeToH5Controller.h; sourceTree = "<group>"; };
+		1453D15D222E6D790066252F /* UIWebNativeToH5Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebNativeToH5Controller.m; sourceTree = "<group>"; };
+		1453D15F222E6D920066252F /* UIWebH5ToNativeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebH5ToNativeController.h; sourceTree = "<group>"; };
+		1453D160222E6D920066252F /* UIWebH5ToNativeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebH5ToNativeController.m; sourceTree = "<group>"; };
+		1453D162222E6DAE0066252F /* WKWebH5ToNativeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebH5ToNativeController.h; sourceTree = "<group>"; };
+		1453D163222E6DAE0066252F /* WKWebH5ToNativeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebH5ToNativeController.m; sourceTree = "<group>"; };
+		1453D165222E6DC40066252F /* WKWebNativeToH5Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebNativeToH5Controller.h; sourceTree = "<group>"; };
+		1453D166222E6DC40066252F /* WKWebNativeToH5Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebNativeToH5Controller.m; sourceTree = "<group>"; };
+		1453D168222E6EA20066252F /* index1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index1.html; sourceTree = "<group>"; };
+		1453D169222E6EA20066252F /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		145B685E209C221A002CF168 /* FiveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FiveController.h; path = "Class模块/视图布局/滑动菜单联动页面/SubController/FiveController.h"; sourceTree = "<group>"; };
 		145B685F209C221A002CF168 /* FiveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FiveController.m; path = "Class模块/视图布局/滑动菜单联动页面/SubController/FiveController.m"; sourceTree = "<group>"; };
 		145B6861209C2236002CF168 /* SixController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SixController.h; path = "Class模块/视图布局/滑动菜单联动页面/SubController/SixController.h"; sourceTree = "<group>"; };
 		145B6862209C2236002CF168 /* SixController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SixController.m; path = "Class模块/视图布局/滑动菜单联动页面/SubController/SixController.m"; sourceTree = "<group>"; };
-		146954F3205FB68A00E0ADDC /* ZHMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHMenuView.m; path = "Class模块/视图布局/滑动菜单联动页面/ZHMenuView.m"; sourceTree = "<group>"; };
 		146954F4205FB68A00E0ADDC /* ZHMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHMenuController.m; path = "Class模块/视图布局/滑动菜单联动页面/ZHMenuController.m"; sourceTree = "<group>"; };
-		146954F5205FB68A00E0ADDC /* ZHMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHMenuView.h; path = "Class模块/视图布局/滑动菜单联动页面/ZHMenuView.h"; sourceTree = "<group>"; };
 		146954F6205FB68A00E0ADDC /* ZHMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHMenuController.h; path = "Class模块/视图布局/滑动菜单联动页面/ZHMenuController.h"; sourceTree = "<group>"; };
 		1469550A205FB79000E0ADDC /* FirstController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FirstController.h; path = "Class模块/视图布局/滑动菜单联动页面/SubController/FirstController.h"; sourceTree = "<group>"; };
 		1469550B205FB79000E0ADDC /* FirstController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FirstController.m; path = "Class模块/视图布局/滑动菜单联动页面/SubController/FirstController.m"; sourceTree = "<group>"; };
@@ -253,6 +298,12 @@
 		14695514205FB7DD00E0ADDC /* FourController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FourController.m; path = "Class模块/视图布局/滑动菜单联动页面/SubController/FourController.m"; sourceTree = "<group>"; };
 		146B4EC9208470BF00D2EE66 /* ProblemDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProblemDetailController.h; path = "Class模块/文本文件/知识总结/ProblemDetailController.h"; sourceTree = "<group>"; };
 		146B4ECA208470BF00D2EE66 /* ProblemDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProblemDetailController.m; path = "Class模块/文本文件/知识总结/ProblemDetailController.m"; sourceTree = "<group>"; };
+		14723BAA2223BAAA00C1E8A3 /* HorseRaceLampController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HorseRaceLampController.h; path = "Class模块/动画效果/跑马灯/HorseRaceLampController.h"; sourceTree = "<group>"; };
+		14723BAB2223BAAA00C1E8A3 /* HorseRaceLampController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HorseRaceLampController.m; path = "Class模块/动画效果/跑马灯/HorseRaceLampController.m"; sourceTree = "<group>"; };
+		14723BB02223D2F400C1E8A3 /* LMJScrollTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LMJScrollTextView.h; path = "Class模块/动画效果/跑马灯/LMJScrollTextView.h"; sourceTree = "<group>"; };
+		14723BB12223D2F400C1E8A3 /* LMJScrollTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LMJScrollTextView.m; path = "Class模块/动画效果/跑马灯/LMJScrollTextView.m"; sourceTree = "<group>"; };
+		1481143B219035FE0051AE47 /* RushToBuyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RushToBuyController.h; sourceTree = "<group>"; };
+		1481143C219035FE0051AE47 /* RushToBuyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RushToBuyController.m; sourceTree = "<group>"; };
 		148861C02058FCE1001AEA7C /* ZHLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHLoadingView.h; path = "Class模块/动画效果/加载菊花/ZHLoadingView.h"; sourceTree = "<group>"; };
 		148861C12058FCE1001AEA7C /* ZHLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZHLoadingView.m; path = "Class模块/动画效果/加载菊花/ZHLoadingView.m"; sourceTree = "<group>"; };
 		148861C6205901AC001AEA7C /* ZHProgressBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZHProgressBarController.h; path = "Class模块/动画效果/进度条/ZHProgressBarController.h"; sourceTree = "<group>"; };
@@ -426,6 +477,10 @@
 		14F9CF95211422740093D8F0 /* DatePickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickViewController.m; sourceTree = "<group>"; };
 		14F9CF9A211439640093D8F0 /* ZHDatePickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHDatePickView.h; sourceTree = "<group>"; };
 		14F9CF9B211439640093D8F0 /* ZHDatePickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHDatePickView.m; sourceTree = "<group>"; };
+		14FBB51722378D0000E1564B /* ZHMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHMenuView.h; sourceTree = "<group>"; };
+		14FBB51822378D0100E1564B /* ZHMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHMenuView.m; sourceTree = "<group>"; };
+		14FBB51B22378FB800E1564B /* MenuNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuNavigationController.h; sourceTree = "<group>"; };
+		14FBB51C22378FB800E1564B /* MenuNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuNavigationController.m; sourceTree = "<group>"; };
 		70043ABA1F4E7C4A00E82B8F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = "main入口/RootViewController.h"; sourceTree = "<group>"; };
 		70043ABB1F4E7C4A00E82B8F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = "main入口/RootViewController.m"; sourceTree = "<group>"; };
 		70043ABC1F4E7C4A00E82B8F /* ZHBasicsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHBasicsTableViewController.h; path = "main入口/ZHBasicsTableViewController.h"; sourceTree = "<group>"; };
@@ -577,6 +632,37 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		142A612E22140842009F8D12 /* 第三方库集成 */ = {
+			isa = PBXGroup;
+			children = (
+				142A613322140923009F8D12 /* 友盟调起微信小程序 */,
+				142A612F22140855009F8D12 /* 友盟分享 */,
+				142A613722140C74009F8D12 /* ThirdPartyLibraryController.h */,
+				142A613822140C74009F8D12 /* ThirdPartyLibraryController.m */,
+			);
+			name = "第三方库集成";
+			sourceTree = "<group>";
+		};
+		142A612F22140855009F8D12 /* 友盟分享 */ = {
+			isa = PBXGroup;
+			children = (
+				142A614022141393009F8D12 /* UMShareManege.h */,
+				142A614122141393009F8D12 /* UMShareManege.m */,
+				142A613D22140D1E009F8D12 /* YouMengShareController.h */,
+				142A613E22140D1E009F8D12 /* YouMengShareController.m */,
+			);
+			name = "友盟分享";
+			sourceTree = "<group>";
+		};
+		142A613322140923009F8D12 /* 友盟调起微信小程序 */ = {
+			isa = PBXGroup;
+			children = (
+				142A613A22140CFA009F8D12 /* SmallProgramController.h */,
+				142A613B22140CFA009F8D12 /* SmallProgramController.m */,
+			);
+			name = "友盟调起微信小程序";
+			sourceTree = "<group>";
+		};
 		1431ED9B203E6C5D00F74EFA /* RSA */ = {
 			isa = PBXGroup;
 			children = (
@@ -672,8 +758,6 @@
 			isa = PBXGroup;
 			children = (
 				14695509205FB73200E0ADDC /* SubController */,
-				146954F5205FB68A00E0ADDC /* ZHMenuView.h */,
-				146954F3205FB68A00E0ADDC /* ZHMenuView.m */,
 				146954F6205FB68A00E0ADDC /* ZHMenuController.h */,
 				146954F4205FB68A00E0ADDC /* ZHMenuController.m */,
 			);
@@ -687,6 +771,15 @@
 				144B6C10216EF34E00FC0087 /* LabAddPictureController.m */,
 			);
 			name = "文字中添加图片";
+			sourceTree = "<group>";
+		};
+		144CC5BF22150AAD0049111E /* 图片抖动 */ = {
+			isa = PBXGroup;
+			children = (
+				144CC5C022150B570049111E /* PictureJitterController.h */,
+				144CC5C122150B570049111E /* PictureJitterController.m */,
+			);
+			name = "图片抖动";
 			sourceTree = "<group>";
 		};
 		144D05BB205B8E8500A655A9 /* 波浪 */ = {
@@ -715,6 +808,77 @@
 				144EBDC520638B8F006BEC8D /* ThirdBarController.m */,
 			);
 			name = "原生TabBarController";
+			sourceTree = "<group>";
+		};
+		1453D145222E4FAE0066252F /* H5与原生交互 */ = {
+			isa = PBXGroup;
+			children = (
+				1453D14B222E6B0A0066252F /* WKWebView */,
+				1453D14A222E6AF70066252F /* UIWebView */,
+				1453D150222E6BBE0066252F /* NativeAndH5InteractiveController.h */,
+				1453D151222E6BBE0066252F /* NativeAndH5InteractiveController.m */,
+			);
+			path = "H5与原生交互";
+			sourceTree = "<group>";
+		};
+		1453D14A222E6AF70066252F /* UIWebView */ = {
+			isa = PBXGroup;
+			children = (
+				1453D169222E6EA20066252F /* index.html */,
+				1453D14F222E6B8F0066252F /* H5调取原生 */,
+				1453D14E222E6B890066252F /* 原生调取H5 */,
+				1453D153222E6C950066252F /* UIWebViewController.h */,
+				1453D154222E6C950066252F /* UIWebViewController.m */,
+			);
+			path = UIWebView;
+			sourceTree = "<group>";
+		};
+		1453D14B222E6B0A0066252F /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				1453D168222E6EA20066252F /* index1.html */,
+				1453D14D222E6B730066252F /* 原生调取H5 */,
+				1453D14C222E6B460066252F /* H5调取原生 */,
+				1453D156222E6CA30066252F /* WKWebViewController.h */,
+				1453D157222E6CA30066252F /* WKWebViewController.m */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		1453D14C222E6B460066252F /* H5调取原生 */ = {
+			isa = PBXGroup;
+			children = (
+				1453D162222E6DAE0066252F /* WKWebH5ToNativeController.h */,
+				1453D163222E6DAE0066252F /* WKWebH5ToNativeController.m */,
+			);
+			path = "H5调取原生";
+			sourceTree = "<group>";
+		};
+		1453D14D222E6B730066252F /* 原生调取H5 */ = {
+			isa = PBXGroup;
+			children = (
+				1453D165222E6DC40066252F /* WKWebNativeToH5Controller.h */,
+				1453D166222E6DC40066252F /* WKWebNativeToH5Controller.m */,
+			);
+			path = "原生调取H5";
+			sourceTree = "<group>";
+		};
+		1453D14E222E6B890066252F /* 原生调取H5 */ = {
+			isa = PBXGroup;
+			children = (
+				1453D15C222E6D790066252F /* UIWebNativeToH5Controller.h */,
+				1453D15D222E6D790066252F /* UIWebNativeToH5Controller.m */,
+			);
+			path = "原生调取H5";
+			sourceTree = "<group>";
+		};
+		1453D14F222E6B8F0066252F /* H5调取原生 */ = {
+			isa = PBXGroup;
+			children = (
+				1453D15F222E6D920066252F /* UIWebH5ToNativeController.h */,
+				1453D160222E6D920066252F /* UIWebH5ToNativeController.m */,
+			);
+			path = "H5调取原生";
 			sourceTree = "<group>";
 		};
 		14695509205FB73200E0ADDC /* SubController */ = {
@@ -779,6 +943,28 @@
 			children = (
 			);
 			name = "导航栏修改";
+			sourceTree = "<group>";
+		};
+		14723BA92223B9FC00C1E8A3 /* 跑马灯 */ = {
+			isa = PBXGroup;
+			children = (
+				14723BB02223D2F400C1E8A3 /* LMJScrollTextView.h */,
+				14723BB12223D2F400C1E8A3 /* LMJScrollTextView.m */,
+				14723BAA2223BAAA00C1E8A3 /* HorseRaceLampController.h */,
+				14723BAB2223BAAA00C1E8A3 /* HorseRaceLampController.m */,
+			);
+			name = "跑马灯";
+			sourceTree = "<group>";
+		};
+		1481143A219035030051AE47 /* 限时抢购 */ = {
+			isa = PBXGroup;
+			children = (
+				145038452213F76200A696BA /* ZHLimitBuyView.h */,
+				145038462213F76200A696BA /* ZHLimitBuyView.m */,
+				1481143B219035FE0051AE47 /* RushToBuyController.h */,
+				1481143C219035FE0051AE47 /* RushToBuyController.m */,
+			);
+			path = "限时抢购";
 			sourceTree = "<group>";
 		};
 		148861BD2058F751001AEA7C /* 加载菊花 */ = {
@@ -986,8 +1172,8 @@
 			children = (
 				14F914BC209EDC8100A05D24 /* emptyhd.png */,
 				14F914BA209EDC8100A05D24 /* UIScrollView+EmptyDataSet.m */,
-				14F914BB209EDC8100A05D24 /* TableViewRefreshController.h */,
 				14F914BD209EDC8100A05D24 /* UIScrollView+EmptyDataSet.h */,
+				14F914BB209EDC8100A05D24 /* TableViewRefreshController.h */,
 				14F914BE209EDC8100A05D24 /* TableViewRefreshController.m */,
 			);
 			path = "刷新";
@@ -1063,6 +1249,9 @@
 		14F91506209EED3500A05D24 /* 功能类封装 */ = {
 			isa = PBXGroup;
 			children = (
+				14FBB51A22378F4900E1564B /* 菜单导航 */,
+				1453D145222E4FAE0066252F /* H5与原生交互 */,
+				1481143A219035030051AE47 /* 限时抢购 */,
 				14189239212164500024BFEB /* 崩溃异常处理 */,
 				14F91521209EED3500A05D24 /* 拨打电话 */,
 				14F91514209EED3500A05D24 /* 下拉菜单 */,
@@ -1307,6 +1496,17 @@
 			path = "日期选择";
 			sourceTree = "<group>";
 		};
+		14FBB51A22378F4900E1564B /* 菜单导航 */ = {
+			isa = PBXGroup;
+			children = (
+				14FBB51722378D0000E1564B /* ZHMenuView.h */,
+				14FBB51822378D0100E1564B /* ZHMenuView.m */,
+				14FBB51B22378FB800E1564B /* MenuNavigationController.h */,
+				14FBB51C22378FB800E1564B /* MenuNavigationController.m */,
+			);
+			path = "菜单导航";
+			sourceTree = "<group>";
+		};
 		70251BEB1F5E4D0900405C57 /* 文本文件 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1428,6 +1628,7 @@
 		709FEEB11F4D7D8E00285983 /* Class 模块 */ = {
 			isa = PBXGroup;
 			children = (
+				142A612E22140842009F8D12 /* 第三方库集成 */,
 				14F62CF92134E893006F0071 /* 项目优化 */,
 				14F91506209EED3500A05D24 /* 功能类封装 */,
 				70251BEB1F5E4D0900405C57 /* 文本文件 */,
@@ -1441,6 +1642,8 @@
 		709FEEB21F4D7DCF00285983 /* 动画效果 */ = {
 			isa = PBXGroup;
 			children = (
+				14723BA92223B9FC00C1E8A3 /* 跑马灯 */,
+				144CC5BF22150AAD0049111E /* 图片抖动 */,
 				141919F420ABC42E003FF19D /* 图片手势放大缩小 */,
 				14F7F0AB206BA081008762CB /* 弹出展示信息 */,
 				144D05BB205B8E8500A655A9 /* 波浪 */,
@@ -1560,7 +1763,7 @@
 				TargetAttributes = {
 					709FEE961F4D63E100285983 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 223MWV8YZF;
+						DevelopmentTeam = 7G6TBAJ5RR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1593,6 +1796,7 @@
 				709FEEAA1F4D63E100285983 /* LaunchScreen.storyboard in Resources */,
 				704915171F56546F00DA2B5A /* mid.jpg in Resources */,
 				14F7F089206B79EF008762CB /* rsa.crt in Resources */,
+				1453D16B222E6EA20066252F /* index.html in Resources */,
 				70251C171F5E9FDD00405C57 /* 2.png in Resources */,
 				14285D7A216B643200894C46 /* 店铺.png in Resources */,
 				14F62D0A2134EC80006F0071 /* Optimization.plist in Resources */,
@@ -1620,6 +1824,7 @@
 				14F91556209EEF6500A05D24 /* dropdownMenu_cornerIcon.png in Resources */,
 				1427F1C22085C4520037E693 /* ProblemList.plist in Resources */,
 				70FA4C951F53C6DD0078BFE6 /* heheda.png in Resources */,
+				1453D16A222E6EA20066252F /* index1.html in Resources */,
 				14285D6C216B528E00894C46 /* ShopCarNew.plist in Resources */,
 				14F7F08A206B79EF008762CB /* p.p12 in Resources */,
 				14F7F087206B79EF008762CB /* private.pem in Resources */,
@@ -1659,11 +1864,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZhangHuaSummary/Pods-ZhangHuaSummary-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/PGDatePicker/PGDatePicker/PGDatePicker.bundle",
+				"${PODS_ROOT}/UMCShare/UMShare/UMSocialUI/UMSocialSDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PGDatePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1677,6 +1884,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14723BB22223D2F400C1E8A3 /* LMJScrollTextView.m in Sources */,
 				709FEE9F1F4D63E100285983 /* AppDelegate.m in Sources */,
 				70251C2B1F5EA42100405C57 /* ZHQinHaiLake.m in Sources */,
 				14F914FD209EE1C300A05D24 /* ZHRoundLayout.m in Sources */,
@@ -1691,6 +1899,7 @@
 				14F914FB209EE1C300A05D24 /* ZHCustomLayOut.m in Sources */,
 				14F9143E209EB47C00A05D24 /* ZHChooseController.m in Sources */,
 				14F91539209EEECE00A05D24 /* SVProgressHUD.m in Sources */,
+				1453D167222E6DC40066252F /* WKWebNativeToH5Controller.m in Sources */,
 				144D05CA205BB35000A655A9 /* ZHWaveTwoView.m in Sources */,
 				14695512205FB7C400E0ADDC /* ThirdController.m in Sources */,
 				709FEE9C1F4D63E100285983 /* main.m in Sources */,
@@ -1715,13 +1924,13 @@
 				14F9153F209EEED900A05D24 /* ZHCustomAFNController.m in Sources */,
 				14F91546209EEF1900A05D24 /* ZHAlbumListController.m in Sources */,
 				14F7F0AA206B8984008762CB /* ZHFMDBDataModel.m in Sources */,
+				1453D155222E6C950066252F /* UIWebViewController.m in Sources */,
 				14F914D6209EDC8200A05D24 /* CollectionViewController.m in Sources */,
 				14C5674B205A6A1900735FC8 /* ZHWaterView.m in Sources */,
 				14F9159D209EF72600A05D24 /* ZHMaskView.m in Sources */,
 				14F9143A209EB47C00A05D24 /* ShareChooseController.m in Sources */,
 				14F9152A209EEEBD00A05D24 /* ZHKVOController.m in Sources */,
 				14F91549209EEF2C00A05D24 /* ZHCameraAlbumController.m in Sources */,
-				146954F7205FB68A00E0ADDC /* ZHMenuView.m in Sources */,
 				148861C22058FCE1001AEA7C /* ZHLoadingView.m in Sources */,
 				14F91537209EEECE00A05D24 /* SVRadialGradientLayer.m in Sources */,
 				14F9CF9C211439640093D8F0 /* ZHDatePickView.m in Sources */,
@@ -1729,6 +1938,7 @@
 				14F7F09C206B7B02008762CB /* KeyChinaController.m in Sources */,
 				14F91524209EED3500A05D24 /* ZHPictureCache.m in Sources */,
 				143B01F1209F21DD0002ED0A /* WaveBtnController.m in Sources */,
+				142A613C22140CFA009F8D12 /* SmallProgramController.m in Sources */,
 				14285D76216B5DDC00894C46 /* ZHShopingCartHeaderView.m in Sources */,
 				1427F1C020858BBC0037E693 /* ZHTextStyleController.m in Sources */,
 				14F9143B209EB47C00A05D24 /* ZHChooseCityController.m in Sources */,
@@ -1736,9 +1946,13 @@
 				14F91439209EB47C00A05D24 /* ZHShareChooseView.m in Sources */,
 				14F7F0A7206B8295008762CB /* ZHFMDBController.m in Sources */,
 				14F91435209EB47C00A05D24 /* QDPickerModel.m in Sources */,
+				14FBB51D22378FB800E1564B /* MenuNavigationController.m in Sources */,
+				145038472213F76200A696BA /* ZHLimitBuyView.m in Sources */,
 				14F914DE209EDC8200A05D24 /* UIButton+ZHCountDown.m in Sources */,
+				1453D15E222E6D790066252F /* UIWebNativeToH5Controller.m in Sources */,
 				144EBDCF2063A14E006BEC8D /* SecondeBarController.m in Sources */,
 				144EBDC020638945006BEC8D /* FirstBarController.m in Sources */,
+				144CC5C222150B570049111E /* PictureJitterController.m in Sources */,
 				14F9159C209EF72600A05D24 /* PatternCordController.m in Sources */,
 				70043AC21F4E7CDA00E82B8F /* viewLayoutController.m in Sources */,
 				14F914D5209EDC8200A05D24 /* UIControlController.m in Sources */,
@@ -1748,7 +1962,9 @@
 				14F91523209EED3500A05D24 /* ZHWebImageCache.m in Sources */,
 				70251BEF1F5E887A00405C57 /* ZHTextFileController.m in Sources */,
 				14F91536209EEECE00A05D24 /* SVIndefiniteAnimatedView.m in Sources */,
+				1453D152222E6BBE0066252F /* NativeAndH5InteractiveController.m in Sources */,
 				14285D70216B537B00894C46 /* ZHShopppingCartBottomView.m in Sources */,
+				1453D161222E6D920066252F /* UIWebH5ToNativeController.m in Sources */,
 				14F914E0209EDC8200A05D24 /* SwitchViewController.m in Sources */,
 				70043ACB1F4E7D8B00E82B8F /* animationController.m in Sources */,
 				144D05C1205B8F3C00A655A9 /* ZHWaveController.m in Sources */,
@@ -1758,6 +1974,9 @@
 				145B6860209C221A002CF168 /* FiveController.m in Sources */,
 				14F914FC209EE1C300A05D24 /* ZHWaterfallStyle.m in Sources */,
 				14F91437209EB47C00A05D24 /* ZHChooseBankController.m in Sources */,
+				142A613922140C74009F8D12 /* ThirdPartyLibraryController.m in Sources */,
+				14723BAC2223BAAA00C1E8A3 /* HorseRaceLampController.m in Sources */,
+				1453D164222E6DAE0066252F /* WKWebH5ToNativeController.m in Sources */,
 				14F914DF209EDC8200A05D24 /* ZHCountdownBtnController.m in Sources */,
 				70251C281F5EA3CD00405C57 /* ZHTravelStrategyController.m in Sources */,
 				14F7F094206B7A05008762CB /* Base64.m in Sources */,
@@ -1767,6 +1986,7 @@
 				14F62D082134EBD2006F0071 /* OptimizationSummaryController.m in Sources */,
 				14F914D8209EDC8200A05D24 /* UIScrollView+EmptyDataSet.m in Sources */,
 				70043ABF1F4E7C4A00E82B8F /* ZHBasicsTableViewController.m in Sources */,
+				142A614222141393009F8D12 /* UMShareManege.m in Sources */,
 				144D05C4205B8F4900A655A9 /* ZHWaveView.m in Sources */,
 				14F914DA209EDC8200A05D24 /* TableViewRefreshController.m in Sources */,
 				144B6C11216EF34E00FC0087 /* LabAddPictureController.m in Sources */,
@@ -1776,13 +1996,16 @@
 				14F914DB209EDC8200A05D24 /* TableViewController.m in Sources */,
 				14F9155D209EF00600A05D24 /* PictureManageController.m in Sources */,
 				146954F8205FB68A00E0ADDC /* ZHMenuController.m in Sources */,
+				142A613F22140D1E009F8D12 /* YouMengShareController.m in Sources */,
 				143B01F4209F22290002ED0A /* ZHWaveBtnView.m in Sources */,
 				14F91577209EF05400A05D24 /* ZHCallTeleController.m in Sources */,
 				14F9CF96211422740093D8F0 /* DatePickViewController.m in Sources */,
 				14285D6D216B528E00894C46 /* ZHShopingCartModel.m in Sources */,
 				14F7F099206B7AE3008762CB /* ZHKeyChina.m in Sources */,
 				1427F1C52085C4960037E693 /* ZHSummaryController.m in Sources */,
+				1481143D219035FE0051AE47 /* RushToBuyController.m in Sources */,
 				145B6863209C2236002CF168 /* SixController.m in Sources */,
+				14FBB51922378D0100E1564B /* ZHMenuView.m in Sources */,
 				14E6A7E420B298E900BF14A0 /* ZHBannerLoopView.m in Sources */,
 				148861C8205901AC001AEA7C /* ZHProgressBarController.m in Sources */,
 				14F9157A209EF06500A05D24 /* ZHReadTextController.m in Sources */,
@@ -1799,6 +2022,7 @@
 				14F9159B209EF72600A05D24 /* ZHPatternCordView.m in Sources */,
 				1418923C212165A60024BFEB /* CrashOneViewController.m in Sources */,
 				14EDAEE82064B18000C1BE3E /* shareDelegate.m in Sources */,
+				1453D158222E6CA30066252F /* WKWebViewController.m in Sources */,
 				146B4ECB208470BF00D2EE66 /* ProblemDetailController.m in Sources */,
 				14F7F0AE206BA0E5008762CB /* ShowStateInfoController.m in Sources */,
 				14F91560209EF02600A05D24 /* toolClassEncap.m in Sources */,
@@ -1924,7 +2148,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 223MWV8YZF;
+				DEVELOPMENT_TEAM = 7G6TBAJ5RR;
 				GCC_PREFIX_HEADER = /Users/zhanghua/Desktop/ZhangHuaSummary/ZhangHuaSummary/ZHSummaryPch.pch;
 				INFOPLIST_FILE = ZhangHuaSummary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1942,7 +2166,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 223MWV8YZF;
+				DEVELOPMENT_TEAM = 7G6TBAJ5RR;
 				GCC_PREFIX_HEADER = /Users/zhanghua/Desktop/ZhangHuaSummary/ZhangHuaSummary/ZHSummaryPch.pch;
 				INFOPLIST_FILE = ZhangHuaSummary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
