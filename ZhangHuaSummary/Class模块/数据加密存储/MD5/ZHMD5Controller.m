@@ -46,7 +46,6 @@
     
 }
 - (void)buttonPressed:(UIButton *)button{
-    
     outputLabel.text = [ZHMD5 md5:inputField.text];
     
 }

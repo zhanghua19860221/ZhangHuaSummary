@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+    
+<div style="margin-top: 200px, margin-left: 100px">
+    <h2>JS与原生交互(WKWebView)</h2>
+    <input type="button" value="h5唤起原生方法(call)" onclick="call()">
+</div>
+
+<div style="margin-top: 60px">
+    <h2>JS与原生交互(WKWebView)</h2>
+    <input type="button" value="h5唤起原生方法(clickOne)" onclick="clickOne()">
+</div>
+
+<script>
+//H5调取原生
+var call = function(){
+    // nativeMethod 引入的自定义原生方法名称
+    // body 体内加入一些需要传递的参数 (body体参数格式，加载本地H5代码时可为null， 加载服务器H5Url时必传）
+    window.webkit.messageHandlers.nativeMethod0.postMessage({body:'方法一'});
+    
+}
+
+//方法名不可以为 click 否则无法与原生交互
+var clickOne = function(){
+    window.webkit.messageHandlers.nativeMethod1.postMessage({body:'方法二'});
+    
+}
+//原生调取H5方法 （str为原生传入参数）
+function alerCallback(str){
+    alert(str);
+    
+}
+</script>
+</body>
+</html>

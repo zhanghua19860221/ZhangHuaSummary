@@ -7,7 +7,6 @@
 //
 
 #import "PictureGestureController.h"
-static CGRect oldframe;//用于记录按钮放大之前的frame
 
 @interface PictureGestureController ()<UIScrollViewDelegate>{
     NSArray *imagesArray;//存储图片
@@ -52,7 +51,6 @@ static CGRect oldframe;//用于记录按钮放大之前的frame
 }
 - (void)enlargeImage:(UIButton *)btn{
     scaleNum=1;
-    oldframe = btn.frame;
     selectBtn = btn;
     NSInteger index = btn.tag - 100;
     NSLog(@"index =%ld" , index);
@@ -61,7 +59,6 @@ static CGRect oldframe;//用于记录按钮放大之前的frame
     UIView *backgroundView=[[UIView alloc]initWithFrame:CGRectMake(0,0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     backgroundView.backgroundColor=[[UIColor blackColor] colorWithAlphaComponent:0.8];
     [window addSubview:backgroundView];
-    
     
     //添加捏合手势，放大与缩小图片
     self.scrollview=[[UIScrollView alloc]initWithFrame:backgroundView.bounds];
@@ -72,7 +69,6 @@ static CGRect oldframe;//用于记录按钮放大之前的frame
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.imageView setImage:[UIImage imageNamed:imagesArray[index]]];
     [self.scrollview addSubview:self.imageView];
-    
     
     //设置UIScrollView的滚动范围和图片的真实尺寸一致
     

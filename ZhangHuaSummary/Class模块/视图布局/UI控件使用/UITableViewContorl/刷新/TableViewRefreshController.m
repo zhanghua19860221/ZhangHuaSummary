@@ -64,7 +64,6 @@
         _tableView.estimatedSectionFooterHeight =0;
         
         
-        
         MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(prepareData)];
           //是否隐藏刷新的时间
 //        header.lastUpdatedTimeLabel.hidden = YES;
@@ -72,9 +71,9 @@
         _tableView.mj_header = header;
         _tableView.mj_footer = footer;
         
-        self.tableView.tableFooterView = [UIView new];
+        _tableView.tableFooterView = [UIView new];
         //可以隐藏默认的底部刷新文字 -(footer.stateLabel.hidden = NO/yes)
-        footer.stateLabel.hidden = NO;
+        //footer.stateLabel.hidden = NO;
 
     }
     return _tableView;
@@ -103,7 +102,6 @@
     [_tableView.mj_footer endRefreshing];
     //如果没有更多数据的时候可以进行设置
     [footer setTitle:@"我也是有底线的." forState:MJRefreshStateIdle];
-    
     pageNum = pageNum++;
 
 //    [[ZHNetWorking shareInstance] postOrGetWithType:POST URL:nil parameter:nil showHUD:YES success:^(id response) {

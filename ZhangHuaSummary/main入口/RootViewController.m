@@ -26,9 +26,9 @@
 }
 -(void)initTableViewData{
 
-    NSArray *tempListArray = @[@"视图布局",@"动画效果",@"文本文件",@"功能类封装",@"数据加密存储",@"项目优化"];
+    NSArray *tempListArray = @[@"视图布局",@"动画效果",@"文本文件",@"功能类封装",@"数据加密存储",@"项目优化",@"第三方库集成"];
     self.tableListArray = [tempListArray copy];
-    NSArray *tempTitle  = @[@"viewLayoutController",@"animationController",@"ZHTextFileController",@"toolClassEncap",@"ZHEncryptDataController",@"ProjectOptimizationController"];
+    NSArray *tempTitle  = @[@"viewLayoutController",@"animationController",@"ZHTextFileController",@"toolClassEncap",@"ZHEncryptDataController",@"ProjectOptimizationController",@"ThirdPartyLibraryController"];
     self.controllerTitle = [tempTitle copy];
 }
 - (void)didReceiveMemoryWarning {

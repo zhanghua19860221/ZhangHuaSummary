@@ -66,14 +66,12 @@
     NSString *tempName = self.controllerTitle[indexPath.row];
     
     if (tempName!=nil) {
-        
         UIViewController *VC =[[NSClassFromString(tempName) alloc] init];
         VC.title = self.tableListArray[indexPath.row];
         VC.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:VC animated:YES];
         
     }
-    
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 20;

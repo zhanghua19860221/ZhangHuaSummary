@@ -7,6 +7,7 @@
 //
 
 #import "ZHMenuController.h"
+//(路径 - Class模块->功能封装->菜单导航)
 #import "ZHMenuView.h"
 #import "FirstController.h"
 #import "SecondeController.h"
@@ -17,7 +18,7 @@
 
 #define menuHeight 40 //菜单栏高度
 
-@interface ZHMenuController ()<UIScrollViewDelegate,ZHMenuDelegateIndex>
+@interface ZHMenuController ()<UIScrollViewDelegate,ZHMenuViewDelegate>
 
 @property (strong , nonatomic)UIScrollView *scrollView;//子控制器视图
 @property (strong , nonatomic)ZHMenuView *menuView;//菜单视图
@@ -46,9 +47,30 @@
     [self.titleArray addObjectsFromArray:array];
     
     _menuView = [[ZHMenuView alloc] initWithFrame:CGRectMake(0,kNavAndStatusHeight, kScreenWidth, menuHeight) titleArray:self.titleArray];
+    _menuView.backgroundColor = [UIColor whiteColor];
+    //选中字体大小
+    //_menuView.selectFont = 20;//默认15
+    //默认字体大小
+    //_menuView.defaultFont = 13;//默认13
+    //选中字体颜色
+    //_menuView.selectTextColor  = [UIColor brownColor];
+    //默认字体颜色
+    //_menuView.defaultTextColor = [UIColor grayColor];
+    //是否显示底部滚动条
+    //_menuView.isShowSlideLine = YES;//默认yes
+    //滚动条颜色
+    //_menuView.defaultSlideColor = [UIColor cyanColor];
+    //是否显示间隔线
+    //_menuView.isShowSpaceLine = YES;//默认yes
+    //间隔线颜色
+    //_menuView.defaultSpaceColor = [UIColor cyanColor];
+    //设置滚动条 、按钮选中初始位置 默认为0
+    //_menuView.currentIndex = 1;
+    //滚动条是否为等宽 默认 YES （YES 等宽，NO 跟随字符串的长度变化）
+    //_menuView.isEqualWidth = NO;
+    //协议方法
     _menuView.delegate = self;
-    _menuView.isShowSpaceLine = YES;
-    _menuView.isShowSlideLine = YES;
+    
     [self.view addSubview:_menuView];
 
     
@@ -123,7 +145,7 @@
         CGPoint point=scrollView.contentOffset;
         int index = point.x/kScreenWidth;
         [_menuView updataSelectMenuIndex:index];
-        
+
     }
 }
 // 当开始滚动视图时，执行该方法。一次有效滑动（开始滑动，滑动一小段距离，只要手指不松开，只算一次滑动），只执行一次。
@@ -149,10 +171,9 @@
     
 }
 
-#pragma *****************ZHMenuDelegateIndex*****************************
+#pragma *****************ZHMenuViewDelegate*****************************
 
--(void)changeSelectMenuIndex:(NSInteger)index{
-
+-(void)changeSelectMenuIndex:(NSInteger)index  isSelect:(BOOL)isSelect{
     self.scrollView.contentOffset = CGPointMake(index*kScreenWidth, 0);
 
 }
