@@ -1,0 +1,6 @@
+module Pods_ZhangHuaSummary {
+  umbrella header "Pods-ZhangHuaSummary-umbrella.h"
+
+  export *
+  module * { export * }
+}

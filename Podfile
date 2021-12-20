@@ -12,5 +12,6 @@ target ‘ZhangHuaSummary’ do
   pod 'UMCShare/UI'
   pod 'UMCShare/Social/ReducedWeChat'
   pod 'UMCShare/Social/ReducedQQ'
+  pod 'JXSegmentedView'
 end
 
